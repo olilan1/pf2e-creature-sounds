@@ -72,6 +72,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - run: npm ci
+
+      - name: Build macro pack
+        run: npm run pack
 
       # Extract version embedded in the tag.
       # This step expects the tag to be one of the following formats:
