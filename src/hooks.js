@@ -10,7 +10,7 @@ Hooks.on("updateActor", (arg0, arg1, arg2, arg3) => {
         const myBestMatch = findBestMatch(myTraits);
         console.log(myBestMatch);
         const returnedSounds = myBestMatch.files;
-        const randomIndex = Math.floor(Math.random() * myArray.length);
+        const randomIndex = Math.floor(Math.random() * returnedSounds.length);
         const soundSelected = returnedSounds[randomIndex];
         AudioHelper.play({
             src: soundSelected,
