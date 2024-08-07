@@ -5,11 +5,11 @@ Hooks.on("updateActor", (arg0, arg1, arg2, arg3) => {
     let isDamageTaken = checkIfHookIsDamageTaken(arg2);
     if (isDamageTaken) {
         ChatMessage.create({ content: "I took damage! Ow!" });}
-        myRollOptions = arg0.flags.pf2e.rollOptions.all;
-        let myTraits = extractTraits(myRollOptions)
-        let myBestMatch = findBestMatch(myTraits);
+        const myRollOptions = arg0.flags.pf2e.rollOptions.all;
+        const myTraits = extractTraits(myRollOptions)
+        const myBestMatch = findBestMatch(myTraits);
         console.log(myBestMatch);
-        let returnedSounds = myBestMatch.files;
+        const returnedSounds = myBestMatch.files;
         const randomIndex = Math.floor(Math.random() * myArray.length);
         const soundSelected = returnedSounds[randomIndex];
         AudioHelper.play({
