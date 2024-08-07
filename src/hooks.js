@@ -4,7 +4,7 @@ Hooks.on("updateActor", (arg0, arg1, arg2, arg3) => {
     console.log(arg2)
     let isDamageTaken = checkIfHookIsDamageTaken(arg2);
     if (isDamageTaken) {
-        ChatMessage.create({ content: "I took damage! Ow!" });}
+        ChatMessage.create({ content: "I took damage! Ow!" });
         const myRollOptions = arg0.flags.pf2e.rollOptions.all;
         const myTraits = extractTraits(myRollOptions)
         const myBestMatch = findBestMatch(myTraits);
@@ -18,7 +18,8 @@ Hooks.on("updateActor", (arg0, arg1, arg2, arg3) => {
             autoplay: true,
             loop: false
         }, true);
-    });
+    }
+});
 
 function checkIfHookIsDamageTaken(args) {
     return "damageTaken" in args
