@@ -1,4 +1,4 @@
-import {extractTraits, findBestMatch} from soundbytrait.js
+import {extractTraits, findBestMatch} from "soundbytrait.js"
 
 Hooks.on("updateActor", (arg0, arg1, arg2, arg3) => {
     console.log(arg2)
