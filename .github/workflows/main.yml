@@ -124,7 +124,6 @@ jobs:
             README.md                            \
             LICENSE                              \
             templates                            \
-            scripts/                             \
             src/                                 \
             styles/                              \
             packs/                               \
