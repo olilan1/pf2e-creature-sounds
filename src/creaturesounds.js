@@ -5,22 +5,23 @@ import {getSetting, SETTINGS} from "./settings.js"
 export function creatureSoundOnDamage(actor) {
     const soundType = checkIfDamageKills(actor);
 
-    //check for name match first
-    let returnedSounds = findSoundByCreatureName(actor.name, soundType);
-    console.log("value of returnedSounds after findSoundByCreatureName(): " + returnedSounds)
-    if (!returnedSounds) {
+    //check for exact name match first
+    let soundSet = findSoundSetByCreatureName(actor.name);
+
+    if (!soundSet) {
         // check for match_on
-        returnedSounds = findSoundByMatch(actor.name, soundType);
+        soundSet = findSoundSetByMatch(actor.name);
     }
 
-    if (!returnedSounds) {
+    if (!soundSet) {
         // check traits
         const rollOptions = actor.flags.pf2e.rollOptions.all;
-        returnedSounds = findSoundByTraits(extractTraits(rollOptions), soundType);
+        soundSet = findSoundSetByTraits(extractTraits(rollOptions));
     }
 
-    if (returnedSounds) {
+    if (soundSet) {
         // Found something!
+        const returnedSounds = getSoundsOfType(soundSet, soundType);
         playRandomSound(returnedSounds);
     } else {
         // Didn't find anything
@@ -35,44 +36,42 @@ function checkIfDamageKills(actor) {
     return "hit"
 }
 
-function findSoundByCreatureName(creatureName, soundType) {
-    for (const [key, value] of Object.entries(soundsDatabase)) {
-        if (value.creatures?.includes(creatureName)) {
+function findSoundSetByCreatureName(creatureName) {
+    for (const [key, soundSet] of Object.entries(soundsDatabase)) {
+        if (soundSet.creatures?.includes(creatureName)) {
             console.log("Exact Match found for " + creatureName);
-            return getSoundsOfType(value, soundType);
+            return soundSet;
         }
     }
-    console.log("Could not find in db: " + creatureName)
     return null;
 }
 
-function findSoundByMatch(creatureName, soundType) {
-    for (const [key, value] of Object.entries(soundsDatabase)) {
-        for (const matchText of value.match_on) {
+function findSoundSetByMatch(creatureName) {
+    for (const [key, soundSet] of Object.entries(soundsDatabase)) {
+        for (const matchText of soundSet.match_on) {
             const regex = new RegExp("\\b" + matchText + "\\b", "i");
             if (creatureName.match(regex)) {
                 console.log("Inexact Match found for " + creatureName + " with match text " + matchText);
-                return getSoundsOfType(value, soundType);
+                return soundSet;
             }
         }
     }
-    console.log("Could not find match for: " + creatureName)
     return null;
 }
 
-function findSoundByTraits(traits, soundType) {
+function findSoundSetByTraits(traits) {
     let bestMatch = null;
     let maxMatchingTraits = 0;
     console.log("Traits found for damaged creature are: " + traits);
-    for (const [key, value] of Object.entries(soundsDatabase)) {
-        const matchingTraits = value.traits.filter(trait => traits.includes(trait)).length;
+    for (const [key, soundSet] of Object.entries(soundsDatabase)) {
+        const matchingTraits = soundSet.traits.filter(trait => traits.includes(trait)).length;
         if (matchingTraits > maxMatchingTraits) {
-            bestMatch = value;
+            bestMatch = soundSet;
             maxMatchingTraits = matchingTraits;
         }
     }
     if (bestMatch) {
-        return getSoundsOfType(bestMatch, soundType);
+        return soundSet;
     }
     return null;
 }
