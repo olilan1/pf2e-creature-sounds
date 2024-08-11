@@ -1,7 +1,7 @@
-import {onDamageTaken} from "./soundbynameortrait.js"
+import {creatureSoundOnDamage} from "./soundbynameortrait.js"
 
-Hooks.on("updateActor", (arg0, arg1, arg2, arg3) => {
-    if ("damageTaken" in arg2 && arg2.damageTaken > 0) {
-        onDamageTaken(arg0);
+Hooks.on("updateActor", (actor, changed, options, userId) => {
+    if ("damageTaken" in options && options.damageTaken > 0) {
+        creatureSoundOnDamage(actor);
     }
 });
