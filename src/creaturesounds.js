@@ -6,10 +6,15 @@ export function creatureSoundOnDamage(actor) {
     const soundType = checkIfDamageKills(actor);
 
     //check for name match first
-    let returnedSounds = findSoundByCreatureName(actor.name, soundType)
+    let returnedSounds = findSoundByCreatureName(actor.name, soundType);
     console.log("value of returnedSounds after findSoundByCreatureName(): " + returnedSounds)
     if (!returnedSounds) {
-        //fallback to trait match
+        // check for match_on
+        returnedSounds = findSoundByMatch(actor.name, soundType);
+    }
+
+    if (!returnedSounds) {
+        // check traits
         const rollOptions = actor.flags.pf2e.rollOptions.all;
         returnedSounds = findSoundByTraits(extractTraits(rollOptions), soundType);
     }
@@ -38,6 +43,20 @@ function findSoundByCreatureName(creatureName, soundType) {
         }
     }
     console.log("Could not find in db: " + creatureName)
+    return null;
+}
+
+function findSoundByMatch(creatureName, soundType) {
+    for (const [key, value] of Object.entries(soundsDatabase)) {
+        for (const matchText of value.match_on) {
+            const regex = new RegExp("\\b" + matchText + "\\b", "i");
+            if (creatureName.match(regex)) {
+                console.log("Inexact Match found for " + creatureName + " with match text " + matchText);
+                return getSoundsOfType(value, soundType);
+            }
+        }
+    }
+    console.log("Could not find match for: " + creatureName)
     return null;
 }
 
