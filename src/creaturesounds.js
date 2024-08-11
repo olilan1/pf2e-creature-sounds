@@ -5,16 +5,16 @@ import {getSetting, SETTINGS} from "./settings.js"
 export function creatureSoundOnDamage(actor) {
     const soundType = checkIfDamageKills(actor);
 
-    //check for exact name match first
+    // Check for exact name match first.
     let soundSet = findSoundSetByCreatureName(actor.name);
 
     if (!soundSet) {
-        // check for match_on
+        // If no exact match, check for match_on.
         soundSet = findSoundSetByMatch(actor.name);
     }
 
     if (!soundSet) {
-        // check traits
+        // If still no match, check traits.
         const rollOptions = actor.flags.pf2e.rollOptions.all;
         soundSet = findSoundSetByTraits(extractTraits(rollOptions));
     }
@@ -24,7 +24,7 @@ export function creatureSoundOnDamage(actor) {
         const returnedSounds = getSoundsOfType(soundSet, soundType);
         playRandomSound(returnedSounds);
     } else {
-        // Didn't find anything
+        // Didn't find anything.
         console.log("No Sounds found.")
     }
 }
