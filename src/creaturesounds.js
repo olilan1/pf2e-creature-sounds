@@ -1,6 +1,6 @@
 import soundsDatabase from "../databases/sounds_db.json" assert { type: "json" };
 
-const HIT_SOUND_VOLUME = 0.5;
+import {getSetting, SETTINGS} from "./settings.js"
 
 export function creatureSoundOnDamage(actor) {
     const soundType = checkIfDamageKills(actor);
@@ -92,7 +92,7 @@ function playSound(sound) {
     console.log("sound to play:" + sound);
     foundry.audio.AudioHelper.play({
         src: sound,
-        volume: HIT_SOUND_VOLUME,
+        volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME),
         autoplay: true,
         loop: false
     }, true);
