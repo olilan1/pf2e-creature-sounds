@@ -1,6 +1,6 @@
 import {getSetting, SETTINGS} from "./settings.js"
 
-const soundsDatabase = (await import("../databases/sounds_db.json", {assert: {type: 'json'}})).default;
+const soundsDatabase = (await import("../databases/sounds_db.json", {assert: {type: 'json'}, with: {type: 'json'}})).default;
 
 export function creatureSoundOnDamage(actor, options) {
     
