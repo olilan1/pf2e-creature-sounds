@@ -1,32 +1,37 @@
 import soundsDatabase from "../databases/sounds_db.json" with { type: "json" };
-
 import {getSetting, SETTINGS} from "./settings.js"
 
 export function creatureSoundOnDamage(actor) {
-    const soundType = checkIfDamageKills(actor);
+    
+    if (getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE) && "damageTaken" in options && options.damageTaken > 0) {
+        if (actor.type !== 'character' || (actor.type === 'character' && getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE))) { 
+            const soundType = checkIfDamageKills(actor);
 
-    // Check for exact name match first.
-    let soundSet = findSoundSetByCreatureName(actor.name);
-
-    if (!soundSet) {
-        // If no exact match, check for match_on.
-        soundSet = findSoundSetByMatch(actor.name);
+            // Check for exact name match first.
+            let soundSet = findSoundSetByCreatureName(actor.name);
+        
+            if (!soundSet) {
+                // If no exact match, check for match_on.
+                soundSet = findSoundSetByMatch(actor.name);
+            }
+        
+            if (!soundSet) {
+                // If still no match, check traits.
+                const rollOptions = actor.flags.pf2e.rollOptions.all;
+                soundSet = findSoundSetByTraits(extractTraits(rollOptions));
+            }
+        
+            if (soundSet) {
+                // Found something!
+                const returnedSounds = getSoundsOfType(soundSet, soundType);
+                playRandomSound(returnedSounds);
+            } else {
+                // Didn't find anything.
+                console.log("No Sounds found.")
+            }
+        }
     }
 
-    if (!soundSet) {
-        // If still no match, check traits.
-        const rollOptions = actor.flags.pf2e.rollOptions.all;
-        soundSet = findSoundSetByTraits(extractTraits(rollOptions));
-    }
-
-    if (soundSet) {
-        // Found something!
-        const returnedSounds = getSoundsOfType(soundSet, soundType);
-        playRandomSound(returnedSounds);
-    } else {
-        // Didn't find anything.
-        console.log("No Sounds found.")
-    }
 }
 
 function checkIfDamageKills(actor) {
@@ -71,7 +76,7 @@ function findSoundSetByTraits(traits) {
         }
     }
     if (bestMatch) {
-        return soundSet;
+        return bestMatch;
     }
     return null;
 }
