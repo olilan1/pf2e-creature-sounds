@@ -1,4 +1,4 @@
-import soundsDatabase from "../databases/sounds_db.json" assert { type: "json" };
+import soundsDatabase from "../databases/sounds_db.json";
 
 import {getSetting, SETTINGS} from "./settings.js"
 
