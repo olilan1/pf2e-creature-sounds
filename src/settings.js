@@ -2,6 +2,7 @@ const SETTINGS_NAMESPACE = "samioli-module";
 
 export const SETTINGS = {
     CREATURE_SOUNDS_ENABLE: "creatureSounds_enable",
+    CREATURE_SOUNDS_CHARACTER_ENABLE: "creatureSounds_characters",
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume"
 };
 
@@ -9,6 +10,15 @@ export function registerSettings() {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_ENABLE, {
         name: "Creature sounds",
         hint: "Enable creature-specific sounds",
+        scope: "world",
+        config: true,
+        default: true,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE, {
+        name: "Character sounds",
+        hint: "Enable creature sounds functionality for player characters",
         scope: "world",
         config: true,
         default: true,
