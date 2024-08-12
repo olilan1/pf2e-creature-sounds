@@ -1,4 +1,4 @@
-import soundsDatabase from "../databases/sounds_db.json";
+import soundsDatabase from "../databases/sounds_db.json" with { type: "json" };
 
 import {getSetting, SETTINGS} from "./settings.js"
 
