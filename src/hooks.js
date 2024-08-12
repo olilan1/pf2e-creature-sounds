@@ -6,5 +6,5 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("updateActor", (actor, changed, options, userId) => {
-    creatureSoundOnDamage(actor);
+    creatureSoundOnDamage(actor, options);
 });

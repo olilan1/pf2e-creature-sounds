@@ -1,7 +1,7 @@
 import soundsDatabase from "../databases/sounds_db.json" with { type: "json" };
 import {getSetting, SETTINGS} from "./settings.js"
 
-export function creatureSoundOnDamage(actor) {
+export function creatureSoundOnDamage(actor, options) {
     
     if (getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE) && "damageTaken" in options && options.damageTaken > 0) {
         if (actor.type !== 'character' || (actor.type === 'character' && getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE))) { 
