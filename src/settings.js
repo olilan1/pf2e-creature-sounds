@@ -3,7 +3,9 @@ const SETTINGS_NAMESPACE = "samioli-module";
 export const SETTINGS = {
     CREATURE_SOUNDS_ENABLE: "creatureSounds_enable",
     CREATURE_SOUNDS_CHARACTER_ENABLE: "creatureSounds_characters",
-    CREATURE_SOUNDS_VOLUME: "creatureSounds_volume"
+    CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
+    CREATURE_ATTACK_SOUNDS_ENABLE: "creatureSounds_attack_enable",
+    CREATURE_HIT_SOUNDS_ENABLE: "creatureSounds_hit_enable"
 };
 
 export function registerSettings() {
@@ -19,6 +21,24 @@ export function registerSettings() {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE, {
         name: "Character sounds",
         hint: "Enable creature sounds functionality for player characters",
+        scope: "world",
+        config: true,
+        default: true,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE, {
+        name: "Attack sounds",
+        hint: "Enable creature sounds functionality for attacks",
+        scope: "world",
+        config: true,
+        default: true,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_HIT_SOUNDS_ENABLE, {
+        name: "Hit sounds",
+        hint: "Enable creature sounds functionality for being hit",
         scope: "world",
         config: true,
         default: true,
