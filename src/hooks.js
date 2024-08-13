@@ -1,4 +1,4 @@
-import {registerSettings, getSetting, SETTINGS} from "./settings.js"
+import {registerSettings} from "./settings.js"
 import {creatureSoundOnDamage, creatureSoundOnAttack} from "./creaturesounds.js"
 
 Hooks.on("init", () => {

@@ -4,7 +4,8 @@ const soundsDatabase = (await import("../databases/sounds_db.json",
         {assert: {type: 'json'}, with: {type: 'json'}})).default;
 
 export function creatureSoundOnDamage(actor, options) {
-    if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE) || !getSetting(SETTINGS.CREATURE_HIT_SOUNDS_ENABLE)) {
+    if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE)
+            || !getSetting(SETTINGS.CREATURE_HIT_SOUNDS_ENABLE)) {
         // Disabled in settings.
         return;
     }
@@ -22,37 +23,34 @@ export function creatureSoundOnDamage(actor, options) {
     }
 
     const soundType = (actor.system.attributes.hp.value === 0) ? "death" : "hit";
-
-    let mySoundSet = findSoundSet(actor.name, actor.flags.pf2e.rollOptions.all)
-
-    if (!mySoundSet) {
-        return
-    }
-    // Found something!
-    const returnedSounds = getSoundsOfType(mySoundSet, soundType);
-    
-    playRandomSound(returnedSounds);
+    playRandomMatchingSound(actor, soundType);
 }
 
 export function creatureSoundOnAttack(ChatMessagePF2e) {
-
-    if (ChatMessagePF2e.flags.pf2e.context.type === 'attack-roll') {
-        
-        if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE) || !getSetting(SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE)) {
-            // Disabled in settings.
-            return;
-        }
-        let attackingActor = game.actors.get(ChatMessagePF2e.speaker.actor)
-        let mySoundSet = findSoundSet(ChatMessagePF2e.speaker.alias, attackingActor.flags.pf2e.rollOptions.all);
-
-        if (!mySoundSet) {
-            return
-        }
-
-        const returnedSounds = getSoundsOfType(mySoundSet, "attack");
-    
-        playRandomSound(returnedSounds);
+    if (ChatMessagePF2e.flags.pf2e.context.type !== 'attack-roll') {
+        // Not an attack roll.
+        return;
     }
+    if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE)
+            || !getSetting(SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE)) {
+        // Disabled in settings.
+        return;
+    }
+
+    let attackingActor = game.actors.get(ChatMessagePF2e.speaker.actor);
+    playRandomMatchingSound(attackingActor, "attack");
+}
+
+function playRandomMatchingSound(actor, soundType) {
+    let soundSet = findSoundSet(actor.name, actor.flags.pf2e.rollOptions.all);
+    if (!soundSet) {
+        // No matching sound found.
+        return;
+    }
+
+    // Found something!
+    const returnedSounds = getSoundsOfType(soundSet, soundType);
+    playRandomSound(returnedSounds);
 }
 
 function findSoundSet(name, rollOptions) {
@@ -114,30 +112,28 @@ function findSoundSetByTraits(traits) {
     return null;
 }
 
-function getSoundsOfType(dbValue, soundType) {
+function getSoundsOfType(soundSet, soundType) {
     switch (soundType) {
         case 'hit':
-            return dbValue.hit_sounds;
+            return soundSet.hit_sounds;
         case 'death':
-            if (dbValue.death_sounds.length != 0) {
-                return dbValue.death_sounds;
+            if (soundSet.death_sounds.length != 0) {
+                return soundSet.death_sounds;
             }
             console.log("No death sounds found, so using hit sound as fallback");
-            return dbValue.hit_sounds;
+            return soundSet.hit_sounds;
         case 'attack': 
-            return dbValue.attack_sounds;
+            return soundSet.attack_sounds;
         default:
             console.log(`No sounds found for soundType=${soundType}`);
     }
 }
 
 function extractTraits(obj) {
-    console.log(`Traits to extract are ${obj}`);
     const traits = [];
     for (const key in obj) {
         if (key.startsWith("self:trait:") || key.startsWith("origin:trait:")) {
             const trait = key.slice(key.lastIndexOf(":") + 1);
-            console.log(`the trait ${trait}`)
             traits.push(trait);
         }
     }
