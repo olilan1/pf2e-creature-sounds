@@ -38,6 +38,12 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
     }
 
     let attackingActor = game.actors.get(ChatMessagePF2e.speaker.actor);
+    if (attackingActor.type === 'character'
+            && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE)) {
+        // Actor is a character, and character sounds are not enabled in settings.
+        return;
+    }
+
     playRandomMatchingSound(attackingActor, "attack");
 }
 
