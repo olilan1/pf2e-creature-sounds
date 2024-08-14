@@ -27,7 +27,7 @@ export function creatureSoundOnDamage(actor, options) {
 }
 
 export function creatureSoundOnAttack(ChatMessagePF2e) {
-    if (ChatMessagePF2e.flags.pf2e.context.type !== 'attack-roll') {
+    if (ChatMessagePF2e.flags.pf2e.context?.type !== 'attack-roll') {
         // Not an attack roll.
         return;
     }
