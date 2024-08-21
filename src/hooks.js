@@ -3,6 +3,7 @@ import { creatureSoundOnDamage, creatureSoundOnAttack } from "./creaturesounds.j
 import { chatMacroButton } from "./chatmacrobutton.js";
 import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
+import { checkForBravado } from "./effects/panache.js";
 
 Hooks.on("init", () => {
     registerSettings();
@@ -16,8 +17,10 @@ Hooks.on("createChatMessage", (ChatMessagePF2e, rollmode, id) => {
     creatureSoundOnAttack(ChatMessagePF2e);
     startTumbleThrough(ChatMessagePF2e);
     startEnjoyTheShow(ChatMessagePF2e);
+    checkForBravado(ChatMessagePF2e)
 });
 
 Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
     chatMacroButton(ChatMessagePF2e, html);
 });
+
