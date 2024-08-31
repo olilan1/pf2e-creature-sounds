@@ -1,0 +1,312 @@
+{
+  "Aberration": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_05.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Attack/CREAHmn_Aberration_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Attack/CREAHmn_Aberration_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Attack/CREAHmn_Aberration_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Attack/CREAHmn_Aberration_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Attack/CREAHmn_Aberration_Attack_05.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Death/CREAHmn_Aberration_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Death/CREAHmn_Aberration_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Death/CREAHmn_Aberration_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Death/CREAHmn_Aberration_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Aberration/Aberration_Death/CREAHmn_Aberration_Death_05.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["aberration"]
+  },
+  "Behemoth": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_05.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Attack/CREAMnstr_Behemoth_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Attack/CREAMnstr_Behemoth_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Attack/CREAMnstr_Behemoth_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Attack/CREAMnstr_Behemoth_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Attack/CREAMnstr_Behemoth_Attack_05.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_04.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["beast"]
+  },
+  "Dragon": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Hurt/CREADrgn_Dragon_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Hurt/CREADrgn_Dragon_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Hurt/CREADrgn_Dragon_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Hurt/CREADrgn_Dragon_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Hurt/CREADrgn_Dragon_Hurt_05.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Attack/CREADrgn_Dragon_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Attack/CREADrgn_Dragon_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Attack/CREADrgn_Dragon_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Attack/CREADrgn_Dragon_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Attack/CREADrgn_Dragon_Attack_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Attack/CREADrgn_Dragon_Attack_06.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Death/CREADrgn_Dragon_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Death/CREADrgn_Dragon_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Death/CREADrgn_Dragon_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Death/CREADrgn_Dragon_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Dragon/Dragon_Death/CREADrgn_Dragon_Death_05.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["dragon"]
+  },
+  "Goblin": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_07.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_08.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_09.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_10.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_11.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_12.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Attack/CREAHmn_Goblin_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Attack/CREAHmn_Goblin_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Attack/CREAHmn_Goblin_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Attack/CREAHmn_Goblin_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Attack/CREAHmn_Goblin_Attack_05.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_07.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Goblin/Goblin_Death/CREAHmn_Goblin_Death_08.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["goblin"]
+  },
+  "Insect": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Hurt/CREAInsc_Insect_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Hurt/CREAInsc_Insect_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Hurt/CREAInsc_Insect_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Hurt/CREAInsc_Insect_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Hurt/CREAInsc_Insect_Hurt_05.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Attack/CREAInsc_Insect_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Attack/CREAInsc_Insect_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Attack/CREAInsc_Insect_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Attack/CREAInsc_Insect_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Attack/CREAInsc_Insect_Attack_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Attack/CREAInsc_Insect_Attack_06.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Death/CREAInsc_Insect_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Death/CREAInsc_Insect_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Death/CREAInsc_Insect_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Death/CREAInsc_Insect_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Insect/Insect_Death/CREAInsc_Insect_Death_05.wav"
+    ],
+    "creatures": [],
+    "keywords": ["ant", "centipede", "beetle"],
+    "traits": []
+  },
+  "Orc": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_07.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_08.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_09.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_10.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_11.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_12.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_13.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_14.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_07.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_08.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_09.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_10.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Attack/CREAHmn_Orc_Attack_11.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_07.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_08.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_09.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Orc/Orc_Death/CREAHmn_Orc_Death_10.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["orc", "dromaar", "half-orc", "hobgoblin"]
+  },
+  "Skeleton": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_07.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_07.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeleton_Attack/CREAHmn_Skeleton_Attack_08.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_01 .wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_07.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["skeleton", "undead"]
+  },
+  "Spectre": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Hurt/CREAEthr_Spectre_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Hurt/CREAEthr_Spectre_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Hurt/CREAEthr_Spectre_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Hurt/CREAEthr_Spectre_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Hurt/CREAEthr_Spectre_Hurt_05.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Attack/CREAEthr_Spectre_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Attack/CREAEthr_Spectre_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Attack/CREAEthr_Spectre_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Attack/CREAEthr_Spectre_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Attack/CREAEthr_Spectre_Attack_05.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Death/CREAEthr_Spectre_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Death/CREAEthr_Spectre_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Death/CREAEthr_Spectre_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Death/CREAEthr_Spectre_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spectre/Spectre_Death/CREAEthr_Spectre_Death_05.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["incorporeal", "wraith", "ghost", "undead"]
+  },
+  "Spider": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_06.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_05.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_06.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Attack/CREAInsc_Spider_Attack_07.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Death/CREAInsc_Spider_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Death/CREAInsc_Spider_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Death/CREAInsc_Spider_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Death/CREAInsc_Spider_Death_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Spider/Spider_Death/CREAInsc_Spider_Death_05.wav"
+    ],
+    "creatures": [],
+    "keywords": ["spider"],
+    "traits": []
+  },
+  "Troll": {
+    "notes": "",
+    "hurt_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_05.wav"
+    ],
+    "attack_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Attack/CREAMnstr_Troll_Attack_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Attack/CREAMnstr_Troll_Attack_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Attack/CREAMnstr_Troll_Attack_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Attack/CREAMnstr_Troll_Attack_04.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Attack/CREAMnstr_Troll_Attack_05.wav"
+    ],
+    "death_sounds": [
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Death/CREAMnstr_Troll_Death_01.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Death/CREAMnstr_Troll_Death_02.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Death/CREAMnstr_Troll_Death_03.wav",
+      "modules/samioli-module/sounds/GameDevMarket/Troll/Troll_Death/CREAMnstr_Troll_Death_04.wav"
+    ],
+    "creatures": [],
+    "keywords": [],
+    "traits": ["troll"]
+  }
+}

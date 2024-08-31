@@ -5,7 +5,7 @@ export const SETTINGS = {
     CREATURE_SOUNDS_CHARACTER_ENABLE: "creatureSounds_characters",
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
     CREATURE_ATTACK_SOUNDS_ENABLE: "creatureSounds_attack_enable",
-    CREATURE_HIT_SOUNDS_ENABLE: "creatureSounds_hit_enable"
+    CREATURE_HURT_SOUNDS_ENABLE: "creatureSounds_hurt_enable"
 };
 
 export function registerSettings() {
@@ -36,9 +36,9 @@ export function registerSettings() {
         type: Boolean
     });
 
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_HIT_SOUNDS_ENABLE, {
-        name: "Hit sounds",
-        hint: "Enable creature sounds functionality for being hit",
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE, {
+        name: "Hurt sounds",
+        hint: "Enable creature sounds functionality for being hurt",
         scope: "world",
         config: true,
         default: true,

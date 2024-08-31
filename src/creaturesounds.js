@@ -1,11 +1,11 @@
 import {getSetting, SETTINGS} from "./settings.js"
 
-const soundsDatabase = (await import("../databases/sounds_db.json",
+const soundsDatabase = (await import("../databases/creature_sounds_db.json",
         {assert: {type: 'json'}, with: {type: 'json'}})).default;
 
 export function creatureSoundOnDamage(actor, options) {
     if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE)
-            || !getSetting(SETTINGS.CREATURE_HIT_SOUNDS_ENABLE)) {
+            || !getSetting(SETTINGS.CREATURE_HURT_SOUNDS_ENABLE)) {
         // Disabled in settings.
         return;
     }
@@ -22,7 +22,7 @@ export function creatureSoundOnDamage(actor, options) {
         return;
     }
 
-    const soundType = (actor.system.attributes.hp.value === 0) ? "death" : "hit";
+    const soundType = (actor.system.attributes.hp.value === 0) ? "death" : "hurt";
     playRandomMatchingSound(actor, soundType);
 }
 
@@ -63,7 +63,7 @@ function findSoundSet(name, rollOptions) {
     // Check for exact name match first.
     let soundSet = findSoundSetByCreatureName(name);
     if (!soundSet) {
-        // If no exact match, check for match_on.
+        // If no exact match, check for keywords.
         soundSet = findSoundSetByMatch(name);
     }
     if (!soundSet) {
@@ -90,7 +90,7 @@ function findSoundSetByCreatureName(creatureName) {
 
 function findSoundSetByMatch(creatureName) {
     for (const [key, soundSet] of Object.entries(soundsDatabase)) {
-        for (const matchText of soundSet.match_on) {
+        for (const matchText of soundSet.keywords) {
             const regex = new RegExp("\\b" + matchText + "\\b", "i");
             if (creatureName.match(regex)) {
                 console.log(`Inexact Match found for ${creatureName} with match text ${matchText}`);
@@ -120,14 +120,14 @@ function findSoundSetByTraits(traits) {
 
 function getSoundsOfType(soundSet, soundType) {
     switch (soundType) {
-        case 'hit':
-            return soundSet.hit_sounds;
+        case 'hurt':
+            return soundSet.hurt_sounds;
         case 'death':
             if (soundSet.death_sounds.length != 0) {
                 return soundSet.death_sounds;
             }
-            console.log("No death sounds found, so using hit sound as fallback");
-            return soundSet.hit_sounds;
+            console.log("No death sounds found, so using hurt sound as fallback");
+            return soundSet.hurt_sounds;
         case 'attack': 
             return soundSet.attack_sounds;
         default:
