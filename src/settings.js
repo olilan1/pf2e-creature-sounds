@@ -5,7 +5,8 @@ export const SETTINGS = {
     CREATURE_SOUNDS_CHARACTER_ENABLE: "creatureSounds_characters",
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
     CREATURE_ATTACK_SOUNDS_ENABLE: "creatureSounds_attack_enable",
-    CREATURE_HURT_SOUNDS_ENABLE: "creatureSounds_hurt_enable"
+    CREATURE_HURT_SOUNDS_ENABLE: "creatureSounds_hurt_enable",
+    TEMPLATE_TARGET_ENABLE: "template_target_enable"
 };
 
 export function registerSettings() {
@@ -57,6 +58,15 @@ export function registerSettings() {
             step: 0.1
         },
         type: Number
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.TEMPLATE_TARGET_ENABLE, {
+        name: "Template targetting",
+        hint: "Automatically target all tokens under a placed template",
+        scope: "world",
+        config: true,
+        default: false,
+        type: Boolean
     });
 }
 
