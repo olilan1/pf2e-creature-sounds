@@ -27,5 +27,5 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
 });
 
 Hooks.on("createMeasuredTemplate", async (template, context, userId) => {
-    targetTokensUnderTemplate(template);
+    targetTokensUnderTemplate(template, userId);
 });
