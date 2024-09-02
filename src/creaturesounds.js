@@ -93,7 +93,7 @@ function findSoundSetByMatch(creatureName) {
         for (const matchText of soundSet.keywords) {
             const regex = new RegExp("\\b" + matchText + "\\b", "i");
             if (creatureName.match(regex)) {
-                console.log(`Inexact Match found for ${creatureName} with match text ${matchText}`);
+                console.log(`Keyword Match found for ${creatureName} with keyword ${matchText}`);
                 return soundSet;
             }
         }
