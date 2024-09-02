@@ -26,9 +26,6 @@ Hooks.on("createMeasuredTemplate", async (template, context, userId) => {
 });
 
 Hooks.on("createChatMessage", (message, rollmode, id) => {   
-    startTumbleThrough(message);
-    startEnjoyTheShow(message);
-
     if (
     !(
         game.modules.get('dice-so-nice')?.active
@@ -49,6 +46,8 @@ Hooks.on('diceSoNiceRollComplete', (id) => {
 
 function handleChatMessage(message) {
     creatureSoundOnAttack(message);
+    startTumbleThrough(message);
+    startEnjoyTheShow(message);
     checkForBravado(message);
     checkForFinisher(message);
     checkForHuntPrey(message);
