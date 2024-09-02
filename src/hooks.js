@@ -4,6 +4,7 @@ import { chatMacroButton } from "./chatmacrobutton.js";
 import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
 import { checkForBravado, checkForFinisher } from "./effects/panache.js";
+import { checkForHuntPrey } from "./actions/huntprey.js";
 
 Hooks.on("init", () => {
     registerSettings();
@@ -19,6 +20,7 @@ Hooks.on("createChatMessage", (ChatMessagePF2e, rollmode, id) => {
     startEnjoyTheShow(ChatMessagePF2e);
     checkForBravado(ChatMessagePF2e);
     checkForFinisher(ChatMessagePF2e);
+    checkForHuntPrey(ChatMessagePF2e);
 });
 
 Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
