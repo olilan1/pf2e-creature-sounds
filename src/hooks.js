@@ -5,6 +5,8 @@ import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
 import { checkForBravado, checkForFinisher } from "./effects/panache.js";
 import { checkForHuntPrey } from "./actions/huntprey.js";
+import { targetTokensUnderTemplate } from "./templatetarget.js";
+
 
 Hooks.on("init", () => {
     registerSettings();
@@ -27,3 +29,6 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
     chatMacroButton(ChatMessagePF2e, html);
 });
 
+Hooks.on("createMeasuredTemplate", async (template, context, userId) => {
+    targetTokensUnderTemplate(template, userId);
+});
