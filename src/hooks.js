@@ -3,7 +3,7 @@ import { creatureSoundOnDamage, creatureSoundOnAttack } from "./creaturesounds.j
 import { chatMacroButton } from "./chatmacrobutton.js";
 import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
-import { checkForBravado, checkForFinisher } from "./effects/panache.js";
+import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFinisher } from "./effects/panache.js";
 import { checkForHuntPrey } from "./actions/huntprey.js";
 import { targetTokensUnderTemplate } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
@@ -50,6 +50,7 @@ function handleChatMessage(message) {
     startEnjoyTheShow(message);
     checkForBravado(message);
     checkForFinisher(message);
+    checkForExtravagantParryOrElegantBuckler(message);
     checkForHuntPrey(message);
     checkForUnstableCheck(message);
 }
