@@ -13,7 +13,7 @@ Hooks.on("init", () => {
     registerSettings();
 });
 
-Hooks.on("updateActor", (actor, changed, options, userId) => {
+Hooks.on("updateActor", (actor, _changed, options/*, userId*/) => {
     creatureSoundOnDamage(actor, options);
 });
 
@@ -21,11 +21,11 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
     chatMacroButton(ChatMessagePF2e, html);
 });
 
-Hooks.on("createMeasuredTemplate", async (template, context, userId) => {
+Hooks.on("createMeasuredTemplate", async (template, _context, userId) => {
     targetTokensUnderTemplate(template, userId);
 });
 
-Hooks.on("createChatMessage", (message, rollmode, id) => {   
+Hooks.on("createChatMessage", (message, /*rollmode, id*/) => {   
     if (
     !(
         game.modules.get('dice-so-nice')?.active
