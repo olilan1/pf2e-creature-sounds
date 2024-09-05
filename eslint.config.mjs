@@ -21,7 +21,8 @@ export default [
           PIXI: "readonly",
           MeasuredTemplateDocument: "readonly",
           Dialog: "readonly",
-          CONFIG: "readonly"
+          CONFIG: "readonly",
+          foundry: "readonly"
         }
       }
     },

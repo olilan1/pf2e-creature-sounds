@@ -1,7 +1,10 @@
 import {getSetting, SETTINGS} from "./settings.js"
 
-const soundsDatabase = (await import("../databases/creature_sounds_db.json",
-        {assert: {type: 'json'}, with: {type: 'json'}})).default;
+// const soundsDatabase = (await import("../databases/creature_sounds_db.json",
+//         {assert: {type: 'json'}, with: {type: 'json'}})).default;
+let soundsDatabase;
+$.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
+    json => { soundsDatabase = json; })
 
 export function creatureSoundOnDamage(actor, options) {
     if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE)
@@ -79,7 +82,7 @@ function findSoundSet(name, rollOptions) {
 }
 
 function findSoundSetByCreatureName(creatureName) {
-    for (const [key, soundSet] of Object.entries(soundsDatabase)) {
+    for (const [, soundSet] of Object.entries(soundsDatabase)) {
         if (soundSet.creatures?.includes(creatureName)) {
             console.log("Exact Match found for " + creatureName);
             return soundSet;
@@ -89,7 +92,7 @@ function findSoundSetByCreatureName(creatureName) {
 }
 
 function findSoundSetByMatch(creatureName) {
-    for (const [key, soundSet] of Object.entries(soundsDatabase)) {
+    for (const [, soundSet] of Object.entries(soundsDatabase)) {
         for (const matchText of soundSet.keywords) {
             const regex = new RegExp("\\b" + matchText + "\\b", "i");
             if (creatureName.match(regex)) {
@@ -105,7 +108,7 @@ function findSoundSetByTraits(traits) {
     let bestMatch = null;
     let maxMatchingTraits = 0;
     console.log(`Traits found for creature are: ${traits}`);
-    for (const [key, soundSet] of Object.entries(soundsDatabase)) {
+    for (const [, soundSet] of Object.entries(soundsDatabase)) {
         const matchingTraits = soundSet.traits.filter(trait => traits.includes(trait)).length;
         if (matchingTraits > maxMatchingTraits) {
             bestMatch = soundSet;
