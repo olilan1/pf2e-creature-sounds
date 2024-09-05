@@ -12,7 +12,16 @@ export default [
           game: "readonly",
           ui: "readonly",
           Hooks: "readonly",
-          canvas: "readonly"
+          canvas: "readonly",
+          pf2eAnimations: "readonly",
+          Portal: "readonly",
+          Sequencer: "readonly",
+          Sequence: "readonly",
+          Actor: "readonly",
+          PIXI: "readonly",
+          MeasuredTemplateDocument: "readonly",
+          Dialog: "readonly",
+          CONFIG: "readonly"
         }
       }
     },
