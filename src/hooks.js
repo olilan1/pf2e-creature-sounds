@@ -3,7 +3,7 @@ import { creatureSoundOnDamage, creatureSoundOnAttack } from "./creaturesounds.j
 import { chatMacroButton } from "./chatmacrobutton.js";
 import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
-import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFinisher } from "./effects/panache.js";
+import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFinisherAttack, checkForFinisherDamage } from "./effects/panache.js";
 import { checkForHuntPrey } from "./actions/huntprey.js";
 import { targetTokensUnderTemplate } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
@@ -43,15 +43,30 @@ Hooks.on('diceSoNiceRollComplete', (id) => {
 });
 
 function handleChatMessage(message) {
-    runIfEnabled([SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE],
-            creatureSoundOnAttack, message);
-    startTumbleThrough(message);
-    startEnjoyTheShow(message);
-    checkForBravado(message);
-    checkForFinisher(message);
-    checkForExtravagantParryOrElegantBuckler(message);
-    checkForHuntPrey(message);
-    checkForUnstableCheck(message);
+    switch (getMessageType(message)) {
+        case "attack-roll":
+            runIfEnabled([SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE],
+                    creatureSoundOnAttack, message);
+            checkForExtravagantParryOrElegantBuckler(message);
+            checkForFinisherAttack(message);
+            break;
+        case "damage-roll":
+            checkForFinisherDamage(message);
+            break;
+        case "skill-check":
+            startTumbleThrough(message);
+            startEnjoyTheShow(message);
+            checkForBravado(message);
+            checkForUnstableCheck(message);
+            break;
+        case "action":
+            checkForHuntPrey(message);
+            break;
+    }
+}
+
+function getMessageType(message) {
+    return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
 }
 
 /**

@@ -1,7 +1,5 @@
 import {getSetting, SETTINGS} from "./settings.js"
 
-// const soundsDatabase = (await import("../databases/creature_sounds_db.json",
-//         {assert: {type: 'json'}, with: {type: 'json'}})).default;
 let soundsDatabase;
 $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
     json => { soundsDatabase = json; })
