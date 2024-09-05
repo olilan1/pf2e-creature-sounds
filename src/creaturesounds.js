@@ -7,11 +7,6 @@ $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
     json => { soundsDatabase = json; })
 
 export function creatureSoundOnDamage(actor, options) {
-    if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE)
-            || !getSetting(SETTINGS.CREATURE_HURT_SOUNDS_ENABLE)) {
-        // Disabled in settings.
-        return;
-    }
     if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
@@ -32,11 +27,6 @@ export function creatureSoundOnDamage(actor, options) {
 export function creatureSoundOnAttack(ChatMessagePF2e) {
     if (ChatMessagePF2e.flags.pf2e.context?.type !== 'attack-roll') {
         // Not an attack roll.
-        return;
-    }
-    if (!getSetting(SETTINGS.CREATURE_SOUNDS_ENABLE)
-            || !getSetting(SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE)) {
-        // Disabled in settings.
         return;
     }
 
