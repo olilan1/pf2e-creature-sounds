@@ -5,7 +5,7 @@ import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
 import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFinisherAttack, checkForFinisherDamage } from "./effects/panache.js";
 import { checkForHuntPrey } from "./actions/huntprey.js";
-import { targetTokensUnderTemplate } from "./templatetarget.js";
+import { targetTokensUnderTemplate, deleteTemplateTargets } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
 
 Hooks.on("init", () => {
@@ -21,11 +21,16 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
     chatMacroButton(ChatMessagePF2e, html);
 });
 
-Hooks.on("createMeasuredTemplate", async (template, _context, userId) => {
+Hooks.on("createMeasuredTemplate", async (
+        /* MeasuredTemplateDocumentPF2e */ template, _context, userId) => {
     runIfEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE, targetTokensUnderTemplate, template, userId);
 });
 
-Hooks.on("createChatMessage", (message, /*rollmode, id*/) => {   
+Hooks.on("deleteMeasuredTemplate", (/* MeasuredTemplateDocumentPF2e */ template) => {
+    runIfEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE, deleteTemplateTargets, template);
+});
+
+Hooks.on("createChatMessage", (message, /*rollmode, id*/) => {
     if (game.modules.get('dice-so-nice')?.active
             && message.isRoll
             && message.rolls.some(roll => roll.dice.length > 0)) {
