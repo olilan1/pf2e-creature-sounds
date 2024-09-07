@@ -13,8 +13,12 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("updateActor", (actor, _changed, options/*, userId*/) => {
-    runIfEnabled([SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE],
-        creatureSoundOnDamage, actor, options);
+    // runIfEnabled([SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE],
+    //     creatureSoundOnDamage, actor, options);
+    hook(creatureSoundOnDamage, actor, options)
+            .ifEnabled(SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE)
+            .ifGM()
+            .run();
 });
 
 Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
@@ -23,11 +27,15 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
 
 Hooks.on("createMeasuredTemplate", async (
         /* MeasuredTemplateDocumentPF2e */ template, _context, userId) => {
-    runIfEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE, targetTokensUnderTemplate, template, userId);
+    hook(targetTokensUnderTemplate, template, userId)
+            .ifEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE)
+            .run();
 });
 
 Hooks.on("deleteMeasuredTemplate", (/* MeasuredTemplateDocumentPF2e */ template) => {
-    runIfEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE, deleteTemplateTargets, template);
+    hook(deleteTemplateTargets, template)
+            .ifEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE)
+            .run();
 });
 
 Hooks.on("createChatMessage", (message, /*rollmode, id*/) => {
@@ -50,8 +58,10 @@ Hooks.on('diceSoNiceRollComplete', (id) => {
 function handleChatMessage(message) {
     switch (getMessageType(message)) {
         case "attack-roll":
-            runIfEnabled([SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE],
-                    creatureSoundOnAttack, message);
+            hook(creatureSoundOnAttack, message)
+                    .ifEnabled(SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE)
+                    .ifGM()
+                    .run();
             checkForExtravagantParryOrElegantBuckler(message);
             checkForFinisherAttack(message);
             break;
@@ -65,7 +75,7 @@ function handleChatMessage(message) {
             checkForUnstableCheck(message);
             break;
         case "action":
-            checkForHuntPrey(message);
+            hook(checkForHuntPrey, message).ifMessagePoster().run();
             break;
     }
 }
@@ -74,17 +84,47 @@ function getMessageType(message) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
 }
 
-/**
- * Runs the handler function with the provided args, if the specified settings are enabled.
- */
-function runIfEnabled(settings, handler, ...args) {
-    if (!Array.isArray(settings)) {
-        settings = [settings];
+function hook(func, ...args) {
+    return new HookRunner(func, ...args);
+}
+
+class HookRunner {
+    constructor(func, ...args) {
+        this.func = func;
+        this.args = args;
+        this.shouldRun = true;
     }
-    for (const setting of settings) {
-        if (!getSetting(setting)) {
-            return;
+
+    ifEnabled(...settings) {
+        for (const setting of settings) {
+            if (!getSetting(setting)) {
+                this.shouldRun = false;
+            }
+        }
+        return this;
+    }
+
+    ifGM() {
+        if (!game.user.isGM) {
+            this.shouldRun = false;
+        }
+        return this;
+    }
+
+    ifMessagePoster() {
+        const message = this.args[0];
+        if (message.constructor.name != "ChatMessagePF2e") {
+            throw new Error("First arg is not ChatMessagePF2e");
+        }
+        if (game.user.id != message.user.id) {
+            this.shouldRun = false;
+        }
+        return this;
+    }
+
+    run() {
+        if (this.shouldRun) {
+            this.func(...this.args);
         }
     }
-    handler(...args);
 }
