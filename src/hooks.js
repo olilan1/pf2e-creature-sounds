@@ -62,16 +62,28 @@ function handleChatMessage(message, userId) {
                     .ifEnabled(SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE)
                     .ifGM()
                     .run();
-            checkForExtravagantParryOrElegantBuckler(message);
-            checkForFinisherAttack(message);
+            hook(checkForExtravagantParryOrElegantBuckler, message)
+                    .ifEnabled(SETTINGS.AUTO_PANACHE)
+                    .ifGM()
+                    .run();
+            hook(checkForFinisherAttack, message)
+                    .ifEnabled(SETTINGS.AUTO_PANACHE)
+                    .ifGM()
+                    .run();
             break;
         case "damage-roll":
-            checkForFinisherDamage(message);
+            hook(checkForFinisherDamage, message)
+                .ifEnabled(SETTINGS.AUTO_PANACHE)
+                .ifGM()
+                .run();
             break;
         case "skill-check":
             startTumbleThrough(message);
             startEnjoyTheShow(message);
-            checkForBravado(message);
+            hook(checkForBravado, message)
+                    .ifEnabled(SETTINGS.AUTO_PANACHE)
+                    .ifGM()
+                    .run();
             checkForUnstableCheck(message);
             break;
         case "action":

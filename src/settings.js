@@ -6,7 +6,8 @@ export const SETTINGS = {
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
     CREATURE_ATTACK_SOUNDS_ENABLE: "creatureSounds_attack_enable",
     CREATURE_HURT_SOUNDS_ENABLE: "creatureSounds_hurt_enable",
-    TEMPLATE_TARGET_ENABLE: "template_target_enable"
+    TEMPLATE_TARGET_ENABLE: "template_target_enable",
+    AUTO_PANACHE: "automatic_panache_enable",
 };
 
 export function registerSettings() {
@@ -63,6 +64,15 @@ export function registerSettings() {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.TEMPLATE_TARGET_ENABLE, {
         name: "Template targetting",
         hint: "Automatically target all tokens under a placed template",
+        scope: "world",
+        config: true,
+        default: false,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_PANACHE, {
+        name: "Automatic Panache",
+        hint: "Automatically add and remove Panache",
         scope: "world",
         config: true,
         default: false,
