@@ -38,14 +38,14 @@ Hooks.on("deleteMeasuredTemplate", (/* MeasuredTemplateDocumentPF2e */ template)
             .run();
 });
 
-Hooks.on("createChatMessage", (message, /*rollmode, id*/) => {
+Hooks.on("createChatMessage", (message, rollmode, userId) => {
     if (game.modules.get('dice-so-nice')?.active
-            && message.isRoll
+            && message.isRoll 
             && message.rolls.some(roll => roll.dice.length > 0)) {
         // Includes a roll, message will be posted by DiceSoNice
         return;
     }
-    handleChatMessage(message);
+    handleChatMessage(message, userId);
 });
 
 Hooks.on('diceSoNiceRollComplete', (id) => {
@@ -55,7 +55,7 @@ Hooks.on('diceSoNiceRollComplete', (id) => {
     };
 });
 
-function handleChatMessage(message) {
+function handleChatMessage(message, userId) {
     switch (getMessageType(message)) {
         case "attack-roll":
             hook(creatureSoundOnAttack, message)
@@ -75,7 +75,7 @@ function handleChatMessage(message) {
             checkForUnstableCheck(message);
             break;
         case "action":
-            hook(checkForHuntPrey, message).ifMessagePoster().run();
+            hook(checkForHuntPrey, message, userId).ifGM().run();
             break;
     }
 }
