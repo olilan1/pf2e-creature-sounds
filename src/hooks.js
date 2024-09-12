@@ -4,7 +4,7 @@ import { chatMacroButton } from "./chatmacrobutton.js";
 import { startTumbleThrough } from "./actions/tumblethrough.js";
 import { startEnjoyTheShow } from "./actions/enjoytheshow.js";
 import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFinisherAttack, checkForFinisherDamage } from "./effects/panache.js";
-import { checkForHuntPrey } from "./actions/huntprey.js";
+import { checkForHuntPreyGM, checkForHuntPreyPlayer } from "./actions/huntprey.js";
 import { targetTokensUnderTemplate, deleteTemplateTargets } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
 
@@ -87,7 +87,8 @@ function handleChatMessage(message, userId) {
             checkForUnstableCheck(message);
             break;
         case "action":
-            hook(checkForHuntPrey, message, userId).ifGM().run();
+            hook(checkForHuntPreyGM, message, userId).ifGM().run();
+            hook(checkForHuntPreyPlayer, message, userId).ifMessagePoster().run();
             break;
     }
 }
