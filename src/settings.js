@@ -1,17 +1,17 @@
 const SETTINGS_NAMESPACE = "samioli-module";
 
 export const SETTINGS = {
-    CREATURE_SOUNDS_ENABLE: "creatureSounds_enable",
-    CREATURE_SOUNDS_CHARACTER_ENABLE: "creatureSounds_characters",
+    CREATURE_SOUNDS: "creatureSounds_enable",
+    CREATURE_SOUNDS_CHARACTER: "creatureSounds_characters",
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
-    CREATURE_ATTACK_SOUNDS_ENABLE: "creatureSounds_attack_enable",
-    CREATURE_HURT_SOUNDS_ENABLE: "creatureSounds_hurt_enable",
-    TEMPLATE_TARGET_ENABLE: "template_target_enable",
+    CREATURE_ATTACK_SOUNDS: "creatureSounds_attack_enable",
+    CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
+    TEMPLATE_TARGET: "template_target_enable",
     AUTO_PANACHE: "automatic_panache_enable",
 };
 
 export function registerSettings() {
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_ENABLE, {
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS, {
         name: "Creature sounds",
         hint: "Enable creature-specific sounds",
         scope: "world",
@@ -20,7 +20,7 @@ export function registerSettings() {
         type: Boolean
     });
 
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE, {
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_CHARACTER, {
         name: "Character sounds",
         hint: "Enable creature sounds functionality for player characters",
         scope: "world",
@@ -29,7 +29,7 @@ export function registerSettings() {
         type: Boolean
     });
 
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE, {
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_ATTACK_SOUNDS, {
         name: "Attack sounds",
         hint: "Enable creature sounds functionality for attacks",
         scope: "world",
@@ -38,7 +38,7 @@ export function registerSettings() {
         type: Boolean
     });
 
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE, {
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_HURT_SOUNDS, {
         name: "Hurt sounds",
         hint: "Enable creature sounds functionality for being hurt",
         scope: "world",
@@ -61,7 +61,7 @@ export function registerSettings() {
         type: Number
     });
 
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.TEMPLATE_TARGET_ENABLE, {
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.TEMPLATE_TARGET, {
         name: "Template targetting",
         hint: "Automatically target all tokens under a placed template",
         scope: "world",

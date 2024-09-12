@@ -13,10 +13,8 @@ Hooks.on("init", () => {
 });
 
 Hooks.on("updateActor", (actor, _changed, options/*, userId*/) => {
-    // runIfEnabled([SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE],
-    //     creatureSoundOnDamage, actor, options);
     hook(creatureSoundOnDamage, actor, options)
-            .ifEnabled(SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_HURT_SOUNDS_ENABLE)
+            .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_HURT_SOUNDS)
             .ifGM()
             .run();
 });
@@ -28,13 +26,13 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
 Hooks.on("createMeasuredTemplate", async (
         /* MeasuredTemplateDocumentPF2e */ template, _context, userId) => {
     hook(targetTokensUnderTemplate, template, userId)
-            .ifEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE)
+            .ifEnabled(SETTINGS.TEMPLATE_TARGET)
             .run();
 });
 
 Hooks.on("deleteMeasuredTemplate", (/* MeasuredTemplateDocumentPF2e */ template) => {
     hook(deleteTemplateTargets, template)
-            .ifEnabled(SETTINGS.TEMPLATE_TARGET_ENABLE)
+            .ifEnabled(SETTINGS.TEMPLATE_TARGET)
             .run();
 });
 
@@ -59,7 +57,7 @@ function handleChatMessage(message, userId) {
     switch (getMessageType(message)) {
         case "attack-roll":
             hook(creatureSoundOnAttack, message)
-                    .ifEnabled(SETTINGS.CREATURE_SOUNDS_ENABLE, SETTINGS.CREATURE_ATTACK_SOUNDS_ENABLE)
+                    .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_ATTACK_SOUNDS)
                     .ifGM()
                     .run();
             hook(checkForExtravagantParryOrElegantBuckler, message)
@@ -73,9 +71,9 @@ function handleChatMessage(message, userId) {
             break;
         case "damage-roll":
             hook(checkForFinisherDamage, message)
-                .ifEnabled(SETTINGS.AUTO_PANACHE)
-                .ifGM()
-                .run();
+                    .ifEnabled(SETTINGS.AUTO_PANACHE)
+                    .ifGM()
+                    .run();
             break;
         case "skill-check":
             startTumbleThrough(message);
