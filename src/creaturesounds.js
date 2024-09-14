@@ -5,7 +5,7 @@ $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
     json => { soundsDatabase = json; })
 
 export function creatureSoundOnDamage(actor, options) {
-    if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE)) {
+    if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
     }
@@ -30,7 +30,7 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
 
     let attackingActor = game.actors.get(ChatMessagePF2e.speaker.actor);
     if (attackingActor.type === 'character'
-            && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER_ENABLE)) {
+            && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
     }
