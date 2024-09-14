@@ -87,8 +87,14 @@ function handleChatMessage(message, userId) {
             checkForUnstableCheck(message);
             break;
         case "action":
-            hook(checkForHuntPreyGM, message, userId).ifGM().run();
-            hook(checkForHuntPreyPlayer, message, userId).ifMessagePoster().run();
+            hook(checkForHuntPreyGM, message, userId)
+                    .ifEnabled(SETTINGS.AUTO_HUNT_PREY)
+                    .ifGM()
+                    .run();
+            hook(checkForHuntPreyPlayer, message, userId)
+                    .ifEnabled(SETTINGS.AUTO_HUNT_PREY)
+                    .ifMessagePoster()
+                    .run();
             break;
     }
 }
