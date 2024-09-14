@@ -8,6 +8,7 @@ export const SETTINGS = {
     CREATURE_HURT_SOUNDS_ENABLE: "creatureSounds_hurt_enable",
     TEMPLATE_TARGET_ENABLE: "template_target_enable",
     AUTO_PANACHE: "automatic_panache_enable",
+    AUTO_HUNT_PREY: "automatic_hunt_prey_enable"
 };
 
 export function registerSettings() {
@@ -73,6 +74,15 @@ export function registerSettings() {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_PANACHE, {
         name: "Automatic Panache",
         hint: "Automatically add and remove Panache",
+        scope: "world",
+        config: true,
+        default: false,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_HUNT_PREY, {
+        name: "Hunt Prey Automation",
+        hint: "Players can apply a Hunt Prey effect to tokens they do not own",
         scope: "world",
         config: true,
         default: false,
