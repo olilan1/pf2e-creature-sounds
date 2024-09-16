@@ -85,8 +85,12 @@ function handleChatMessage(message, userId) {
                     .ifEnabled(SETTINGS.AUTO_PANACHE)
                     .ifGM()
                     .run();
-            checkForUnstableCheck(message);
             break;
+        case "flat-check":
+            hook(checkForUnstableCheck, message)
+                    .ifEnabled(SETTINGS.AUTO_UNSTABLE_CHECK)
+                    .ifGM()
+                    .run();
         case "action":
             hook(checkForHuntPreyGM, message, userId)
                     .ifEnabled(SETTINGS.AUTO_HUNT_PREY)
