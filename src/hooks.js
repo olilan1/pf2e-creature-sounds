@@ -23,8 +23,7 @@ Hooks.on('renderChatMessage', async (ChatMessagePF2e, html) => {
     chatMacroButton(ChatMessagePF2e, html);
 });
 
-Hooks.on("createMeasuredTemplate", async (
-        /* MeasuredTemplateDocumentPF2e */ template, _context, userId) => {
+Hooks.on("createMeasuredTemplate", async (/* MeasuredTemplateDocumentPF2e */ template, _context, userId) => {
     hook(targetTokensUnderTemplate, template, userId)
             .ifEnabled(SETTINGS.TEMPLATE_TARGET)
             .run();
@@ -76,8 +75,12 @@ function handleChatMessage(message, userId) {
                     .run();
             break;
         case "skill-check":
-            startTumbleThrough(message);
-            startEnjoyTheShow(message);
+            hook(startTumbleThrough, message)
+                .ifMessagePoster()
+                .run();
+            hook(startEnjoyTheShow, message)
+                .ifMessagePoster()
+                .run();
             hook(checkForBravado, message)
                     .ifEnabled(SETTINGS.AUTO_PANACHE)
                     .ifGM()
