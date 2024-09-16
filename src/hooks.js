@@ -76,11 +76,11 @@ function handleChatMessage(message, userId) {
             break;
         case "skill-check":
             hook(startTumbleThrough, message)
-                .ifMessagePoster()
-                .run();
+                    .ifMessagePoster()
+                    .run();
             hook(startEnjoyTheShow, message)
-                .ifMessagePoster()
-                .run();
+                    .ifMessagePoster()
+                    .run();
             hook(checkForBravado, message)
                     .ifEnabled(SETTINGS.AUTO_PANACHE)
                     .ifGM()
