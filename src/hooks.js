@@ -91,6 +91,7 @@ function handleChatMessage(message, userId) {
                     .ifEnabled(SETTINGS.AUTO_UNSTABLE_CHECK)
                     .ifGM()
                     .run();
+            break;
         case "action":
             hook(checkForHuntPreyGM, message, userId)
                     .ifEnabled(SETTINGS.AUTO_HUNT_PREY)
