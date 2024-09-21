@@ -1,8 +1,12 @@
-import {getSetting, SETTINGS} from "./settings.js"
+import { getSetting, SETTINGS } from "./settings.js"
+import { getHashCode } from "./utils.js";
 
 let soundsDatabase;
 $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
     json => { soundsDatabase = json; })
+
+const KEYWORD_SCORE = 5;
+const TRAIT_SCORE = 1;
 
 export function creatureSoundOnDamage(actor, options) {
     if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
@@ -50,16 +54,12 @@ function playRandomMatchingSound(actor, soundType) {
     playRandomSound(returnedSounds);
 }
 
-function findSoundSet(name, rollOptions) {
+function findSoundSet(creatureName, rollOptions) {
     // Check for exact name match first.
-    let soundSet = findSoundSetByCreatureName(name);
+    let soundSet = findSoundSetByCreatureName(creatureName);
     if (!soundSet) {
-        // If no exact match, check for keywords.
-        soundSet = findSoundSetByMatch(name);
-    }
-    if (!soundSet) {
-        // If still no match, check traits.
-        soundSet = findSoundSetByTraits(extractTraits(rollOptions));
+        // If no exact match, score keywords and traits
+        soundSet = selectSoundSet(scoreSoundSets(creatureName, rollOptions), creatureName);
     }
     if (!soundSet) {
         // If still no match, didn't find anything.
@@ -69,42 +69,65 @@ function findSoundSet(name, rollOptions) {
     return soundSet;
 }
 
+function selectSoundSet(soundSetScores, creatureName) {
+    let highestScore = 1;
+    let soundsWithHighestValue = [];
+
+    for (let [soundSet, score] of soundSetScores) {
+        if (score > highestScore) {
+            highestScore = score;
+            soundsWithHighestValue = [soundSet];
+        } else if (score === highestScore) {
+            soundsWithHighestValue.push(soundSet);
+        }
+    }
+    
+    if (soundsWithHighestValue.length === 0) {
+        return null;
+    }
+    
+    let hash = getHashCode(creatureName);
+    return soundsWithHighestValue[hash % soundsWithHighestValue.length];
+}
+
+function scoreSoundSets(creatureName, rollOptions) {
+
+    const soundSetScores = new Map();
+    for (const [, soundSet] of Object.entries(soundsDatabase)) {
+        let score = 0;
+        
+        // Keyword match
+        for (const matchText of soundSet.keywords) {
+            const regex = new RegExp("\\b" + matchText + "\\b", "i");
+            if (creatureName.match(regex)) {
+                score += KEYWORD_SCORE;
+            }
+        }
+
+        // Trait match
+        let traits = extractTraits(rollOptions);
+        const matchingTraits = soundSet.traits.filter(trait => traits.includes(trait)).length;
+        score += matchingTraits * TRAIT_SCORE;
+
+        // Size adjustment
+        if (score > 0 && soundSet.size != -1) {
+            let creatureSize = extractSize(rollOptions);
+            let scoreAdj = (2 - Math.abs(creatureSize - soundSet.size)) / 10;
+            score += scoreAdj;
+        }
+        
+        soundSetScores.set(soundSet, score);
+    }
+    console.log(soundSetScores);
+    return soundSetScores; 
+}
+
 function findSoundSetByCreatureName(creatureName) {
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         if (soundSet.creatures?.includes(creatureName)) {
             console.log("Exact Match found for " + creatureName);
             return soundSet;
         }
-    }
-    return null;
-}
-
-function findSoundSetByMatch(creatureName) {
-    for (const [, soundSet] of Object.entries(soundsDatabase)) {
-        for (const matchText of soundSet.keywords) {
-            const regex = new RegExp("\\b" + matchText + "\\b", "i");
-            if (creatureName.match(regex)) {
-                console.log(`Keyword Match found for ${creatureName} with keyword ${matchText}`);
-                return soundSet;
-            }
-        }
-    }
-    return null;
-}
-
-function findSoundSetByTraits(traits) {
-    let bestMatch = null;
-    let maxMatchingTraits = 0;
-    console.log(`Traits found for creature are: ${traits}`);
-    for (const [, soundSet] of Object.entries(soundsDatabase)) {
-        const matchingTraits = soundSet.traits.filter(trait => traits.includes(trait)).length;
-        if (matchingTraits > maxMatchingTraits) {
-            bestMatch = soundSet;
-            maxMatchingTraits = matchingTraits;
-        }
-    }
-    if (bestMatch) {
-        return bestMatch;
     }
     return null;
 }
@@ -135,6 +158,18 @@ function extractTraits(obj) {
         }
     }
     return traits;
+}
+
+function extractSize(obj) {
+    const regex = /^(self|origin):size:(\d+)$/;
+    for (const key in obj) {
+        let matches = key.match(regex);
+        if (!matches) {
+            continue;
+        }
+        return matches[2];
+    }
+    console.log(`Size not found`);
 }
 
 function playRandomSound(sounds) {
