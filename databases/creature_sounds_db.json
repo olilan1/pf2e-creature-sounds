@@ -4,7 +4,6 @@
     "hurt_sounds": [
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_01.wav",
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_02.wav",
-      "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_03.wav",
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_04.wav",
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_05.wav"
     ],
@@ -596,7 +595,7 @@
       "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures_2/Hell_Hound/Hellhound_Monster_Death_3_Dog_Wolf_Creature.wav"
     ],
     "creatures": [],
-    "keywords": ["hound"],
+    "keywords": ["hound", "dog", "wolf"],
     "traits": []
   },
   "Kelpie": {
@@ -618,7 +617,7 @@
       "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Death_3_Water_Spirit_Horse_Creature.wav"
     ],
     "creatures": [],
-    "keywords": ["kelpie"],
+    "keywords": ["kelpie", "nightmare", "horse"],
     "traits": []
   },
   "Mimic": {
