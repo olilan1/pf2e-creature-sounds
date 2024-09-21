@@ -26,7 +26,7 @@
     "traits": ["aberration"]
   },
   "Behemoth": {
-    "notes": "",
+    "notes": "Big Cat would work here",
     "hurt_sounds": [
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_01.wav",
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_02.wav",
@@ -48,7 +48,7 @@
       "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_04.wav"
     ],
     "creatures": [],
-    "keywords": [],
+    "keywords": ["tiger", "lion", "leopard"],
     "traits": ["beast"]
   },
   "Dragon": {
