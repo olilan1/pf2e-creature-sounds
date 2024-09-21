@@ -36,29 +36,37 @@ Hooks.on("deleteMeasuredTemplate", (/* MeasuredTemplateDocumentPF2e */ template)
 });
 
 Hooks.on("createChatMessage", (message, rollmode, userId) => {
+    handleChatMessagePreRoll(message);
     if (game.modules.get('dice-so-nice')?.active
             && message.isRoll 
             && message.rolls.some(roll => roll.dice.length > 0)) {
         // Includes a roll, message will be posted by DiceSoNice
         return;
     }
-    handleChatMessage(message, userId);
+    handleChatMessagePostRoll(message, userId);
 });
 
 Hooks.on('diceSoNiceRollComplete', (id) => {
     const message = game.messages.get(id);
     if (message) {
-      handleChatMessage(message);
+      handleChatMessagePostRoll(message);
     };
 });
 
-function handleChatMessage(message, userId) {
+function handleChatMessagePreRoll(message) {
     switch (getMessageType(message)) {
         case "attack-roll":
             hook(creatureSoundOnAttack, message)
                     .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_ATTACK_SOUNDS)
                     .ifGM()
                     .run();
+            break;
+    }
+}
+
+function handleChatMessagePostRoll(message, userId) {
+    switch (getMessageType(message)) {
+        case "attack-roll":
             hook(checkForExtravagantParryOrElegantBuckler, message)
                     .ifEnabled(SETTINGS.AUTO_PANACHE)
                     .ifGM()
