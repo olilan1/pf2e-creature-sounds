@@ -1,3 +1,4 @@
+import { getSetting, SETTINGS } from "./settings.js";
 
 export function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -14,4 +15,10 @@ export function getHashCode(str) {
     }
     
     return hash;
+}
+
+export function logd(message) {
+    if (getSetting(SETTINGS.DEBUG_LOGGING)) {
+        console.log(message);
+    }
 }

@@ -9,7 +9,8 @@ export const SETTINGS = {
     TEMPLATE_TARGET: "template_target_enable",
     AUTO_PANACHE: "automatic_panache_enable",
     AUTO_HUNT_PREY: "automatic_hunt_prey_enable",
-    AUTO_UNSTABLE_CHECK: "automatic_unstable_check_enable"
+    AUTO_UNSTABLE_CHECK: "automatic_unstable_check_enable",
+    DEBUG_LOGGING: "debug_logging"
 };
 
 export function registerSettings() {
@@ -93,6 +94,15 @@ export function registerSettings() {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_UNSTABLE_CHECK, {
         name: "Unstable Check Automation",
         hint: "Automatically add Unstable Effect",
+        scope: "world",
+        config: true,
+        default: false,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.DEBUG_LOGGING, {
+        name: "Debug logging",
+        hint: "Log debug info to console",
         scope: "world",
         config: true,
         default: false,
