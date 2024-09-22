@@ -86,12 +86,11 @@ function selectSoundSet(soundSetScores, creatureName) {
         return null;
     }
     
-    let hash = getHashCode(creatureName);
+    let hash = Math.abs(getHashCode(creatureName));
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
 
 function scoreSoundSets(creatureName, rollOptions) {
-
     const soundSetScores = new Map();
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         let score = 0;
