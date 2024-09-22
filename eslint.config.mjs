@@ -27,4 +27,9 @@ export default [
       }
     },
   pluginJs.configs.recommended,
+    {
+      rules: {
+        "no-unused-vars": "warn"
+      }
+    }
 ];

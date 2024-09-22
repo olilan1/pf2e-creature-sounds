@@ -1,5 +1,5 @@
 import { getSetting, SETTINGS } from "./settings.js"
-import { getHashCode } from "./utils.js";
+import { getHashCode, logd } from "./utils.js";
 
 let soundsDatabase;
 $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
@@ -63,7 +63,7 @@ function findSoundSet(creatureName, rollOptions) {
     }
     if (!soundSet) {
         // If still no match, didn't find anything.
-        console.log("No Sounds found.");
+        logd("No Sounds found.");
         return;
     }
     return soundSet;
@@ -118,14 +118,14 @@ function scoreSoundSets(creatureName, rollOptions) {
         
         soundSetScores.set(soundSet, score);
     }
-    console.log(soundSetScores);
+    logd(soundSetScores);
     return soundSetScores; 
 }
 
 function findSoundSetByCreatureName(creatureName) {
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         if (soundSet.creatures?.includes(creatureName)) {
-            console.log("Exact Match found for " + creatureName);
+            logd("Exact Match found for " + creatureName);
             return soundSet;
         }
     }
@@ -140,12 +140,12 @@ function getSoundsOfType(soundSet, soundType) {
             if (soundSet.death_sounds.length != 0) {
                 return soundSet.death_sounds;
             }
-            console.log("No death sounds found, so using hurt sound as fallback");
+            logd("No death sounds found, so using hurt sound as fallback");
             return soundSet.hurt_sounds;
         case 'attack': 
             return soundSet.attack_sounds;
         default:
-            console.log(`No sounds found for soundType=${soundType}`);
+            logd(`No sounds found for soundType=${soundType}`);
     }
 }
 
@@ -169,7 +169,7 @@ function extractSize(obj) {
         }
         return matches[2];
     }
-    console.log(`Size not found`);
+    logd(`Size not found`);
 }
 
 function playRandomSound(sounds) {
@@ -177,7 +177,7 @@ function playRandomSound(sounds) {
 }
 
 function playSound(sound) {
-    console.log(`sound to play: ${sound}`);
+    logd(`sound to play: ${sound}`);
     foundry.audio.AudioHelper.play({
         src: sound,
         volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME),
