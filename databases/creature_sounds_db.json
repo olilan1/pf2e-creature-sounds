@@ -934,11 +934,10 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "gnome",
             "sprite",
             "fey"
         ],
-        "size": -1
+        "size": 0
     },
     "Female Succubus Demon": {
         "notes": "",
