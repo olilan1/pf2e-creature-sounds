@@ -32,7 +32,8 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
         return;
     }
 
-    let attackingActor = game.actors.get(ChatMessagePF2e.speaker.actor);
+    let attackingToken = game.canvas.scene.tokens.get(ChatMessagePF2e.speaker.token);
+    let attackingActor = attackingToken.actor;
     if (attackingActor.type === 'character'
             && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
@@ -43,7 +44,7 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
 }
 
 function playRandomMatchingSound(actor, soundType) {
-    let soundSet = findSoundSet(actor.name, actor.flags.pf2e.rollOptions.all);
+    let soundSet = findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
         return;
@@ -54,12 +55,12 @@ function playRandomMatchingSound(actor, soundType) {
     playRandomSound(returnedSounds);
 }
 
-function findSoundSet(creatureName, rollOptions) {
+function findSoundSet(actor) {
     // Check for exact name match first.
-    let soundSet = findSoundSetByCreatureName(creatureName);
+    let soundSet = findSoundSetByCreatureName(actor.name);
     if (!soundSet) {
         // If no exact match, score keywords and traits
-        soundSet = selectSoundSet(scoreSoundSets(creatureName, rollOptions), creatureName);
+        soundSet = findSoundSetByScoring(actor);
     }
     if (!soundSet) {
         // If still no match, didn't find anything.
@@ -69,11 +70,13 @@ function findSoundSet(creatureName, rollOptions) {
     return soundSet;
 }
 
-function selectSoundSet(soundSetScores, creatureName) {
+function findSoundSetByScoring(actor) {
+    const scoredSoundSets = scoreSoundSets(actor);
+
     let highestScore = 1;
     let soundsWithHighestValue = [];
 
-    for (let [soundSet, score] of soundSetScores) {
+    for (let [soundSet, score] of scoredSoundSets) {
         if (score > highestScore) {
             highestScore = score;
             soundsWithHighestValue = [soundSet];
@@ -86,31 +89,31 @@ function selectSoundSet(soundSetScores, creatureName) {
         return null;
     }
     
-    let hash = Math.abs(getHashCode(creatureName));
+    let hash = Math.abs(getHashCode(actor.name));
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
 
-function scoreSoundSets(creatureName, rollOptions) {
+function scoreSoundSets(actor) {
     const soundSetScores = new Map();
+    let traits = extractTraits(actor);
+    let creatureSize = extractSize(actor);
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         let score = 0;
         
         // Keyword match
         for (const matchText of soundSet.keywords) {
             const regex = new RegExp("\\b" + matchText + "\\b", "i");
-            if (creatureName.match(regex)) {
+            if (actor.name.match(regex)) {
                 score += KEYWORD_SCORE;
             }
         }
-
-        // Trait match
-        let traits = extractTraits(rollOptions);
+        
+        // Trait match 
         const matchingTraits = soundSet.traits.filter(trait => traits.includes(trait)).length;
         score += matchingTraits * TRAIT_SCORE;
 
         // Size adjustment
         if (score > 0 && soundSet.size != -1) {
-            let creatureSize = extractSize(rollOptions);
             let scoreAdj = (2 - Math.abs(creatureSize - soundSet.size)) / 10;
             score += scoreAdj;
         }
@@ -148,20 +151,70 @@ function getSoundsOfType(soundSet, soundType) {
     }
 }
 
-function extractTraits(obj) {
+function extractTraits(actor) {
+    const rollOptions = actor.flags.pf2e.rollOptions.all;
     const traits = [];
-    for (const key in obj) {
+    for (const key in rollOptions) {
         if (key.startsWith("self:trait:") || key.startsWith("origin:trait:")) {
             const trait = key.slice(key.lastIndexOf(":") + 1);
             traits.push(trait);
         }
     }
+    let gender = getGenderFromPronouns(actor);
+    if (!gender) {
+        gender = getGenderFromBlurb(actor);
+    }
+    if (gender) {
+        traits.push(gender);
+    }
+
     return traits;
 }
 
-function extractSize(obj) {
+function getGenderFromBlurb(actor) {
+    const blurb = actor?.system?.details?.blurb;
+    if (!blurb) {
+        return null;
+    }
+
+    const regexMale = /\bmale\b/i;
+    const regexFemale = /\bfemale\b/i;
+
+    if (blurb.match(regexFemale)) {
+      return "female";
+    }
+    
+    if (blurb.match(regexMale)) {
+      return "male";
+    }
+    
+    return null;
+}
+
+function getGenderFromPronouns(actor) {
+    const pronouns = actor?.system?.details?.gender?.value;
+    if (!pronouns) {
+        return null;
+    }
+
+    const regexMale = /\b(he|him)\b/i;
+    const regexFemale = /\b(she|her)\b/i;
+
+    if (pronouns.match(regexFemale)) {
+      return "female";
+    }
+    
+    if (pronouns.match(regexMale)) {
+      return "male";
+    }
+    
+    return null;
+}
+
+function extractSize(actor) {
+    const rollOptions = actor.flags.pf2e.rollOptions.all;
     const regex = /^(self|origin):size:(\d+)$/;
-    for (const key in obj) {
+    for (const key in rollOptions) {
         let matches = key.match(regex);
         if (!matches) {
             continue;
