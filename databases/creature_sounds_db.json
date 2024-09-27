@@ -26,7 +26,7 @@
         "traits": [
             "aberration"
         ],
-        "size": -1
+        "size": 3
     },
     "Behemoth": {
         "notes": "Big Cat would work here",
@@ -160,7 +160,8 @@
         "keywords": [
             "ant",
             "centipede",
-            "beetle"
+            "beetle",
+            "seugathi"
         ],
         "traits": [],
         "size": -1
@@ -285,7 +286,8 @@
             "incorporeal",
             "wraith",
             "ghost",
-            "undead"
+            "undead",
+            "phantom"
         ],
         "size": -1
     },
@@ -320,7 +322,7 @@
             "spider"
         ],
         "traits": [],
-        "size": -1
+        "size": 0
     },
     "Troll": {
         "notes": "",
@@ -372,8 +374,10 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": [
+            "dinosaur"
+        ],
+        "size": 3
     },
     "Balor": {
         "notes": "",
@@ -445,7 +449,6 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "giant"
         ],
         "size": -1
     },
@@ -472,8 +475,6 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "aquatic",
-            "beast"
         ],
         "size": -1
     },
@@ -497,7 +498,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "mammoth"
+            "mammoth",
+            "elephant"
         ],
         "traits": [],
         "size": -1
@@ -522,7 +524,16 @@
         ],
         "creatures": [],
         "keywords": [
-            "roc"
+            "roc",
+            "phoenix",
+            "bird",
+            "thunderbird",
+            "eagle",
+            "falcon",
+            "hawk",
+            "hippogriff",
+            "griffon"
+
         ],
         "traits": [],
         "size": -1
@@ -546,7 +557,10 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures/Sphinx/Sphinx_Monster_Death_3_Saber_Tooth_Lion_Tiger_Groan_Pain_Moan_Hurt.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "sphinx",
+            "smilodon"
+        ],
         "traits": [],
         "size": -1
     },
@@ -570,10 +584,10 @@
         ],
         "creatures": [],
         "keywords": [
-            "sphinx"
+            "spider"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Treant": {
         "notes": "",
@@ -599,7 +613,7 @@
         "traits": [
             "plant"
         ],
-        "size": -1
+        "size": 4
     },
     "Gnoll": {
         "notes": "",
@@ -750,7 +764,9 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "giant"
+        ],
         "size": -1
     },
     "Owlbear": {
@@ -772,7 +788,9 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures_2/Owlbear/Owlbear_Monster_Death_3_Bird_Mammal_Creature.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "owlbear"
+        ],
         "traits": [],
         "size": -1
     },
@@ -799,7 +817,7 @@
             "construct",
             "earth"
         ],
-        "size": -1
+        "size": 3
     },
     "Wight": {
         "notes": "",
@@ -847,7 +865,12 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "incorporeal",
+            "wraith",
+            "ghost",
+            "undead"
+        ],
         "size": -1
     },
     "Female Creature": {
@@ -875,7 +898,9 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "hag"
+        ],
         "size": -1
     },
     "Female Naga Gorgon": {
@@ -903,7 +928,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "naga"
+            "naga",
+            "medusa"
         ],
         "traits": [],
         "size": -1
@@ -932,10 +958,13 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Sprite_Gnome/CREAHmn_Female Sprite Gnome Death Fallen Defeated Cry Wail 05_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "fairy",
+            "brownie"
+        ],
         "traits": [
             "sprite",
-            "fey"
+            "gremlin"
         ],
         "size": 0
     },
@@ -966,7 +995,9 @@
         "keywords": [
             "succubus"
         ],
-        "traits": [],
+        "traits": [
+            "nymph"
+        ],
         "size": -1
     },
     "Female Infected Undead": {
@@ -995,7 +1026,6 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "undead"
         ],
         "size": -1
     },
@@ -1054,13 +1084,11 @@
         ],
         "creatures": [],
         "keywords": [
-            "wisp",
-            "will-o'-wisp"
+            "wisp"
         ],
         "traits": [
-            "air"
         ],
-        "size": -1
+        "size": 0
     },
     "Brute": {
         "notes": "",
@@ -1086,8 +1114,12 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Brute/CREAHmn_Brute Death Short Roaring Dying Painful Groan 05_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
-        "traits": [],
+        "keywords": [
+            "minotaur"
+        ],
+        "traits": [
+            "minotaur"
+        ],
         "size": -1
     },
     "Ghoul": {
@@ -1120,7 +1152,9 @@
         "keywords": [],
         "traits": [
             "ghoul",
-            "undead"
+            "undead",
+            "morlock",
+            "grippli"
         ],
         "size": -1
     },
@@ -1182,7 +1216,9 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Mutant/CREAHmn_Mutant Death Screaming Throaty Crunchy Harsh Hissing 06_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "harpy"
+        ],
         "traits": [],
         "size": -1
     },
@@ -1213,7 +1249,9 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "ooze"
+        ],
         "size": -1
     },
     "Strigoi": {
@@ -1242,8 +1280,10 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": [
+            "aberration"
+        ],
+        "size": 2
     },
     "Voidling": {
         "notes": "",
@@ -1270,9 +1310,11 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Death Short Quick Creepy Weird Ethereal 05_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "wisp"
+        ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Zombie": {
         "notes": "",
@@ -1364,8 +1406,11 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "female"
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
         ],
         "size": 2
     },
@@ -1394,8 +1439,11 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "female"
+            "female",
+            "human",
+            "halfling",
+            "elf",
+            "centaur"
         ],
         "size": 2
     },
@@ -1419,68 +1467,13 @@
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set2_04.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set2_05.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set2_06.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set2_07.wav"
-        ],
-        "death_sounds": [
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_01.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_02.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_03.wav"
-        ],
-        "creatures": [],
-        "keywords": [],
-        "traits": [
-            "humanoid",
-            "female"
-        ],
-        "size": 2
-    },
-    "Human_Female_B3": {
-        "notes": "",
-        "hurt_sounds": [
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_01.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_02.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_03.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_04.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_05.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_06.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_07.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_08.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_09.wav"
-        ],
-        "attack_sounds": [
+            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set2_07.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_01.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_02.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_03.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_04.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_05.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_06.wav"
-        ],
-        "death_sounds": [
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_04.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_05.wav"
-        ],
-        "creatures": [],
-        "keywords": [],
-        "traits": [
-            "humanoid",
-            "female"
-        ],
-        "size": 2
-    },
-    "Human_Female_B4": {
-        "notes": "",
-        "hurt_sounds": [
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_01.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_02.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_03.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_04.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_05.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_06.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_07.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_08.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_09.wav"
-        ],
-        "attack_sounds": [
+            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set3_06.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set4_01.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set4_02.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_attack_set4_03.wav",
@@ -1491,17 +1484,21 @@
         "death_sounds": [
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_01.wav",
             "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_02.wav",
-            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_03.wav"
+            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_03.wav",
+            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_04.wav",
+            "modules/samioli-module/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_05.wav"
         ],
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "female"
+            "female",
+            "human",
+            "halfling",
+            "elf",
+            "centaur"
         ],
         "size": 2
     },
-    
     "Human_Female_C": {
         "notes": "",
         "hurt_sounds": [
@@ -1545,8 +1542,12 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "female"
+            "female",
+            "human",
+            "halfling",
+            "elf",
+            "gnome",
+            "leshy"
         ],
         "size": 2
     },
@@ -1595,8 +1596,10 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "elf"
         ],
         "size": 2
     },
@@ -1632,8 +1635,10 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "elf"
         ],
         "size": 2
     },
@@ -1677,8 +1682,12 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "elf",
+            "gnome",
+            "leshy"
         ],
         "size": 2
     },
@@ -1716,8 +1725,12 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "elf",
+            "gnome",
+            "leshy"
         ],
         "size": 2
     },
@@ -1751,8 +1764,10 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "elf"
         ],
         "size": 2
     },
@@ -1805,8 +1820,11 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
         ],
         "size": 2
     },
@@ -1856,8 +1874,11 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "humanoid",
-            "male"
+            "male",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
         ],
         "size": 2
     }
