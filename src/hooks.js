@@ -75,6 +75,10 @@ function handleChatMessagePostRoll(message, userId) {
                     .ifEnabled(SETTINGS.AUTO_PANACHE)
                     .ifGM()
                     .run();
+            hook(checkForBravado, message)
+                    .ifEnabled(SETTINGS.AUTO_PANACHE)
+                    .ifGM()
+                    .run();
             break;
         case "damage-roll":
             hook(checkForFinisherDamage, message)
