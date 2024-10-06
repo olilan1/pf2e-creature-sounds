@@ -24,7 +24,8 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "aberration"
+            "aberration",
+            "qlippoth"
         ],
         "size": 3
     },
@@ -1107,7 +1108,10 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Undead/CREAHmn_Female Infected Undead Death Zombie Spawn Groan Grunt Scream Cry 05_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "revenant",
+            "seraptis"
+        ],
         "traits": [
         ],
         "size": -1
@@ -1304,7 +1308,8 @@
         "creatures": [],
         "keywords": [
             "harpy",
-            "nuckelavee"
+            "nuckelavee",
+            "vrock"
         ],
         "traits": [],
         "size": -1
@@ -1339,7 +1344,9 @@
             "charnel creation",
             "quai dau to",
             "terotricus",
-            "warsworn"
+            "warsworn",
+            "ort",
+            "omox"
         ],
         "traits": [
             "ooze"
@@ -1374,7 +1381,8 @@
         "keywords": [],
         "traits": [
             "aberration",
-            "xulgath"
+            "xulgath",
+            "qlippoth"
         ],
         "size": 2
     },
@@ -1405,7 +1413,8 @@
         "creatures": [],
         "keywords": [
             "wisp",
-            "shining child"
+            "shining child",
+            "venedaemon"
         ],
         "traits": [],
         "size": 1
