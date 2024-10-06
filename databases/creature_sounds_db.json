@@ -54,7 +54,9 @@
         "keywords": [
             "tiger",
             "lion",
-            "leopard"
+            "leopard",
+            "bandersnatch",
+            "chimera"
         ],
         "traits": [
         ],
@@ -85,7 +87,10 @@
             "modules/samioli-module/sounds/GameDevMarket/Khron_Monster_Library/Dragon/Dragon_Death/CREADrgn_Dragon_Death_05.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "hydra",
+            "yamaraj"
+        ],
         "traits": [
             "dragon"
         ],
@@ -127,7 +132,8 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "goblin"
+            "goblin",
+            "kobold"
         ],
         "size": -1
     },
@@ -157,13 +163,29 @@
         ],
         "creatures": [],
         "keywords": [
+            "ankhrav",
             "ant",
-            "centipede",
             "beetle",
-            "seugathi"
+            "centipede",
+            "cockroach",
+            "dragonfly",
+            "fly",
+            "mantis",
+            "mosquito",
+            "scorpion",
+            "seugathi",
+            "spider",
+            "sportlebore",
+            "tarantula",
+            "tick",
+            "wasp",
+            "wihsaak",
+            "con rit",
+            "mukradi",
+            "vescavor"
         ],
         "traits": [],
-        "size": -1
+        "size": 3
     },
     "Orc": {
         "notes": "",
@@ -214,7 +236,8 @@
             "orc",
             "dromaar",
             "half-orc",
-            "hobgoblin"
+            "hobgoblin",
+            "bugbear"
         ],
         "size": -1
     },
@@ -318,7 +341,23 @@
         ],
         "creatures": [],
         "keywords": [
-            "spider"
+            "ankhrav",
+            "ant",
+            "beetle",
+            "centipede",
+            "cockroach",
+            "dragonfly",
+            "fly",
+            "mantis",
+            "mosquito",
+            "scorpion",
+            "seugathi",
+            "spider",
+            "sportlebore",
+            "tarantula",
+            "tick",
+            "wasp",
+            "wihsaak"
         ],
         "traits": [],
         "size": 0
@@ -424,7 +463,11 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures/Basilisk/Basilisk_Monster_Death_3_Lizard_Reptile_Creature_Hiss_Groan_Moan_Screech_Squeal.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "basilisk",
+            "cave worm",
+            "krooth"
+        ],
         "traits": [],
         "size": -1
     },
@@ -446,7 +489,9 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures/Frost_Giant/Frost_Giant_Monster_Death_3_Human_Creature_Growl_Pain_Groan_Moan_Hurt.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "bear"
+        ],
         "traits": [
         ],
         "size": -1
@@ -472,7 +517,9 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures/Kraken/Kraken_Monster_Death_3_Ghost_Magic_Disappear_Appear_Die_Moan_Transition.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "kraken"
+        ],
         "traits": [
         ],
         "size": -1
@@ -531,8 +578,14 @@
             "falcon",
             "hawk",
             "hippogriff",
-            "griffon"
-
+            "griffon",
+            "raven",
+            "vulture",
+            "cauthooj",
+            "cockatrice",
+            "coatl",
+            "pteranodon",
+            "quetzalcoatlus"
         ],
         "traits": [],
         "size": -1
@@ -583,7 +636,23 @@
         ],
         "creatures": [],
         "keywords": [
-            "spider"
+            "ankhrav",
+            "ant",
+            "beetle",
+            "centipede",
+            "cockroach",
+            "dragonfly",
+            "fly",
+            "mantis",
+            "mosquito",
+            "scorpion",
+            "seugathi",
+            "spider",
+            "sportlebore",
+            "tarantula",
+            "tick",
+            "wasp",
+            "wihsaak"
         ],
         "traits": [],
         "size": 2
@@ -608,9 +677,10 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures/Treant/Treant_Monster_Death_3_Tree_Creature_Groan_Pain_Hurt_Moan_Die.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "arboreal"
+        ],
         "traits": [
-            "plant"
         ],
         "size": 4
     },
@@ -633,7 +703,10 @@
             "modules/samioli-module/sounds/GameDevMarket/Evolved_Game_Creatures_2/Gnoll/Gnoll_Monster_Death_3_Wolf_Hyena_Dog_Creature_.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "hyena",
+            "hyaenodon"
+        ],
         "traits": [
             "gnoll",
             "kholo"
@@ -686,7 +759,11 @@
         "keywords": [
             "hound",
             "dog",
-            "wolf"
+            "wolf",
+            "warhound",
+            "barghest",
+            "warg",
+            "witchwarg"
         ],
         "traits": [],
         "size": -1
@@ -713,7 +790,12 @@
         "keywords": [
             "kelpie",
             "nightmare",
-            "horse"
+            "horse",
+            "hippocampus",
+            "pegasus",
+            "unicorn",
+            "alicorn",
+            "karkadann"
         ],
         "traits": [],
         "size": -1
@@ -927,8 +1009,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "naga",
-            "medusa"
+            "medusa",
+            "lamia"
         ],
         "traits": [],
         "size": -1
@@ -959,7 +1041,8 @@
         "creatures": [],
         "keywords": [
             "fairy",
-            "brownie"
+            "brownie",
+            "pukwudgie"
         ],
         "traits": [
             "sprite",
@@ -992,7 +1075,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "succubus"
+            "succubus",
+            "norn"
         ],
         "traits": [
             "nymph"
@@ -1114,7 +1198,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "minotaur"
+            "minotaur",
+            "yeti"
         ],
         "traits": [
             "minotaur"
@@ -1148,7 +1233,9 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Ghoul/CREAHmn_Ghoul Death Wet Gurgling Bloody Painful Drowning 06_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "boggard"
+        ],
         "traits": [
             "ghoul",
             "undead",
@@ -1216,7 +1303,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "harpy"
+            "harpy",
+            "nuckelavee"
         ],
         "traits": [],
         "size": -1
@@ -1247,7 +1335,12 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Sludgeman/CREAHmn_Sludgeman Death Throaty Stuttering Long Trailing Off 05_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "charnel creation",
+            "quai dau to",
+            "terotricus",
+            "warsworn"
+        ],
         "traits": [
             "ooze"
         ],
@@ -1280,7 +1373,8 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "aberration"
+            "aberration",
+            "xulgath"
         ],
         "size": 2
     },
@@ -1310,7 +1404,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "wisp"
+            "wisp",
+            "shining child"
         ],
         "traits": [],
         "size": 1
@@ -1342,7 +1437,9 @@
             "modules/samioli-module/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Zombie/CREAHmn_Zombie Death Throaty Snarling Airy Breathy Short 06_ESM_HC2.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "chupacabra"
+        ],
         "traits": [
             "zombie",
             "undead"
