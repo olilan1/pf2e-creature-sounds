@@ -1,0 +1,12 @@
+<div>
+  Sound set:
+  <select id="myDropdown">
+    {{selectOptions dropDownNames selected=currentSoundSet valueAttr="label"}}
+  </select>
+  <div style="display:flex">
+    <button data-action="play_attack_sound">Attack</button>
+    <button data-action="play_hurt_sound">Hurt</button>
+    <button data-action="play_death_sound">Death</button>
+  </div>
+  <button data-action="default_sound">Revert to Default Sound</button>
+</div>

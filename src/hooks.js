@@ -7,7 +7,7 @@ import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFini
 import { checkForHuntPreyGM, checkForHuntPreyPlayer } from "./actions/huntprey.js";
 import { targetTokensUnderTemplate, deleteTemplateTargets } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
-import { renderCreatureSoundsUI } from "./csdialog.js";
+import { ActorSoundSelectApp } from "./csdialog.js";
 
 Hooks.on("init", () => {
     registerSettings();
@@ -60,7 +60,7 @@ Hooks.on("getActorSheetPF2eHeaderButtons", (actorSheet, buttons) => {
       icon: "fas fa-volume-up",
       label: "Sounds",
       onclick: () => {
-        renderCreatureSoundsUI(actorSheet);
+        new ActorSoundSelectApp(actorSheet.object, {}).render(true);
       }
     });
   });
