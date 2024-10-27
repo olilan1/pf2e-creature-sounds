@@ -7,7 +7,7 @@ import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFini
 import { checkForHuntPreyGM, checkForHuntPreyPlayer } from "./actions/huntprey.js";
 import { targetTokensUnderTemplate, deleteTemplateTargets } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
-import { ActorSoundSelectApp } from "./csdialog.js";
+import { ActorSoundSelectApp } from "./actorsoundselect.js";
 
 Hooks.on("init", () => {
     registerSettings();
