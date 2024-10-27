@@ -8,6 +8,7 @@ $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
+export const NO_SOUND_SET = "none";
 
 function addNames() {
     for (const [name, soundSet] of Object.entries(soundsDatabase)) {
@@ -67,17 +68,23 @@ export function playRandomMatchingSound(actor, soundType) {
 }
 
 export function findSoundSet(actor) {
-    // Check if flag has been set for Actor
-    let soundSet = soundsDatabase[actor.flags?.["samioli-module"]?.soundset];
-    if (soundSet) {
-        return soundSet;
+    // Check if flag has been set for Actor.
+    const chosenSoundSet = actor.flags?.["samioli-module"]?.soundset;
+    if (chosenSoundSet) {
+        if (chosenSoundSet === NO_SOUND_SET) {
+            return null;
+        }
+        let soundSet = soundsDatabase[chosenSoundSet];
+        if (soundSet) {
+            return soundSet;
+        }
     }
     // Check for exact name match first.
-    soundSet = findSoundSetByCreatureName(actor.name);
+    let soundSet = findSoundSetByCreatureName(actor.name);
     if (soundSet) {
         return soundSet;
     }
-    // If no exact match, score keywords and traits
+    // If no exact match, score keywords and traits.
     soundSet = findSoundSetByScoring(actor);
     if (soundSet) {
         return soundSet;

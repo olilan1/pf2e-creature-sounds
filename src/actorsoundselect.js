@@ -1,4 +1,5 @@
-import { findSoundSet, getAllNames, playRandomMatchingSound } from "./creaturesounds.js";
+import { findSoundSet, getAllNames, NO_SOUND_SET, playRandomMatchingSound } from "./creaturesounds.js";
+import { logd } from "./utils.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -30,12 +31,14 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     async _prepareContext() {
         const context = {};
-        context.currentSoundSet = findSoundSet(this.actor).name;
+        context.currentSoundSet = findSoundSet(this.actor)?.name ?? NO_SOUND_SET;
         context.dropDownNames = getAllNames();
+        context.dropDownNames.unshift(NO_SOUND_SET);
         return context;
     }
 
     async _onChangeForm(formConfig, event) {
+        logd("selected soundset = " + event.target.value);
         await this.actor.setFlag("samioli-module", "soundset", event.target.value);
         this.render();
     }
