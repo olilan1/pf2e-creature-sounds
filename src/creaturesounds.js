@@ -43,7 +43,7 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
     playRandomMatchingSound(attackingActor, "attack");
 }
 
-function playRandomMatchingSound(actor, soundType) {
+export function playRandomMatchingSound(actor, soundType) {
     let soundSet = findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.

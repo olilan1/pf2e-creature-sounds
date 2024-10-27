@@ -7,6 +7,7 @@ import { checkForBravado, checkForExtravagantParryOrElegantBuckler, checkForFini
 import { checkForHuntPreyGM, checkForHuntPreyPlayer } from "./actions/huntprey.js";
 import { targetTokensUnderTemplate, deleteTemplateTargets } from "./templatetarget.js";
 import { checkForUnstableCheck } from "./effects/unstablecheck.js";
+import { renderCreatureSoundsUI } from "./csdialog.js";
 
 Hooks.on("init", () => {
     registerSettings();
@@ -52,6 +53,17 @@ Hooks.on('diceSoNiceRollComplete', (id) => {
       handleChatMessagePostRoll(message);
     };
 });
+
+Hooks.on("getActorSheetPF2eHeaderButtons", (characterSheetPF2e, buttons) => {
+    buttons.unshift({
+      class: "sounds-control",
+      icon: "fas fa-volume-up",
+      label: "Sounds",
+      onclick: () => {
+        renderCreatureSoundsUI(characterSheetPF2e);
+      }
+    });
+  });
 
 function handleChatMessagePreRoll(message) {
     switch (getMessageType(message)) {
