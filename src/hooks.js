@@ -54,13 +54,13 @@ Hooks.on('diceSoNiceRollComplete', (id) => {
     };
 });
 
-Hooks.on("getActorSheetPF2eHeaderButtons", (characterSheetPF2e, buttons) => {
+Hooks.on("getActorSheetPF2eHeaderButtons", (actorSheet, buttons) => {
     buttons.unshift({
       class: "sounds-control",
       icon: "fas fa-volume-up",
       label: "Sounds",
       onclick: () => {
-        renderCreatureSoundsUI(characterSheetPF2e);
+        renderCreatureSoundsUI(actorSheet);
       }
     });
   });
