@@ -5,7 +5,8 @@ let soundsDatabase;
 $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
     json => { soundsDatabase = json; })
 
-const KEYWORD_SCORE = 5;
+const KEYWORD_NAME_SCORE = 5;
+const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
 
 export function creatureSoundOnDamage(actor, options) {
@@ -101,10 +102,14 @@ function scoreSoundSets(actor) {
         let score = 0;
         
         // Keyword match
-        for (const matchText of soundSet.keywords) {
-            const regex = new RegExp("\\b" + matchText + "\\b", "i");
+        const blurb = actor?.system?.details?.blurb;
+        for (const keyword of soundSet.keywords) {
+            const regex = new RegExp("\\b" + keyword + "\\b", "i");
             if (actor.name.match(regex)) {
-                score += KEYWORD_SCORE;
+                score += KEYWORD_NAME_SCORE;
+            }
+            if (blurb && blurb.match(regex)) {
+                score += KEYWORD_BLURB_SCORE;
             }
         }
         
