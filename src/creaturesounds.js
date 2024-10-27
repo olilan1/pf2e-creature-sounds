@@ -3,11 +3,21 @@ import { getHashCode, logd } from "./utils.js";
 
 let soundsDatabase;
 $.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
-    json => { soundsDatabase = json; })
+    json => { soundsDatabase = json; addNames();})
 
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
+
+function addNames() {
+    for (const [name, soundSet] of Object.entries(soundsDatabase)) {
+        soundSet.name = name;
+    } 
+}
+
+export function getAllNames() {
+    return Object.keys(soundsDatabase);    
+}
 
 export function creatureSoundOnDamage(actor, options) {
     if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
@@ -56,19 +66,25 @@ export function playRandomMatchingSound(actor, soundType) {
     playRandomSound(returnedSounds);
 }
 
-function findSoundSet(actor) {
+export function findSoundSet(actor) {
+    // Check if flag has been set for Actor
+    let soundSet = soundsDatabase[actor.flags?.["samioli-module"]?.soundset];
+    if (soundSet) {
+        return soundSet;
+    }
     // Check for exact name match first.
-    let soundSet = findSoundSetByCreatureName(actor.name);
-    if (!soundSet) {
-        // If no exact match, score keywords and traits
-        soundSet = findSoundSetByScoring(actor);
+    soundSet = findSoundSetByCreatureName(actor.name);
+    if (soundSet) {
+        return soundSet;
     }
-    if (!soundSet) {
-        // If still no match, didn't find anything.
-        logd("No Sounds found.");
-        return;
+    // If no exact match, score keywords and traits
+    soundSet = findSoundSetByScoring(actor);
+    if (soundSet) {
+        return soundSet;
     }
-    return soundSet;
+    // If still no match, didn't find anything.
+    logd("No Sounds found.");
+    return;
 }
 
 function findSoundSetByScoring(actor) {
