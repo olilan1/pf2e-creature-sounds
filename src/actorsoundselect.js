@@ -49,14 +49,14 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     static playAttackSound() {
-        playRandomMatchingSound(this.actor, "attack");
+        playRandomMatchingSound(this.actor, "attack", false);
     }
 
     static playHurtSound() {
-        playRandomMatchingSound(this.actor, "hurt");
+        playRandomMatchingSound(this.actor, "hurt", false);
     }
 
     static playDeathSound() {
-        playRandomMatchingSound(this.actor, "death");
+        playRandomMatchingSound(this.actor, "death", false);
     }
 }

@@ -55,7 +55,7 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
     playRandomMatchingSound(attackingActor, "attack");
 }
 
-export function playRandomMatchingSound(actor, soundType) {
+export function playRandomMatchingSound(actor, soundType, allPlayers = true) {
     let soundSet = findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
@@ -64,7 +64,7 @@ export function playRandomMatchingSound(actor, soundType) {
 
     // Found something!
     const returnedSounds = getSoundsOfType(soundSet, soundType);
-    playRandomSound(returnedSounds);
+    playRandomSound(returnedSounds, allPlayers);
 }
 
 export function findSoundSet(actor) {
@@ -252,16 +252,16 @@ function extractSize(actor) {
     logd(`Size not found`);
 }
 
-function playRandomSound(sounds) {
-    playSound(sounds[Math.floor(Math.random() * sounds.length)]);
+function playRandomSound(sounds, allPlayers) {
+    playSound(sounds[Math.floor(Math.random() * sounds.length)], allPlayers);
 }
 
-function playSound(sound) {
+function playSound(sound, allPlayers) {
     logd(`sound to play: ${sound}`);
     foundry.audio.AudioHelper.play({
         src: sound,
         volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME),
         autoplay: true,
         loop: false
-    }, true);
+    }, allPlayers);
 }
