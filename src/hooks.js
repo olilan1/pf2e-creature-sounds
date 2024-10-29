@@ -26,14 +26,14 @@ Hooks.on("createChatMessage", (message) => {
 
 Hooks.on("getActorSheetPF2eHeaderButtons", (actorSheet, buttons) => {
     buttons.unshift({
-      class: "sounds-control",
-      icon: "fas fa-volume-up",
-      label: "Sounds",
-      onclick: () => {
-        new ActorSoundSelectApp(actorSheet.object, {}).render(true);
-      }
+        class: "sounds-control",
+        icon: "fas fa-volume-up",
+        label: "Sounds",
+        onclick: () => {
+            new ActorSoundSelectApp(actorSheet.object, {}).render(true);
+        }
     });
-  });
+});
 
 function getMessageType(message) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
