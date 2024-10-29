@@ -1,0 +1,24 @@
+{
+    "id": "pf2e-creature-sounds",
+    "title": "PF2e Creature Sounds",
+    "description": "Adds sounds when creatures attack or are damaged.",
+    "authors": [
+      {
+        "name": "Sami Ali Adib"
+      },
+      {
+        "name": "Oli Lan"
+      }
+    ],
+    "esmodules": [
+      "src/hooks.js"
+    ],
+    "compatibility": {
+      "minimum": "12",
+      "verified": "12"
+    },
+    "version": "#{VERSION}#",
+    "url": "#{URL}#",
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#"
+}
