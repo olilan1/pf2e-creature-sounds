@@ -74,9 +74,6 @@ jobs:
 
       - run: npm ci
 
-      - name: Build macro pack
-        run: npm run pack
-
       # Extract version embedded in the tag.
       # This step expects the tag to be one of the following formats:
       #   - "v<major>.<minor>.<patch>" (e.g., "v1.2.3")
