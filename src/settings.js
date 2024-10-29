@@ -1,4 +1,4 @@
-const SETTINGS_NAMESPACE = "samioli-module";
+const SETTINGS_NAMESPACE = "pf2e-creature-sounds";
 
 export const SETTINGS = {
     CREATURE_SOUNDS: "creatureSounds_enable",
@@ -6,10 +6,6 @@ export const SETTINGS = {
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
     CREATURE_ATTACK_SOUNDS: "creatureSounds_attack_enable",
     CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
-    TEMPLATE_TARGET: "template_target_enable",
-    AUTO_PANACHE: "automatic_panache_enable",
-    AUTO_HUNT_PREY: "automatic_hunt_prey_enable",
-    AUTO_UNSTABLE_CHECK: "automatic_unstable_check_enable",
     DEBUG_LOGGING: "debug_logging"
 };
 
@@ -62,42 +58,6 @@ export function registerSettings() {
             step: 0.1
         },
         type: Number
-    });
-
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.TEMPLATE_TARGET, {
-        name: "Template targetting",
-        hint: "Automatically target all tokens under a placed template",
-        scope: "world",
-        config: true,
-        default: false,
-        type: Boolean
-    });
-
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_PANACHE, {
-        name: "Automatic Panache",
-        hint: "Automatically add and remove Panache",
-        scope: "world",
-        config: true,
-        default: false,
-        type: Boolean
-    });
-
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_HUNT_PREY, {
-        name: "Hunt Prey Automation",
-        hint: "Players can apply a Hunt Prey effect to tokens they do not own",
-        scope: "world",
-        config: true,
-        default: false,
-        type: Boolean
-    });
-
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.AUTO_UNSTABLE_CHECK, {
-        name: "Unstable Check Automation",
-        hint: "Automatically add Unstable Effect",
-        scope: "world",
-        config: true,
-        default: false,
-        type: Boolean
     });
 
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.DEBUG_LOGGING, {
