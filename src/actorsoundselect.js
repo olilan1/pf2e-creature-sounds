@@ -1,5 +1,5 @@
 import { findSoundSet, getAllNames, NO_SOUND_SET, playRandomMatchingSound } from "./creaturesounds.js";
-import { logd } from "./utils.js";
+import { logd, MODULE_ID } from "./utils.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -11,7 +11,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     static PARTS = {
         form: {
-            template: "modules/samioli-module/templates/actor-sound-select.html"
+            template: "modules/pf2e-creature-sounds/templates/actor-sound-select.html"
         }
     }
 
@@ -39,12 +39,12 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     async _onChangeForm(formConfig, event) {
         logd("selected soundset = " + event.target.value);
-        await this.actor.setFlag("samioli-module", "soundset", event.target.value);
+        await this.actor.setFlag(MODULE_ID, "soundset", event.target.value);
         this.render();
     }
 
     static async setToDefault() {
-        await this.actor.unsetFlag("samioli-module", "soundset");
+        await this.actor.unsetFlag(MODULE_ID, "soundset");
         this.render();
     }
 

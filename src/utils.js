@@ -1,5 +1,7 @@
 import { getSetting, SETTINGS } from "./settings.js";
 
+export const MODULE_ID = "pf2e-creature-sounds";
+
 export function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }

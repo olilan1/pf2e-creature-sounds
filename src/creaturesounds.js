@@ -1,8 +1,8 @@
 import { getSetting, SETTINGS } from "./settings.js"
-import { getHashCode, logd } from "./utils.js";
+import { getHashCode, logd, MODULE_ID } from "./utils.js";
 
 let soundsDatabase;
-$.getJSON("modules/samioli-module/databases/creature_sounds_db.json",
+$.getJSON("modules/pf2e-creature-sounds/databases/creature_sounds_db.json",
     json => { soundsDatabase = json; addNames();})
 
 const KEYWORD_NAME_SCORE = 5;
@@ -69,7 +69,7 @@ export function playRandomMatchingSound(actor, soundType, allPlayers = true) {
 
 export function findSoundSet(actor) {
     // Check if flag has been set for Actor.
-    const chosenSoundSet = actor.flags?.["samioli-module"]?.soundset;
+    const chosenSoundSet = actor.flags?.[MODULE_ID]?.soundset;
     if (chosenSoundSet) {
         if (chosenSoundSet === NO_SOUND_SET) {
             return null;
