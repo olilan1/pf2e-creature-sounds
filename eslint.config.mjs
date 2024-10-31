@@ -22,7 +22,8 @@ export default [
           MeasuredTemplateDocument: "readonly",
           Dialog: "readonly",
           CONFIG: "readonly",
-          foundry: "readonly"
+          foundry: "readonly",
+          CONST: "readonly"
         }
       }
     },
