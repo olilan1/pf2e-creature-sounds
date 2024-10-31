@@ -24,7 +24,8 @@ Hooks.on("createChatMessage", (message) => {
     }
 });
 
-Hooks.on("getActorSheetPF2eHeaderButtons", (actorSheet, buttons) => {
+Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet, buttons) => {
+    
     buttons.unshift({
         class: "sounds-control",
         icon: "fas fa-volume-up",
