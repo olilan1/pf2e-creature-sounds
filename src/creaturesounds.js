@@ -3,7 +3,7 @@ import { getHashCode, logd, MODULE_ID } from "./utils.js";
 
 let soundsDatabase;
 $.getJSON("modules/pf2e-creature-sounds/databases/creature_sounds_db.json",
-    json => { soundsDatabase = json; addNames();})
+    json => { soundsDatabase = json; addNames(); })
 
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
@@ -13,11 +13,15 @@ export const NO_SOUND_SET = "none";
 function addNames() {
     for (const [name, soundSet] of Object.entries(soundsDatabase)) {
         soundSet.name = name;
-    } 
+    }
 }
 
-export function getAllNames() {
-    return Object.keys(soundsDatabase);    
+export function getNameOptions() {
+    const sortedArray = Object.entries(soundsDatabase)
+        .map(([key, value]) => [key, value.display_name])
+        .sort((a, b) => a[1].localeCompare(b[1]));
+    sortedArray.unshift([NO_SOUND_SET, "--- no sound ---"])
+    return Object.fromEntries(sortedArray)
 }
 
 export function creatureSoundOnDamage(actor, options) {
@@ -47,7 +51,7 @@ export function creatureSoundOnAttack(ChatMessagePF2e) {
     let attackingToken = game.canvas.scene.tokens.get(ChatMessagePF2e.speaker.token);
     let attackingActor = attackingToken.actor;
     if (attackingActor.type === 'character'
-            && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
+        && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
     }
@@ -108,11 +112,11 @@ function findSoundSetByScoring(actor) {
             soundsWithHighestValue.push(soundSet);
         }
     }
-    
+
     if (soundsWithHighestValue.length === 0) {
         return null;
     }
-    
+
     let hash = Math.abs(getHashCode(actor.name));
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
@@ -123,7 +127,7 @@ function scoreSoundSets(actor) {
     let creatureSize = extractSize(actor);
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         let score = 0;
-        
+
         // Keyword match
         const blurb = actor?.system?.details?.blurb;
         for (const keyword of soundSet.keywords) {
@@ -135,7 +139,7 @@ function scoreSoundSets(actor) {
                 score += KEYWORD_BLURB_SCORE;
             }
         }
-        
+
         // Trait match 
         const matchingTraits = soundSet.traits.filter(trait => traits.includes(trait)).length;
         score += matchingTraits * TRAIT_SCORE;
@@ -145,11 +149,11 @@ function scoreSoundSets(actor) {
             let scoreAdj = (2 - Math.abs(creatureSize - soundSet.size)) / 10;
             score += scoreAdj;
         }
-        
+
         soundSetScores.set(soundSet, score);
     }
     logd(soundSetScores);
-    return soundSetScores; 
+    return soundSetScores;
 }
 
 function findSoundSetByCreatureName(creatureName) {
@@ -172,7 +176,7 @@ function getSoundsOfType(soundSet, soundType) {
             }
             logd("No death sounds found, so using hurt sound as fallback");
             return soundSet.hurt_sounds;
-        case 'attack': 
+        case 'attack':
             return soundSet.attack_sounds;
         default:
             logd(`No sounds found for soundType=${soundType}`);
@@ -209,13 +213,13 @@ function getGenderFromBlurb(actor) {
     const regexFemale = /\bfemale\b/i;
 
     if (blurb.match(regexFemale)) {
-      return "female";
+        return "female";
     }
-    
+
     if (blurb.match(regexMale)) {
-      return "male";
+        return "male";
     }
-    
+
     return null;
 }
 
@@ -229,13 +233,13 @@ function getGenderFromPronouns(actor) {
     const regexFemale = /\b(she|her)\b/i;
 
     if (pronouns.match(regexFemale)) {
-      return "female";
+        return "female";
     }
-    
+
     if (pronouns.match(regexMale)) {
-      return "male";
+        return "male";
     }
-    
+
     return null;
 }
 

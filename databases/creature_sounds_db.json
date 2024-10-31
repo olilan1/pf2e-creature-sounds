@@ -1,5 +1,6 @@
 {
     "Aberration": {
+        "display_name": "Aberration",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Aberration/Aberration_Hurt/CREAHmn_Aberration_Hurt_01.wav",
@@ -30,6 +31,7 @@
         "size": 3
     },
     "Behemoth": {
+        "display_name": "Behemoth",
         "notes": "Big Cat would work here",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_01.wav",
@@ -64,6 +66,7 @@
         "size": -1
     },
     "Dragon": {
+        "display_name": "Dragon",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Dragon/Dragon_Hurt/CREADrgn_Dragon_Hurt_01.wav",
@@ -98,6 +101,7 @@
         "size": -1
     },
     "Goblin": {
+        "display_name": "Goblin",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_01.wav",
@@ -139,6 +143,7 @@
         "size": -1
     },
     "Insect": {
+        "display_name": "Insect (Large)",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Insect/Insect_Hurt/CREAInsc_Insect_Hurt_01.wav",
@@ -189,6 +194,7 @@
         "size": 3
     },
     "Orc": {
+        "display_name": "Orc",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Orc/Orc_Hurt/CREAHmn_Orc_Hurt_01.wav",
@@ -243,6 +249,7 @@
         "size": -1
     },
     "Skeleton": {
+        "display_name": "Skeleton",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skeleton/Skeleton_Hurt/CREAHmn_Skeleton_Hurt_01.wav",
@@ -281,6 +288,7 @@
         "size": -1
     },
     "Spectre": {
+        "display_name": "Spectre",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Spectre/Spectre_Hurt/CREAEthr_Spectre_Hurt_01.wav",
@@ -315,6 +323,7 @@
         "size": -1
     },
     "Spider": {
+        "display_name": "Insect (Tiny)",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Spider/Spider_Hurt/CREAInsc_Spider_Hurt_01.wav",
@@ -364,6 +373,7 @@
         "size": 0
     },
     "Troll": {
+        "display_name": "Troll",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_01.wav",
@@ -393,6 +403,7 @@
         "size": -1
     },
     "Ancient_Dragon": {
+        "display_name": "Dinosaur",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Ancient_Dragon/Ancient_Dragon_Monster_Pain_1_Dinosaur_Creature_Hurt_Squeal_Vocalization.wav",
@@ -419,6 +430,7 @@
         "size": 3
     },
     "Balor": {
+        "display_name": "Balor",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Balor/Balor_Monster_Pain_1_Supernatural_Creature_Groan_Hurt_Death_Hit_Vocalization.wav",
@@ -445,6 +457,7 @@
         "size": 3
     },
     "Basilisk": {
+        "display_name": "Basilisk",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Basilisk/Basilisk_Monster_Pain_1_Lizard_Reptile_Creature_Grunt_Short_Hit_Death_Hurt_Moan.wav",
@@ -473,6 +486,7 @@
         "size": -1
     },
     "Frost_Giant": {
+        "display_name": "Bear",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Frost_Giant/Frost_Giant_Monster_Pain_1_Human_Creature_Short_Grunt_Hit_Hurt.wav",
@@ -498,6 +512,7 @@
         "size": -1
     },
     "Kraken": {
+        "display_name": "Kraken",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Kraken/Kraken_Monster_Pain_1_Hurt_Death_Howl_Moan.wav",
@@ -526,6 +541,7 @@
         "size": -1
     },
     "Mammoth": {
+        "display_name": "Mammoth",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Mammoth/Mammoth_Monster_Pain_1_Elephant_Vocalization_Grunt_Breath.wav",
@@ -552,6 +568,7 @@
         "size": -1
     },
     "Roc": {
+        "display_name": "Roc",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Roc/Roc_Monster_Pain_1_Dinosaur_Bird_Squeal_Die_Death_Hit.wav",
@@ -592,6 +609,7 @@
         "size": -1
     },
     "Sphinx": {
+        "display_name": "Sphinx",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Sphinx/Sphinx_Monster_Pain_1_Saber_Tooth_Lion_Tiger_Growl_Grunt_Death.wav",
@@ -618,6 +636,7 @@
         "size": -1
     },
     "Spider_Queen": {
+        "display_name": "Insect (Medium)",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Spider_Queen/Spider_Queen_Monster_Pain_1_Insect_Bug_Screech_Chirp_Death_Hit_Squish.wav",
@@ -659,6 +678,7 @@
         "size": 2
     },
     "Treant": {
+        "display_name": "Arboreal",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Treant/Treant_Monster_Pain_1_Tree_Creature_Croak_Groan_Moan_Squeal.wav",
@@ -686,6 +706,7 @@
         "size": 4
     },
     "Gnoll": {
+        "display_name": "Kholo",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Gnoll/Gnoll_Monster_Pain_1_Wolf_Hyena_Dog_Creature_.wav",
@@ -715,6 +736,7 @@
         "size": -1
     },
     "Harpy": {
+        "display_name": "Harpy",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Harpy/Harpy_Monster_Pain_1_Bird_Dinosaur_Witch_Creature.wav",
@@ -739,6 +761,7 @@
         "size": -1
     },
     "Hellhound": {
+        "display_name": "Hellhound",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Hell_Hound/Hellhound_Monster_Pain_1_Dog_Wolf_Creature.wav",
@@ -770,6 +793,7 @@
         "size": -1
     },
     "Kelpie": {
+        "display_name": "Kelpie",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Pain_1_Water_Spirit_Horse_Creature.wav",
@@ -802,6 +826,7 @@
         "size": -1
     },
     "Mimic": {
+        "display_name": "Mimic",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Mimic/Mimic_Monster_Pain_1_Robotic_Humanoid_Creature_Mechanical.wav",
@@ -827,6 +852,7 @@
         "size": -1
     },
     "EGC_Orc": {
+        "display_name": "Giant",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Orc/Orc_Monster_Pain_1_Humanoid_Troll_Tribal_Creature.wav",
@@ -852,6 +878,7 @@
         "size": -1
     },
     "Owlbear": {
+        "display_name": "Owlbear",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Owlbear/Owlbear_Monster_Pain_1_Bird_Mammal_Creature.wav",
@@ -877,6 +904,7 @@
         "size": -1
     },
     "Rock_Golem": {
+        "display_name": "Rock Golem",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Rock_Golem/Rock_Golem_Monster_Pain_1_Supernatural_Mythical_Creature.wav",
@@ -902,6 +930,7 @@
         "size": 3
     },
     "Wight": {
+        "display_name": "Wight",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wight/Wight_Monster_Pain_1_Spirit_Fairy_Ghost_Creature.wav",
@@ -928,6 +957,7 @@
         "size": -1
     },
     "Wraith": {
+        "display_name": "Wraith",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wraith/Wraith_Monster_Pain_1_Spirit_Fairy_Ghost_Creature.wav",
@@ -956,6 +986,7 @@
         "size": -1
     },
     "Female Creature": {
+        "display_name": "Hag",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Creature/CREAHmn_Female Creature Pain Monstrosity Raspy Grunt Cry 01_ESM_HC2.wav",
@@ -986,6 +1017,7 @@
         "size": -1
     },
     "Female Naga Gorgon": {
+        "display_name": "Medusa",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Naga_Gorgon/CREAHmn_Female Naga Gorgon Pain Injured Groan Snake Rattle 01_ESM_HC2.wav",
@@ -1017,6 +1049,7 @@
         "size": -1
     },
     "Female Sprite Gnome": {
+        "display_name": "Sprite",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Sprite_Gnome/CREAHmn_Female Sprite Gnome Pain Injured Hit Shout Cry 01_ESM_HC2.wav",
@@ -1052,6 +1085,7 @@
         "size": 0
     },
     "Female Succubus Demon": {
+        "display_name": "Succubus",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Succubus_Demon/CREAHmn_Female Succubus Demon Pain Groan Hit Grunt Cry 01_ESM_HC2.wav",
@@ -1085,6 +1119,7 @@
         "size": -1
     },
     "Female Infected Undead": {
+        "display_name": "Revenant",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Undead/CREAHmn_Female Infected Undead Pain Zombie Spawn Grunt Scream Cry 01_ESM_HC2.wav",
@@ -1117,6 +1152,7 @@
         "size": -1
     },
     "Female Werewolf Shifter": {
+        "display_name": "Werewolf",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 01_ESM_HC2.wav",
@@ -1147,6 +1183,7 @@
         "size": -1
     },
     "Female Wisp Spirit": {
+        "display_name": "Wisp",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Wisp_Spirit/CREAHmn_Female Wisp Spirit Pain Yelp Cry Hit Short Ethereal Ghost 01_ESM_HC2.wav",
@@ -1178,6 +1215,7 @@
         "size": 0
     },
     "Brute": {
+        "display_name": "Minotaur",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Brute/CREAHmn_Brute Pain Painful Angry Grunt Ahh Hurt 01_ESM_HC2.wav",
@@ -1211,6 +1249,7 @@
         "size": -1
     },
     "Ghoul": {
+        "display_name": "Ghoul",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Ghoul/CREAHmn_Ghoul Pain Ahh Short Gurgle Gargling Damaged 01_ESM_HC2.wav",
@@ -1249,6 +1288,7 @@
         "size": -1
     },
     "Hellspawn": {
+        "display_name": "Imp",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Hellspawn/CREAHmn_Hellspawn Pain Painful Hissing Grunt Falling Off 01_ESM_HC2.wav",
@@ -1281,6 +1321,7 @@
         "size": 0
     },
     "Mutant": {
+        "display_name": "Vrock",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Mutant/CREAHmn_Mutant Pain Damaged Screech Defiant Fearful Throaty 01_ESM_HC2.wav",
@@ -1307,7 +1348,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "harpy",
             "nuckelavee",
             "vrock"
         ],
@@ -1315,6 +1355,7 @@
         "size": -1
     },
     "Sludgeman": {
+        "display_name": "Sludgeman",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Sludgeman/CREAHmn_Sludgeman Pain Deep Gutteral Disgusting Throaty Wet 01_ESM_HC2.wav",
@@ -1354,6 +1395,7 @@
         "size": -1
     },
     "Strigoi": {
+        "display_name": "Xulgath",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Strigoi/CREAHmn_Strigoi Pain Ew Bleck Short Quick Gross 01_ESM_HC2.wav",
@@ -1387,6 +1429,7 @@
         "size": 2
     },
     "Voidling": {
+        "display_name": "Venedaemon",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Pain Harsh Breathy Light Ghost Like 01_ESM_HC2.wav",
@@ -1420,6 +1463,7 @@
         "size": 1
     },
     "Zombie": {
+        "display_name": "Zombie",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Zombie/CREAHmn_Zombie Pain Airy Throaty Breathy Short Quick 01_ESM_HC2.wav",
@@ -1456,6 +1500,7 @@
         "size": -1
     },
     "Human_Female_A": {
+        "display_name": "Humanoid Feminine A",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female A/voice_female_a_hurt_pain_01.wav",
@@ -1520,6 +1565,7 @@
         "size": 2
     },
     "Human_Female_B1": {
+        "display_name": "Humanoid Feminine B",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_mild_01.wav",
@@ -1553,6 +1599,7 @@
         "size": 2
     },
     "Human_Female_B2": {
+        "display_name": "Humanoid Feminine C",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_hurt_pain_low_01.wav",
@@ -1605,6 +1652,7 @@
         "size": 2
     },
     "Human_Female_C": {
+        "display_name": "Humanoid Feminine D",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female C/voice_female_c_hurt_pain_01.wav",
@@ -1657,6 +1705,7 @@
         "size": 2
     },
     "Human_Male_A": {
+        "display_name": "Humanoid Masculine A",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male A/voice_male_grunt_pain_01.wav",
@@ -1709,6 +1758,7 @@
         "size": 2
     },
     "Human_Male_B1": {
+        "display_name": "Humanoid Masculine B",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male B/voice_male_b_hurt_pain_set_1_01.wav",
@@ -1748,6 +1798,7 @@
         "size": 2
     },
     "Human_Male_B2": {
+        "display_name": "Humanoid Masculine C",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male B/voice_male_b_hurt_pain_set_2_01.wav",
@@ -1797,6 +1848,7 @@
         "size": 2
     },
     "Human_Male_B3": {
+        "display_name": "Humanoid Masculine D",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male B/voice_male_b_hurt_pain_set_3_01.wav",
@@ -1840,6 +1892,7 @@
         "size": 2
     },
     "Human_Male_B4": {
+        "display_name": "Humanoid Masculine E",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male B/voice_male_b_hurt_pain_set_4_01.wav",
@@ -1877,6 +1930,7 @@
         "size": 2
     },
     "Human_Male_C": {
+        "display_name": "Humanoid Masculine F",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male C/voice_male_c_hurt_pain_01.wav",
@@ -1934,6 +1988,7 @@
         "size": 2
     },
     "Human_Male_D": {
+        "display_name": "Humanoid Masculine G",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male D/voice_male_d_hurt_pain_01.wav",

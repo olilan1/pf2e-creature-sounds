@@ -1,7 +1,7 @@
 <div>
   Sound set:
   <select id="myDropdown" {{#unless canEdit}} disabled {{/unless}}>
-    {{selectOptions dropDownNames selected=currentSoundSet valueAttr="label"}}
+    {{selectOptions dropDownNames selected=currentSoundSet}}
   </select>
   <div style="display:flex">
     <button data-action="play_attack_sound">Attack</button>

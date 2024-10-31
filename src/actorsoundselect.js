@@ -1,4 +1,4 @@
-import { findSoundSet, getAllNames, NO_SOUND_SET, playRandomMatchingSound } from "./creaturesounds.js";
+import { findSoundSet, getNameOptions, NO_SOUND_SET, playRandomMatchingSound } from "./creaturesounds.js";
 import { logd, MODULE_ID } from "./utils.js";
 import { getSetting, SETTINGS } from "./settings.js";
 
@@ -33,11 +33,11 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     async _prepareContext() {
         const context = {};
         context.currentSoundSet = findSoundSet(this.actor)?.name ?? NO_SOUND_SET;
-        context.dropDownNames = getAllNames();
-        context.dropDownNames.unshift(NO_SOUND_SET);
+        context.dropDownNames = getNameOptions();
+        logd(context.dropDownNames);
         context.canEdit =
-            game.user.isGM
-            || (this.actor.getUserLevel(game.user) == CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+            game.user.isGM       
+                || (this.actor.getUserLevel(game.user) == CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER 
                 && getSetting(SETTINGS.PLAYERS_CAN_EDIT));
         return context;
     }
