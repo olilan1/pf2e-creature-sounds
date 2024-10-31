@@ -24,14 +24,17 @@ Hooks.on("createChatMessage", (message) => {
     }
 });
 
-Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet, buttons) => {
-    
+Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet, buttons) => { 
+    const actor = actorSheet.object;
+    if (actor.getUserLevel(game.user) < CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER) {
+        return;
+    }
     buttons.unshift({
         class: "sounds-control",
         icon: "fas fa-volume-up",
         label: "Sounds",
         onclick: () => {
-            new ActorSoundSelectApp(actorSheet.object, {}).render(true);
+            new ActorSoundSelectApp(actor, {}).render(true);
         }
     });
 });

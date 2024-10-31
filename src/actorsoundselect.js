@@ -34,6 +34,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         context.currentSoundSet = findSoundSet(this.actor)?.name ?? NO_SOUND_SET;
         context.dropDownNames = getAllNames();
         context.dropDownNames.unshift(NO_SOUND_SET);
+        context.observer =
+                this.actor.getUserLevel(game.user) == CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER;
         return context;
     }
 

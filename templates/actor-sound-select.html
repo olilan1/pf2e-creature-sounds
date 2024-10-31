@@ -1,6 +1,6 @@
 <div>
   Sound set:
-  <select id="myDropdown">
+  <select id="myDropdown" {{#if observer}} disabled {{/if}}>
     {{selectOptions dropDownNames selected=currentSoundSet valueAttr="label"}}
   </select>
   <div style="display:flex">
@@ -8,5 +8,5 @@
     <button data-action="play_hurt_sound">Hurt</button>
     <button data-action="play_death_sound">Death</button>
   </div>
-  <button data-action="default_sound">Revert to Default Sound</button>
+  <button data-action="default_sound" {{#if observer}} disabled {{/if}}>Revert to Default Sound</button>
 </div>
