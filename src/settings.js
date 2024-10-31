@@ -6,6 +6,7 @@ export const SETTINGS = {
     CREATURE_SOUNDS_VOLUME: "creatureSounds_volume",
     CREATURE_ATTACK_SOUNDS: "creatureSounds_attack_enable",
     CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
+    PLAYERS_CAN_EDIT: "players_can_edit",
     DEBUG_LOGGING: "debug_logging"
 };
 
@@ -58,6 +59,15 @@ export function registerSettings() {
             step: 0.1
         },
         type: Number
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.PLAYERS_CAN_EDIT, {
+        name: "Allow Players to Edit Sounds",
+        hint: "Allow players to edit creature sounds for actors they own",
+        scope: "world",
+        config: true,
+        default: true,
+        type: Boolean
     });
 
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.DEBUG_LOGGING, {

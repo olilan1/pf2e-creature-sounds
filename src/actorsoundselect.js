@@ -1,5 +1,6 @@
 import { findSoundSet, getAllNames, NO_SOUND_SET, playRandomMatchingSound } from "./creaturesounds.js";
 import { logd, MODULE_ID } from "./utils.js";
+import { getSetting, SETTINGS } from "./settings.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -34,8 +35,10 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         context.currentSoundSet = findSoundSet(this.actor)?.name ?? NO_SOUND_SET;
         context.dropDownNames = getAllNames();
         context.dropDownNames.unshift(NO_SOUND_SET);
-        context.observer =
-                this.actor.getUserLevel(game.user) == CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER;
+        context.canEdit =
+            game.user.isGM
+            || (this.actor.getUserLevel(game.user) == CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER
+                && getSetting(SETTINGS.PLAYERS_CAN_EDIT));
         return context;
     }
 
