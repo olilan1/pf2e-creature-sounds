@@ -10,7 +10,7 @@ export const SETTINGS = {
     DEBUG_LOGGING: "debug_logging"
 };
 
-export function registerSettings() {
+export function registerSettings(): void {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS, {
         name: "Creature sounds",
         hint: "Enable creature-specific sounds",
@@ -53,6 +53,7 @@ export function registerSettings() {
         scope: "client",
         config: true,
         default: 0.5,
+        // @ts-ignore
         range: {
             min: 0,
             max: 1,
@@ -80,6 +81,6 @@ export function registerSettings() {
     });
 }
 
-export function getSetting(setting) {
+export function getSetting(setting: string) {
     return game.settings.get(SETTINGS_NAMESPACE, setting);
 }
