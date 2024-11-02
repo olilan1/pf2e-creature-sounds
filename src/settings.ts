@@ -53,7 +53,7 @@ export function registerSettings(): void {
         scope: "client",
         config: true,
         default: 0.5,
-        // @ts-ignore
+        // @ts-expect-error (range is ok)
         range: {
             min: 0,
             max: 1,
