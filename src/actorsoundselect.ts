@@ -37,10 +37,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     override async _prepareContext() {
         const currentSoundSet = findSoundSet(this.actor)?.name ?? NO_SOUND_SET;
         const dropDownNames = getNameOptions();
-        const canEdit =
-            game.user.isGM       
-                || (this.actor.getUserLevel(game.user) == CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER 
-                && getSetting(SETTINGS.PLAYERS_CAN_EDIT));
+        const canEdit = this.actor.sheet.isEditable
+                && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
         return {
             currentSoundSet,
             dropDownNames,

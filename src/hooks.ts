@@ -27,7 +27,7 @@ Hooks.on("createChatMessage", (message: ChatMessagePF2e) => {
 
 Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet: CreatureSheetPF2e<CreaturePF2e>, buttons) => { 
     const actor = actorSheet.object;
-    if ((actor.getUserLevel(game.user) ?? 0) < CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER) {
+    if (!actor.testUserPermission(game.user, CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER)) {
         return;
     }
     buttons.unshift({
