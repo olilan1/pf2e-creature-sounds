@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "types": [
+            "vite/client",
+            "foundry-pf2e",
+            "foundry-pf2e/lib-wrapper",
+            "jquery"
+        ],
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "strict": true,
+
+        // Code checking stuff
+        "noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true
+    }
+}

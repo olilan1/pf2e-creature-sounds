@@ -1,19 +1,20 @@
-import { registerSettings, getSetting, SETTINGS } from "./settings.js"
-import { creatureSoundOnDamage, creatureSoundOnAttack } from "./creaturesounds.js"
-import { ActorSoundSelectApp } from "./actorsoundselect.js";
+import { registerSettings, getSetting, SETTINGS } from "./settings.ts"
+import { creatureSoundOnDamage, creatureSoundOnAttack } from "./creaturesounds.ts"
+import { ActorSoundSelectApp } from "./actorsoundselect.ts";
+import { ActorPF2e, ChatMessagePF2e, CreatureSheetPF2e } from "foundry-pf2e";
 
 Hooks.on("init", () => {
     registerSettings();
 });
 
-Hooks.on("updateActor", (actor, _changed, options/*, userId*/) => {
+Hooks.on("updateActor", (actor: ActorPF2e, _changed: Object, options: Object, _userId: string) => {
     hook(creatureSoundOnDamage, actor, options)
             .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_HURT_SOUNDS)
             .ifGM()
             .run();
 });
 
-Hooks.on("createChatMessage", (message) => {
+Hooks.on("createChatMessage", (message: ChatMessagePF2e) => {
     switch (getMessageType(message)) {
         case "attack-roll":
             hook(creatureSoundOnAttack, message)
@@ -24,7 +25,7 @@ Hooks.on("createChatMessage", (message) => {
     }
 });
 
-Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet, buttons) => { 
+Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet: CreatureSheetPF2e<any>, buttons) => { 
     const actor = actorSheet.object;
     if (actor.getUserLevel(game.user) < CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER) {
         return;
@@ -39,22 +40,26 @@ Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet, buttons) => {
     });
 });
 
-function getMessageType(message) {
+function getMessageType(message: ChatMessagePF2e) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
 }
 
-function hook(func, ...args) {
+function hook(func: Function, ...args: any[]) {
     return new HookRunner(func, ...args);
 }
 
 class HookRunner {
-    constructor(func, ...args) {
+    func: Function;
+    args: any[];
+    shouldRun: boolean;
+
+    constructor(func: Function, ...args: any[]) {
         this.func = func;
         this.args = args;
         this.shouldRun = true;
     }
 
-    ifEnabled(...settings) {
+    ifEnabled(...settings: string[]) {
         for (const setting of settings) {
             if (!getSetting(setting)) {
                 this.shouldRun = false;
