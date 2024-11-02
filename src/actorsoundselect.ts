@@ -2,14 +2,14 @@ import { findSoundSet, getNameOptions, NO_SOUND_SET, playRandomMatchingSound } f
 import { MODULE_ID } from "./utils.ts";
 import { getSetting, SETTINGS } from "./settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
-import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
+import { ApplicationConfiguration, ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
 export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV2) {
     actor: ActorPF2e;
 
-    constructor(actor: ActorPF2e, options: any) {
+    constructor(actor: ActorPF2e, options: Partial<ApplicationConfiguration>) {
         super(options);
         this.actor = actor;
     }
@@ -49,30 +49,30 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        // @ts-ignore
+        // @ts-expect-error (this.actor is ok)
         await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
         this.render();
     }
 
     static async setToDefault() {
-        // @ts-ignore
+        // @ts-expect-error (this.actor is ok)
         await this.actor.unsetFlag(MODULE_ID, "soundset");
-        // @ts-ignore
+        // @ts-expect-error (this.render is ok)
         this.render();
     }
 
     static playAttackSound() {
-        // @ts-ignore
+        // @ts-expect-error (this.actor is ok)
         playRandomMatchingSound(this.actor, "attack", false);
     }
 
     static playHurtSound() {
-        // @ts-ignore
+        // @ts-expect-error (this.actor is ok)
         playRandomMatchingSound(this.actor, "hurt", false);
     }
 
     static playDeathSound() {
-        // @ts-ignore
+        // @ts-expect-error (this.actor is ok)
         playRandomMatchingSound(this.actor, "death", false);
     }
 }

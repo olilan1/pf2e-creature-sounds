@@ -45,7 +45,7 @@ export function getNameOptions(): Record<string, string> {
     return Object.fromEntries(sortedArray)
 }
 
-export function creatureSoundOnDamage(actor: ActorPF2e, options: any): void {
+export function creatureSoundOnDamage(actor: ActorPF2e, options: object): void {
     if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
@@ -54,7 +54,7 @@ export function creatureSoundOnDamage(actor: ActorPF2e, options: any): void {
         // Not a damage update.
         return;
     }
-    if (options.damageTaken <= 0) {
+    if ((options.damageTaken as number) <= 0) {
         // Damage is not positive.
         return;
     }
@@ -72,8 +72,8 @@ export function creatureSoundOnAttack(message: ChatMessagePF2e): void {
     if (!message.speaker.token) {
         return;
     }
-    let attackingToken = canvas.scene?.tokens.get(message.speaker.token);
-    let attackingActor = attackingToken!.actor;
+    const attackingToken = canvas.scene?.tokens.get(message.speaker.token);
+    const attackingActor = attackingToken!.actor;
     if (attackingActor!.type === 'character'
         && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
@@ -85,7 +85,7 @@ export function creatureSoundOnAttack(message: ChatMessagePF2e): void {
 
 export function playRandomMatchingSound(
         actor: ActorPF2e, soundType: string, allPlayers = true): void {
-    let soundSet = findSoundSet(actor);
+    const soundSet = findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
         return;
@@ -129,7 +129,7 @@ function findSoundSetByScoring(actor: ActorPF2e): SoundSet | null {
     let highestScore = 1;
     let soundsWithHighestValue: SoundSet[] = [];
 
-    for (let [soundSet, score] of scoredSoundSets) {
+    for (const [soundSet, score] of scoredSoundSets) {
         if (score > highestScore) {
             highestScore = score;
             soundsWithHighestValue = [soundSet];
@@ -142,14 +142,14 @@ function findSoundSetByScoring(actor: ActorPF2e): SoundSet | null {
         return null;
     }
 
-    let hash = Math.abs(getHashCode(actor.name));
+    const hash = Math.abs(getHashCode(actor.name));
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
 
 function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
     const soundSetScores = new Map<SoundSet, number>();
-    let traits = extractTraits(actor);
-    let creatureSize = extractSize(actor);
+    const traits = extractTraits(actor);
+    const creatureSize = extractSize(actor);
 
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         let score = 0;
@@ -171,7 +171,7 @@ function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
 
         // Size adjustment
         if (score > 0 && soundSet.size != -1 && creatureSize != -1) {
-            let scoreAdj = (2 - Math.abs(creatureSize - soundSet.size)) / 10;
+            const scoreAdj = (2 - Math.abs(creatureSize - soundSet.size)) / 10;
             score += scoreAdj;
         }
 
@@ -273,7 +273,7 @@ function extractSize(actor: ActorPF2e): number {
     const rollOptions = actor.flags.pf2e.rollOptions.all;
     const regex = /^(self|origin):size:(\d+)$/;
     for (const key in rollOptions) {
-        let matches = key.match(regex);
+        const matches = key.match(regex);
         if (!matches) {
             continue;
         }
@@ -292,7 +292,7 @@ function playRandomSound(sounds: string[], allPlayers: boolean): void {
 
 function playSound(sound: string, allPlayers: boolean): void {
     logd(`sound to play: ${sound}`);
-    // @ts-ignore
+    // @ts-expect-error (foundry.audio is ok)
     foundry.audio.AudioHelper.play({
         src: sound,
         volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME),

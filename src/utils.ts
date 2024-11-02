@@ -12,7 +12,7 @@ export function getHashCode(str: string): number {
     if (str.length === 0) return hash;
 
     for (let i = 0; i < str.length; i++) {
-        let char = str.charCodeAt(i);
+        const char = str.charCodeAt(i);
         hash = ((hash << 5) - hash) + char;
         hash = hash & hash; // Convert to 32bit integer 
     }
@@ -20,13 +20,13 @@ export function getHashCode(str: string): number {
     return hash;
 }
 
-export function logd(message: any): void {
+export function logd(message: unknown): void {
     if (getSetting(SETTINGS.DEBUG_LOGGING)) {
         console.log(message);
     }
 }
 
-export function hasKey<O extends Object>(obj: O, key: PropertyKey): key is keyof O {
+export function hasKey<O extends object>(obj: O, key: PropertyKey): key is keyof O {
     return key in obj
 }
 

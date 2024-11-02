@@ -5,11 +5,16 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@eslint/js": "^9.13.0",
+    "@eslint/js": "^9.14.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/jquery": "^3.5.32",
-    "eslint": "^9.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "eslint": "^9.14.0",
     "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
     "globals": "^15.11.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2",
     "vite": "^5.4.10"
   }
 }
