@@ -37,7 +37,7 @@ const TRAIT_SCORE = 1;
 export const NO_SOUND_SET = "none";
 const NO_SOUND_SET_DISPLAY_NAME = "--- no sound ---";
 
-export function getNameOptions() {
+export function getNameOptions(): Record<string, string> {
     const sortedArray = Object.entries(soundsDatabase)
         .map(([key, value]) => [key, value.display_name])
         .sort((a, b) => a[1].localeCompare(b[1]));
@@ -45,7 +45,7 @@ export function getNameOptions() {
     return Object.fromEntries(sortedArray)
 }
 
-export function creatureSoundOnDamage(actor: ActorPF2e, options: any) {
+export function creatureSoundOnDamage(actor: ActorPF2e, options: any): void {
     if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
@@ -63,7 +63,7 @@ export function creatureSoundOnDamage(actor: ActorPF2e, options: any) {
     playRandomMatchingSound(actor, soundType);
 }
 
-export function creatureSoundOnAttack(message: ChatMessagePF2e) {
+export function creatureSoundOnAttack(message: ChatMessagePF2e): void {
     if (message.flags.pf2e.context?.type !== 'attack-roll') {
         // Not an attack roll.
         return;
@@ -83,7 +83,8 @@ export function creatureSoundOnAttack(message: ChatMessagePF2e) {
     playRandomMatchingSound(attackingActor!, "attack");
 }
 
-export function playRandomMatchingSound(actor: ActorPF2e, soundType: string, allPlayers = true) {
+export function playRandomMatchingSound(
+        actor: ActorPF2e, soundType: string, allPlayers = true): void {
     let soundSet = findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
@@ -95,7 +96,7 @@ export function playRandomMatchingSound(actor: ActorPF2e, soundType: string, all
     playRandomSound(returnedSounds, allPlayers);
 }
 
-export function findSoundSet(actor: ActorPF2e) {
+export function findSoundSet(actor: ActorPF2e): SoundSet | null {
     // Check if flag has been set for Actor.
     const chosenSoundSet = actor.flags?.[MODULE_ID]?.soundset as string;
     if (chosenSoundSet) {
@@ -122,11 +123,11 @@ export function findSoundSet(actor: ActorPF2e) {
     return null;
 }
 
-function findSoundSetByScoring(actor: ActorPF2e) {
+function findSoundSetByScoring(actor: ActorPF2e): SoundSet | null {
     const scoredSoundSets = scoreSoundSets(actor);
 
     let highestScore = 1;
-    let soundsWithHighestValue = [];
+    let soundsWithHighestValue: SoundSet[] = [];
 
     for (let [soundSet, score] of scoredSoundSets) {
         if (score > highestScore) {
@@ -145,8 +146,8 @@ function findSoundSetByScoring(actor: ActorPF2e) {
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
 
-function scoreSoundSets(actor: ActorPF2e) {
-    const soundSetScores = new Map();
+function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
+    const soundSetScores = new Map<SoundSet, number>();
     let traits = extractTraits(actor);
     let creatureSize = extractSize(actor);
 
@@ -170,7 +171,6 @@ function scoreSoundSets(actor: ActorPF2e) {
 
         // Size adjustment
         if (score > 0 && soundSet.size != -1 && creatureSize != -1) {
-            logd("creaturesize=" + creatureSize);
             let scoreAdj = (2 - Math.abs(creatureSize - soundSet.size)) / 10;
             score += scoreAdj;
         }
@@ -181,7 +181,7 @@ function scoreSoundSets(actor: ActorPF2e) {
     return soundSetScores;
 }
 
-function findSoundSetByCreatureName(creatureName: string) {
+function findSoundSetByCreatureName(creatureName: string): SoundSet | null {
     for (const [, soundSet] of Object.entries(soundsDatabase)) {
         if (soundSet.creatures?.includes(creatureName)) {
             logd("Exact Match found for " + creatureName);
@@ -209,7 +209,7 @@ function getSoundsOfType(soundSet: SoundSet, soundType: string): string[] {
     }
 }
 
-function extractTraits(actor: ActorPF2e) {
+function extractTraits(actor: ActorPF2e): string[] {
     const rollOptions = actor.flags.pf2e.rollOptions.all;
     const traits = [];
     for (const key in rollOptions) {
@@ -229,7 +229,7 @@ function extractTraits(actor: ActorPF2e) {
     return traits;
 }
 
-function getGenderFromBlurb(actor: ActorPF2e) {
+function getGenderFromBlurb(actor: ActorPF2e): "female" | "male" | null {
     const blurb = isNPC(actor) ? actor?.system?.details?.blurb : null;
     if (!blurb) {
         return null;
@@ -249,7 +249,7 @@ function getGenderFromBlurb(actor: ActorPF2e) {
     return null;
 }
 
-function getGenderFromPronouns(actor: ActorPF2e) {
+function getGenderFromPronouns(actor: ActorPF2e): "female" | "male" | null {
     const pronouns = isCharacter(actor) ? actor?.system?.details?.gender?.value : null;
     if (!pronouns) {
         return null;
@@ -286,11 +286,11 @@ function extractSize(actor: ActorPF2e): number {
     return -1;
 }
 
-function playRandomSound(sounds: string[], allPlayers: boolean) {
+function playRandomSound(sounds: string[], allPlayers: boolean): void {
     playSound(sounds[Math.floor(Math.random() * sounds.length)], allPlayers);
 }
 
-function playSound(sound: string, allPlayers: boolean) {
+function playSound(sound: string, allPlayers: boolean): void {
     logd(`sound to play: ${sound}`);
     // @ts-ignore
     foundry.audio.AudioHelper.play({

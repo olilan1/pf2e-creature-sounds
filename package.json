@@ -8,8 +8,8 @@
     "@eslint/js": "^9.13.0",
     "@types/jquery": "^3.5.32",
     "eslint": "^9.13.0",
+    "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e",
     "globals": "^15.11.0",
-    "vite": "^5.4.10",
-    "foundry-pf2e": "github:7H3LaughingMan/foundry-pf2e"
+    "vite": "^5.4.10"
   }
 }

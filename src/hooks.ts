@@ -44,7 +44,7 @@ function getMessageType(message: ChatMessagePF2e) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
 }
 
-function hook(func: Function, ...args: any[]) {
+function hook(func: Function, ...args: any[]): HookRunner {
     return new HookRunner(func, ...args);
 }
 
@@ -59,7 +59,7 @@ class HookRunner {
         this.shouldRun = true;
     }
 
-    ifEnabled(...settings: string[]) {
+    ifEnabled(...settings: string[]): this {
         for (const setting of settings) {
             if (!getSetting(setting)) {
                 this.shouldRun = false;
@@ -68,14 +68,14 @@ class HookRunner {
         return this;
     }
 
-    ifGM() {
+    ifGM(): this {
         if (!game.user.isGM) {
             this.shouldRun = false;
         }
         return this;
     }
 
-    ifMessagePoster() {
+    ifMessagePoster(): this {
         const message = this.args[0];
         if (message.constructor.name != "ChatMessagePF2e") {
             throw new Error("First arg is not ChatMessagePF2e");
@@ -86,7 +86,7 @@ class HookRunner {
         return this;
     }
 
-    run() {
+    run(): void {
         if (this.shouldRun) {
             this.func(...this.args);
         }

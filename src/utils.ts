@@ -7,7 +7,7 @@ export function delay(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-export function getHashCode(str: string) {
+export function getHashCode(str: string): number {
     let hash = 0;
     if (str.length === 0) return hash;
 
@@ -20,7 +20,7 @@ export function getHashCode(str: string) {
     return hash;
 }
 
-export function logd(message: any) {
+export function logd(message: any): void {
     if (getSetting(SETTINGS.DEBUG_LOGGING)) {
         console.log(message);
     }

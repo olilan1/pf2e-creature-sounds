@@ -10,7 +10,7 @@ export const SETTINGS = {
     DEBUG_LOGGING: "debug_logging"
 };
 
-export function registerSettings() {
+export function registerSettings(): void {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS, {
         name: "Creature sounds",
         hint: "Enable creature-specific sounds",
