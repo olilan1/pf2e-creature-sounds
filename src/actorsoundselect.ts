@@ -10,7 +10,11 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     actor: ActorPF2e;
 
     constructor(actor: ActorPF2e) {
-        super({});
+        super({
+            window: {
+                title: "Creature Sounds: " + actor.name
+            }
+        });
         this.actor = actor;
     }
 
