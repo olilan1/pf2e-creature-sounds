@@ -51,7 +51,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        // @ts-expect-error (this.actor is ok)
+        // @ts-expect-error (EventTarget.value is ok)
         await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
         this.render();
     }

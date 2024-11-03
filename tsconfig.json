@@ -18,6 +18,7 @@
         "allowImportingTsExtensions": true,
         "strict": true,
         "sourceMap": true,
+        "skipLibCheck": true,
 
         // Code checking stuff
         "noFallthroughCasesInSwitch": true,
