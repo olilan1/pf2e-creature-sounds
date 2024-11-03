@@ -102,7 +102,7 @@ export function findSoundSet(actor: ActorPF2e): SoundSet | null {
         }
     }
 
-    // Check for exact name match first.
+    // Check for exact name match.
     let soundSet = findSoundSetByCreatureName(actor.name);
     if (soundSet) {
         return soundSet;

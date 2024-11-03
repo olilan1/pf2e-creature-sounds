@@ -2,15 +2,15 @@ import { findSoundSet, getNameOptions, NO_SOUND_SET, playSoundForCreature } from
 import { MODULE_ID } from "./utils.ts";
 import { getSetting, SETTINGS } from "./settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
-import { ApplicationConfiguration, ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
+import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
 export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV2) {
     actor: ActorPF2e;
 
-    constructor(actor: ActorPF2e, options: Partial<ApplicationConfiguration>) {
-        super(options);
+    constructor(actor: ActorPF2e) {
+        super({});
         this.actor = actor;
     }
 

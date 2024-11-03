@@ -38,7 +38,7 @@ Hooks.on("getCreatureSheetPF2eHeaderButtons",
         icon: "fas fa-volume-up",
         label: "Sounds",
         onclick: () => {
-            new ActorSoundSelectApp(actor, {}).render(true);
+            new ActorSoundSelectApp(actor).render(true);
         }
     });
 });
