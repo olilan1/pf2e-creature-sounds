@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES2022",
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
         "lib": [
@@ -17,12 +17,14 @@
         "noEmit": true,
         "allowImportingTsExtensions": true,
         "strict": true,
+        "sourceMap": true,
 
         // Code checking stuff
         "noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
 		"noUnusedLocals": true,
-		"noUnusedParameters": true
+		"noUnusedParameters": true,
+        "forceConsistentCasingInFileNames": true
     }
 }

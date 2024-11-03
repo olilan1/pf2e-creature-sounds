@@ -1,6 +1,6 @@
 import { ActorPF2e, ChatMessagePF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
-import { getHashCode, logd, hasKey, isNPC, isCharacter, MODULE_ID } from "./utils.ts";
+import { getHashCode, logd, isNPC, isCharacter, MODULE_ID } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json';
 
 interface SoundSet {
@@ -31,9 +31,13 @@ const soundsDatabase: SoundDatabase = Object.fromEntries(
         ])
 );
 
+type SoundType = "attack" | "hurt" | "death";
+
+// Score values
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
+
 export const NO_SOUND_SET = "none";
 const NO_SOUND_SET_DISPLAY_NAME = "--- no sound ---";
 
@@ -45,46 +49,36 @@ export function getNameOptions(): Record<string, string> {
     return Object.fromEntries(sortedArray)
 }
 
-export function creatureSoundOnDamage(actor: ActorPF2e, options: object): void {
-    if (actor.type === 'character' && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
+export function playSoundForCreatureOnDamage(actor: ActorPF2e): void {
+    if (actor.type === "character" && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
-        return;
-    }
-    if (!("damageTaken" in options)) {
-        // Not a damage update.
-        return;
-    }
-    if ((options.damageTaken as number) <= 0) {
-        // Damage is not positive.
         return;
     }
 
     const soundType = (actor.system.attributes.hp?.value === 0) ? "death" : "hurt";
-    playRandomMatchingSound(actor, soundType);
+    playSoundForCreature(actor, soundType);
 }
 
-export function creatureSoundOnAttack(message: ChatMessagePF2e): void {
-    if (message.flags.pf2e.context?.type !== 'attack-roll') {
-        // Not an attack roll.
-        return;
-    }
-
+export function playSoundForCreatureOnAttack(message: ChatMessagePF2e): void {
     if (!message.speaker.token) {
         return;
     }
     const attackingToken = canvas.scene?.tokens.get(message.speaker.token);
-    const attackingActor = attackingToken!.actor;
-    if (attackingActor!.type === 'character'
+    const attackingActor = attackingToken?.actor;
+    if (!attackingActor) {
+        return;
+    }
+    if (attackingActor.type === "character"
         && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
     }
 
-    playRandomMatchingSound(attackingActor!, "attack");
+    playSoundForCreature(attackingActor, "attack");
 }
 
-export function playRandomMatchingSound(
-        actor: ActorPF2e, soundType: string, allPlayers = true): void {
+export function playSoundForCreature(
+        actor: ActorPF2e, soundType: SoundType, allPlayers = true): void {
     const soundSet = findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
@@ -103,7 +97,7 @@ export function findSoundSet(actor: ActorPF2e): SoundSet | null {
         if (chosenSoundSet === NO_SOUND_SET) {
             return null;
         }
-        if (hasKey(soundsDatabase, chosenSoundSet)) {
+        if (chosenSoundSet in soundsDatabase) {
             return soundsDatabase[chosenSoundSet];
         }
     }
@@ -191,17 +185,17 @@ function findSoundSetByCreatureName(creatureName: string): SoundSet | null {
     return null;
 }
 
-function getSoundsOfType(soundSet: SoundSet, soundType: string): string[] {
+function getSoundsOfType(soundSet: SoundSet, soundType: SoundType): string[] {
     switch (soundType) {
-        case 'hurt':
+        case "hurt":
             return soundSet.hurt_sounds;
-        case 'death':
+        case "death":
             if (soundSet.death_sounds.length != 0) {
                 return soundSet.death_sounds;
             }
             logd("No death sounds found, so using hurt sound as fallback");
             return soundSet.hurt_sounds;
-        case 'attack':
+        case "attack":
             return soundSet.attack_sounds;
         default:
             logd(`No sounds found for soundType=${soundType}`);

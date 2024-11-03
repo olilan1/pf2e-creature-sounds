@@ -1,5 +1,5 @@
 import { registerSettings, getSetting, SETTINGS } from "./settings.ts"
-import { creatureSoundOnDamage, creatureSoundOnAttack } from "./creaturesounds.ts"
+import { playSoundForCreatureOnDamage, playSoundForCreatureOnAttack } from "./creaturesounds.ts"
 import { ActorSoundSelectApp } from "./actorsoundselect.ts";
 import { ActorPF2e, ChatMessagePF2e, CreaturePF2e, CreatureSheetPF2e } from "foundry-pf2e";
 
@@ -7,17 +7,19 @@ Hooks.on("init", () => {
     registerSettings();
 });
 
-Hooks.on("updateActor", (actor: ActorPF2e, _changed: object, options: object) => {
-    hook(creatureSoundOnDamage, actor, options)
-            .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_HURT_SOUNDS)
-            .ifGM()
-            .run();
+Hooks.on("updateActor", (actor: ActorPF2e, _changed: object, updateDetails: object) => {
+    if ("damageTaken" in updateDetails && (updateDetails.damageTaken as number) > 0) {
+        hook(playSoundForCreatureOnDamage, actor)
+                .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_HURT_SOUNDS)
+                .ifGM()
+                .run();
+    }
 });
 
 Hooks.on("createChatMessage", (message: ChatMessagePF2e) => {
     switch (getMessageType(message)) {
         case "attack-roll":
-            hook(creatureSoundOnAttack, message)
+            hook(playSoundForCreatureOnAttack, message)
                     .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_ATTACK_SOUNDS)
                     .ifGM()
                     .run();
@@ -25,7 +27,8 @@ Hooks.on("createChatMessage", (message: ChatMessagePF2e) => {
     }
 });
 
-Hooks.on("getCreatureSheetPF2eHeaderButtons", (actorSheet: CreatureSheetPF2e<CreaturePF2e>, buttons) => { 
+Hooks.on("getCreatureSheetPF2eHeaderButtons",
+        (actorSheet: CreatureSheetPF2e<CreaturePF2e>, buttons) => { 
     const actor = actorSheet.object;
     if (!actor.testUserPermission(game.user, CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER)) {
         return;
@@ -44,19 +47,16 @@ function getMessageType(message: ChatMessagePF2e) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
-function hook(func: Function, ...args: unknown[]): HookRunner {
-    return new HookRunner(func, ...args);
+function hook<T extends unknown[]>(func: (...args: T) => void, ...args: T): HookRunner<T> {
+    return new HookRunner<T>(func, ...args);
 }
 
-class HookRunner {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
-    func: Function;
-    args: unknown[];
+class HookRunner<T extends unknown[]> {
+    func: (...args: T) => void;
+    args: T;
     shouldRun: boolean;
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
-    constructor(func: Function, ...args: unknown[]) {
+    constructor(func: (...args: T) => void, ...args: T) {
         this.func = func;
         this.args = args;
         this.shouldRun = true;

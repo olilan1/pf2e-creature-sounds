@@ -1,4 +1,4 @@
-import { findSoundSet, getNameOptions, NO_SOUND_SET, playRandomMatchingSound } from "./creaturesounds.ts";
+import { findSoundSet, getNameOptions, NO_SOUND_SET, playSoundForCreature } from "./creaturesounds.ts";
 import { MODULE_ID } from "./utils.ts";
 import { getSetting, SETTINGS } from "./settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
@@ -61,16 +61,16 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     static playAttackSound() {
         // @ts-expect-error (this.actor is ok)
-        playRandomMatchingSound(this.actor, "attack", false);
+        playSoundForCreature(this.actor, "attack", false);
     }
 
     static playHurtSound() {
         // @ts-expect-error (this.actor is ok)
-        playRandomMatchingSound(this.actor, "hurt", false);
+        playSoundForCreature(this.actor, "hurt", false);
     }
 
     static playDeathSound() {
         // @ts-expect-error (this.actor is ok)
-        playRandomMatchingSound(this.actor, "death", false);
+        playSoundForCreature(this.actor, "death", false);
     }
 }
