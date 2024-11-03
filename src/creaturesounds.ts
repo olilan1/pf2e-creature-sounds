@@ -27,7 +27,7 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
     Object.entries(importedDb.default)
         .map(([key, value]) => [
             key,
-            { ...value, name: key }, // Add the new field here
+            { ...value, name: key },
         ])
 );
 
