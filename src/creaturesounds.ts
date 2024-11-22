@@ -3,17 +3,17 @@ import { getSetting, SETTINGS } from "./settings.ts"
 import { getHashCode, logd, isNPC, isCharacter, MODULE_ID } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json';
 
-interface SoundSet {
+export interface SoundSet {
     name: string;
     display_name: string;
-    notes: string;
+    notes?: string;
     hurt_sounds: string[];
     attack_sounds: string[];
     death_sounds: string[];
-    creatures: string[];
-    keywords: string[];
-    traits: string[];
-    size: number;
+    creatures?: string[];
+    keywords?: string[];
+    traits?: string[];
+    size?: number;
 }
   
 interface SoundDatabase {

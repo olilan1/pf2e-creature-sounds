@@ -1,0 +1,11 @@
+<div>
+    <input type="text" name="sound_set_name">
+    <input type="submit" value="What's in the box?!">
+    <div>
+        {{#each customSoundSetNames}}
+        <span data-action="select_sound_set" data-key="{{this}}">
+            {{this}}
+        </span><p>
+        {{/each}}
+    </div>
+</div>
