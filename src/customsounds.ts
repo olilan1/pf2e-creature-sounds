@@ -23,7 +23,12 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             closeOnSubmit: true
         },
         window: {
-            title: "Custom Sounds"
+            title: "Custom Sounds",
+            resizable: true,
+        },
+        position: {
+            width: 900,
+            height: 700
         },
         actions: {
             select_sound_set: CustomSoundsApp.selectSoundSet,
