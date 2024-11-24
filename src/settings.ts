@@ -18,9 +18,9 @@ export const SETTINGS = {
 export function registerSettings(): void {
     game.settings.registerMenu(SETTINGS_NAMESPACE, "CustomSoundsApp", {
         name: "Custom Sounds Sets",
-        label: "Manage Custom Sounds Sets",
+        label: "Manage Custom Sound Sets",
         hint: "Create your own sound sets to apply to creatures",
-        icon: "fa-solid fa-music",
+        icon: "fa-solid fa-spaghetti-monster-flying",
         // @ts-expect-error (type is ok)
         type: CustomSoundsApp,
         restricted: true,

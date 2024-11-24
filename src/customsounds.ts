@@ -23,7 +23,8 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             closeOnSubmit: true
         },
         window: {
-            title: "Custom Sounds",
+            title: "PF2e Creature Sounds: Custom Sound Sets",
+            icon: "fa-solid fa-spaghetti-monster-flying",
             resizable: true,
         },
         position: {
