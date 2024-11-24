@@ -14,7 +14,8 @@
       "dist/pf2e-creature-sounds.js"
     ],
     "styles": [
-      "styles/styles.css"
+      "styles/customsounds.css",
+      "styles/actorsoundselect.css"
     ],
     "compatibility": {
       "minimum": "12",

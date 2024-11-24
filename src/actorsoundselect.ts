@@ -28,7 +28,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         id: "creature-sounds-app",
         tag: "form",
         window: {
-            title: "Creature Sounds"
+            title: "Creature Sounds",
+            icon: "fas fa-volume-up",
         },
         actions: {
             play_attack_sound: ActorSoundSelectApp.playAttackSound,

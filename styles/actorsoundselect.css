@@ -1,0 +1,40 @@
+/* The "Sound Set" label. */
+.selected-sound-set-label {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Container for the sound set drop-down box and revert button. */
+.sound-set-selector-container {
+    display: flex;
+    gap: 8px;
+    width: 20rem;
+}
+
+/* The button to revert to default sound set. */
+.revert-button {
+    flex-grow: 0;
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Style for an icon that is not followed by text. */
+.icon-only {
+    margin-right: 0px !important;
+}
+
+/* Container for the buttons to play sounds of different types. */
+.play-buttons-container {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+/* One of the buttons to play a sound of a given type. */
+.play-button {
+    flex: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+}

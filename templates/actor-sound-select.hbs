@@ -1,12 +1,16 @@
 <div>
-  Sound set:
-  <select id="myDropdown" {{#unless canEdit}} disabled {{/unless}}>
-    {{selectOptions dropDownNames selected=currentSoundSet}}
-  </select>
-  <div style="display:flex">
-    <button data-action="play_attack_sound">Attack</button>
-    <button data-action="play_hurt_sound">Hurt</button>
-    <button data-action="play_death_sound">Death</button>
-  </div>
-  <button data-action="default_sound" {{#unless canEdit}} disabled {{/unless}}>Revert to Default Sound</button>
+    <div class="selected-sound-set-label">Sound Set</div>
+    <div class="sound-set-selector-container">
+        <select id="myDropdown" {{#unless canEdit}} disabled {{/unless}}>
+            {{selectOptions dropDownNames selected=currentSoundSet}}
+        </select>
+        <button class="revert-button" data-action="default_sound" data-tooltip="Revert to default" {{#unless canEdit}} disabled {{/unless}}>
+            <i class="fa-solid fa-arrow-rotate-left icon-only"></i>
+        </button>
+    </div>
+    <div class="play-buttons-container">
+        <button class="play-button" data-action="play_attack_sound"><i class="fa-solid fa-burst"></i> Attack</button>
+        <button class="play-button" data-action="play_hurt_sound"><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
+        <button class="play-button" data-action="play_death_sound"><i class="fa-solid fa-skull"></i> Death</button>
+    </div>
 </div>
