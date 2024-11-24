@@ -8,6 +8,7 @@
     --creature-sounds-shadow-color: var(--color-dark-3);
 }
 
+/* Container for the whole custom sounds UI. */
 .customs-container {
     display: flex;
     gap: 1rem;
@@ -17,6 +18,8 @@
     padding-bottom: 0.5rem;
 }
 
+/* Left column for the custom sounds UI, containing the list of sound sets and the create sound set
+   button. */
 .customs-left-column {
     display: flex;
     flex-direction: column;
@@ -25,6 +28,7 @@
     padding-left: 0.5rem;
 }
 
+/* Right column for the custom sounds UI, containing the details for the selected sound set. */
 .customs-right-column {
     display: flex;
     flex-direction: column;
@@ -34,7 +38,15 @@
     min-width: 100px;
 }
 
-.sound-sets-list {
+/* Applied to all boxes in the custom sounds UI. */
+.customs-box {
+    border-radius: 4px;
+    border: 1px solid var(--creature-sounds-border-color);
+    box-shadow: inset 0 0 4px 0 var(--creature-sounds-shadow-color);
+}
+
+/* The box containing all the custom sound sets. */
+.sound-set-box {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -42,17 +54,14 @@
     gap: 8px;
 }
 
-.add-sound-set-button {
-    align-self: center;
-    white-space: nowrap;
-}
-
+/* Container for a sound set entry, with text and a delete button. */
 .sound-set-entry {
     display: flex;
     align-items: center;
     padding: 4px;
 }
 
+/* Text showing the name of a custom sound set. */
 .sound-set-entry-text {
     flex-grow: 1;
 }
@@ -67,16 +76,13 @@
     font-weight: bold;
 }
 
-.title {
-    font-weight: bold;
+/* Button to add a new custom sound set. */
+.sound-set-add-button {
+    align-self: center;
+    white-space: nowrap;
 }
 
-.customs-box {
-    border-radius: 4px;
-    border: 1px solid var(--creature-sounds-border-color);
-    box-shadow: inset 0 0 4px 0 var(--creature-sounds-shadow-color);
-}
-
+/* Container for the label and text input box for the custom sound set name. */
 .sound-set-name-container {
     display: flex;
     align-items: center;
@@ -86,16 +92,19 @@
     margin-right: 8px;
 }
 
+/* Label for the input box to enter the sound set name.  */
 .sound-set-name-label {
     font-weight: bold;
     white-space: nowrap;
 }
 
+/* Text input box to enter the sound set name. */
 .sound-set-name-input {
     flex-grow: 1;
     padding-left: 4px;
 }
 
+/* Container for the label for a type of sound, and the add button. */
 .sound-type-header {
     display: flex;
     margin-top: 16px;
@@ -105,12 +114,14 @@
     align-items: end;
 }
 
+/* Text showing the sound type name, e.g. "Attack sounds". */
 .sound-type-header-text {
     flex-grow: 1;
     font-weight: bold;
 }
 
-.sound-type-content {
+/* Box containing sounds for a particular type. */
+.sound-type-box {
     display: flex;
     flex-basis: 30px;
     flex-direction: column;
@@ -119,18 +130,21 @@
     overflow: hidden;
 }
 
-.sound-entry {
+/* Container for a specific sound, showing the path and play and delete buttons. */
+.sound-type-entry {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.sound-entry-text {
+/* Text showing the path to a sound file. */
+.sound-type-entry-text {
     flex-grow: 1;
     min-width: 0px;
     overflow: hidden;
 }
 
+/* The plus icon used to add a new sound of a particular type. */
 .plus-icon {
     font-size: 1.6rem;
 }
@@ -139,10 +153,11 @@
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
 
-.custom-icon {
+/* Icons shown inline with entries in boxes, e.g. the delete button next to a sound or sound set. */
+.customs-entry-icon {
     font-size: 1rem;
 }
 
-.custom-icon:hover {
+.customs-entry-icon:hover {
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
