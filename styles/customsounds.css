@@ -38,6 +38,12 @@
     min-width: 100px;
 }
 
+/* Disables Right Column when nothing is selected */
+.customs-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 /* Applied to all boxes in the custom sounds UI. */
 .customs-box {
     border-radius: 4px;
@@ -123,11 +129,10 @@
 /* Box containing sounds for a particular type. */
 .sound-type-box {
     display: flex;
-    flex-basis: 30px;
+    flex-basis: 80px;
     flex-direction: column;
     padding: 8px;
     gap: 8px;
-    overflow: hidden;
 }
 
 /* Container for a specific sound, showing the path and play and delete buttons. */

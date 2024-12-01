@@ -1,121 +1,72 @@
 <div class="customs-container">
   <div class="customs-left-column">
     <div class="sound-set-box customs-box">
+      {{#each customSoundSetNames}}
       <div class="sound-set-entry">
-        <span class="sound-set-entry-text">Lizardman</span>
-        <i class="fa-solid fa-trash customs-entry-icon"></i>
+        <span class="sound-set-entry-text{{#if this.selected}} sound-set-entry-selected{{/if}}"
+          data-action="select_sound_set" data-id="{{this.id}}">
+          {{this.display_name}}
+        </span>
+        <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound_set" data-id="{{this.id}}"
+          data-display_name="{{this.display_name}}"></i>
       </div>
-      <div class="sound-set-entry">
-        <span class="sound-set-entry-text sound-set-entry-selected">Kobold</span>
-        <i class="fa-solid fa-trash customs-entry-icon"></i>
-      </div>
-      <div class="sound-set-entry">
-        <span class="sound-set-entry-text">Sayf</span>
-        <i class="fa-solid fa-trash customs-entry-icon"></i>
-      </div>
+      {{/each}}
     </div>
-    <button class="sound-set-add-button">
-        <i class="fa-solid fa-spaghetti-monster-flying"></i>
-        Create Sound Set
+    <button class="sound-set-add-button" type="button" data-action="create_sound_set">
+      <i class="fa-solid fa-spaghetti-monster-flying"></i>
+      Create Sound Set
     </button>
   </div>
-  <div class="customs-right-column">
+  <div class="customs-right-column{{#if nothingSelected}} customs-disabled{{/if}}">
     <div class="sound-set-name-container">
       <span class="sound-set-name-label">Sound Set Name</span>
-      <input class="sound-set-name-input" type="text" value="Kobold" />
+      <input class="sound-set-name-input" id="name-input" type="text" value="{{selectedSoundSet.display_name}}"
+        data-id="{{selectedSoundSet.id}}" required />
     </div>
-    <div class="sounds-content">
-      <div class="sound-type-header">
-        <span class="sound-type-header-text">Attack Sounds</span>
-        <i class="fa-solid fa-square-plus plus-icon"></i>
+    <div class="sound-type-header">
+      <span class="sound-type-header-text">Attack Sounds</span>
+      <i class="fa-solid fa-square-plus plus-icon" data-action="add_sound" data-type="attack"
+        data-id="{{selectedSoundSet.id}}"></i>
+    </div>
+    <div class="sound-type-box customs-box">
+      {{#each selectedSoundSet.attack_sounds}}
+      <div class="sound-type-entry">
+        <span class="sound-type-entry-text">{{this}}</span>
+        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}"></i>
+        <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound" data-index="{{@index}}"
+          data-type="attack"></i>
       </div>
-      <div class="sound-type-box customs-box">
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound1.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound2.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound3.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound4.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound5.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound6.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound7.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/attacksound8.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
+      {{/each}}
+    </div>
+    <div class="sound-type-header">
+      <span class="sound-type-header-text">Hurt Sounds</span>
+      <i class="fa-solid fa-square-plus plus-icon" data-action="add_sound" data-type="hurt"
+        data-id="{{selectedSoundSet.id}}"></i>
+    </div>
+    <div class="sound-type-box customs-box">
+      {{#each selectedSoundSet.hurt_sounds}}
+      <div class="sound-type-entry">
+        <span class="sound-type-entry-text">{{this}}</span>
+        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}"></i>
+        <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound" data-index="{{@index}}"
+          data-type="hurt"></i>
       </div>
-      <div class="sound-type-header">
-        <span class="sound-type-header-text">Hurt Sounds</span>
-        <i class="fa-solid fa-square-plus plus-icon"></i>
+      {{/each}}
+    </div>
+    <div class="sound-type-header">
+      <span class="sound-type-header-text">Death Sounds</span>
+      <i class="fa-solid fa-square-plus plus-icon" data-action="add_sound" data-type="death"
+        data-id="{{selectedSoundSet.id}}"></i>
+    </div>
+    <div class="sound-type-box customs-box">
+      {{#each selectedSoundSet.death_sounds}}
+      <div class="sound-type-entry">
+        <span class="sound-type-entry-text">{{this}}</span>
+        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}"></i>
+        <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound" data-index="{{@index}}"
+          data-type="death"></i>
       </div>
-      <div class="sound-type-box customs-box">
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/hurtsound3.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-      </div>
-      <div class="sound-type-header">
-        <span class="sound-type-header-text">Death Sounds</span>
-        <i class="fa-solid fa-square-plus plus-icon"></i>
-      </div>
-      <div class="sound-type-box customs-box">
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/deathsound3.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-        <div class="sound-type-entry">
-          <span class="sound-type-entry-text">/path/to/deathsound4.wav</span>
-          <i class="fa-solid fa-play customs-entry-icon"></i>
-          <i class="fa-solid fa-trash customs-entry-icon"></i>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-{{!-- <div>
-    <input type="text" name="sound_set_name">
-    <input type="submit" value="What's in the box?!">
-    <div>
-        {{#each customSoundSetNames}}
-        <span data-action="select_sound_set" data-key="{{this}}">
-            {{this}}
-        </span><p>
-        {{/each}}
-    </div>
-</div> --}}

@@ -1,5 +1,6 @@
 import { ActorPF2e, CharacterPF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
+import { SoundType } from "./creaturesounds.ts";
 
 export const MODULE_ID = "pf2e-creature-sounds";
 
@@ -32,4 +33,15 @@ export function isNPC(obj: ActorPF2e): obj is NPCPF2e {
 
 export function isCharacter(obj: ActorPF2e): obj is CharacterPF2e {
     return obj.type === "character";
+}
+
+export function soundTypeToField(soundType: SoundType) {
+    switch (soundType) {
+        case 'attack':
+            return 'attack_sounds';
+        case 'hurt':
+            return 'hurt_sounds';
+        case 'death':
+            return 'death_sounds';
+    }
 }

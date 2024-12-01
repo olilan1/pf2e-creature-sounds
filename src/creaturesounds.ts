@@ -1,23 +1,23 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
-import { getSetting, SETTINGS } from "./settings.ts"
+import { getCustomSoundSet, getCustomSoundSetNames, getSetting, SETTINGS } from "./settings.ts"
 import { getHashCode, logd, isNPC, isCharacter, MODULE_ID } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json';
 
 export interface SoundSet {
-    name: string;
+    id: string;
     display_name: string;
     notes?: string;
     hurt_sounds: string[];
     attack_sounds: string[];
     death_sounds: string[];
-    creatures?: string[];
-    keywords?: string[];
-    traits?: string[];
-    size?: number;
+    creatures: string[];
+    keywords: string[];
+    traits: string[];
+    size: number;
 }
   
-interface SoundDatabase {
-    [name: string]: SoundSet;
+export interface SoundDatabase {
+    [id: string]: SoundSet;
 }
 
 // Add names to each sound set, and use the declared SoundDatabase and SoundSet types.
@@ -27,11 +27,11 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
     Object.entries(importedDb.default)
         .map(([key, value]) => [
             key,
-            { ...value, name: key },
+            { ...value, id: key },
         ])
 );
 
-type SoundType = "attack" | "hurt" | "death";
+export type SoundType = "attack" | "hurt" | "death";
 
 // Score values
 const KEYWORD_NAME_SCORE = 5;
@@ -46,6 +46,10 @@ export function getNameOptions(): Record<string, string> {
         .map(([key, value]) => [key, value.display_name])
         .sort((a, b) => a[1].localeCompare(b[1]));
     sortedArray.unshift([NO_SOUND_SET, NO_SOUND_SET_DISPLAY_NAME])
+
+    const arrayOfCustomSoundSetNames = 
+        getCustomSoundSetNames().map(obj => [obj.id, "CUSTOM: " + obj.display_name]);
+    sortedArray.push(...arrayOfCustomSoundSetNames)
     return Object.fromEntries(sortedArray)
 }
 
@@ -99,6 +103,10 @@ export function findSoundSet(actor: ActorPF2e): SoundSet | null {
         }
         if (chosenSoundSet in soundDatabase) {
             return soundDatabase[chosenSoundSet];
+        }
+        const customSoundSet = getCustomSoundSet(chosenSoundSet);
+        if (customSoundSet) {
+            return customSoundSet;
         }
     }
 
@@ -286,7 +294,7 @@ function playRandomSound(sounds: string[], allPlayers: boolean): void {
     playSound(sounds[Math.floor(Math.random() * sounds.length)], allPlayers);
 }
 
-function playSound(sound: string, allPlayers: boolean): void {
+export function playSound(sound: string, allPlayers: boolean): void {
     logd(`sound to play: ${sound}`);
     // @ts-expect-error (foundry.audio is ok)
     foundry.audio.AudioHelper.play({

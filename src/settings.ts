@@ -1,7 +1,9 @@
 import { CustomSoundsApp } from "./customsounds.ts";
-import { SoundSet } from "./creaturesounds.ts"
+import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts"
+import { logd, soundTypeToField } from "./utils.ts";
 
 const SETTINGS_NAMESPACE = "pf2e-creature-sounds";
+const CUSTOM_SOUND_SETS = "custom_sound_sets";
 
 export const SETTINGS = {
     CREATURE_SOUNDS: "creatureSounds_enable",
@@ -10,9 +12,7 @@ export const SETTINGS = {
     CREATURE_ATTACK_SOUNDS: "creatureSounds_attack_enable",
     CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
     PLAYERS_CAN_EDIT: "players_can_edit",
-    DEBUG_LOGGING: "debug_logging",
-    CUSTOM_SOUND_SETS: "custom_sound_sets"
-
+    DEBUG_LOGGING: "debug_logging"
 };
 
 export function registerSettings(): void {
@@ -95,12 +95,12 @@ export function registerSettings(): void {
         type: Boolean
     });
 
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CUSTOM_SOUND_SETS, {
+    game.settings.register(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, {
         name: "Custom Sound Sets",
         scope: "world",
-        default: [],
+        default: {},
         config: false,
-        type: Array
+        type: Object
     });
 }
 
@@ -108,10 +108,54 @@ export function getSetting(setting: string) {
     return game.settings.get(SETTINGS_NAMESPACE, setting);
 }
 
-export function getCustomSoundSets(): SoundSet[] {
-    return game.settings.get(SETTINGS_NAMESPACE, SETTINGS.CUSTOM_SOUND_SETS) as SoundSet[];
+function getCustomSoundDatabase(): SoundDatabase {
+    return game.settings.get(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS) as SoundDatabase;
 }
 
-export function setCustomSoundSets(soundSets: SoundSet[]) {
-    game.settings.set(SETTINGS_NAMESPACE, SETTINGS.CUSTOM_SOUND_SETS, soundSets);
+function setCustomSoundDatabase(soundSets: SoundDatabase) {
+    game.settings.set(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, soundSets);
+}
+
+export function updateCustomSoundSet(soundSet: SoundSet) {
+    const currentSoundDatabase = getCustomSoundDatabase();
+    currentSoundDatabase[soundSet.id] = soundSet;
+    setCustomSoundDatabase(currentSoundDatabase);
+}
+
+export function getCustomSoundSet(soundSetId: string) {
+    const currentSoundDatabase = getCustomSoundDatabase();
+    return currentSoundDatabase[soundSetId];
+}
+
+export function deleteCustomSoundSet(soundSetId: string) {
+    const currentSoundDatabase = getCustomSoundDatabase();
+    delete currentSoundDatabase[soundSetId];
+    setCustomSoundDatabase(currentSoundDatabase);  
+}
+
+export function getCustomSoundSetNames() {
+    const result = Object.entries(getCustomSoundDatabase())
+        .map(([key, value]) => ({id: key, display_name: value.display_name}));
+    logd(result);
+    return result;
+}
+
+export function updateCustomSoundSetDisplayName(soundSetId: string, displayName: string) {
+    const currentSoundSet = getCustomSoundSet(soundSetId);
+    currentSoundSet.display_name = displayName;
+    updateCustomSoundSet(currentSoundSet);
+}
+
+export function addSoundToCustomSoundSet(soundSetId: string, soundType: SoundType, path: string) {
+    const currentSoundSet = getCustomSoundSet(soundSetId);
+    const soundTypeField = soundTypeToField(soundType);
+    currentSoundSet[soundTypeField].push(path);
+    updateCustomSoundSet(currentSoundSet);
+}
+
+export function deleteSoundFromCustomSoundSet(soundSetId: string, soundType: SoundType, index: number) {
+    const currentSoundSet = getCustomSoundSet(soundSetId);
+    const soundTypeField = soundTypeToField(soundType);
+    currentSoundSet[soundTypeField].splice(index, 1);
+    updateCustomSoundSet(currentSoundSet);
 }
