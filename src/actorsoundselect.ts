@@ -28,7 +28,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         id: "creature-sounds-app",
         tag: "form",
         window: {
-            title: "Creature Sounds"
+            title: "Creature Sounds",
+            icon: "fas fa-volume-up",
         },
         actions: {
             play_attack_sound: ActorSoundSelectApp.playAttackSound,
@@ -39,7 +40,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     override async _prepareContext() {
-        const currentSoundSet = findSoundSet(this.actor)?.name ?? NO_SOUND_SET;
+        const currentSoundSet = findSoundSet(this.actor)?.id ?? NO_SOUND_SET;
         const dropDownNames = getNameOptions();
         const canEdit = this.actor.sheet.isEditable
                 && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
