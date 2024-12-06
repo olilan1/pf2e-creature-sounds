@@ -2,7 +2,7 @@
     <div class="selected-sound-set-label">Sound Set</div>
     <div class="sound-set-selector-container">
         <select id="myDropdown" {{#unless canEdit}} disabled {{/unless}}>
-            {{selectOptions dropDownNames selected=currentSoundSet}}
+            {{selectOptions dropDownNames selected=currentSoundSet valueAttr="id" labelAttr="display_name"}}
         </select>
         <button class="revert-button" data-action="default_sound" data-tooltip="Revert to default" {{#unless canEdit}} disabled {{/unless}}>
             <i class="fa-solid fa-arrow-rotate-left icon-only"></i>

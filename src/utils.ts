@@ -1,6 +1,6 @@
 import { ActorPF2e, CharacterPF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
-import { SoundType } from "./creaturesounds.ts";
+import { SoundDatabase, SoundType } from "./creaturesounds.ts";
 
 export const MODULE_ID = "pf2e-creature-sounds";
 
@@ -44,4 +44,10 @@ export function soundTypeToField(soundType: SoundType) {
         case 'death':
             return 'death_sounds';
     }
+}
+
+export function namesFromSoundDatabase(soundDb: SoundDatabase) {
+    const result = Object.entries(soundDb)
+        .map(([key, value]) => ({id: key, display_name: value.display_name}));
+    return result;
 }

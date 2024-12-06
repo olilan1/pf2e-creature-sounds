@@ -1,9 +1,6 @@
-import { CustomSoundsApp } from "./customsounds.ts";
-import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts"
-import { logd, soundTypeToField } from "./utils.ts";
+import { CustomSoundsApp } from "./ui/customsounds.ts";
 
-const SETTINGS_NAMESPACE = "pf2e-creature-sounds";
-const CUSTOM_SOUND_SETS = "custom_sound_sets";
+export const SETTINGS_NAMESPACE = "pf2e-creature-sounds";
 
 export const SETTINGS = {
     CREATURE_SOUNDS: "creatureSounds_enable",
@@ -94,68 +91,8 @@ export function registerSettings(): void {
         default: false,
         type: Boolean
     });
-
-    game.settings.register(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, {
-        name: "Custom Sound Sets",
-        scope: "world",
-        default: {},
-        config: false,
-        type: Object
-    });
 }
 
 export function getSetting(setting: string) {
     return game.settings.get(SETTINGS_NAMESPACE, setting);
-}
-
-function getCustomSoundDatabase(): SoundDatabase {
-    return game.settings.get(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS) as SoundDatabase;
-}
-
-function setCustomSoundDatabase(soundSets: SoundDatabase) {
-    game.settings.set(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, soundSets);
-}
-
-export function updateCustomSoundSet(soundSet: SoundSet) {
-    const currentSoundDatabase = getCustomSoundDatabase();
-    currentSoundDatabase[soundSet.id] = soundSet;
-    setCustomSoundDatabase(currentSoundDatabase);
-}
-
-export function getCustomSoundSet(soundSetId: string) {
-    const currentSoundDatabase = getCustomSoundDatabase();
-    return currentSoundDatabase[soundSetId];
-}
-
-export function deleteCustomSoundSet(soundSetId: string) {
-    const currentSoundDatabase = getCustomSoundDatabase();
-    delete currentSoundDatabase[soundSetId];
-    setCustomSoundDatabase(currentSoundDatabase);  
-}
-
-export function getCustomSoundSetNames() {
-    const result = Object.entries(getCustomSoundDatabase())
-        .map(([key, value]) => ({id: key, display_name: value.display_name}));
-    logd(result);
-    return result;
-}
-
-export function updateCustomSoundSetDisplayName(soundSetId: string, displayName: string) {
-    const currentSoundSet = getCustomSoundSet(soundSetId);
-    currentSoundSet.display_name = displayName;
-    updateCustomSoundSet(currentSoundSet);
-}
-
-export function addSoundToCustomSoundSet(soundSetId: string, soundType: SoundType, path: string) {
-    const currentSoundSet = getCustomSoundSet(soundSetId);
-    const soundTypeField = soundTypeToField(soundType);
-    currentSoundSet[soundTypeField].push(path);
-    updateCustomSoundSet(currentSoundSet);
-}
-
-export function deleteSoundFromCustomSoundSet(soundSetId: string, soundType: SoundType, index: number) {
-    const currentSoundSet = getCustomSoundSet(soundSetId);
-    const soundTypeField = soundTypeToField(soundType);
-    currentSoundSet[soundTypeField].splice(index, 1);
-    updateCustomSoundSet(currentSoundSet);
 }

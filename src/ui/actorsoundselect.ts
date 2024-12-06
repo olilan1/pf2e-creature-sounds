@@ -1,10 +1,13 @@
-import { findSoundSet, getNameOptions, NO_SOUND_SET, playSoundForCreature } from "./creaturesounds.ts";
-import { MODULE_ID } from "./utils.ts";
-import { getSetting, SETTINGS } from "./settings.ts";
+import { findSoundSet, getDbSoundSetNames, NO_SOUND_SET, playSoundForCreature } from "../creaturesounds.ts";
+import { MODULE_ID } from "../utils.ts";
+import { getSetting, SETTINGS } from "../settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
 import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
+import { getCustomSoundSetNames } from "../customsoundsdb.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
+
+const NO_SOUND_SET_DISPLAY_NAME = "--- no sound ---";
 
 export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV2) {
     actor: ActorPF2e;
@@ -41,7 +44,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     override async _prepareContext() {
         const currentSoundSet = findSoundSet(this.actor)?.id ?? NO_SOUND_SET;
-        const dropDownNames = getNameOptions();
+        const dropDownNames = this.buildNameOptions();
         const canEdit = this.actor.sheet.isEditable
                 && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
         return {
@@ -73,5 +76,15 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     static playDeathSound(this: ActorSoundSelectApp) {
         playSoundForCreature(this.actor, "death", false);
+    }
+
+    buildNameOptions(): { id: string; display_name: string; }[] {
+        const sortedNames = getDbSoundSetNames()
+            .sort((a, b) => a.display_name.localeCompare(b.display_name));
+        const customNames = getCustomSoundSetNames()
+            .map(obj => ( { id: obj.id, display_name: "CUSTOM: " + obj.display_name } ));
+        sortedNames.push(...customNames);
+        sortedNames.unshift({ id: NO_SOUND_SET, display_name: NO_SOUND_SET_DISPLAY_NAME });
+        return sortedNames;
     }
 }

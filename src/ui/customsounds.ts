@@ -1,5 +1,5 @@
-import { playSound, SoundSet, SoundType } from "./creaturesounds.ts";
-import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, deleteSoundFromCustomSoundSet } from "./settings.ts";
+import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
+import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, deleteSoundFromCustomSoundSet } from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -144,9 +144,9 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             window: { title: "Confirm Delete" },
             content: `<p>Are you sure you want to delete ${soundSetDisplayName}?</p>`,
             modal: true
-          })
+        });
         
-        if (confirmed){ 
+        if (confirmed) {
             deleteCustomSoundSet(target.dataset.id!);
             this.render();
         }

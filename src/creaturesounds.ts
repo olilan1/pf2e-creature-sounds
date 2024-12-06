@@ -1,7 +1,8 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
-import { getCustomSoundSet, getCustomSoundSetNames, getSetting, SETTINGS } from "./settings.ts"
-import { getHashCode, logd, isNPC, isCharacter, MODULE_ID } from "./utils.ts";
+import { getSetting, SETTINGS } from "./settings.ts"
+import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json';
+import { getCustomSoundSet } from "./customsoundsdb.ts";
 
 export interface SoundSet {
     id: string;
@@ -20,6 +21,8 @@ export interface SoundDatabase {
     [id: string]: SoundSet;
 }
 
+export type SoundType = "attack" | "hurt" | "death";
+
 // Add names to each sound set, and use the declared SoundDatabase and SoundSet types.
 // For some reason importedDb directly includes only the names without spaces. importedDb.default
 // includes everything.
@@ -31,26 +34,15 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
         ])
 );
 
-export type SoundType = "attack" | "hurt" | "death";
-
 // Score values
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
 
 export const NO_SOUND_SET = "none";
-const NO_SOUND_SET_DISPLAY_NAME = "--- no sound ---";
 
-export function getNameOptions(): Record<string, string> {
-    const sortedArray = Object.entries(soundDatabase)
-        .map(([key, value]) => [key, value.display_name])
-        .sort((a, b) => a[1].localeCompare(b[1]));
-    sortedArray.unshift([NO_SOUND_SET, NO_SOUND_SET_DISPLAY_NAME])
-
-    const arrayOfCustomSoundSetNames = 
-        getCustomSoundSetNames().map(obj => [obj.id, "CUSTOM: " + obj.display_name]);
-    sortedArray.push(...arrayOfCustomSoundSetNames)
-    return Object.fromEntries(sortedArray)
+export function getDbSoundSetNames(): { id: string; display_name: string; }[] {
+    return namesFromSoundDatabase(soundDatabase);
 }
 
 export function playSoundForCreatureOnDamage(actor: ActorPF2e): void {
@@ -292,7 +284,8 @@ function playRandomSound(sounds: string[], allPlayers: boolean): void {
 export function playSound(sound: string, allPlayers: boolean): void {
     logd(`sound to play: ${sound}`);
 
-    AudioHelper.play({
+    // @ts-expect-error (foundry.audio is ok)
+    foundry.audio.AudioHelper.play({
         src: sound,
         volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME) as number,
         autoplay: true,

@@ -1,10 +1,12 @@
 import { registerSettings, getSetting, SETTINGS } from "./settings.ts"
 import { playSoundForCreatureOnDamage, playSoundForCreatureOnAttack } from "./creaturesounds.ts"
-import { ActorSoundSelectApp } from "./actorsoundselect.ts";
+import { ActorSoundSelectApp } from "./ui/actorsoundselect.ts";
 import { ActorPF2e, ChatMessagePF2e, CreaturePF2e, CreatureSheetPF2e } from "foundry-pf2e";
+import { registerCustomSoundsDb } from "./customsoundsdb.ts";
 
 Hooks.on("init", () => {
     registerSettings();
+    registerCustomSoundsDb();
 });
 
 Hooks.on("updateActor", (actor: ActorPF2e, _changed: object, updateDetails: object) => {
