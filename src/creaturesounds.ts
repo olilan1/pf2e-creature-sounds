@@ -64,21 +64,16 @@ export function playSoundForCreatureOnDamage(actor: ActorPF2e): void {
 }
 
 export function playSoundForCreatureOnAttack(message: ChatMessagePF2e): void {
-    if (!message.speaker.token) {
+    if (!message.actor) {
         return;
     }
-    const attackingToken = canvas.scene?.tokens.get(message.speaker.token);
-    const attackingActor = attackingToken?.actor;
-    if (!attackingActor) {
-        return;
-    }
-    if (attackingActor.type === "character"
+    if (message.actor.type === "character"
         && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
     }
 
-    playSoundForCreature(attackingActor, "attack");
+    playSoundForCreature(message.actor, "attack");
 }
 
 export function playSoundForCreature(
@@ -296,10 +291,10 @@ function playRandomSound(sounds: string[], allPlayers: boolean): void {
 
 export function playSound(sound: string, allPlayers: boolean): void {
     logd(`sound to play: ${sound}`);
-    // @ts-expect-error (foundry.audio is ok)
-    foundry.audio.AudioHelper.play({
+
+    AudioHelper.play({
         src: sound,
-        volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME),
+        volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME) as number,
         autoplay: true,
         loop: false
     }, allPlayers);

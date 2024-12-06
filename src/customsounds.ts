@@ -1,7 +1,6 @@
 import { playSound, SoundSet, SoundType } from "./creaturesounds.ts";
 import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, deleteSoundFromCustomSoundSet } from "./settings.ts";
 import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
-import { logd } from "./utils.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 
@@ -37,7 +36,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             create_sound_set: CustomSoundsApp.createSoundSet,
             select_sound_set: CustomSoundsApp.selectSoundSet,
             delete_sound_set: CustomSoundsApp.deleteSoundSet,
-            add_sound: CustomSoundsApp.addSound,
+            add_sound: CustomSoundsApp.addCustomSound,
             play_sound: CustomSoundsApp.playCustomSound,
             delete_sound: CustomSoundsApp.deleteCustomSound
         }
@@ -54,14 +53,11 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
 
         let selectedSoundSet: SoundSet;
-
         if (this.selectedSoundSetId) {
             selectedSoundSet = getCustomSoundSet(this.selectedSoundSetId);
         } else {
             selectedSoundSet = createEmptySoundSet();
         }
-
-        logd(selectedSoundSet);
 
         const nothingSelected = (!this.selectedSoundSetId);
 
@@ -73,23 +69,19 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        logd(event)
-        
-        // @ts-expect-error (target.id is ok)
-        if (event.target?.id === "name-input") {
-            // @ts-expect-error (target.value is ok)
+        if (event.target instanceof HTMLInputElement) {
             const newDisplayName = event.target.value;
             if (!newDisplayName) {
                 this.render();
                 return;
             }
-            // @ts-expect-error (dataset.id is ok)
-            updateCustomSoundSetDisplayName(event.target.dataset.id, newDisplayName);
+
+            updateCustomSoundSetDisplayName(event.target.dataset.id!, newDisplayName);
             this.render();
         }
     }
 
-    static createSoundSet() {
+    static createSoundSet(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         // Create sound set
         const newSoundSet: SoundSet = {
             id: getNewSoundSetId(),
@@ -104,53 +96,49 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         };
 
         updateCustomSoundSet(newSoundSet);
-        // @ts-expect-error (this.render is ok)
         this.selectedSoundSetId = newSoundSet.id;
-        // @ts-expect-error (this.render is ok)
         this.render();
     }
 
-    static selectSoundSet(_event: PointerEvent, target: HTMLElement) {
-        // @ts-expect-error (this.selectedSoundSet is ok)
-        this.selectedSoundSetId = target.dataset.id;
-        // @ts-expect-error (this.selectedSoundSet is ok)
-        logd(this.selectedSoundSetId);
-        // @ts-expect-error (this.render is ok)
+    static selectSoundSet(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+        if (target.dataset.id) {
+            this.selectedSoundSetId = target.dataset.id;
+        }
         this.render();
     }
 
-    static addSound(_event: PointerEvent, target: HTMLElement) {
+    static addCustomSound(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
         const soundSetId = target.dataset.id;
         if (!soundSetId) {
             return;
         }
         const soundType = target.dataset.type as SoundType;
-        // @ts-expect-error (filepicker is ok)
+
         const fp = new FilePicker({
             title: "Select a sound",
             type: "audio",
             callback: (path: string) => {
                 addSoundToCustomSoundSet(soundSetId, soundType, path);
-                // @ts-expect-error (this.render is ok)
                 this.render();
             }
         });
         fp.render();        
     }
 
-    static playCustomSound(_event: PointerEvent, target: HTMLElement) {
+    static playCustomSound(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
         playSound(target.dataset.path!, false);
     }
 
-    static deleteCustomSound(_event: PointerEvent, target: HTMLElement){
-        // @ts-expect-error (this.selectedSoundSetId is ok)
-        deleteSoundFromCustomSoundSet(this.selectedSoundSetId, target.dataset.type as SoundType, Number(target.dataset.index));
-        // @ts-expect-error (this.render is ok)
+    static deleteCustomSound(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+        if (!this.selectedSoundSetId) {
+            return;
+        }
+        deleteSoundFromCustomSoundSet(this.selectedSoundSetId,
+            target.dataset.type as SoundType, Number(target.dataset.index));
         this.render();
     }
 
-    static async deleteSoundSet(_event: PointerEvent, target: HTMLElement) {
-
+    static async deleteSoundSet(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
         const soundSetDisplayName = target.dataset.display_name
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Delete" },
@@ -160,7 +148,6 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         
         if (confirmed){ 
             deleteCustomSoundSet(target.dataset.id!);
-            // @ts-expect-error (this.render is ok)
             this.render();
         }
     }

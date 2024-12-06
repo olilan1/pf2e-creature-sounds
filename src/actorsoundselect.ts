@@ -52,30 +52,26 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        // @ts-expect-error (EventTarget.value is ok)
-        await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
-        this.render();
+        if (event.target instanceof HTMLSelectElement) {
+            await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
+            this.render();
+        }
     }
 
-    static async setToDefault() {
-        // @ts-expect-error (this.actor is ok)
+    static async setToDefault(this: ActorSoundSelectApp) {
         await this.actor.unsetFlag(MODULE_ID, "soundset");
-        // @ts-expect-error (this.render is ok)
         this.render();
     }
 
-    static playAttackSound() {
-        // @ts-expect-error (this.actor is ok)
+    static playAttackSound(this: ActorSoundSelectApp) {
         playSoundForCreature(this.actor, "attack", false);
     }
 
-    static playHurtSound() {
-        // @ts-expect-error (this.actor is ok)
+    static playHurtSound(this: ActorSoundSelectApp) {
         playSoundForCreature(this.actor, "hurt", false);
     }
 
-    static playDeathSound() {
-        // @ts-expect-error (this.actor is ok)
+    static playDeathSound(this: ActorSoundSelectApp) {
         playSoundForCreature(this.actor, "death", false);
     }
 }

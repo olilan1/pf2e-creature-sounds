@@ -21,7 +21,7 @@ export function registerSettings(): void {
         label: "Manage Custom Sound Sets",
         hint: "Create your own sound sets to apply to creatures",
         icon: "fa-solid fa-spaghetti-monster-flying",
-        // @ts-expect-error (type is ok)
+        // @ts-expect-error (type of ApplicationV2 is ok)
         type: CustomSoundsApp,
         restricted: true,
     });
