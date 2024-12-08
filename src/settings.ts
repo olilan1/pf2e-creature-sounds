@@ -10,7 +10,9 @@ export const SETTINGS = {
     CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
     PLAYERS_CAN_EDIT: "players_can_edit",
     DEBUG_LOGGING: "debug_logging"
-};
+} as const;
+
+export type SettingsKey = typeof SETTINGS[keyof typeof SETTINGS];
 
 export function registerSettings(): void {
     game.settings.registerMenu(SETTINGS_NAMESPACE, "CustomSoundsApp", {
@@ -93,6 +95,6 @@ export function registerSettings(): void {
     });
 }
 
-export function getSetting(setting: string) {
+export function getSetting(setting: SettingsKey) {
     return game.settings.get(SETTINGS_NAMESPACE, setting);
 }
