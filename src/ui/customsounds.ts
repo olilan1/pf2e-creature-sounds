@@ -19,8 +19,9 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     static override PARTS = {
         form: {
-            template: "modules/pf2e-creature-sounds/templates/custom-sounds.hbs"
-        }
+            template: "modules/pf2e-creature-sounds/templates/custom-sounds.hbs",
+            scrollable: [".sound-set-box"]
+        },
     }
 
     static override DEFAULT_OPTIONS = {
