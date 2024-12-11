@@ -88,6 +88,14 @@
     white-space: nowrap;
 }
 
+/* Container for download/upload sound sets buttons. */
+.sound-set-download-upload {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 /* Container for the label and text input box for the custom sound set name. */
 .sound-set-name-container {
     display: flex;
