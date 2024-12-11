@@ -58,6 +58,7 @@
     flex-grow: 1;
     padding: 8px;
     gap: 8px;
+    overflow-y: auto;
 }
 
 /* Container for a sound set entry, with text and a delete button. */
