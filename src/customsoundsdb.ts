@@ -1,5 +1,6 @@
 import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
 import { SETTINGS_NAMESPACE } from "./settings.ts";
+import { postUINotification } from "./ui/customsounds.ts";
 import { namesFromSoundDatabase, soundTypeToField } from "./utils.ts";
 import { saveAs } from 'file-saver';
 
@@ -76,14 +77,14 @@ export function downloadSoundSetsAsJSON() {
     saveAs(blob, filename);
 }
 
-function overwriteSoundSetsWithJSON(jsonObject: any) {
+export function overwriteSoundSetsWithJSON(jsonObject: any) {
     const newSoundSets = translateJSONObject(jsonObject);
     let entries = 0;
     for (const entry in newSoundSets) {
         updateCustomSoundSet(newSoundSets[entry]);
         entries++;
     }
-    ui.notifications.info(`Custom Sounds updated successfully with ${entries} entries`)
+    postUINotification(`Custom Sounds updated successfully with ${entries} entries`, `info`)
 }
 
 function translateJSONObject(jsonObject: any): { [key: string]: SoundSet } {
@@ -114,21 +115,21 @@ export async function validateJSONObject(jsonObject: any) {
         return (
             typeof entry === 'object' &&
             entry !== null &&
-            Object.prototype.hasOwnProperty.call(entry, 'id') &&
-            Object.prototype.hasOwnProperty.call(entry, 'display_name') &&
-            Object.prototype.hasOwnProperty.call(entry, 'hurt_sounds') &&
+            entry.hasOwnProperty('id') &&
+            entry.hasOwnProperty('display_name') &&
+            entry.hasOwnProperty('hurt_sounds') &&
             Array.isArray(entry.hurt_sounds) &&
-            Object.prototype.hasOwnProperty.call(entry, 'attack_sounds') &&
+            entry.hasOwnProperty('attack_sounds') &&
             Array.isArray(entry.attack_sounds) &&
-            Object.prototype.hasOwnProperty.call(entry, 'death_sounds') &&
+            entry.hasOwnProperty('death_sounds') &&
             Array.isArray(entry.death_sounds) &&
-            Object.prototype.hasOwnProperty.call(entry, 'creatures') &&
+            entry.hasOwnProperty('creatures') &&
             Array.isArray(entry.creatures) &&
-            Object.prototype.hasOwnProperty.call(entry, 'keywords') &&
+            entry.hasOwnProperty('keywords') &&
             Array.isArray(entry.keywords) &&
-            Object.prototype.hasOwnProperty.call(entry, 'traits') &&
+            entry.hasOwnProperty('traits') &&
             Array.isArray(entry.traits) &&
-            Object.prototype.hasOwnProperty.call(entry, 'size') &&
+            entry.hasOwnProperty('size') &&
             typeof entry.size === 'number'
         );
     });
@@ -146,22 +147,29 @@ export async function validateJSONObject(jsonObject: any) {
         return key === entry.id;
     });
 
-    // 5. If all validations pass, run your function
+    // 5. If all validations pass return true
     if (isValidStructure && hasUniqueIds && validIdFormat) {
-        await overwriteSoundSetsWithJSON(jsonObject);
+        return true;
     } else {
         // Handle invalid JSON 
         if (!isValidStructure) {
-            ui.notifications.error('Invalid JSON structure');
+            postUINotification('Invalid JSON structure', 'error')
+            return false;
         }
         if (!hasUniqueIds) {
-            ui.notifications.error('Duplicate IDs found');
+            postUINotification('Duplicate IDs found', 'error')
+            return false;
         }
         if (!validIdFormat) {
-            ui.notifications.error('Invalid ID format. IDs must start with "Custom-"');
+            postUINotification('Invalid ID format. IDs must start with "Custom-"', 'error')
+            return false;
         }
         if (!validNameIdMatch) {
-            ui.notifications.error('Object name and ID must match!');
+            postUINotification('Object name and ID must match!', 'error')
+            return false;
+        } else {
+            postUINotification('Unknown validation error', 'error')
+            return false
         }
     }
 }

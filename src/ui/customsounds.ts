@@ -2,7 +2,8 @@ import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
 import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, 
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, 
     deleteSoundFromCustomSoundSet, downloadSoundSetsAsJSON, 
-    validateJSONObject } from "../customsoundsdb.ts";
+    validateJSONObject, 
+    overwriteSoundSetsWithJSON} from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -50,6 +51,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     override async _prepareContext() {
         const customSoundSetNames = getCustomSoundSetNames() as SoundSetEntry[];
+        customSoundSetNames.sort((a, b) => a.display_name.localeCompare(b.display_name));
         for (const entry of customSoundSetNames) {
             if (entry.id === this.selectedSoundSetId) {
                 entry.selected = true;
@@ -186,7 +188,10 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                     reader.onload = async (event) => {
                         try {
                             const jsonObject = JSON.parse(event.target?.result as string);
-                            await validateJSONObject(jsonObject);
+                            const validationSuccessful = await validateJSONObject(jsonObject);
+                            if (validationSuccessful) {
+                                await overwriteSoundSetsWithJSON(jsonObject);
+                            }
                             this.render();
                         } catch (error) {
                             console.error('Error parsing JSON:', error);
@@ -222,4 +227,18 @@ function createEmptySoundSet() {
         size: -1
     };
     return emptySoundSet;
+}
+
+export function postUINotification(message: string, type: "info" | "warn" | "error") {
+    switch (type) {
+        case "info": 
+            ui.notifications.info(message); 
+            break;
+        case "warn": 
+            ui.notifications.warn(message);
+            break;
+        case "error": 
+            ui.notifications.error(message); 
+            break;
+    }
 }

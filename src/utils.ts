@@ -49,6 +49,5 @@ export function soundTypeToField(soundType: SoundType) {
 export function namesFromSoundDatabase(soundDb: SoundDatabase) {
     const result = Object.entries(soundDb)
         .map(([key, value]) => ({ id: key, display_name: value.display_name }))
-        .sort((a, b) => a.display_name.localeCompare(b.display_name));
     return result;
 }
