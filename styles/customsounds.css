@@ -58,6 +58,7 @@
     flex-grow: 1;
     padding: 8px;
     gap: 8px;
+    overflow-y: auto;
 }
 
 /* Container for a sound set entry, with text and a delete button. */
@@ -86,6 +87,14 @@
 .sound-set-add-button {
     align-self: center;
     white-space: nowrap;
+}
+
+/* Container for download/upload sound sets buttons. */
+.sound-set-download-upload {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 /* Container for the label and text input box for the custom sound set name. */
