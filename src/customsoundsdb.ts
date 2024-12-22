@@ -15,54 +15,58 @@ export function registerCustomSoundsDb(): void {
     });
 }
 
-function getCustomSoundDatabase(): SoundDatabase {
+async function getCustomSoundDatabase(): Promise<SoundDatabase> {
     return game.settings.get(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS) as SoundDatabase;
 }
 
-function setCustomSoundDatabase(soundSets: SoundDatabase) {
-    game.settings.set(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, soundSets);
+async function setCustomSoundDatabase(soundSets: SoundDatabase) {
+    await game.settings.set(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, soundSets);
 }
 
-export function updateCustomSoundSet(soundSet: SoundSet) {
-    const currentSoundDatabase = getCustomSoundDatabase();
+export async function updateCustomSoundSet(soundSet: SoundSet) {
+    const currentSoundDatabase = await getCustomSoundDatabase();
     currentSoundDatabase[soundSet.id] = soundSet;
-    setCustomSoundDatabase(currentSoundDatabase);
+    await setCustomSoundDatabase(currentSoundDatabase);
 }
 
-export function getCustomSoundSet(soundSetId: string) {
-    const currentSoundDatabase = getCustomSoundDatabase();
+export async function getCustomSoundSet(soundSetId: string) {
+    const currentSoundDatabase = await getCustomSoundDatabase();
     return currentSoundDatabase[soundSetId];
 }
 
-export function deleteCustomSoundSet(soundSetId: string) {
-    const currentSoundDatabase = getCustomSoundDatabase();
+export async function deleteCustomSoundSet(soundSetId: string) {
+    const currentSoundDatabase = await getCustomSoundDatabase();
     delete currentSoundDatabase[soundSetId];
-    setCustomSoundDatabase(currentSoundDatabase);
+    await setCustomSoundDatabase(currentSoundDatabase);
 }
 
-export function getCustomSoundSetNames() {
-    return namesFromSoundDatabase(getCustomSoundDatabase());
+export async function deleteAllCustomSoundSets() {
+    await setCustomSoundDatabase({});
 }
 
-export function updateCustomSoundSetDisplayName(soundSetId: string, displayName: string) {
-    const currentSoundSet = getCustomSoundSet(soundSetId);
+export async function getCustomSoundSetNames() {
+    return namesFromSoundDatabase(await getCustomSoundDatabase());
+}
+
+export async function updateCustomSoundSetDisplayName(soundSetId: string, displayName: string) {
+    const currentSoundSet = await getCustomSoundSet(soundSetId);
     currentSoundSet.display_name = displayName;
-    updateCustomSoundSet(currentSoundSet);
+    await updateCustomSoundSet(currentSoundSet);
 }
 
-export function addSoundToCustomSoundSet(soundSetId: string, soundType: SoundType, path: string) {
-    const currentSoundSet = getCustomSoundSet(soundSetId);
+export async function addSoundToCustomSoundSet(soundSetId: string, soundType: SoundType, path: string) {
+    const currentSoundSet = await getCustomSoundSet(soundSetId);
     const soundTypeField = soundTypeToField(soundType);
     currentSoundSet[soundTypeField].push(path);
-    updateCustomSoundSet(currentSoundSet);
+    await updateCustomSoundSet(currentSoundSet);
 }
 
-export function deleteSoundFromCustomSoundSet(
+export async function deleteSoundFromCustomSoundSet(
     soundSetId: string, soundType: SoundType, index: number) {
-    const currentSoundSet = getCustomSoundSet(soundSetId);
+    const currentSoundSet = await getCustomSoundSet(soundSetId);
     const soundTypeField = soundTypeToField(soundType);
     currentSoundSet[soundTypeField].splice(index, 1);
-    updateCustomSoundSet(currentSoundSet);
+    await updateCustomSoundSet(currentSoundSet);
 }
 
 export function downloadSoundSetsAsJSON() {

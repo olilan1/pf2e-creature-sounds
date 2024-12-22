@@ -95,6 +95,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 4px;
 }
 
 /* Container for the label and text input box for the custom sound set name. */
@@ -174,4 +175,15 @@
 
 .customs-entry-icon:hover {
     text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+
+/* Buttons showing just an icon. */
+.icon-only-button {
+    flex-grow: 0;
+    width: auto;
+}
+
+.button-in-row {
+    margin-left: 0px;
+    margin-right: 0px;
 }

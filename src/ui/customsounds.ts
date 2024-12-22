@@ -3,7 +3,8 @@ import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet,
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, 
     deleteSoundFromCustomSoundSet, downloadSoundSetsAsJSON, 
     validateSoundDatabase, overwriteSoundSetsWithJSON as updateSoundSetsWithJSON,
-    isSoundDatabase} from "../customsoundsdb.ts";
+    isSoundDatabase,
+    deleteAllCustomSoundSets} from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -48,11 +49,12 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             delete_sound: CustomSoundsApp.deleteCustomSound,
             download_sound_sets: CustomSoundsApp.downloadSoundSets,
             upload_sound_sets: CustomSoundsApp.uploadJSON,
+            clear_sound_sets: CustomSoundsApp.clearSoundSets
         }
     }
 
     override async _prepareContext() {
-        const customSoundSetNames = getCustomSoundSetNames() as SoundSetEntry[];
+        const customSoundSetNames = await getCustomSoundSetNames() as SoundSetEntry[];
         customSoundSetNames.sort((a, b) => a.display_name.localeCompare(b.display_name));
         for (const entry of customSoundSetNames) {
             if (entry.id === this.selectedSoundSetId) {
@@ -64,7 +66,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
         let selectedSoundSet: SoundSet;
         if (this.selectedSoundSetId) {
-            selectedSoundSet = getCustomSoundSet(this.selectedSoundSetId);
+            selectedSoundSet = await getCustomSoundSet(this.selectedSoundSetId);
         } else {
             selectedSoundSet = createEmptySoundSet();
         }
@@ -238,6 +240,19 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
             fileInput.click();
             fileInput.remove();    
+        }
+    }
+
+    static async clearSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {    
+        const confirmed = await DialogV2.confirm({
+            window: { title: "Confirm Clear" },
+            content: `<p>Are you sure you want to clear all custom sound sets?</p>`,
+            modal: true
+        });
+    
+        if (confirmed) {
+            await deleteAllCustomSoundSets();
+            this.render(); 
         }
     }
 }

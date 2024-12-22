@@ -45,17 +45,17 @@ export function getDbSoundSetNames(): { id: string; display_name: string; }[] {
     return namesFromSoundDatabase(soundDatabase);
 }
 
-export function playSoundForCreatureOnDamage(actor: ActorPF2e): void {
+export async function playSoundForCreatureOnDamage(actor: ActorPF2e) {
     if (actor.type === "character" && !getSetting(SETTINGS.CREATURE_SOUNDS_CHARACTER)) {
         // Actor is a character, and character sounds are not enabled in settings.
         return;
     }
 
     const soundType = (actor.system.attributes.hp?.value === 0) ? "death" : "hurt";
-    playSoundForCreature(actor, soundType);
+    await playSoundForCreature(actor, soundType);
 }
 
-export function playSoundForCreatureOnAttack(message: ChatMessagePF2e): void {
+export async function playSoundForCreatureOnAttack(message: ChatMessagePF2e) {
     if (!message.actor) {
         return;
     }
@@ -65,12 +65,12 @@ export function playSoundForCreatureOnAttack(message: ChatMessagePF2e): void {
         return;
     }
 
-    playSoundForCreature(message.actor, "attack");
+    await playSoundForCreature(message.actor, "attack");
 }
 
-export function playSoundForCreature(
-        actor: ActorPF2e, soundType: SoundType, allPlayers = true): void {
-    const soundSet = findSoundSet(actor);
+export async function playSoundForCreature(
+        actor: ActorPF2e, soundType: SoundType, allPlayers = true) {
+    const soundSet = await findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
         return;
@@ -81,7 +81,7 @@ export function playSoundForCreature(
     playRandomSound(returnedSounds, allPlayers);
 }
 
-export function findSoundSet(actor: ActorPF2e): SoundSet | null {
+export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
     // Check if flag has been set for Actor.
     const chosenSoundSet = actor.flags?.[MODULE_ID]?.soundset as string;
     if (chosenSoundSet) {
@@ -91,7 +91,7 @@ export function findSoundSet(actor: ActorPF2e): SoundSet | null {
         if (chosenSoundSet in soundDatabase) {
             return soundDatabase[chosenSoundSet];
         }
-        const customSoundSet = getCustomSoundSet(chosenSoundSet);
+        const customSoundSet = await getCustomSoundSet(chosenSoundSet);
         if (customSoundSet) {
             return customSoundSet;
         }

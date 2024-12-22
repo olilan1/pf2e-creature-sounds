@@ -43,8 +43,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     override async _prepareContext() {
-        const currentSoundSet = findSoundSet(this.actor)?.id ?? NO_SOUND_SET;
-        const dropDownNames = this.buildNameOptions();
+        const currentSoundSet = (await findSoundSet(this.actor))?.id ?? NO_SOUND_SET;
+        const dropDownNames = await this.buildNameOptions();
         const canEdit = this.actor.sheet.isEditable
                 && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
         return {
@@ -78,10 +78,10 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         playSoundForCreature(this.actor, "death", false);
     }
 
-    buildNameOptions(): { id: string; display_name: string; }[] {
+    async buildNameOptions() {
         const sortedNames = getDbSoundSetNames()
             .sort((a, b) => a.display_name.localeCompare(b.display_name));
-        const customNames = getCustomSoundSetNames()
+        const customNames = (await getCustomSoundSetNames())
             .map(obj => ( { id: obj.id, display_name: "CUSTOM: " + obj.display_name } ));
         sortedNames.push(...customNames);
         sortedNames.unshift({ id: NO_SOUND_SET, display_name: NO_SOUND_SET_DISPLAY_NAME });
