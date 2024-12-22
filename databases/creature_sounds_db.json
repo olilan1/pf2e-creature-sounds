@@ -93,7 +93,8 @@
         "creatures": [],
         "keywords": [
             "hydra",
-            "yamaraj"
+            "yamaraj",
+            "zombie dragon"
         ],
         "traits": [
             "dragon"
@@ -282,8 +283,7 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "skeleton",
-            "undead"
+            "skeleton"
         ],
         "size": -1
     },
@@ -317,7 +317,6 @@
             "incorporeal",
             "wraith",
             "ghost",
-            "undead",
             "phantom"
         ],
         "size": -1
@@ -951,8 +950,7 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "wight",
-            "undead"
+            "wight"
         ],
         "size": -1
     },
@@ -980,8 +978,7 @@
         "traits": [
             "incorporeal",
             "wraith",
-            "ghost",
-            "undead"
+            "ghost"
         ],
         "size": -1
     },
@@ -1281,7 +1278,6 @@
         ],
         "traits": [
             "ghoul",
-            "undead",
             "morlock",
             "grippli"
         ],
@@ -1494,8 +1490,7 @@
             "chupacabra"
         ],
         "traits": [
-            "zombie",
-            "undead"
+            "zombie"
         ],
         "size": -1
     },
