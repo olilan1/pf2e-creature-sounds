@@ -14,6 +14,7 @@ interface SoundSetEntry {
     selected: boolean
 }
 
+// @ts-expect-error - form.scrollable should not be booleans
 export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     selectedSoundSetId: string | null = null;
@@ -160,11 +161,11 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
     }
 
-    static downloadSoundSets(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+    static downloadSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         downloadSoundSetsAsJSON();
     }
 
-    static async uploadJSON(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+    static async uploadJSON(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Upload" },
             content: `<p>Uploading will overwrite any custom sound sets with the same ID.
@@ -223,7 +224,6 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             fileInput.remove();    
         }
     }
-
 }
 
 function getNewSoundSetId() {
