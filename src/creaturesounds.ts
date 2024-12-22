@@ -1,7 +1,7 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
 import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase } from "./utils.ts";
-import * as importedDb from '../databases/creature_sounds_db.json';
+import * as importedDb from '../databases/creature_sounds_db.json' assert { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
 
 export interface SoundSet {
