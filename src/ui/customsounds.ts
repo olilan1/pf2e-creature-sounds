@@ -18,6 +18,7 @@ interface SoundSetEntry {
 export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     selectedSoundSetId: string | null = null;
+    shouldScroll = false;
 
     static override PARTS = {
         form: {
@@ -78,11 +79,12 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     override _onRender(_context: ApplicationRenderContext, _options : ApplicationRenderOptions) {
-        if (this.selectedSoundSetId) {
+        if (this.shouldScroll) {
             const selectedSoundSetDiv = this.element.querySelector(".sound-set-entry-selected");
             if (selectedSoundSetDiv) {
                 selectedSoundSetDiv.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
             }
+            this.shouldScroll = false;
         }
     }
 
@@ -95,6 +97,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             }
 
             updateCustomSoundSetDisplayName(event.target.dataset.id!, newDisplayName);
+            this.shouldScroll = true;
             this.render();
         }
     }
@@ -115,6 +118,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
         updateCustomSoundSet(newSoundSet);
         this.selectedSoundSetId = newSoundSet.id;
+        this.shouldScroll = true;
         this.render();
     }
 
