@@ -2,8 +2,8 @@ import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
 import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, 
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, 
     deleteSoundFromCustomSoundSet, downloadSoundSetsAsJSON, 
-    validateJSONObject, 
-    overwriteSoundSetsWithJSON} from "../customsoundsdb.ts";
+    validateSoundDatabase, overwriteSoundSetsWithJSON as updateSoundSetsWithJSON,
+    isSoundDatabase} from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -167,7 +167,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     static async uploadJSON(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Upload" },
-            content: `<p>Uploading a new file will overwrite your current Custom Sound Sets.
+            content: `<p>Uploading will overwrite any custom sound sets with the same ID.
                 Do you want to continue?</p>`,
             modal: true
         });
@@ -186,16 +186,32 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                     const reader = new FileReader();
 
                     reader.onload = async (event) => {
-                        try {
-                            const jsonObject = JSON.parse(event.target?.result as string);
-                            const validationSuccessful = await validateJSONObject(jsonObject);
-                            if (validationSuccessful) {
-                                await overwriteSoundSetsWithJSON(jsonObject);
+                        const jsonObject: unknown = JSON.parse(event.target?.result as string);
+                        if (!isSoundDatabase(jsonObject)) {
+                            postUINotification('Invalid JSON structure.', 'error');
+                        } else {
+                            const validationResult = validateSoundDatabase(jsonObject);
+                            switch (validationResult) {
+                                case "OK": {
+                                    const numberOfEntries = updateSoundSetsWithJSON(jsonObject);
+                                    if (numberOfEntries === 0) {
+                                        postUINotification('No entries found in JSON file.', 'info');
+                                    } else {
+                                        postUINotification(`Custom Sounds updated successfully with ${numberOfEntries} entries`, `info`)
+                                    }
+                                    break; 
+                                }
+                                case "duplicate_ids":
+                                    postUINotification('Duplicate ID detected in JSON file', 'error');
+                                    break;
+                                case "invalid_id_format":
+                                    postUINotification('IDs must start with "Custom-"', 'error');
+                                    break;
+                                case "name_id_mismatch":
+                                    postUINotification('Object Name and ID should match.', 'error');
+                                    break;
                             }
                             this.render();
-                        } catch (error) {
-                            console.error('Error parsing JSON:', error);
-                            ui.notifications.error('Error parsing JSON file.', { permanent: true });
                         }
                     };
 
