@@ -4,7 +4,7 @@ import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet,
     deleteSoundFromCustomSoundSet, downloadSoundSetsAsJSON, 
     validateSoundDatabase, overwriteSoundSetsWithJSON as updateSoundSetsWithJSON,
     isSoundDatabase} from "../customsoundsdb.ts";
-import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
+import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 
@@ -74,6 +74,15 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             customSoundSetNames,
             selectedSoundSet,
             nothingSelected
+        }
+    }
+
+    override _onRender(_context: ApplicationRenderContext, _options : ApplicationRenderOptions) {
+        if (this.selectedSoundSetId) {
+            const selectedSoundSetDiv = this.element.querySelector(".sound-set-entry-selected");
+            if (selectedSoundSetDiv) {
+                selectedSoundSetDiv.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+            }
         }
     }
 
