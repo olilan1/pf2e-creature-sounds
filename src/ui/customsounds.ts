@@ -1,5 +1,9 @@
 import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
-import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, deleteSoundFromCustomSoundSet } from "../customsoundsdb.ts";
+import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, 
+    getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, 
+    deleteSoundFromCustomSoundSet, downloadSoundSetsAsJSON, 
+    validateSoundDatabase, overwriteSoundSetsWithJSON as updateSoundSetsWithJSON,
+    isSoundDatabase} from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
@@ -16,8 +20,9 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     static override PARTS = {
         form: {
-            template: "modules/pf2e-creature-sounds/templates/custom-sounds.hbs"
-        }
+            template: "modules/pf2e-creature-sounds/templates/custom-sounds.hbs",
+            scrollable: [".sound-set-box"]
+        },
     }
 
     static override DEFAULT_OPTIONS = {
@@ -38,12 +43,15 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             delete_sound_set: CustomSoundsApp.deleteSoundSet,
             add_sound: CustomSoundsApp.addCustomSound,
             play_sound: CustomSoundsApp.playCustomSound,
-            delete_sound: CustomSoundsApp.deleteCustomSound
+            delete_sound: CustomSoundsApp.deleteCustomSound,
+            download_sound_sets: CustomSoundsApp.downloadSoundSets,
+            upload_sound_sets: CustomSoundsApp.uploadJSON,
         }
     }
 
     override async _prepareContext() {
         const customSoundSetNames = getCustomSoundSetNames() as SoundSetEntry[];
+        customSoundSetNames.sort((a, b) => a.display_name.localeCompare(b.display_name));
         for (const entry of customSoundSetNames) {
             if (entry.id === this.selectedSoundSetId) {
                 entry.selected = true;
@@ -122,7 +130,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                 this.render();
             }
         });
-        fp.render();        
+        fp.render();
     }
 
     static playCustomSound(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
@@ -145,13 +153,77 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             content: `<p>Are you sure you want to delete ${soundSetDisplayName}?</p>`,
             modal: true
         });
-        
+
         if (confirmed) {
             deleteCustomSoundSet(target.dataset.id!);
             this.render();
         }
     }
-    
+
+    static downloadSoundSets(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+        downloadSoundSetsAsJSON();
+    }
+
+    static async uploadJSON(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+        const confirmed = await DialogV2.confirm({
+            window: { title: "Confirm Upload" },
+            content: `<p>Uploading will overwrite any custom sound sets with the same ID.
+                Do you want to continue?</p>`,
+            modal: true
+        });
+
+        if (confirmed) {
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = '.json';
+            fileInput.style.display = 'none';
+            document.body.appendChild(fileInput);
+
+            fileInput.addEventListener('change', (event) => {
+                const file = (event.target as HTMLInputElement)?.files?.[0];
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.onload = async (event) => {
+                        const jsonObject: unknown = JSON.parse(event.target?.result as string);
+                        if (!isSoundDatabase(jsonObject)) {
+                            postUINotification('Invalid JSON structure.', 'error');
+                        } else {
+                            const validationResult = validateSoundDatabase(jsonObject);
+                            switch (validationResult) {
+                                case "OK": {
+                                    const numberOfEntries = updateSoundSetsWithJSON(jsonObject);
+                                    if (numberOfEntries === 0) {
+                                        postUINotification('No entries found in JSON file.', 'info');
+                                    } else {
+                                        postUINotification(`Custom Sounds updated successfully with ${numberOfEntries} entries`, `info`)
+                                    }
+                                    break; 
+                                }
+                                case "duplicate_ids":
+                                    postUINotification('Duplicate ID detected in JSON file', 'error');
+                                    break;
+                                case "invalid_id_format":
+                                    postUINotification('IDs must start with "Custom-"', 'error');
+                                    break;
+                                case "name_id_mismatch":
+                                    postUINotification('Object Name and ID should match.', 'error');
+                                    break;
+                            }
+                            this.render();
+                        }
+                    };
+
+                    reader.readAsText(file);
+                }
+            });
+
+            fileInput.click();
+            fileInput.remove();    
+        }
+    }
+
 }
 
 function getNewSoundSetId() {
@@ -171,4 +243,18 @@ function createEmptySoundSet() {
         size: -1
     };
     return emptySoundSet;
+}
+
+export function postUINotification(message: string, type: "info" | "warn" | "error") {
+    switch (type) {
+        case "info": 
+            ui.notifications.info(message); 
+            break;
+        case "warn": 
+            ui.notifications.warn(message);
+            break;
+        case "error": 
+            ui.notifications.error(message); 
+            break;
+    }
 }

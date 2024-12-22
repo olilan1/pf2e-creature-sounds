@@ -48,6 +48,6 @@ export function soundTypeToField(soundType: SoundType) {
 
 export function namesFromSoundDatabase(soundDb: SoundDatabase) {
     const result = Object.entries(soundDb)
-        .map(([key, value]) => ({id: key, display_name: value.display_name}));
+        .map(([key, value]) => ({ id: key, display_name: value.display_name }))
     return result;
 }
