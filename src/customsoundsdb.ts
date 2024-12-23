@@ -69,8 +69,8 @@ export async function deleteSoundFromCustomSoundSet(
     await updateCustomSoundSet(currentSoundSet);
 }
 
-export function downloadSoundSetsAsJSON() {
-    const jsonObject = getCustomSoundDatabase();
+export async function saveSoundSetsAsJSON() {
+    const jsonObject = await getCustomSoundDatabase();
     const jsonString = JSON.stringify(jsonObject);
     const blob = new Blob([jsonString], { type: 'application/json' });
 
@@ -80,48 +80,18 @@ export function downloadSoundSetsAsJSON() {
     saveAs(blob, filename);
 }
 
-export function overwriteSoundSetsWithJSON(soundDatabase: SoundDatabase) {
+export async function updateSoundSetsWithSoundDatabase(soundDatabase: SoundDatabase) {
     let entries = 0;
     for (const entry in soundDatabase) {
-        updateCustomSoundSet(soundDatabase[entry]);
+        await updateCustomSoundSet(soundDatabase[entry]);
         entries++;
     }
     return entries;
 }
 
-export function isSoundDatabase(obj: unknown): obj is SoundDatabase {
-    if (typeof obj !== 'object' || obj === null) {
-        return false;
-    }
-    const isValidStructure = Object.values(obj).every((entry: unknown) => {
-        return (
-            typeof entry === 'object' &&
-            entry !== null &&
-            'id' in entry &&
-            'display_name' in entry &&
-            'hurt_sounds' in entry &&
-            'attack_sounds' in entry &&
-            'death_sounds' in entry &&
-            'creatures' in entry &&
-            'keywords' in entry &&
-            'traits' in entry &&
-            'size' in entry &&
-            Array.isArray(entry.hurt_sounds) &&
-            Array.isArray(entry.attack_sounds) &&
-            Array.isArray(entry.death_sounds) &&
-            Array.isArray(entry.creatures) &&
-            Array.isArray(entry.keywords) &&
-            Array.isArray(entry.traits) &&
-            typeof entry.size === 'number'
-        );
-    });
-    
-    return isValidStructure;
-}
-
 export type ValidationResult = 'OK' | 'duplicate_ids' | 'invalid_id_format' | 'name_id_mismatch';
 
-export function validateSoundDatabase(soundDatabase: SoundDatabase): ValidationResult {
+export function validateCustomSoundDatabase(soundDatabase: SoundDatabase): ValidationResult {
     // 1. Validate unique IDs
     const ids = Object.keys(soundDatabase);
     const hasUniqueIds = new Set(ids).size === ids.length;
@@ -134,7 +104,8 @@ export function validateSoundDatabase(soundDatabase: SoundDatabase): ValidationR
         const entry = soundDatabase[key];
         return key === entry.id;
     });
-    // Return correct error message
+
+    // 4. Return appropriate result
     if (!hasUniqueIds) {
         return "duplicate_ids";
     }
@@ -144,6 +115,5 @@ export function validateSoundDatabase(soundDatabase: SoundDatabase): ValidationR
     if (!validNameIdMatch) {
         return "name_id_mismatch";
     } 
-    // 4. If all validations pass return true
     return "OK";
 }

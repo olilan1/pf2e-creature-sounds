@@ -35,6 +35,36 @@ export function isCharacter(obj: ActorPF2e): obj is CharacterPF2e {
     return obj.type === "character";
 }
 
+export function isSoundDatabase(obj: unknown): obj is SoundDatabase {
+    if (typeof obj !== 'object' || obj === null) {
+        return false;
+    }
+    const isValidStructure = Object.values(obj).every((entry: unknown) => {
+        return (
+            typeof entry === 'object' &&
+            entry !== null &&
+            'id' in entry &&
+            'display_name' in entry &&
+            'hurt_sounds' in entry &&
+            'attack_sounds' in entry &&
+            'death_sounds' in entry &&
+            'creatures' in entry &&
+            'keywords' in entry &&
+            'traits' in entry &&
+            'size' in entry &&
+            Array.isArray(entry.hurt_sounds) &&
+            Array.isArray(entry.attack_sounds) &&
+            Array.isArray(entry.death_sounds) &&
+            Array.isArray(entry.creatures) &&
+            Array.isArray(entry.keywords) &&
+            Array.isArray(entry.traits) &&
+            typeof entry.size === 'number'
+        );
+    });
+    
+    return isValidStructure;
+}
+
 export function soundTypeToField(soundType: SoundType) {
     switch (soundType) {
         case 'attack':

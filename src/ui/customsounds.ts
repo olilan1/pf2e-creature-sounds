@@ -1,11 +1,11 @@
 import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
 import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, 
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, 
-    deleteSoundFromCustomSoundSet, downloadSoundSetsAsJSON, 
-    validateSoundDatabase, overwriteSoundSetsWithJSON as updateSoundSetsWithJSON,
-    isSoundDatabase,
+    deleteSoundFromCustomSoundSet, saveSoundSetsAsJSON, 
+    validateCustomSoundDatabase, updateSoundSetsWithSoundDatabase,
     deleteAllCustomSoundSets} from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
+import { isSoundDatabase } from "../utils.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 
@@ -179,8 +179,8 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
     }
 
-    static downloadSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
-        downloadSoundSetsAsJSON();
+    static async downloadSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
+        await saveSoundSetsAsJSON();
     }
 
     static async uploadJSON(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
@@ -209,10 +209,10 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                         if (!isSoundDatabase(jsonObject)) {
                             postUINotification('Invalid JSON structure.', 'error');
                         } else {
-                            const validationResult = validateSoundDatabase(jsonObject);
+                            const validationResult = validateCustomSoundDatabase(jsonObject);
                             switch (validationResult) {
                                 case "OK": {
-                                    const numberOfEntries = updateSoundSetsWithJSON(jsonObject);
+                                    const numberOfEntries = await updateSoundSetsWithSoundDatabase(jsonObject);
                                     if (numberOfEntries === 0) {
                                         postUINotification('No entries found in JSON file.', 'info');
                                     } else {
