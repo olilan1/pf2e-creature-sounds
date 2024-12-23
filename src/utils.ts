@@ -1,6 +1,6 @@
 import { ActorPF2e, CharacterPF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
-import { SoundDatabase, SoundType } from "./creaturesounds.ts";
+import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
 
 export const MODULE_ID = "pf2e-creature-sounds";
 
@@ -39,30 +39,37 @@ export function isSoundDatabase(obj: unknown): obj is SoundDatabase {
     if (typeof obj !== 'object' || obj === null) {
         return false;
     }
-    const isValidStructure = Object.values(obj).every((entry: unknown) => {
-        return (
-            typeof entry === 'object' &&
-            entry !== null &&
-            'id' in entry &&
-            'display_name' in entry &&
-            'hurt_sounds' in entry &&
-            'attack_sounds' in entry &&
-            'death_sounds' in entry &&
-            'creatures' in entry &&
-            'keywords' in entry &&
-            'traits' in entry &&
-            'size' in entry &&
-            Array.isArray(entry.hurt_sounds) &&
-            Array.isArray(entry.attack_sounds) &&
-            Array.isArray(entry.death_sounds) &&
-            Array.isArray(entry.creatures) &&
-            Array.isArray(entry.keywords) &&
-            Array.isArray(entry.traits) &&
-            typeof entry.size === 'number'
-        );
-    });
-    
-    return isValidStructure;
+    return Object.values(obj).every(isSoundSet);
+}
+
+function isSoundSet(obj: unknown): obj is SoundSet {
+    if (typeof obj !== 'object' || obj === null) {
+        return false;
+    }
+    return (
+        'id' in obj &&
+        'display_name' in obj &&
+        'hurt_sounds' in obj &&
+        'attack_sounds' in obj &&
+        'death_sounds' in obj &&
+        'creatures' in obj &&
+        'keywords' in obj &&
+        'traits' in obj &&
+        'size' in obj &&
+        typeof obj.id === 'string' &&
+        typeof obj.display_name === 'string' &&
+        isStringArray(obj.hurt_sounds) &&
+        isStringArray(obj.attack_sounds) &&
+        isStringArray(obj.death_sounds) &&
+        isStringArray(obj.creatures) &&
+        isStringArray(obj.keywords) &&
+        isStringArray(obj.traits) &&
+        typeof obj.size === 'number'
+    );
+}
+
+function isStringArray(value: unknown): value is string[] {
+    return Array.isArray(value) && value.every(item => typeof item === 'string');
 }
 
 export function soundTypeToField(soundType: SoundType) {
