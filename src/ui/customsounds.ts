@@ -98,13 +98,13 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                 return;
             }
 
-            updateCustomSoundSetDisplayName(event.target.dataset.id!, newDisplayName);
+            await updateCustomSoundSetDisplayName(event.target.dataset.id!, newDisplayName);
             this.shouldScroll = true;
             this.render();
         }
     }
 
-    static createSoundSet(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
+    static async createSoundSet(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         // Create sound set
         const newSoundSet: SoundSet = {
             id: getNewSoundSetId(),
@@ -118,7 +118,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             size: -1
         };
 
-        updateCustomSoundSet(newSoundSet);
+        await updateCustomSoundSet(newSoundSet);
         this.selectedSoundSetId = newSoundSet.id;
         this.shouldScroll = true;
         this.render();
@@ -141,8 +141,8 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const fp = new FilePicker({
             title: "Select a sound",
             type: "audio",
-            callback: (path: string) => {
-                addSoundToCustomSoundSet(soundSetId, soundType, path);
+            callback: async (path: string) => {
+                await addSoundToCustomSoundSet(soundSetId, soundType, path);
                 this.render();
             }
         });
@@ -153,11 +153,11 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         playSound(target.dataset.path!, false);
     }
 
-    static deleteCustomSound(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
+    static async deleteCustomSound(this: CustomSoundsApp, _event: PointerEvent, target: HTMLElement) {
         if (!this.selectedSoundSetId) {
             return;
         }
-        deleteSoundFromCustomSoundSet(this.selectedSoundSetId,
+        await deleteSoundFromCustomSoundSet(this.selectedSoundSetId,
             target.dataset.type as SoundType, Number(target.dataset.index));
         this.render();
     }
@@ -166,12 +166,12 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const soundSetDisplayName = target.dataset.display_name
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Delete" },
-            content: `<p>Are you sure you want to delete ${soundSetDisplayName}?</p>`,
+            content: `Are you sure you want to delete ${soundSetDisplayName}?`,
             modal: true
         });
 
         if (confirmed) {
-            deleteCustomSoundSet(target.dataset.id!);
+            await deleteCustomSoundSet(target.dataset.id!);
             if (target.dataset.id === this.selectedSoundSetId) {
                 this.selectedSoundSetId = null;
             }
@@ -186,8 +186,8 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     static async uploadJSON(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Upload" },
-            content: `<p>Uploading will overwrite any custom sound sets with the same ID.
-                Do you want to continue?</p>`,
+            content: `Uploading will overwrite any custom sound sets with the same ID.
+                <br>Do you want to continue?`,
             modal: true
         });
 
@@ -246,7 +246,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     static async clearSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {    
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Clear" },
-            content: `<p>Are you sure you want to clear all custom sound sets?</p>`,
+            content: `Are you sure you want to clear all custom sound sets?`,
             modal: true
         });
     

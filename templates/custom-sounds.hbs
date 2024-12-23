@@ -8,7 +8,7 @@
           {{this.display_name}}
         </span>
         <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound_set" data-id="{{this.id}}"
-          data-display_name="{{this.display_name}}"></i>
+          data-display_name="{{this.display_name}}" data-tooltip="Delete sound set"></i>
       </div>
       {{/each}}
     </div>
@@ -18,14 +18,14 @@
     </button>
     <div class="sound-set-download-upload">
       <button class="button-in-row" type="button" data-action="download_sound_sets">
-        <i class="fa-solid fa-download"></i>
+        <i class="fa-solid fa-file-export"></i>
         Export
       </button>
       <button class="button-in-row" type="button" data-action="upload_sound_sets">
-        <i class="fa-solid fa-upload"></i>
+        <i class="fa-solid fa-file-import"></i>
         Import
       </button>
-      <button class="icon-only-button button-in-row" type="button" data-action="clear_sound_sets">
+      <button class="icon-only-button button-in-row" type="button" data-action="clear_sound_sets" data-tooltip="Clear sound sets">
         <i class="fa-solid fa-eraser icon-only"></i>
       </button>
     </div>
@@ -39,45 +39,45 @@
     <div class="sound-type-header">
       <span class="sound-type-header-text">Attack Sounds</span>
       <i class="fa-solid fa-square-plus plus-icon" data-action="add_sound" data-type="attack"
-        data-id="{{selectedSoundSet.id}}"></i>
+        data-id="{{selectedSoundSet.id}}" data-tooltip="Add attack sound"></i>
     </div>
     <div class="sound-type-box customs-box">
       {{#each selectedSoundSet.attack_sounds}}
       <div class="sound-type-entry">
         <span class="sound-type-entry-text">{{this}}</span>
-        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}"></i>
+        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}" data-tooltip="Play sound"></i>
         <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound" data-index="{{@index}}"
-          data-type="attack"></i>
+          data-type="attack" data-tooltip="Delete sound"></i>
       </div>
       {{/each}}
     </div>
     <div class="sound-type-header">
       <span class="sound-type-header-text">Hurt Sounds</span>
       <i class="fa-solid fa-square-plus plus-icon" data-action="add_sound" data-type="hurt"
-        data-id="{{selectedSoundSet.id}}"></i>
+        data-id="{{selectedSoundSet.id}}" data-tooltip="Add hurt sound"></i>
     </div>
     <div class="sound-type-box customs-box">
       {{#each selectedSoundSet.hurt_sounds}}
       <div class="sound-type-entry">
         <span class="sound-type-entry-text">{{this}}</span>
-        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}"></i>
+        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}" data-tooltip="Play sound"></i>
         <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound" data-index="{{@index}}"
-          data-type="hurt"></i>
+          data-type="hurt" data-tooltip="Delete sound"></i>
       </div>
       {{/each}}
     </div>
     <div class="sound-type-header">
       <span class="sound-type-header-text">Death Sounds</span>
       <i class="fa-solid fa-square-plus plus-icon" data-action="add_sound" data-type="death"
-        data-id="{{selectedSoundSet.id}}"></i>
+        data-id="{{selectedSoundSet.id}}" data-tooltip="Add death sound"></i>
     </div>
     <div class="sound-type-box customs-box">
       {{#each selectedSoundSet.death_sounds}}
       <div class="sound-type-entry">
         <span class="sound-type-entry-text">{{this}}</span>
-        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}"></i>
+        <i class="fa-solid fa-play customs-entry-icon" data-action="play_sound" data-path="{{this}}" data-tooltip="Play sound"></i>
         <i class="fa-solid fa-trash customs-entry-icon" data-action="delete_sound" data-index="{{@index}}"
-          data-type="death"></i>
+          data-type="death" data-tooltip="Delete sound"></i>
       </div>
       {{/each}}
     </div>
