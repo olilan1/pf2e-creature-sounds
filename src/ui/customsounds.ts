@@ -252,6 +252,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     
         if (confirmed) {
             await deleteAllCustomSoundSets();
+            this.selectedSoundSetId = null;
             this.render(); 
         }
     }
