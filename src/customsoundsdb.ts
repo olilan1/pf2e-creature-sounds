@@ -100,10 +100,8 @@ export function validateCustomSoundDatabase(soundDatabase: SoundDatabase): Valid
     const validIdFormat = ids.every((id: string) => id.startsWith('Custom-'));
 
     // 3. Validate object name and ID match
-    const validNameIdMatch = Object.keys(soundDatabase).every((key: string) => {
-        const entry = soundDatabase[key];
-        return key === entry.id;
-    });
+    const validNameIdMatch = Object.entries(soundDatabase).every(
+        ([key, value]) => key === value.id);
 
     // 4. Return appropriate result
     if (!hasUniqueIds) {
