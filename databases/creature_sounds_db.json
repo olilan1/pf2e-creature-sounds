@@ -102,7 +102,7 @@
         "size": -1
     },
     "Goblin": {
-        "display_name": "Goblin",
+        "display_name": "Goblin A",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_01.mp3",
@@ -2034,6 +2034,341 @@
             "halfling",
             "dwarf",
             "centaur"
+        ],
+        "size": 2
+    },
+    "Ben_Goblin": {
+        "display_name": "Goblin B",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-10.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-11.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-9.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-attack-7.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-6.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "goblin"
+        ],
+        "size": 1
+    },
+    "Ben_Human": {
+        "display_name": "Humanoid Masculine H",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-hurt-7.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-attack-7.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-death-5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "male",
+            "human",
+            "dwarf",
+            "halfling"
+        ],
+        "size": 2
+    },
+    "Ben_Kobold": {
+        "display_name": "Kobold",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-10.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-9.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-attack-7.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-6.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "kobold"
+        ],
+        "size": 1
+    },
+    "Oli_Human": {
+        "display_name": "Humanoid Masculine I",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-hurt-5.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-attack-5.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/olihuman/olihuman-death-5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "male",
+            "human",
+            "dwarf",
+            "halfling"
+        ],
+        "size": 2
+    },
+    "Sami_Gnome": {
+        "display_name": "Gnome",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-8.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-10.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-11.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-12.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-13.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-14.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-15.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-16.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-17.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-attack-9.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "gnome"
+        ],
+        "size": 1
+    },
+    "Sami_Human": {
+        "display_name": "Humanoid Masculine J",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-hurt-6.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-attack-7.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-10.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-11.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samihuman/samihuman-death-9.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "male",
+            "human",
+            "halfling"
+        ],
+        "size": 2
+    },
+    "Sami_Lizard": {
+        "display_name": "Reptilian",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-hurt-7.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-attack-9.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-10.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-11.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-12.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-13.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-14.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-9.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "male",
+            "lizardfolk",
+            "nagaji",
+            "serpentfolk"
+        ],
+        "size": 2
+    },
+    "Sami_Swash": {
+        "display_name": "Humanoid Masculine Swash",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-9.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-10.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-11.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-12.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-13.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-14.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-15.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-7.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-8.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-attack-9.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-6.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "male",
+            "human"
         ],
         "size": 2
     }
