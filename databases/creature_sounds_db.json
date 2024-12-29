@@ -750,7 +750,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "harpy"
+            "harpy",
+            "strix"
         ],
         "traits": [],
         "size": -1
@@ -2035,7 +2036,7 @@
         "size": -1
     },
     "Zoe": {
-        "display_name": "Zoe",
+        "display_name": "Humanoid Feminine L",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_01.mp3",
@@ -3061,6 +3062,389 @@
         ],
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Death/Snake 1.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Bear": {
+        "display_name": "Bear",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Hurt/Bear_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Hurt/Bear_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Hurt/Bear_Damage_Take-003.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Attack/Bear_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Attack/Bear_Attack-002.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Death/Bear_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Death/Bear_Dead-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Beast": {
+        "display_name": "Beast",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-004.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Attack/Beast_Attack_Impact-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Attack/Beast_Attack_Impact-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Attack/Beast_Attack_Impact-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Attack/Beast_Attack_Impact-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Attack/Beast_Attack_Impact-005.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Death/Beast_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Death/Beast_Dead-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Death/Beast_Dead-003.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Boar": {
+        "display_name": "Boar",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Hurt/Boar_Roar_Scream-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Hurt/Boar_Roar_Scream-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Hurt/Boar_Roar_Scream-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Hurt/Boar_Wound.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Attack/Boar_Roar_Scream-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Attack/Boar_Roar_Scream-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Attack/Boar_Roar_Scream-003.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Death/Boar_Death-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Death/Boar_Death-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Camel": {
+        "display_name": "Camel",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Hurt/Camel_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Hurt/Camel_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Hurt/Camel_Damage_Take-003.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Attack/Camel_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Attack/Camel_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Attack/Camel_Attack-003.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Death/Camel_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Death/Camel_Dead-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Crab": {
+        "display_name": "Crab",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Hurt/Crab_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Hurt/Crab_Damage_Take-002.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Attack/Crab_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Attack/Crab_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Attack/Crab_Attack-003.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Death/Crab_Dead.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Crocodile": {
+        "display_name": "Crocodile",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Hurt/Crocodile_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Hurt/Crocodile_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Hurt/Crocodile_Damage_Take-003.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Attack/Crocodile_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Attack/Crocodile_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Attack/Crocodile_Attack-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Attack/Crocodile_Attack-004.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Death/Crocodile_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Death/Crocodile_Dead-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Daemon": {
+        "display_name": "Daemon",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Hurt/Harpy_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Hurt/Harpy_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Hurt/Harpy_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Hurt/Harpy_Damage_Take-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Hurt/Harpy_Damage_Take-005.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Attack/Harpy_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Attack/Harpy_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Attack/Harpy_Attack-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Attack/Harpy_Attack-004.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Death/Harpy_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Death/Harpy_Dead-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Death/Harpy_Dead-003.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Demon": {
+        "display_name": "Demon",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Hurt/Zombie_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Hurt/Zombie_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Hurt/Zombie_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Hurt/Zombie_Damage_Take-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Hurt/Zombie_Damage_Take-005.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Attack/Zombie_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Attack/Zombie_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Attack/Zombie_Attack-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Attack/Zombie_Attack-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Attack/Zombie_Attack-005.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Death/Zombie_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Death/Zombie_Dead-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Death/Zombie_Dead-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Death/Zombie_Dead-004.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Dryad": {
+        "display_name": "Dryad",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-005.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-006.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-007.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-008.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-009.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-010.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-005.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-006.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-007.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Attack/Dryad_Attack-008.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Death/Dryad_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Death/Dryad_Dead-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Elephant": {
+        "display_name": "Elephant",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Hurt/Elephant_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Hurt/Elephant_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Hurt/Elephant_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Hurt/Elephant_Damage_Take-004.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Attack/Elephant_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Attack/Elephant_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Attack/Elephant_Attack-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Attack/Elephant_Attack-004.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Death-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Death-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Death-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Death-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Wound_Critical-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Wound_Critical-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Death/Elephant_Wound_Critical-003.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Fly": {
+        "display_name": "Fly",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Hurt/Insect_Bug_Smash_A.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Hurt/Insect_Bug_Smash_B.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Hurt/Insect_Bug_Smash_C.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Hurt/Insect_Bug_Smash_D.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Attack/Insect_Fly_Close_Range_Buzz_A.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Attack/Insect_Fly_Close_Range_Buzz_B.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Attack/Insect_Fly_Close_Range_Buzz_C.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Attack/Insect_Fly_Close_Range_Buzz_D.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Attack/Insect_Fly_Close_Range_Buzz_E.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Fly/Death/Insect_Fly_Smash_Dead.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Lion": {
+        "display_name": "Lion",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Damage_Take-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Wound-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Wound-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Wound-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Wound-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Wound-005.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Attack/Mountain_Lion_Attack_Impact-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Attack/Mountain_Lion_Attack_Impact-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Attack/Mountain_Lion_Attack_Impact-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Attack/Mountain_Lion_Attack_Impact-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Attack/Mountain_Lion_Attack_Impact-005.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Death/Mountain_Lion_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Death/Mountain_Lion_Dead-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Death/Mountain_Lion_Dead-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Death/Mountain_Lion_Dead-004.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Ooze": {
+        "display_name": "Ooze",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Hurt/Ooze_Slime_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Hurt/Ooze_Slime_Damage_Take-002.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Attack/Ooze_Slime_Attack_Impact-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Attack/Ooze_Slime_Attack_Impact-002.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Death/Ooze_Slime_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Death/Ooze_Slime_Dead-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Orc": {
+        "display_name": "Orc",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Pain-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Pain-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Pain-003.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Attack_Fight_Anger-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Attack_Fight_Anger-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Attack_Fight_Anger-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Attack_Fight_Anger-004.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Effort_Fight-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Effort_Fight-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Effort_Fight-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Attack/Orc_Effort_Fight-004.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Death/Orc_Death-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Death/Orc_Death-002.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Sea Lion": {
+        "display_name": "Sea Lion",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Hurt/Sea_Lion_Damage_Take-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Hurt/Sea_Lion_Damage_Take-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Hurt/Sea_Lion_Damage_Take-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Hurt/Sea_Lion_Damage_Take-004.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Attack/Sea_Lion_Attack-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Attack/Sea_Lion_Attack-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Attack/Sea_Lion_Attack-003.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Attack/Sea_Lion_Attack-004.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Death/Sea_Lion_Dead-001.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Death/Sea_Lion_Dead-002.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Death/Sea_Lion_Dead-003.wav"
         ],
         "creatures": [],
         "keywords": [],
