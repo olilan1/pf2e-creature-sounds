@@ -61,8 +61,7 @@
             "bandersnatch",
             "chimera"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": -1
     },
     "Dragon": {
@@ -506,8 +505,7 @@
         "keywords": [
             "bear"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": -1
     },
     "Kraken": {
@@ -535,8 +533,7 @@
         "keywords": [
             "kraken"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": -1
     },
     "Mammoth": {
@@ -700,8 +697,7 @@
         "keywords": [
             "arboreal"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": 4
     },
     "Gnoll": {
@@ -1144,8 +1140,7 @@
             "revenant",
             "seraptis"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": -1
     },
     "Female Werewolf Shifter": {
@@ -1207,8 +1202,7 @@
         "keywords": [
             "wisp"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": 0
     },
     "Brute": {
@@ -1698,6 +1692,389 @@
             "leshy"
         ],
         "size": 2
+    },
+    "Agnes": {
+        "display_name": "Humanoid Feminine E",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Pain_03.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Pain_07.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Pain_08.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Pain_09.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Pain_10.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Pain_11.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_03.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_04.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_05.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_06.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_07.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_08.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_09.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Hurt/NPC_Agnes_Sharp_Pain_10.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Attacking_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Weapon_Swing_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Weapon_Swing_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Weapon_Swing_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Weapon_Swing_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Attack/NPC_Agnes_Weapon_Swing_5.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_6.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": 2
+    },
+    "Alex": {
+        "display_name": "Humanoid Feminine F",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_7.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_8.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Hurt/Hero_Alex_Sharp_Pain_9.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_7.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Attacking_8.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_01.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_02.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_03.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_04.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_05.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_06.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_07.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_08.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_09.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_10.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_11.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Attack/Hero_Alex_Weapon_Swing_12.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_7.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Chloe": {
+        "display_name": "Humanoid Feminine G",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Pain_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Pain_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Pain_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Pain_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Scream_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Scream_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Sharp_Pain_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Sharp_Pain_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Sharp_Pain_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Hurt/Hero_Chloe_Sharp_Pain_4.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_7.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_8.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Attacking_9.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_7.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_8.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Attack/Hero_Chloe_Weapon_Swing_9.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Death/Hero_Chloe_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Death/Hero_Chloe_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Death/Hero_Chloe_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Death/Hero_Chloe_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Death/Hero_Chloe_Death_5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "elf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Esmerelda": {
+        "display_name": "Humanoid Feminine H",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Pain_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Pain_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Pain_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Sharp_Pain_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Sharp_Pain_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Sharp_Pain_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Sharp_Pain_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Hurt/NPC_Esmeralda_Sharp_Pain_5.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Double_Weapon_Swing.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Weapon_Swing_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Weapon_Swing_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Weapon_Swing_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Weapon_Swing_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Attack/NPC_Esmeralda_Weapon_Swing_6.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Death/NPC_Esmeralda_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Death/NPC_Esmeralda_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Death/NPC_Esmeralda_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Death/NPC_Esmeralda_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Esmerelda/Death/NPC_Esmeralda_Death_5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "elf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Grace": {
+        "display_name": "Humanoid Feminine I",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Pain_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Pain_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Pain_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Pain_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Pain_7.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_01.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_02.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_03.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_04.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_05.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_06.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_07.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_08.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_09.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Hurt/Soldier_Grace_Sharp_Pain_10.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Attacking_6.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Effort_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Effort_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_01.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_02.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_03.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_04.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_05.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_06.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_07.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_08.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_09.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Attack/Soldier_Grace_Weapon_Swing_10.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_6.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Kate": {
+        "display_name": "Humanoid Feminine J",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Pain_02.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Pain_15.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Pain_16.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_7.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Hurt/Soldier_Kate_Sharp_Pain_8.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Jumping_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Jumping_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Jumping_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Jumping_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Weapon_Swing_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Weapon_Swing_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Weapon_Swing_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Attack/Soldier_Kate_Weapon_Swing_4.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Robin": {
+        "display_name": "Humanoid Feminine K",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Hurt/Robin_Archer_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Hurt/Robin_Archer_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Hurt/Robin_Archer_Death_3.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Attack/Robin_Archer_Hit_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Attack/Robin_Archer_Hit_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Attack/Robin_Archer_Hit_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Attack/Robin_Archer_Hit_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Attack/Robin_Archer_Hit_5.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_3.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Zoe": {
+        "display_name": "Zoe",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_01.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_02.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_03.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_04.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_10.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Pain_11.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Sharp_Pain_01.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Hurt/NPC_Zoe_Sharp_Pain_02.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Attacking_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Attacking_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Attacking_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Attacking_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Attacking_5.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Weapon_Swing_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Weapon_Swing_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Weapon_Swing_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Weapon_Swing_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Attack/NPC_Zoe_Weapon_Swing_5.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Death/NPC_Zoe_Death_1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Death/NPC_Zoe_Death_2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Death/NPC_Zoe_Death_3.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Death/NPC_Zoe_Death_4.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Zoe/Death/NPC_Zoe_Death_5.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "centaur"
+        ],
+        "size": -1
     },
     "Human_Male_A": {
         "display_name": "Humanoid Masculine A",
@@ -2326,7 +2703,7 @@
         "size": 2
     },
     "Sami_Swash": {
-        "display_name": "Humanoid Masculine Swash",
+        "display_name": "Humanoid Masculine K",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-hurt-1.mp3",
