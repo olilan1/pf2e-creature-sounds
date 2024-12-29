@@ -3396,8 +3396,8 @@
         "traits": [],
         "size": -1
     },
-    "Orc": {
-        "display_name": "Orc",
+    "Beastkin": {
+        "display_name": "Beastkin",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Orc/Hurt/Orc_Damage_Take-001.wav",
