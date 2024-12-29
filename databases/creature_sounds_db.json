@@ -2786,5 +2786,285 @@
             "human"
         ],
         "size": 2
+    },
+    "Cat": {
+        "display_name": "Cat",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Hurt/Cat Scream 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Hurt/Cat Scream 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Hurt/Cat Scream 03.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Attack/Cat Hiss 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Attack/Cat Hiss 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Attack/Cat Hiss 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Attack/Cat Hiss 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Attack/Cat Hiss 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Attack/Cat Hiss 06.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Death/Cat Squeal 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Death/Cat Squeal 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Death/Cat Squeal 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Death/Cat Squeal 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Death/Cat Squeal 07.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Chicken": {
+        "display_name": "Chicken",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Hurt/Chicken 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Hurt/Chicken 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Hurt/Chicken 11.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Attack/Chicken 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Attack/Chicken 08.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Attack/Chicken Wings 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Attack/Chicken Wings 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Attack/Chicken Wings 06.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Death/Chicken 01.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Cow": {
+        "display_name": "Cow",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Hurt/Cow 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Hurt/Cow 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Hurt/Cow 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Hurt/Cow 09.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Hurt/Cow 15.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 08.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 11.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 12.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 13.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Attack/Cow 14.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Death/Cow 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Death/Cow 04.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Dog": {
+        "display_name": "Dog",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Bark 08.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Bark 09.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Whine 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Whine 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Whine 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Whine 07.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Bark 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Attack/Dog Snarl 04.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 04.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Donkey": {
+        "display_name": "Donkey",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Hurt/Donkey 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Hurt/Donkey 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Hurt/Donkey 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Hurt/Donkey 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Hurt/Donkey 07.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 08.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 09.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 11.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 12.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 13.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Attack/Donkey 14.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Death/Donkey 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Death/Donkey 04.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Duck": {
+        "display_name": "Duck",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Hurt/Duck 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Hurt/Duck 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Hurt/Duck 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Hurt/Duck 11.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Hurt/Duck 15.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 12.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 14.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 17.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Attack/Duck 18.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Death/Duck 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Death/Duck 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Death/Duck 08.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Horse": {
+        "display_name": "Horse",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Hurt/Horse Neigh 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Hurt/Horse Neigh 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Hurt/Horse Neigh 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Hurt/Horse Neigh 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Hurt/Horse Neigh 08.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 09.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 11.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 12.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 13.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Attack/Horse Neigh 14.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Death/Horse Screech 07.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Pig": {
+        "display_name": "Pig",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 08.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 05.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 06.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 08.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 09.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Attack/Pig Snort 11.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Death/Pig Squeel 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Death/Pig Squeel 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Death/Pig Squeel 09.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Sheep": {
+        "display_name": "Sheep",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 07.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 08.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 09.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 10.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 11.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 12.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Attack/Sheep 01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Attack/Sheep 02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Attack/Sheep 03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Attack/Sheep 04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Attack/Sheep 05.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Death/Sheep 06.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Snake": {
+        "display_name": "Snake",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Attack/Snake 2.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Death/Snake 1.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
     }
 }
