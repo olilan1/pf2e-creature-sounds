@@ -3586,5 +3586,25 @@
         "keywords": [],
         "traits": [],
         "size": -1
+    },
+    "Insect_Swarm": {
+        "display_name": "Insect Swarm",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_04.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_06.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_05.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_02.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
     }
 }
