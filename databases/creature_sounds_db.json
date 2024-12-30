@@ -32,7 +32,7 @@
     },
     "Behemoth": {
         "display_name": "Behemoth",
-        "notes": "Big Cat would work here",
+        "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_01.mp3",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Hurt/CREAMnstr_Behemoth_Hurt_02.mp3",
@@ -55,11 +55,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "tiger",
-            "lion",
-            "leopard",
             "bandersnatch",
-            "chimera"
+            "chimera",
+            "balor"
         ],
         "traits": [],
         "size": -1
@@ -93,7 +91,8 @@
         "keywords": [
             "hydra",
             "yamaraj",
-            "zombie dragon"
+            "zombie dragon",
+            "remorhaz"
         ],
         "traits": [
             "dragon"
@@ -188,7 +187,10 @@
             "wihsaak",
             "con rit",
             "mukradi",
-            "vescavor"
+            "vescavor",
+            "gelugon",
+            "hive mother",
+            "rust monster"
         ],
         "traits": [],
         "size": 3
@@ -427,8 +429,8 @@
         ],
         "size": 3
     },
-    "Balor": {
-        "display_name": "Balor",
+    "Barbazu": {
+        "display_name": "Barbazu",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Balor/Balor_Monster_Pain_1_Supernatural_Creature_Groan_Hurt_Death_Hit_Vocalization.mp3",
@@ -478,7 +480,9 @@
         "keywords": [
             "basilisk",
             "cave worm",
-            "krooth"
+            "krooth",
+            "bulette",
+            "naunet"
         ],
         "traits": [],
         "size": -1
@@ -626,7 +630,8 @@
         "creatures": [],
         "keywords": [
             "sphinx",
-            "smilodon"
+            "smilodon",
+            "rakshasa"
         ],
         "traits": [],
         "size": -1
@@ -695,7 +700,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "arboreal"
+            "arboreal",
+            "wemmuth"
         ],
         "traits": [],
         "size": 4
@@ -751,7 +757,8 @@
         "creatures": [],
         "keywords": [
             "harpy",
-            "strix"
+            "strix",
+            "cloaker"
         ],
         "traits": [],
         "size": -1
@@ -918,10 +925,11 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Rock_Golem/Rock_Golem_Monster_Death_3_Supernatural_Mythical_Creature.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "kapoacinth"
+        ],
         "traits": [
-            "construct",
-            "earth"
+            "construct"
         ],
         "size": 3
     },
@@ -1004,7 +1012,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Creature/CREAHmn_Female Creature Death Monstrosity Raspy Yell Cry Groan 05_ESM_HC2.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "hag"
+        ],
         "traits": [
             "hag"
         ],
@@ -1037,7 +1047,9 @@
         "creatures": [],
         "keywords": [
             "medusa",
-            "lamia"
+            "lamia",
+            "naga",
+            "marilith"
         ],
         "traits": [],
         "size": -1
@@ -1169,7 +1181,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 02_ESM_HC2.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "simurgh"
+        ],
         "traits": [
             "werecreature"
         ],
@@ -1201,7 +1215,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "wisp"
+            "wisp",
+            "phantasmal minion"
         ],
         "traits": [],
         "size": 0
@@ -1305,7 +1320,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Hellspawn/CREAHmn_Hellspawn Death Throaty High Pitched Screaming Falling 06_ESM_HC2.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "mephit"
+        ],
         "traits": [
             "fiend"
         ],
@@ -1378,7 +1395,8 @@
             "terotricus",
             "warsworn",
             "ort",
-            "omox"
+            "omox",
+            "shoggoth"
         ],
         "traits": [
             "ooze"
@@ -1411,11 +1429,15 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Strigoi/CREAHmn_Strigoi Death Multiple Gargling Hissing Pitiful Dying 05_ESM_HC2.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "doppelganger",
+            "skum"
+        ],
         "traits": [
             "aberration",
             "xulgath",
-            "qlippoth"
+            "qlippoth",
+            "sea devil"
         ],
         "size": 2
     },
@@ -1448,7 +1470,8 @@
         "keywords": [
             "wisp",
             "shining child",
-            "venedaemon"
+            "venedaemon",
+            "quelaunt"
         ],
         "traits": [],
         "size": 1
@@ -1631,7 +1654,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_05.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "centaur"
+        ],
         "traits": [
             "female",
             "human",
@@ -2732,12 +2757,14 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samilizard/samilizard-death-9.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "salamander"
+        ],
         "traits": [
             "male",
             "lizardfolk",
             "nagaji",
-            "serpentfolk"
+            "serpentfolk"            
         ],
         "size": 2
     },
@@ -3253,7 +3280,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Death/Zombie_Dead-004.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "wendigo"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3344,8 +3373,8 @@
         "traits": [],
         "size": -1
     },
-    "Lion": {
-        "display_name": "Lion",
+    "Manticore": {
+        "display_name": "Manticore",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Hurt/Mountain_Lion_Damage_Take-001.wav",
@@ -3372,7 +3401,32 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Lion/Death/Mountain_Lion_Dead-004.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "manticore"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Lion": {
+        "display_name": "Lion",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Damage 1.mp3",
+            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Damage 2.mp3",
+            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Damage 3.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Attack.mp3"            
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Death.mp3"
+        ],
+        "creatures": [],
+        "keywords": [
+            "tiger",
+            "lion",
+            "leopard"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3526,7 +3580,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_tidal_wave_drown_04.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "tidal master",
+            "living waterfall"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3552,7 +3609,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_power_02.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "storm lord",
+            "uthul"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3583,7 +3643,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_falling_debris_04.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "xorn",
+            "zaramuun"
+        ],
         "traits": [],
         "size": -1
     },
