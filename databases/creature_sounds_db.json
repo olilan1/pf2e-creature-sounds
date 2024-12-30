@@ -484,7 +484,7 @@
         "size": -1
     },
     "Frost_Giant": {
-        "display_name": "Bear",
+        "display_name": "Ogre",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Frost_Giant/Frost_Giant_Monster_Pain_1_Human_Creature_Short_Grunt_Hit_Hurt.mp3",
@@ -503,7 +503,7 @@
         ],
         "creatures": [],
         "keywords": [
-            "bear"
+            "ogre"
         ],
         "traits": [],
         "size": -1
@@ -3082,9 +3082,11 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Death/Bear_Dead-002.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "bear"
+        ],
         "traits": [],
-        "size": -1
+        "size": 3
     },
     "Beast": {
         "display_name": "Beast",
