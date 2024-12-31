@@ -2922,7 +2922,8 @@
         "creatures": [],
         "keywords": [
             "dweomercat",
-            "hellcat"
+            "hellcat",
+            "cat"
         ],
         "traits": [],
         "size": -1
@@ -2946,7 +2947,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Death/Chicken 01.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "chicken"
+        ],
         "traits": [],
         "size": -1
     },
@@ -2975,7 +2978,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Death/Cow 04.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "cow"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3006,7 +3011,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 04.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "dog"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3034,7 +3041,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Death/Donkey 04.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "donkey"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3063,7 +3072,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Death/Duck 08.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "duck"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3136,7 +3147,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Death/Pig Squeel 09.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "pig"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3162,7 +3175,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Death/Sheep 06.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "sheep"
+        ],
         "traits": [],
         "size": -1
     },
@@ -3283,6 +3298,7 @@
         ],
         "creatures": [],
         "keywords": [
+            "camel",
             "hodag"
         ],
         "traits": [],
@@ -3332,6 +3348,8 @@
         ],
         "creatures": [],
         "keywords": [
+            "crocodile",
+            "alligator",
             "akizendri",
             "esobok",
             "megalania"
@@ -3630,7 +3648,8 @@
         "creatures": [],
         "keywords": [
             "snapping turtle",
-            "hippopotamus"
+            "hippopotamus",
+            "sea lion"
         ],
         "traits": [],
         "size": -1
