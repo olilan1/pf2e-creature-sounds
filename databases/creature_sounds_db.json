@@ -101,7 +101,8 @@
             "yamaraj",
             "zombie dragon",
             "remorhaz",
-            "behir"
+            "behir",
+            "forest dragon"
         ],
         "traits": [
             "dragon"
@@ -699,7 +700,7 @@
         "size": 2
     },
     "Treant": {
-        "display_name": "Arboreal",
+        "display_name": "Plant - Arboreal",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Treant/Treant_Monster_Pain_1_Tree_Creature_Croak_Groan_Moan_Squeal.mp3",
@@ -723,13 +724,13 @@
             "arboreal",
             "wemmuth",
             "mandragora",
-            "moonflower",
             "sard",
             "tree",
             "viper vine"
         ],
-        "traits": [],
-        "size": 4
+        "traits": [
+        ],
+        "size": 5
     },
     "Gnoll": {
         "display_name": "Kholo",
@@ -3187,10 +3188,13 @@
         "display_name": "Snake",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.mp3"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Animals_Nature_Ambiences/snake_hiss_04.wav"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Attack/Snake 2.mp3"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Attack/Snake 2.mp3",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Animals_Nature_Ambiences/snake_hiss_01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Animals_Nature_Ambiences/snake_hiss_02.wav"
         ],
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Death/Snake 1.mp3"
@@ -3359,7 +3363,7 @@
         "traits": [],
         "size": 2
     },
-    "Daemon": {
+    "Insectoid": {
         "display_name": "Insectoid",
         "notes": "",
         "hurt_sounds": [
@@ -3921,5 +3925,31 @@
             "sprite"
         ],
         "size": 0
+    },
+    "small_plant": {
+        "display_name": "Plant",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_03.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_04.wav"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_tree_impact_01.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_tree_impact_02.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_tree_impact_03.wav"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact1.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact2.wav",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact3.wav"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "plant"
+        ],
+        "size": 1
     }
 }
