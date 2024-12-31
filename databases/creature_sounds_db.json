@@ -3118,7 +3118,7 @@
             "pegasus"
         ],
         "traits": [],
-        "size": 2
+        "size": -1
     },
     "Pig": {
         "display_name": "Pig",
@@ -3154,7 +3154,7 @@
             "pig"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Sheep": {
         "display_name": "Sheep",
@@ -3182,7 +3182,7 @@
             "sheep"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Snake": {
         "display_name": "Snake",
@@ -3205,7 +3205,7 @@
             "cobra"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Bear": {
         "display_name": "Bear",
@@ -3229,7 +3229,7 @@
             "wolverine"
         ],
         "traits": [],
-        "size": 3
+        "size": -1
     },
     "Beast": {
         "display_name": "Beast",
@@ -3283,7 +3283,7 @@
             "wereboar"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Camel": {
         "display_name": "Camel",
@@ -3308,7 +3308,7 @@
             "hodag"
         ],
         "traits": [],
-        "size": 2
+        "size": -1
     },
     "Crab": {
         "display_name": "Crab",
