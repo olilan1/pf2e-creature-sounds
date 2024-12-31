@@ -198,9 +198,7 @@
             "gelugon",
             "hive mother",
             "rust monster",
-            "bebilith",
             "bog strider",
-            "solifugid",
             "giant maggot"
         ],
         "traits": [],
@@ -957,7 +955,9 @@
         "creatures": [],
         "keywords": [
             "kapoacinth",
-            "granite glyptodont"
+            "granite glyptodont",
+            "shaitan",
+            "bastion archon"
         ],
         "traits": [
             "construct"
@@ -1524,7 +1524,8 @@
             "ankou",
             "denizen of leng",
             "devourer",
-            "soul eater"
+            "soul eater",
+            "demilich"
         ],
         "traits": [],
         "size": 1
@@ -1561,7 +1562,8 @@
             "chupacabra",
             "bodak",
             "void zombie",
-            "yellow musk thrall"
+            "yellow musk thrall",
+            "flesh golem"
         ],
         "traits": [
             "zombie"
@@ -1881,7 +1883,7 @@
             "dwarf",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Chloe": {
         "display_name": "Humanoid Feminine G",
@@ -1934,7 +1936,7 @@
             "elf",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Esmerelda": {
         "display_name": "Humanoid Feminine H",
@@ -1980,7 +1982,7 @@
             "elf",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Grace": {
         "display_name": "Humanoid Feminine I",
@@ -2039,7 +2041,7 @@
             "dwarf",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Kate": {
         "display_name": "Humanoid Feminine J",
@@ -2090,7 +2092,7 @@
             "dwarf",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Robin": {
         "display_name": "Humanoid Feminine K",
@@ -2123,7 +2125,7 @@
             "dwarf",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Zoe": {
         "display_name": "Humanoid Feminine L",
@@ -2165,7 +2167,7 @@
             "halfling",
             "centaur"
         ],
-        "size": -1
+        "size": 2
     },
     "Human_Male_A": {
         "display_name": "Humanoid Masculine A",
@@ -2926,7 +2928,7 @@
             "cat"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Chicken": {
         "display_name": "Chicken",
@@ -2951,7 +2953,7 @@
             "chicken"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Cow": {
         "display_name": "Cow",
@@ -2982,7 +2984,7 @@
             "cow"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Dog": {
         "display_name": "Dog",
@@ -3015,7 +3017,7 @@
             "dog"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Donkey": {
         "display_name": "Donkey",
@@ -3045,7 +3047,7 @@
             "donkey"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Duck": {
         "display_name": "Duck",
@@ -3076,7 +3078,7 @@
             "duck"
         ],
         "traits": [],
-        "size": -1
+        "size": 0
     },
     "Horse": {
         "display_name": "Horse",
@@ -3115,7 +3117,7 @@
             "pegasus"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Pig": {
         "display_name": "Pig",
@@ -3151,7 +3153,7 @@
             "pig"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Sheep": {
         "display_name": "Sheep",
@@ -3179,7 +3181,7 @@
             "sheep"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Snake": {
         "display_name": "Snake",
@@ -3199,7 +3201,7 @@
             "cobra"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Bear": {
         "display_name": "Bear",
@@ -3277,7 +3279,7 @@
             "wereboar"
         ],
         "traits": [],
-        "size": -1
+        "size": 1
     },
     "Camel": {
         "display_name": "Camel",
@@ -3302,7 +3304,7 @@
             "hodag"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Crab": {
         "display_name": "Crab",
@@ -3326,7 +3328,7 @@
             "irlgaunt"
         ],
         "traits": [],
-        "size": -1
+        "size": 0
     },
     "Crocodile": {
         "display_name": "Crocodile",
@@ -3355,10 +3357,10 @@
             "megalania"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Daemon": {
-        "display_name": "Daemon",
+        "display_name": "Insectoid",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Daemon/Hurt/Harpy_Damage_Take-001.wav",
@@ -3380,7 +3382,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "grodair"
+            "grodair",
+            "bebilith",
+            "solifugid"
         ],
         "traits": [],
         "size": -1
@@ -3484,7 +3488,7 @@
             "mastodon"
         ],
         "traits": [],
-        "size": -1
+        "size": 3
     },
     "Fly": {
         "display_name": "Fly",
@@ -3513,7 +3517,7 @@
             "wasp"
         ],
         "traits": [],
-        "size": -1
+        "size": 0
     },
     "Manticore": {
         "display_name": "Manticore",
@@ -3570,7 +3574,7 @@
             "leopard"
         ],
         "traits": [],
-        "size": -1
+        "size": 2
     },
     "Ooze": {
         "display_name": "Ooze",
