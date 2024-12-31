@@ -730,7 +730,7 @@
         ],
         "traits": [
         ],
-        "size": 5
+        "size": -1
     },
     "Gnoll": {
         "display_name": "Kholo",
@@ -1125,7 +1125,7 @@
         "traits": [
             "gremlin"
         ],
-        "size": 0
+        "size": 1
     },
     "Female Succubus Demon": {
         "display_name": "Succubus",
@@ -1529,7 +1529,7 @@
             "demilich"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Zombie": {
         "display_name": "Zombie",
@@ -2929,7 +2929,7 @@
             "cat"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Chicken": {
         "display_name": "Chicken",
@@ -2954,7 +2954,7 @@
             "chicken"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Cow": {
         "display_name": "Cow",
@@ -2985,7 +2985,7 @@
             "cow"
         ],
         "traits": [],
-        "size": 2
+        "size": -1
     },
     "Dog": {
         "display_name": "Dog",
@@ -3018,7 +3018,7 @@
             "dog"
         ],
         "traits": [],
-        "size": 1
+        "size": -1
     },
     "Donkey": {
         "display_name": "Donkey",
@@ -3048,7 +3048,7 @@
             "donkey"
         ],
         "traits": [],
-        "size": 2
+        "size": -1
     },
     "Duck": {
         "display_name": "Duck",
@@ -3079,7 +3079,7 @@
             "duck"
         ],
         "traits": [],
-        "size": 0
+        "size": -1
     },
     "Horse": {
         "display_name": "Horse",
@@ -3332,7 +3332,7 @@
             "irlgaunt"
         ],
         "traits": [],
-        "size": 0
+        "size": -1
     },
     "Crocodile": {
         "display_name": "Crocodile",
@@ -3361,7 +3361,7 @@
             "megalania"
         ],
         "traits": [],
-        "size": 2
+        "size": -1
     },
     "Insectoid": {
         "display_name": "Insectoid",
@@ -3492,7 +3492,7 @@
             "mastodon"
         ],
         "traits": [],
-        "size": 3
+        "size": -1
     },
     "Fly": {
         "display_name": "Fly",
@@ -3521,7 +3521,7 @@
             "wasp"
         ],
         "traits": [],
-        "size": 0
+        "size": -1
     },
     "Manticore": {
         "display_name": "Manticore",
@@ -3578,7 +3578,7 @@
             "leopard"
         ],
         "traits": [],
-        "size": 2
+        "size": -1
     },
     "Ooze": {
         "display_name": "Ooze",
@@ -3950,6 +3950,6 @@
         "traits": [
             "plant"
         ],
-        "size": 1
+        "size": -1
     }
 }
