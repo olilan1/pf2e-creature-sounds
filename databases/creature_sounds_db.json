@@ -65,7 +65,9 @@
             "behemoth hippopotamus",
             "frost worm",
             "hezrou",
-            "leydroth"
+            "leydroth",
+            "kimenhul",
+            "tzitzimitl"
         ],
         "traits": [],
         "size": -1
@@ -145,11 +147,11 @@
         ],
         "creatures": [],
         "keywords": [
-            "skulk"
+            "skulk",
+            "grioth"
         ],
         "traits": [
-            "goblin",
-            "kobold"
+            "goblin"
         ],
         "size": -1
     },
@@ -200,7 +202,12 @@
             "hive mother",
             "rust monster",
             "bog strider",
-            "giant maggot"
+            "giant maggot",
+            "empress bore worm",
+            "empress ice worm",
+            "empress mage-eater worm",
+            "empress necril worm",
+            "eurypterid"
         ],
         "traits": [],
         "size": 3
@@ -299,7 +306,9 @@
             "vrykolakas"
         ],
         "traits": [
-            "skeleton"
+            "skeleton",
+            "Guecubu",
+            "Rokurokubi"
         ],
         "size": -1
     },
@@ -381,7 +390,9 @@
             "tarantula",
             "tick",
             "wihsaak",
-            "solifugid"
+            "solifugid",
+            "lovelorn",
+            "ostovite"
         ],
         "traits": [],
         "size": 0
@@ -411,7 +422,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "grendel"
+            "grendel",
+            "angazhani"
         ],
         "traits": [
             "troll"
@@ -441,7 +453,9 @@
         "creatures": [],
         "keywords": [
             "elasmosaurus",
-            "water orm"
+            "water orm",
+            "mokele-mbembe",
+            "tyrannosaurus"
         ],
         "traits": [
             "dinosaur"
@@ -624,7 +638,11 @@
             "coatl",
             "pteranodon",
             "quetzalcoatlus",
-            "jyoti"
+            "jyoti",
+            "Garuda",
+            "Harmona",
+            "Terror Shrike",
+            "Tidehawk"
         ],
         "traits": [],
         "size": -1
@@ -653,7 +671,8 @@
             "sphinx",
             "smilodon",
             "rakshasa",
-            "imentesh"
+            "imentesh",
+            "Hieracosphinx"
         ],
         "traits": [],
         "size": -1
@@ -694,7 +713,8 @@
             "tarantula",
             "tick",
             "wihsaak",
-            "solifugid"
+            "solifugid",
+            "eurypterid"
         ],
         "traits": [],
         "size": 2
@@ -756,7 +776,11 @@
             "hyena",
             "hyaenodon",
             "aurumvorax",
-            "leucrotta"
+            "leucrotta",
+            "Eunemvro",
+            "Kirin",
+            "Kishi",
+            "Namorrodor"
         ],
         "traits": [
             "gnoll",
@@ -820,7 +844,8 @@
             "warg",
             "witchwarg",
             "peryton",
-            "trollhound"
+            "trollhound",
+            "esipil"
         ],
         "traits": [],
         "size": -1
@@ -851,7 +876,8 @@
             "hippocampus",
             "alicorn",
             "karkadann",
-            "sandpoint devil"
+            "sandpoint devil",
+            "shantak"
         ],
         "traits": [],
         "size": -1
@@ -904,7 +930,8 @@
         "creatures": [],
         "keywords": [],
         "traits": [
-            "giant"
+            "giant",
+            "titan"
         ],
         "size": -1
     },
@@ -958,12 +985,13 @@
             "kapoacinth",
             "granite glyptodont",
             "shaitan",
-            "bastion archon"
+            "bastion archon",
+            "sturzstromer"
         ],
         "traits": [
             "construct"
         ],
-        "size": 3
+        "size": 5
     },
     "Wight": {
         "display_name": "Wight",
@@ -990,7 +1018,11 @@
             "draugr",
             "mohrg",
             "skaveling",
-            "totenmaske"
+            "totenmaske",
+            "Baykok",
+            "Festrog",
+            "Kurobozu",
+            "Trailgaunt"
         ],
         "traits": [
             "wight"
@@ -1017,7 +1049,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wraith/Wraith_Monster_Death_3_Spirit_Fairy_Ghost_Creature.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Betobeto-San"
+        ],
         "traits": [
             "incorporeal",
             "wraith",
@@ -1051,7 +1085,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "hag"
+            "hag",
+            "aghash",
+            "hyakume"
         ],
         "traits": [
             "hag"
@@ -1089,7 +1125,10 @@
             "naga",
             "marilith",
             "rusalka",
-            "vaspercham"
+            "vaspercham",
+            "Angheuvore Flesh-Gnawer",
+            "Mothman",
+            "Pakalchi"
         ],
         "traits": [],
         "size": -1
@@ -1120,7 +1159,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "pukwudgie"
+            "pukwudgie",
+            "skull peeler",
+            "tupilag"
         ],
         "traits": [
             "gremlin"
@@ -1189,7 +1230,8 @@
         "keywords": [
             "revenant",
             "seraptis",
-            "ostiarius"
+            "ostiarius",
+            "Manticore Paaridar"
         ],
         "traits": [],
         "size": -1
@@ -1214,7 +1256,6 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Grunt Growl 01_ESM_HC2.mp3",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Grunt Growl 02_ESM_HC2.mp3",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Howl 01_ESM_HC2.mp3",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 01_ESM_HC2.mp3",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 02_ESM_HC2.mp3"
         ],
@@ -1326,7 +1367,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "boggard"
+            "boggard",
+            "myceloid"
         ],
         "traits": [
             "ghoul",
@@ -1364,7 +1406,13 @@
         "creatures": [],
         "keywords": [
             "mephit",
-            "scamp"
+            "scamp",
+            "domovoi",
+            "doru",
+            "kappa",
+            "kasa-obake",
+            "kushtaka",
+            "scalescribe"
         ],
         "traits": [
             "fiend"
@@ -1400,7 +1448,8 @@
         "creatures": [],
         "keywords": [
             "nuckelavee",
-            "vrock"
+            "vrock",
+            "Mobogo"
         ],
         "traits": [],
         "size": -1
@@ -1442,7 +1491,9 @@
             "shoggoth",
             "blindheim",
             "giant leech",
-            "mist stalker"
+            "mist stalker",
+            "Skinstitch",
+            "Squirming Swill"
         ],
         "traits": [
             "ooze"
@@ -1481,7 +1532,12 @@
             "grimstalker",
             "intellect devourer",
             "stygira",
-            "urdefhan"
+            "urdefhan",
+            "Caulborn",
+            "Nosferatu Malefactor",
+            "Nosferatu Overlord",
+            "Popobawa",
+            "Soul Skelm"
         ],
         "traits": [
             "aberration",
@@ -1526,7 +1582,16 @@
             "denizen of leng",
             "devourer",
             "soul eater",
-            "demilich"
+            "demilich",
+            "Brainchild",
+            "Divine Warden Of Nethys",
+            "Dramofir",
+            "Hadrinnex",
+            "Hatred Siktempora",
+            "Owb",
+            "Owb Prophet",
+            "Shae",
+            "Tolokand"
         ],
         "traits": [],
         "size": -1
@@ -1564,7 +1629,10 @@
             "bodak",
             "void zombie",
             "yellow musk thrall",
-            "flesh golem"
+            "flesh golem",
+            "Buso",
+            "Incutilis",
+            "Severed Head"
         ],
         "traits": [
             "zombie"
@@ -1627,7 +1695,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "fetchling scout"
+            "fetchling scout",
+            "azarketi explorer",
+            "valkyrie"
         ],
         "traits": [
             "female",
@@ -1716,7 +1786,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "centaur"
+            "centaur",
+            "munavri spellblade"
         ],
         "traits": [
             "female",
@@ -1821,7 +1892,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Agnes/Death/NPC_Agnes_Death_6.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "samsaran anchorite"
+        ],
         "traits": [
             "female",
             "human",
@@ -1876,7 +1949,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Alex/Death/Hero_Alex_Death_7.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "adlet",
+            "azer",
+            "hellbound attorney",
+            "strix kinmate",
+            "zuishin"
+        ],
         "traits": [
             "female",
             "human",
@@ -1929,7 +2008,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Chloe/Death/Hero_Chloe_Death_5.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "ganzi martial artist"
+        ],
         "traits": [
             "female",
             "human",
@@ -1974,7 +2055,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "sylph sneak"
+            "sylph sneak",
+            "munagola"
         ],
         "traits": [
             "female",
@@ -2034,7 +2116,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_6.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "huldra"
+        ],
         "traits": [
             "female",
             "human",
@@ -2117,7 +2201,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "triton"
+            "triton",
+            "android infiltrator"
         ],
         "traits": [
             "female",
@@ -2256,7 +2341,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male B/voice_male_b_death_low_10.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Nosferatu Thrall"
+        ],
         "traits": [
             "male",
             "human",
@@ -2314,7 +2401,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "witchwyrd"
+            "witchwyrd",
+            "Tattoo Guardian",
+            "Vanara Disciple"
         ],
         "traits": [
             "male",
@@ -2366,7 +2455,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Boris/Death/Soldier_Boris_Death_6.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Cecaelia Trapper",
+            "Kovintus Geomancer"
+        ],
         "traits": [
             "male",
             "human",
@@ -2487,7 +2579,9 @@
         "creatures": [],
         "keywords": [
             "caligni slayer",
-            "undine hydromancer"
+            "undine hydromancer",
+            "Shrine Skelm",
+            "Caligni Vanguard"
         ],
         "traits": [
             "male",
@@ -2543,7 +2637,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male D/voice_male_d_death_12.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Maftet Guardian"
+        ],
         "traits": [
             "male",
             "human",
@@ -2589,7 +2685,11 @@
         "creatures": [],
         "keywords": [
             "quickling",
-            "spriggan"
+            "spriggan",
+            "duende",
+            "dvorovoi",
+            "etioling",
+            "wayang"
         ],
         "traits": [
             "goblin"
@@ -2625,7 +2725,9 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benhuman/benhuman-death-5.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Caligni Caller"
+        ],
         "traits": [
             "male",
             "human",
@@ -2752,7 +2854,9 @@
         "keywords": [
             "blodeuwedd",
             "korred",
-            "leprechaun"
+            "leprechaun",
+            "millindemalion",
+            "ovinnik"
         ],
         "traits": [
             "gnome"
@@ -2842,7 +2946,9 @@
         ],
         "creatures": [],
         "keywords": [
-            "salamander"
+            "salamander",
+            "Mix Couatl",
+            "Vishkanya Infiltrator"
         ],
         "traits": [
             "male",
@@ -2892,7 +2998,9 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samiswash/samiswash-death-6.mp3"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Triumph Siktempora"
+        ],
         "traits": [
             "male",
             "human"
@@ -2926,7 +3034,10 @@
         "keywords": [
             "dweomercat",
             "hellcat",
-            "cat"
+            "cat",
+            "squirrel",
+            "silvanshee",
+            "lion cub"
         ],
         "traits": [],
         "size": -1
@@ -3115,7 +3226,8 @@
         "keywords": [
             "horse",
             "unicorn",
-            "pegasus"
+            "pegasus",
+            "yzobu"
         ],
         "traits": [],
         "size": -1
@@ -3202,7 +3314,11 @@
         "creatures": [],
         "keywords": [
             "snake",
-            "cobra"
+            "cobra",
+            "amphisbaena",
+            "ouroboros",
+            "viper",
+            "stheno"
         ],
         "traits": [],
         "size": -1
@@ -3226,7 +3342,10 @@
         "creatures": [],
         "keywords": [
             "bear",
-            "wolverine"
+            "wolverine",
+            "opossum",
+            "kokogiak",
+            "megalictis"
         ],
         "traits": [],
         "size": -1
@@ -3254,7 +3373,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "catoblepas"
+            "catoblepas",
+            "giant pangolin"
         ],
         "traits": [],
         "size": -1
@@ -3280,7 +3400,8 @@
         "creatures": [],
         "keywords": [
             "boar",
-            "wereboar"
+            "wereboar",
+            "nucol"
         ],
         "traits": [],
         "size": -1
@@ -3305,7 +3426,18 @@
         "creatures": [],
         "keywords": [
             "camel",
-            "hodag"
+            "hodag",
+            "bauble beast",
+            "bison",
+            "giant porcupine",
+            "giant skunk",
+            "kangaroo",
+            "khravgodon",
+            "megatherium",
+            "moose",
+            "ram",
+            "sloth",
+            "wolliped"
         ],
         "traits": [],
         "size": -1
@@ -3358,7 +3490,12 @@
             "alligator",
             "akizendri",
             "esobok",
-            "megalania"
+            "megalania",
+            "platecarpus",
+            "tylosaurus",
+            "werecrocodile",
+            "ximtal",
+            "zetogeki"
         ],
         "traits": [],
         "size": -1
@@ -3388,7 +3525,14 @@
         "keywords": [
             "grodair",
             "bebilith",
-            "solifugid"
+            "solifugid",
+            "Girtablilu Seer",
+            "Girtablilu Sentry",
+            "Jorogumo",
+            "Levaloch",
+            "Mi-Go",
+            "Misery Siktempora",
+            "Quintessivore"
         ],
         "traits": [],
         "size": -1
@@ -3575,7 +3719,8 @@
         "keywords": [
             "tiger",
             "lion",
-            "leopard"
+            "leopard",
+            "Nikaramsa"
         ],
         "traits": [],
         "size": -1
@@ -3628,7 +3773,14 @@
         "creatures": [],
         "keywords": [
             "doprillu",
-            "yellow musk brute"
+            "yellow musk brute",
+            "adhukait",
+            "krampus",
+            "sabosan",
+            "sasquatch",
+            "street skelm",
+            "sumbreiva",
+            "tikbalang"
         ],
         "traits": [],
         "size": -1
@@ -3691,7 +3843,10 @@
             "ice golem",
             "icicle snake",
             "sceaduinar",
-            "umonlee"
+            "umonlee",
+            "adachros",
+            "consonite choir",
+            "ledalusca"
         ],
         "traits": [],
         "size": -1
@@ -3719,7 +3874,9 @@
         "creatures": [],
         "keywords": [
             "lerritan",
-            "marrmora"
+            "marrmora",
+            "lava worm",
+            "xiuh couatl"
         ],
         "traits": [],
         "size": -1
@@ -3840,7 +3997,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "mosquito swarm"
+            "mosquito swarm",
+            "hellwasp swarm"
         ],
         "traits": [],
         "size": -1
@@ -3919,7 +4077,10 @@
         "keywords": [
             "fairy",
             "brownie",
-            "lurker in light"
+            "lurker in light",
+            "Gathlain Wanderer",
+            "Kodama",
+            "Shikigami"
         ],
         "traits": [
             "sprite"
@@ -3946,7 +4107,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact3.wav"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "Green Man",
+            "Toshigami"
+        ],
         "traits": [
             "plant"
         ],
