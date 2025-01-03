@@ -3301,12 +3301,12 @@
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Animals_Nature_Ambiences/snake_hiss_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/snake_hiss_04.m4a"
         ],
         "attack_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Attack/Snake 2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Animals_Nature_Ambiences/snake_hiss_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Animals_Nature_Ambiences/snake_hiss_02.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/snake_hiss_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/snake_hiss_02.m4a"
         ],
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Death/Snake 1.m4a"
@@ -3818,23 +3818,23 @@
         "display_name": "Elemental - Ice",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_small_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_small_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_small_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_small_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_small_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_small_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_small_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_small_04.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_blast_projectile_spell_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_blast_projectile_spell_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_blast_projectile_spell_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_blast_projectile_spell_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_blast_projectile_spell_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_blast_projectile_spell_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_blast_projectile_spell_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_blast_projectile_spell_04.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_frost_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_frost_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_frost_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_frost_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/ice_spell_freeze_frost_05.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_05.m4a"
         ],
         "creatures": [],
         "keywords": [
@@ -3860,12 +3860,12 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Monster/Monster_Growl-003.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/fireball_blast_projectile_spell_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/fireball_blast_projectile_spell_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/fireball_blast_projectile_spell_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/fireball_blast_projectile_spell_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/fireball_blast_projectile_spell_05.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/fireball_blast_projectile_spell_06.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/fireball_blast_projectile_spell_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/fireball_blast_projectile_spell_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/fireball_blast_projectile_spell_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/fireball_blast_projectile_spell_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/fireball_blast_projectile_spell_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/fireball_blast_projectile_spell_06.m4a"
         ],
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Monster/Monster_Scream_A-002.m4a",
@@ -3885,23 +3885,23 @@
         "display_name": "Elemental - Water",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_impact_hit_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_impact_hit_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_impact_hit_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_impact_hit_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_impact_hit_05.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_impact_hit_06.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_impact_hit_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_impact_hit_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_impact_hit_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_impact_hit_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_impact_hit_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_impact_hit_06.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_blast_projectile_spell_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_blast_projectile_spell_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_blast_projectile_spell_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_blast_projectile_spell_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_blast_projectile_spell_05.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_blast_projectile_spell_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_blast_projectile_spell_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_blast_projectile_spell_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_blast_projectile_spell_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_blast_projectile_spell_05.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_tidal_wave_drown_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/water_spell_tidal_wave_drown_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_tidal_wave_drown_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/water_spell_tidal_wave_drown_04.m4a"
         ],
         "creatures": [],
         "keywords": [
@@ -3915,22 +3915,22 @@
         "display_name": "Elemental - Air",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/dark_wind_growls_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/dark_wind_growls_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/dark_wind_growls_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/dark_wind_growls_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/dark_wind_growls_05.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/dark_wind_growls_06.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/dark_wind_growls_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/dark_wind_growls_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/dark_wind_growls_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/dark_wind_growls_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/dark_wind_growls_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/dark_wind_growls_06.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_blast_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_blast_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_blast2_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_blast2_02.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/wind_blizzard_storm_spell_blast_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/wind_blizzard_storm_spell_blast_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/wind_blizzard_storm_spell_blast2_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/wind_blizzard_storm_spell_blast2_02.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_power_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/wind_blizzard_storm_spell_power_02.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/wind_blizzard_storm_spell_power_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/wind_blizzard_storm_spell_power_02.m4a"
         ],
         "creatures": [],
         "keywords": [
@@ -3947,27 +3947,27 @@
         "display_name": "Elemental - Earth",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_hit_impact_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_hit_impact_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_hit_impact_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_hit_impact_large_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_hit_impact_large_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_hit_impact_large_03.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_hit_impact_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_hit_impact_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_hit_impact_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_hit_impact_large_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_hit_impact_large_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_hit_impact_large_03.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_heavy_slam_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_heavy_slam_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_heavy_slam_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_heavy_slam_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_small_hit_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_small_hit_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_impact_small_hit_03.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_heavy_slam_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_heavy_slam_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_heavy_slam_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_heavy_slam_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_small_hit_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_small_hit_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_impact_small_hit_03.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_falling_debris_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_falling_debris_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_falling_debris_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Impacts_Smashable/rock_smashable_falling_debris_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_falling_debris_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_falling_debris_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_falling_debris_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Impacts_Smashable/rock_smashable_falling_debris_04.m4a"
         ],
         "creatures": [],
         "keywords": [
@@ -3984,16 +3984,16 @@
         "display_name": "Insect Swarm",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_06.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/fly_buzz_flying_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/fly_buzz_flying_06.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_05.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/fly_buzz_flying_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/fly_buzz_flying_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/fly_buzz_flying_05.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Animals_Nature_Ambiences/fly_buzz_flying_02.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Animals_Nature_Ambiences/fly_buzz_flying_02.m4a"
         ],
         "creatures": [],
         "keywords": [
@@ -4007,71 +4007,71 @@
         "display_name": "Sprite",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_05.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_06.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_07.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_08.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_09.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_10.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_11.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_12.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_13.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_14.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_15.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_16.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_17.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_18.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_19.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_20.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_21.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_hurt_pain_22.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_16.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_17.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_18.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_19.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_20.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_21.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_22.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_05.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_06.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_07.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_08.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_09.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_10.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_11.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_12.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_13.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_14.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_15.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_16.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_17.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_18.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_19.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_20.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_21.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_22.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_23.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_attack_24.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_16.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_17.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_18.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_19.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_20.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_21.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_22.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_23.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_attack_24.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_04.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_05.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_06.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_07.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_08.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_09.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_10.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_11.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_pain_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_pain_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_pain_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Voice/Goblin Fairy/goblin_fairy_death_pain_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_pain_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_death_pain_04.m4a"
         ],
         "creatures": [],
         "keywords": [
@@ -4091,20 +4091,20 @@
         "display_name": "Plant",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_03.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_bush_tree_whip_04.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_bush_tree_whip_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_bush_tree_whip_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_bush_tree_whip_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_bush_tree_whip_04.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_tree_impact_01.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_tree_impact_02.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_tree_impact_03.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_tree_impact_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_tree_impact_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_tree_impact_03.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact1.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection v1.3 - 16bit 48k/Magic_Spells/nature_spell_vines_blast_impact3.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_blast_impact1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_blast_impact2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_blast_impact3.m4a"
         ],
         "creatures": [],
         "keywords": [
