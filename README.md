@@ -12,3 +12,37 @@ covering creatures from dragons to sprites, aberrations to insects, and a large 
 The module attempts to match an appropriate sound set using a creature's name, traits, and size - for example, a tiny
 fiend will use the "Imp" sound set by default. For cases where a match can't be found, or if you want to choose a different
 set, you can pick the sounds used with a selector, and you can even create your own sound sets by uploading sound files.
+
+## Choosing a sound set
+
+Click on Sounds in the header bar of a character sheet (NPC or Player) to open the sound select
+dialog.
+
+<img src="documentation/sounds-ringed.png" width="400">
+
+In the dialog that appears, use the drop-down to select your preferred sound set, and use the
+buttons to preview sounds for Attack, Hurt, and Death.
+
+<img src="documentation/sound-select-dialog.png" width="240">
+
+By default, players can change sounds for actors they own, but as the GM you can turn off this
+ability in the settings if you can't trust your players not to all sound like ducks and elephants
+(don't message me if your party is actually composed of all ducks and elephants).
+
+## Adding custom sound sets
+
+If you have your own sound files and are the GM, you can create custom sound sets for use with
+players or monsters.
+
+In the module settings, click the Manage Custom Sound Sets button.
+
+<img src="documentation/manage-sound-sets-button.png" width="400">
+
+In the window that opens, click 'Create sound set' to add a new sound set, give it a name, and
+click the plus buttons beside Attack Sounds, Hurt Sounds, and Death Sounds to upload and select your
+sound files.
+
+<img src="documentation/manage-sound-sets.png" width="400">
+
+The new sound set set is saved automatically, and will appear at the bottom of the drop-down in
+the sound select dialog.
