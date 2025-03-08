@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Add system dependency to module manifest
+
 ## [0.56.1] - 2025-01-03
 
 - Rename Pro Sound Collection sound directory
