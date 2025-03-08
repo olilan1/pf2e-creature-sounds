@@ -46,7 +46,7 @@ sound files.
 
 <img src="documentation/manage-sound-sets.png" width="400">
 
-The new sound set set is saved automatically, and will appear at the bottom of the drop-down in
+The new sound set is saved automatically, and will appear at the bottom of the drop-down in
 the sound select dialog.
 
 You can also Export all your custom sound sets so that you can Import them into another world, or
