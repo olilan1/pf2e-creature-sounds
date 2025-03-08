@@ -3705,15 +3705,15 @@
         "display_name": "Lion",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Damage 1.m4a",
-            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Damage 2.m4a",
-            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Damage 3.m4a"
+            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Damage 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Damage 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Damage 3.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Attack.m4a"            
+            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Attack.m4a"            
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/Freesound_Community/Lion/Lion Death.m4a"
+            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Death.m4a"
         ],
         "creatures": [],
         "keywords": [

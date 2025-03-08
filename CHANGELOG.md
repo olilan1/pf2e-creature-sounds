@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Add system dependency to module manifest
+- Rename Freesound_Community sound directory to Pixabay and add licence
 
 ## [0.56.1] - 2025-01-03
 
