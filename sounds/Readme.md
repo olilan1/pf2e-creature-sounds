@@ -5,6 +5,8 @@ GameDevMarket: https://www.gamedevmarket.net/terms-conditions#pro-licence
 
 Pixabay: https://pixabay.com/service/license-summary/
 
+SamiOli Studios sounds are proprietary sounds recorded by the developers specifically for this module.
+
 ## Important
 
 Content inside this folder may only be distributed as part of the PF2e Creature Sounds module.
