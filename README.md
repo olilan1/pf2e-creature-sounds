@@ -15,15 +15,14 @@ for example, a tiny fiend will use the "Imp" sound set by default. If a match ca
 found, or if you want to choose a different set, you can pick the sounds used with a selector, and
 you can even create your own sound sets by uploading sound files.
 
-## Choosing a sound set
+## Previewing or choosing sound sets
 
 Click on Sounds in the header bar of a character sheet (NPC or Player) to open the sound select
 dialog.
 
 <img src="documentation/sounds-ringed.png" width="400">
 
-In the dialog that appears, use the drop-down to select your preferred sound set, and use the
-buttons to preview sounds for Attack, Hurt, and Death.
+In the dialog that appears, you can see the currently selected sound set. Use the buttons to preview sounds for Attack, Hurt, and Death, and use the drop-down to select a different sound set.
 
 <img src="documentation/sound-select-dialog.png" width="240">
 
@@ -50,5 +49,5 @@ The new sound set is saved automatically, and will appear at the bottom of the d
 the sound select dialog.
 
 You can also Export all your custom sound sets so that you can Import them into another world, or
-just as a backup. Note that this does not back up your actual sound files, just the sound set
-definition.
+just as a backup, but please note that this does not back up your actual sound files, just the sound
+set definition.
