@@ -7,12 +7,11 @@
 ![](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fversion%3Fstyle%3Dflat%26url%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Folilan1%2Fpf2e-creature-sounds%2Fmain%2Fmodule.json)
 ![](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fsystem%3FnameType%3Dshort%26showVersion%3D1%26style%3Dflat%26url%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Folilan1%2Fpf2e-creature-sounds%2Fmain%2Fmodule.json)
 
-This module adds sounds when creatures (or characters) attack or are damaged or killed. A large
-number of sound sets are included, covering creatures from dragons to sprites, aberrations to
+This module adds sounds when creatures or characters attack, are damaged, or are killed. Many sound sets are included, covering creatures from dragons to sprites, aberrations to
 insects, and many different humanoids.
 
 The module attempts to find an appropriate sound set using a creature's name, traits, and size -
-for example, a tiny fiend will use the "Imp" sound set by default. For cases where a match can't be
+for example, a tiny fiend will use the "Imp" sound set by default. If a match can't be
 found, or if you want to choose a different set, you can pick the sounds used with a selector, and
 you can even create your own sound sets by uploading sound files.
 
