@@ -2,9 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.0] - 2025-03-09
+
 - Release Candidate version
 - Add system dependency to module manifest
-- Rename Freesound_Community sound directory to Pixabay and add licence
+- Rename Freesound\_Community sound directory to Pixabay and add licence
 
 ## [0.56.1] - 2025-01-03
 
@@ -17,7 +19,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v0.56.1...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.0.0...HEAD
+
+[1.0.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v0.56.1...v1.0.0
 
 [0.56.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v0.56.0...v0.56.1
 
