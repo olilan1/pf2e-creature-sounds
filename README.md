@@ -18,6 +18,10 @@ for example, a tiny fiend will use the "Imp" sound set by default. If a match ca
 found, or if you want to choose a different set, you can pick the sounds used with a selector, and
 you can even create your own sound sets by uploading sound files.
 
+## How to use
+
+For the majority of creatures, appropriate sounds will be added automatically. Just attack with a creature normally, and you'll hear its attack sound. When it takes damage, you'll hear another sound, and another will play if it dies. If there's no automatched sound set, or you'd like to choose your own, you can do that in the Sound Select Dialog (see below).
+
 ## Previewing or choosing sound sets
 
 Click on Sounds in the header bar of a character sheet (NPC or Player) to open the sound select
