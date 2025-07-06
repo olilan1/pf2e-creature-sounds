@@ -1,9 +1,8 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
 import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName } from "./utils.ts";
-import * as importedDb from '../databases/creature_sounds_db.json' assert { type: "json" };
+import * as importedDb from '../databases/creature_sounds_db.json' with { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
-import { get } from "jquery";
 
 export interface SoundSet {
     id: string;
@@ -71,7 +70,8 @@ export async function playSoundForCreatureOnAttack(message: ChatMessagePF2e) {
 
 export async function playSoundForCreature(
         actor: ActorPF2e, soundType: SoundType, allPlayers = true, forceSound = false) {
-    if (!actor.system.attributes.emitsSound && !forceSound) {
+    // @ts-expect-error (actor.system.attributes.emitsSound is valid)
+    if (!actor.system.attributes.emitsSound && !forceSound) {       
         return;
     }
     const soundSet = await findSoundSet(actor);
