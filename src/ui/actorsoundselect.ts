@@ -67,15 +67,15 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     static playAttackSound(this: ActorSoundSelectApp) {
-        playSoundForCreature(this.actor, "attack", false);
+        playSoundForCreature(this.actor, "attack", false, true);
     }
 
     static playHurtSound(this: ActorSoundSelectApp) {
-        playSoundForCreature(this.actor, "hurt", false);
+        playSoundForCreature(this.actor, "hurt", false, true);
     }
 
     static playDeathSound(this: ActorSoundSelectApp) {
-        playSoundForCreature(this.actor, "death", false);
+        playSoundForCreature(this.actor, "death", false, true);
     }
 
     async buildNameOptions() {

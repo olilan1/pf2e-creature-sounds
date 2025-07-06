@@ -4,6 +4,7 @@
 
  - Verified V13 Compatibility
  - Minor CSS amendments to fix UI
+ - Creatures under the influence of Silence will not make sounds
 
 ## [1.0.0] - 2025-03-09
 

@@ -69,7 +69,10 @@ export async function playSoundForCreatureOnAttack(message: ChatMessagePF2e) {
 }
 
 export async function playSoundForCreature(
-        actor: ActorPF2e, soundType: SoundType, allPlayers = true) {
+        actor: ActorPF2e, soundType: SoundType, allPlayers = true, forceSound = false) {
+    if (!actor.system.attributes.emitsSound && !forceSound) {
+        return;
+    }
     const soundSet = await findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
