@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+ - Verified V13 Compatibility
+ - Minor CSS amendments to fix UI
+
 ## [1.0.0] - 2025-03-09
 
 - Release Candidate version

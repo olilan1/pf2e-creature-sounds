@@ -87,6 +87,7 @@
 .sound-set-add-button {
     align-self: center;
     white-space: nowrap;
+    width: 100%;
 }
 
 /* Container for download/upload sound sets buttons. */
@@ -181,9 +182,12 @@
 .icon-only-button {
     flex-grow: 0;
     width: auto;
-}
-
-.button-in-row {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.text-and-icon-button {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-grow: 1;
 }
