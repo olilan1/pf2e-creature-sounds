@@ -1,8 +1,9 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
-import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase } from "./utils.ts";
+import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json' assert { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
+import { get } from "jquery";
 
 export interface SoundSet {
     id: string;
@@ -101,7 +102,7 @@ export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
     }
 
     // Check for exact name match.
-    let soundSet = findSoundSetByCreatureName(actor.name);
+    let soundSet = findSoundSetByCreatureName(getActorName(actor));
     if (soundSet) {
         return soundSet;
     }
@@ -134,7 +135,7 @@ function findSoundSetByScoring(actor: ActorPF2e): SoundSet | null {
         return null;
     }
 
-    const hash = Math.abs(getHashCode(actor.name));
+    const hash = Math.abs(getHashCode(getActorName(actor)));
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
 
@@ -149,7 +150,7 @@ function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
         const blurb = isNPC(actor) ? actor?.system?.details?.blurb : null;
         for (const keyword of soundSet.keywords) {
             const regex = new RegExp("\\b" + keyword + "\\b", "i");
-            if (actor.name.match(regex)) {
+            if (getActorName(actor).match(regex)) {
                 score += KEYWORD_NAME_SCORE;
             }
             if (blurb && blurb.match(regex)) {

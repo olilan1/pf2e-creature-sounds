@@ -88,3 +88,10 @@ export function namesFromSoundDatabase(soundDb: SoundDatabase) {
         .map(([key, value]) => ({ id: key, display_name: value.display_name }))
     return result;
 }
+
+export function getActorName(actor: ActorPF2e): string {
+    if (actor.flags.babele?.originalName) {
+        return actor.flags.babele.originalName as string;
+    } 
+    return actor.name;
+}

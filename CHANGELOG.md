@@ -5,6 +5,7 @@
  - Verified V13 Compatibility
  - Minor CSS amendments to fix UI
  - Creatures under the influence of Silence will not make sounds
+ - Added support for Babele Compendium translations to use Original Name to match on sounds
 
 ## [1.0.0] - 2025-03-09
 
