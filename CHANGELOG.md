@@ -2,10 +2,12 @@
 
 ## [Unreleased]
 
- - Verified V13 Compatibility
- - Minor CSS amendments to fix UI
- - Creatures under the influence of Silence will not make sounds
- - Added support for Babele Compendium translations to use Original Name to match on sounds
+## [1.1.0] - 2025-07-06
+
+- Verified V13 Compatibility
+- Minor CSS amendments to fix UI
+- Creatures under the influence of Silence will not make sounds
+- Added support for Babele Compendium translations to use Original Name to match on sounds
 
 ## [1.0.0] - 2025-03-09
 
@@ -24,7 +26,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.0...HEAD
+
+[1.1.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.0.0...v1.1.0
 
 [1.0.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v0.56.1...v1.0.0
 
