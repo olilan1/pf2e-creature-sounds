@@ -1,8 +1,10 @@
 # Changelog
 
 ## [Unreleased]
- 
- - Bug fix: Creatures not playing sounds on death 
+
+## [1.1.1] - 2025-07-20
+
+- Bug fix: Creatures not playing sounds on death
 
 ## [1.1.0] - 2025-07-06
 
@@ -28,7 +30,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...HEAD
+
+[1.1.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.0...v1.1.1
 
 [1.1.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.0.0...v1.1.0
 
