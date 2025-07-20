@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+ 
+ - Bug fix: Creatures not playing sounds on death 
 
 ## [1.1.0] - 2025-07-06
 

@@ -52,6 +52,8 @@ export async function playSoundForCreatureOnDamage(actor: ActorPF2e) {
     }
 
     const soundType = (actor.system.attributes.hp?.value === 0) ? "death" : "hurt";
+    logd(`Actor's hp detected as ${actor.system.attributes.hp?.value}, playing ${soundType} sound`);
+
     await playSoundForCreature(actor, soundType);
 }
 
@@ -70,10 +72,22 @@ export async function playSoundForCreatureOnAttack(message: ChatMessagePF2e) {
 
 export async function playSoundForCreature(
         actor: ActorPF2e, soundType: SoundType, allPlayers = true, forceSound = false) {
-    // @ts-expect-error (actor.system.attributes.emitsSound is valid)
-    if (!actor.system.attributes.emitsSound && !forceSound) {       
-        return;
+
+    switch (soundType) {
+        case "attack":
+        case "hurt":
+            // @ts-expect-error (actor.system.attributes.emitsSound is valid)
+            if (!actor.system.attributes.emitsSound && !forceSound) {       
+                return;
+            } 
+            break;
+        case "death":
+            if (hasSilenceEffect(actor) && !forceSound) {
+                return;
+            }
+            break;
     }
+
     const soundSet = await findSoundSet(actor);
     if (!soundSet) {
         // No matching sound found.
@@ -295,4 +309,19 @@ export function playSound(sound: string, allPlayers: boolean): void {
         autoplay: true,
         loop: false
     }, allPlayers);
+}
+
+function hasSilenceEffect(actor: ActorPF2e): boolean {
+
+    if (!actor || !actor.items) {
+        return false;
+    }
+
+    for (const item of actor.items) {
+        if (item.type === "effect" && item.slug === "spell-effect-silence") {
+            return true;
+        }
+    }
+
+    return false;
 }
