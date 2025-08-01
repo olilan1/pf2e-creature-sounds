@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+- Added new sounds from OvaniSound (@ChasarooniZ)
 
 ## [1.1.1] - 2025-07-20
 
