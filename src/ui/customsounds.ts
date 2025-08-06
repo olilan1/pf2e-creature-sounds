@@ -1,11 +1,19 @@
 import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
-import { updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet, 
-    getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet, 
-    deleteSoundFromCustomSoundSet, saveSoundSetsAsJSON, 
+import {
+    updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet,
+    getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet,
+    deleteSoundFromCustomSoundSet, saveSoundSetsAsJSON,
     validateCustomSoundDatabase, updateSoundSetsWithSoundDatabase,
-    deleteAllCustomSoundSets} from "../customsoundsdb.ts";
+    deleteAllCustomSoundSets
+} from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
-import { isSoundDatabase } from "../utils.ts";
+import { isSoundDatabase, logd } from "../utils.ts";
+
+// Assuming MODULE_ID and SETTINGS are imported from a constants file
+// Make sure this import path is correct for your project
+// import { MODULE_ID, SETTINGS } from "../constants.js"; 
+// Placeholder for MODULE_ID if not imported from constants.js
+const MODULE_ID = "pf2e-creature-sounds";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 
@@ -49,7 +57,8 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             delete_sound: CustomSoundsApp.deleteCustomSound,
             download_sound_sets: CustomSoundsApp.downloadSoundSets,
             upload_sound_sets: CustomSoundsApp.uploadJSON,
-            clear_sound_sets: CustomSoundsApp.clearSoundSets
+            clear_sound_sets: CustomSoundsApp.clearSoundSets,
+            import_from_folder: CustomSoundsApp.importSoundSetsFromFolder,
         }
     }
 
@@ -73,32 +82,56 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
         const nothingSelected = (!this.selectedSoundSetId);
 
+        // Placeholder for getSetting and SETTINGS if not imported
+        // const canEdit = this.actor.sheet.isEditable && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
+        // For demonstration, assuming canEdit is always true or false as needed
+        const canEdit = true; // Replace with your actual logic for canEdit
+
         return {
             customSoundSetNames,
             selectedSoundSet,
-            nothingSelected
+            nothingSelected,
+            canEdit // Ensure canEdit is passed to the context for your HTML
         }
     }
 
-    override _onRender(_context: ApplicationRenderContext, _options : ApplicationRenderOptions) {
+    override _onRender(_context: ApplicationRenderContext, _options: ApplicationRenderOptions) {
         if (this.shouldScroll) {
             const selectedSoundSetDiv = this.element.querySelector(".sound-set-entry-selected");
             if (selectedSoundSetDiv) {
-                selectedSoundSetDiv.scrollIntoView({behavior: "smooth", block: "center", inline: "center"});
+                selectedSoundSetDiv.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
             }
             this.shouldScroll = false;
         }
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        if (event.target instanceof HTMLInputElement) {
-            const newDisplayName = event.target.value;
+        const target = event.target;
+
+        // Handle the dropdown selection
+        if (target instanceof HTMLSelectElement) {
+            // Assuming this.actor is available in your context
+            // If not, you'll need to pass it or retrieve it differently
+            await (this as any).actor.setFlag(MODULE_ID, "soundset", target.value);
+            this.render();
+        }
+
+        // Handle the radio button selection
+        if (target instanceof HTMLInputElement && target.type === "radio" && target.name === "pitch") {
+            // Assuming this.actor is available in your context
+            await (this as any).actor.setFlag(MODULE_ID, "pitch", target.value);
+            this.render();
+        }
+
+        // Existing logic for display name input
+        if (target instanceof HTMLInputElement && target.dataset.id) { // Check for dataset.id to differentiate from radio buttons
+            const newDisplayName = target.value;
             if (!newDisplayName) {
                 this.render();
                 return;
             }
 
-            await updateCustomSoundSetDisplayName(event.target.dataset.id!, newDisplayName);
+            await updateCustomSoundSetDisplayName(target.dataset.id!, newDisplayName);
             this.shouldScroll = true;
             this.render();
         }
@@ -218,7 +251,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                                     } else {
                                         postUINotification(`Custom Sounds updated successfully with ${numberOfEntries} entries`, `info`)
                                     }
-                                    break; 
+                                    break;
                                 }
                                 case "duplicate_ids":
                                     postUINotification('Duplicate ID detected in JSON file', 'error');
@@ -239,22 +272,149 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             });
 
             fileInput.click();
-            fileInput.remove();    
+            fileInput.remove();
         }
     }
 
-    static async clearSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {    
+    static async clearSoundSets(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         const confirmed = await DialogV2.confirm({
             window: { title: "Confirm Clear" },
             content: `Are you sure you want to clear all custom sound sets?`,
             modal: true
         });
-    
+
         if (confirmed) {
             await deleteAllCustomSoundSets();
             this.selectedSoundSetId = null;
-            this.render(); 
+            this.render();
         }
+    }
+
+    static async importSoundSetsFromFolder(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
+        const confirmed = await DialogV2.confirm({
+            window: { title: "Confirm Import" },
+            content: `
+            <li><strong>Create a Main Folder:</strong> You can store this anywhere that is accessible by your Foundry server. The name of this folder will not matter.</li>
+            <li><strong>Sound Set Folders:</strong> Inside your Main Folder, create Sub-Folders. <strong>Each of these Sub-Folders will become a new custom sound set</strong>, and its name will be the <strong>display name</strong> of the sound set.</li>
+            <li><strong>Sound Type Folders:</strong> Inside <em>each sound set folder</em>, create specific Sub-Folders named <code>attack</code>, <code>hurt</code>, and <code>death</code>.</li>
+            <li><strong>Sound Files:</strong> Place your audio files (MP3, OGG, WAV) directly inside these <code>attack</code>, <code>hurt</code>, or <code>death</code> subfolders based on when you want the sounds to trigger. The names of the files will not matter.</li>
+            <p><strong>Example Structure:</strong></p>
+            <pre><code>CustomSoundsFolder/
+├── Ghast/
+│   ├── attack/
+│   │   ├── ghast_attack_01.mp3
+│   │   └── ghast_attack_02.wav
+│   ├── hurt/
+│   │   └── ghast_hurt_01.ogg
+│   └── death/
+│       └── ghast_death_01.mp3
+└── Vampire/
+    ├── attack/
+    │   └── vamp_attack_01.mp3
+    ├── hurt/
+    │   └── vamp_hurt_01.wav
+    └── death/
+        └── vampire_death.ogg
+        </code></pre>
+        <ul>
+            <li>Note: Subfolders with the same name will overwrite preexisting sound sets.</li>
+            <br>Do you want to continue?</li>
+        </ul>
+        `,
+            modal: true
+        });
+
+        if (!confirmed) {
+            return;
+        }
+
+        const fp = new FilePicker({
+            type: "folder",
+            title: "Select a folder containing your organized sound set subfolders",
+            callback: async (folderPath: string, picker: FilePicker) => {
+                try {
+                    const source = picker.activeSource;
+
+                    let basePath = folderPath;
+                    if (basePath.startsWith("/")) {
+                        basePath = basePath.substring(1);
+                    }
+                    if (basePath.startsWith(`${source}/`)) {
+                        basePath = basePath.substring(source.length + 1);
+                    }
+                    if (basePath.endsWith("/")) {
+                        basePath = basePath.slice(0, -1);
+                    }
+
+                    const folderContents = await FilePicker.browse(source, basePath);
+                    const soundSetFolders = folderContents.dirs;
+
+                    if (soundSetFolders.length === 0) {
+                        postUINotification("No subfolders found in the selected directory. Please select a folder containing subfolders that represent your sound sets.", "warn");
+                        return;
+                    }
+
+                    let importedCount = 0;
+                    for (const fullSoundSetPathFromBrowse of soundSetFolders) {
+                        const soundSetName = fullSoundSetPathFromBrowse.split('/').pop();
+                        if (!soundSetName) {
+                            console.warn("Skipping invalid sound set path:", fullSoundSetPathFromBrowse);
+                            continue;
+                        }
+
+                        const soundSetBrowsePath = fullSoundSetPathFromBrowse;
+
+                        const newSoundSet: SoundSet = {
+                            id: soundSetName,
+                            display_name: soundSetName,
+                            hurt_sounds: [],
+                            attack_sounds: [],
+                            death_sounds: [],
+                            creatures: [],
+                            keywords: [],
+                            traits: [],
+                            size: -1
+                        };
+
+                        const soundTypeMap: Record<string, SoundType> = {
+                            "attack": "attack_sounds",
+                            "hurt": "hurt_sounds",
+                            "death": "death_sounds"
+                        };
+
+                        const soundTypeSubFolders = await FilePicker.browse(source, soundSetBrowsePath);
+
+                        for (const fullSubDirPathFromBrowse of soundTypeSubFolders.dirs) { 
+                            const subDirName = fullSubDirPathFromBrowse.split('/').pop();
+                            if (!subDirName) {
+                                continue;
+                            }
+
+                            const soundType = soundTypeMap[subDirName.toLowerCase()];
+                            if (soundType) {
+                                const soundFileBrowsePath = fullSubDirPathFromBrowse;
+                                const soundFiles = await FilePicker.browse(source, soundFileBrowsePath);
+
+                                for (const filePath of soundFiles.files) {
+                                    if (filePath.match(/\.(mp3|ogg|wav)$/i)) {
+                                        newSoundSet[soundType].push(filePath);
+                                    }
+                                }
+                            }
+                        }
+                        await updateCustomSoundSet(newSoundSet);
+                        importedCount++;
+                    }
+
+                    postUINotification(`Successfully imported ${importedCount} custom sound sets.`, "info");
+                    this.render(); 
+                } catch (error: any) {
+                    console.error("Error importing sound sets from folder:", error);
+                    postUINotification(`Failed to import sound sets: ${error.message}`, "error");
+                }
+            }
+        });
+        fp.render();
     }
 }
 
@@ -279,14 +439,14 @@ function createEmptySoundSet() {
 
 export function postUINotification(message: string, type: "info" | "warn" | "error") {
     switch (type) {
-        case "info": 
-            ui.notifications.info(message); 
+        case "info":
+            ui.notifications.info(message);
             break;
-        case "warn": 
+        case "warn":
             ui.notifications.warn(message);
             break;
-        case "error": 
-            ui.notifications.error(message); 
+        case "error":
+            ui.notifications.error(message);
             break;
     }
 }
