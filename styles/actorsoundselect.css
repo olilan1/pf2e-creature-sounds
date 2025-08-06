@@ -38,3 +38,18 @@
     margin-left: 0px;
     margin-right: 0px;
 }
+
+/* The container for the pitch options. */
+.pitch-options-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    width: 20rem;
+}
+
+/* The "Pitch" label. */
+.pitch-selection-label {
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 4px;
+}

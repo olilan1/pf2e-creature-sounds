@@ -8,6 +8,18 @@
             <i class="fa-solid fa-arrow-rotate-left icon-only"></i>
         </button>
     </div>
+<div class="pitch-selection-label">Pitch</div>
+<div class="pitch-options-container">
+    <label>
+        <input type="radio" name="pitch" value="lower" {{#unless canEdit}} disabled {{/unless}} {{#if (eq currentPitch "lower")}} checked {{/if}}> Lower
+    </label>
+    <label>
+        <input type="radio" name="pitch" value="normal" {{#unless canEdit}} disabled {{/unless}} {{#if (eq currentPitch "normal")}} checked {{/if}}> Normal
+    </label>
+    <label>
+        <input type="radio" name="pitch" value="higher" {{#unless canEdit}} disabled {{/unless}} {{#if (eq currentPitch "higher")}} checked {{/if}}> Higher
+    </label>
+</div>
     <div class="play-buttons-container">
         <button class="play-button" data-action="play_attack_sound"><i class="fa-solid fa-burst"></i> Attack</button>
         <button class="play-button" data-action="play_hurt_sound"><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>

@@ -23,6 +23,7 @@ export interface SoundDatabase {
 }
 
 export type SoundType = "attack" | "hurt" | "death";
+export type Pitch = "lower" | "normal" | "higher";
 
 // Add names to each sound set, and use the declared SoundDatabase and SoundSet types.
 // For some reason importedDb directly includes only the names without spaces. importedDb.default
@@ -97,7 +98,8 @@ export async function playSoundForCreature(
 
     // Found something!
     const returnedSounds = getSoundsOfType(soundSet, soundType);
-    await playRandomSound(returnedSounds, allPlayers);
+    const pitch = (actor.getFlag(MODULE_ID, "pitch") as Pitch) ?? "normal";
+    await playRandomSound(returnedSounds, allPlayers, pitch);
 }
 
 export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
@@ -296,15 +298,24 @@ function extractSize(actor: ActorPF2e): number {
     return -1;
 }
 
-async function playRandomSound(sounds: string[], allPlayers: boolean): Promise<void> {
+async function playRandomSound(sounds: string[], allPlayers: boolean, pitchSetting: Pitch): Promise<void> {
     const soundFile = sounds[Math.floor(Math.random() * sounds.length)];
-
-    const min = 0.85;
-    const max = 1.15;
-    const randomPitch = Math.random() * (max - min) + min;
-
     if (!soundFile) return;
-    await broadcastPitchedSound(soundFile, randomPitch, allPlayers);
+
+    let pitchValue = 1;
+    switch (pitchSetting) {
+        case "lower":
+            pitchValue = 0.9;
+            break;
+        case "normal":
+            pitchValue = 1;
+            break;
+        case "higher":
+            pitchValue = 1.1;
+            break;
+    }
+    if (!soundFile) return;
+    await broadcastPitchedSound(soundFile, pitchValue, allPlayers);
 }
 
 export function playSound(sound: string, allPlayers: boolean): void {

@@ -44,25 +44,36 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     override async _prepareContext() {
         const currentSoundSet = (await findSoundSet(this.actor))?.id ?? NO_SOUND_SET;
+        const currentPitch = this.actor.getFlag(MODULE_ID, "pitch") ?? "normal";
         const dropDownNames = await this.buildNameOptions();
         const canEdit = this.actor.sheet.isEditable
                 && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
         return {
             currentSoundSet,
+            currentPitch,
             dropDownNames,
             canEdit
         };
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        if (event.target instanceof HTMLSelectElement) {
-            await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
+        const target = event.target;
+
+        if (target instanceof HTMLSelectElement) {
+            await this.actor.setFlag(MODULE_ID, "soundset", target.value);
+            this.render();
+        }
+        
+        // Handle the radio button selection
+        if (target instanceof HTMLInputElement && target.type === "radio" && target.name === "pitch") {
+            await this.actor.setFlag(MODULE_ID, "pitch", target.value);
             this.render();
         }
     }
 
     static async setToDefault(this: ActorSoundSelectApp) {
         await this.actor.unsetFlag(MODULE_ID, "soundset");
+        await this.actor.unsetFlag(MODULE_ID, "pitch");
         this.render();
     }
 
