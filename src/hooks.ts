@@ -1,27 +1,37 @@
 import { registerSettings, getSetting, SETTINGS, SettingsKey } from "./settings.ts"
-import { playSoundForCreatureOnDamage, playSoundForCreatureOnAttack } from "./creaturesounds.ts"
+import { playSoundForCreatureOnDamage, playSoundForCreatureOnAttack, playPitchedSound } from "./creaturesounds.ts"
 import { ActorSoundSelectApp } from "./ui/actorsoundselect.ts";
 import { ActorPF2e, ChatMessagePF2e, CreaturePF2e, CreatureSheetPF2e } from "foundry-pf2e";
 import { registerCustomSoundsDb } from "./customsoundsdb.ts";
+import { MODULE_ID } from "./utils.ts";
+
+export let socket;
 
 Hooks.on("init", () => {
     registerSettings();
     registerCustomSoundsDb();
+    console.log(`${MODULE_ID} | Loaded`);
 });
 
-Hooks.on("updateActor", (actor: ActorPF2e, _changed: object, updateDetails: object) => {
+Hooks.once('socketlib.ready', () => {
+    console.log("socketlib ready");
+    socket = socketlib.registerModule(MODULE_ID);
+    socket.register("playPitchedSound", playPitchedSound);
+});
+
+Hooks.on("updateActor", async (actor: ActorPF2e, _changed: object, updateDetails: object) => {
     if ("damageTaken" in updateDetails && (updateDetails.damageTaken as number) > 0) {
-        hook(playSoundForCreatureOnDamage, actor)
+        await hook(playSoundForCreatureOnDamage, actor)
                 .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_HURT_SOUNDS)
                 .ifGM()
                 .run();
     }
 });
 
-Hooks.on("createChatMessage", (message: ChatMessagePF2e) => {
+Hooks.on("createChatMessage", async (message: ChatMessagePF2e) => {
     switch (getMessageType(message)) {
         case "attack-roll":
-            hook(playSoundForCreatureOnAttack, message)
+            await hook(playSoundForCreatureOnAttack, message)
                     .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.CREATURE_ATTACK_SOUNDS)
                     .ifGM()
                     .run();
@@ -49,16 +59,16 @@ function getMessageType(message: ChatMessagePF2e) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;
 }
 
-function hook<T extends unknown[]>(func: (...args: T) => void, ...args: T): HookRunner<T> {
+function hook<T extends unknown[]>(func: (...args: T) => Promise<void> | void, ...args: T): HookRunner<T> {
     return new HookRunner<T>(func, ...args);
 }
 
 class HookRunner<T extends unknown[]> {
-    func: (...args: T) => void;
+    func: (...args: T) => Promise<void> | void;
     args: T;
     shouldRun: boolean;
 
-    constructor(func: (...args: T) => void, ...args: T) {
+    constructor(func: (...args: T) => Promise<void> | void, ...args: T) {
         this.func = func;
         this.args = args;
         this.shouldRun = true;
@@ -88,9 +98,9 @@ class HookRunner<T extends unknown[]> {
         return this;
     }
 
-    run(): void {
+    async run(): Promise<void> {
         if (this.shouldRun) {
-            this.func(...this.args);
+            await this.func(...this.args);
         }
     }
 }

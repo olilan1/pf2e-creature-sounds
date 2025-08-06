@@ -1,8 +1,9 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
-import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName } from "./utils.ts";
+import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName, delay } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json' with { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
+import { socket } from "./hooks.ts";
 
 export interface SoundSet {
     id: string;
@@ -96,7 +97,7 @@ export async function playSoundForCreature(
 
     // Found something!
     const returnedSounds = getSoundsOfType(soundSet, soundType);
-    playRandomSound(returnedSounds, allPlayers);
+    await playRandomSound(returnedSounds, allPlayers);
 }
 
 export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
@@ -295,8 +296,15 @@ function extractSize(actor: ActorPF2e): number {
     return -1;
 }
 
-function playRandomSound(sounds: string[], allPlayers: boolean): void {
-    playSound(sounds[Math.floor(Math.random() * sounds.length)], allPlayers);
+async function playRandomSound(sounds: string[], allPlayers: boolean): Promise<void> {
+    const soundFile = sounds[Math.floor(Math.random() * sounds.length)];
+
+    const min = 0.85;
+    const max = 1.15;
+    const randomPitch = Math.random() * (max - min) + min;
+
+    if (!soundFile) return;
+    await broadcastPitchedSound(soundFile, randomPitch, allPlayers);
 }
 
 export function playSound(sound: string, allPlayers: boolean): void {
@@ -309,6 +317,57 @@ export function playSound(sound: string, allPlayers: boolean): void {
         autoplay: true,
         loop: false
     }, allPlayers);
+}
+
+async function broadcastPitchedSound(sound: string, pitch: number, allPlayers: boolean) {
+    const volume = getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME) as number;
+    if (allPlayers) {
+        if (socket) {
+            await socket.executeForEveryone("playPitchedSound", sound, pitch, volume);
+        } else {
+            console.error(`${MODULE_ID} | Socket not ready, cannot play sound for all players.`);
+            // Fallback to local play for GM
+            if (game.user.isGM) {
+                await playPitchedSound(sound, pitch, volume);
+            }
+        }
+    } else {
+        await playPitchedSound(sound, pitch, volume);
+    }
+}
+
+export async function playPitchedSound(sound: string, pitch: number, volume: number) {
+    if (!getSetting(SETTINGS.CREATURE_SOUNDS)) return;
+    try {
+        logd(`Playing pitched sound: ${sound} at pitch ${pitch} and volume ${volume}`);
+        const response = await fetch(sound);
+        if (!response.ok) {
+            console.error(`${MODULE_ID} | Could not fetch sound: ${sound}`);
+            return;
+        }
+        const arrayBuffer = await response.arrayBuffer();
+
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioContext.state === 'suspended') {
+            await audioContext.resume();
+        }
+
+        const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+
+        const source = audioContext.createBufferSource();
+        source.buffer = audioBuffer;
+
+        const gainNode = audioContext.createGain();
+        gainNode.gain.value = volume;
+
+        source.playbackRate.value = pitch;
+        source.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        source.start(0);
+    } catch (e) {
+        console.error(`${MODULE_ID} | Error playing pitched sound: ${sound}`, e);
+    }
 }
 
 function hasSilenceEffect(actor: ActorPF2e): boolean {
