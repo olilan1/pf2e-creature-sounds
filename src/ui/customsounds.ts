@@ -7,16 +7,9 @@ import {
     deleteAllCustomSoundSets
 } from "../customsoundsdb.ts";
 import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
-import { isSoundDatabase, logd } from "../utils.ts";
-
-// Assuming MODULE_ID and SETTINGS are imported from a constants file
-// Make sure this import path is correct for your project
-// import { MODULE_ID, SETTINGS } from "../constants.js"; 
-// Placeholder for MODULE_ID if not imported from constants.js
-const MODULE_ID = "pf2e-creature-sounds";
+import { isSoundDatabase, logd, MODULE_ID } from "../utils.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
-
 interface SoundSetEntry {
     id: string;
     display_name: string;
@@ -81,17 +74,13 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
 
         const nothingSelected = (!this.selectedSoundSetId);
-
-        // Placeholder for getSetting and SETTINGS if not imported
-        // const canEdit = this.actor.sheet.isEditable && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
-        // For demonstration, assuming canEdit is always true or false as needed
-        const canEdit = true; // Replace with your actual logic for canEdit
+        const canEdit = true;
 
         return {
             customSoundSetNames,
             selectedSoundSet,
             nothingSelected,
-            canEdit // Ensure canEdit is passed to the context for your HTML
+            canEdit
         }
     }
 
@@ -108,23 +97,17 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
         const target = event.target;
 
-        // Handle the dropdown selection
         if (target instanceof HTMLSelectElement) {
-            // Assuming this.actor is available in your context
-            // If not, you'll need to pass it or retrieve it differently
             await (this as any).actor.setFlag(MODULE_ID, "soundset", target.value);
             this.render();
         }
 
-        // Handle the radio button selection
         if (target instanceof HTMLInputElement && target.type === "radio" && target.name === "pitch") {
-            // Assuming this.actor is available in your context
             await (this as any).actor.setFlag(MODULE_ID, "pitch", target.value);
             this.render();
         }
 
-        // Existing logic for display name input
-        if (target instanceof HTMLInputElement && target.dataset.id) { // Check for dataset.id to differentiate from radio buttons
+        if (target instanceof HTMLInputElement && target.dataset.id) { 
             const newDisplayName = target.value;
             if (!newDisplayName) {
                 this.render();
@@ -138,7 +121,6 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     static async createSoundSet(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
-        // Create sound set
         const newSoundSet: SoundSet = {
             id: getNewSoundSetId(),
             display_name: "New Sound Set",
@@ -363,9 +345,10 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                         }
 
                         const soundSetBrowsePath = fullSoundSetPathFromBrowse;
+                        const soundSetId = `Folder-${soundSetName}`;
 
                         const newSoundSet: SoundSet = {
-                            id: soundSetName,
+                            id: soundSetId,
                             display_name: soundSetName,
                             hurt_sounds: [],
                             attack_sounds: [],
