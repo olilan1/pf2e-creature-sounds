@@ -2,6 +2,7 @@ import { findSoundSet, getDbSoundSetNames, NO_SOUND_SET, playSoundForCreature } 
 import { MODULE_ID } from "../utils.ts";
 import { getSetting, SETTINGS } from "../settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
+import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client/applications/_types.mjs";
 import { getCustomSoundSetNames } from "../customsoundsdb.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
@@ -53,7 +54,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         };
     }
 
-    override async _onChangeForm(_formConfig: any, event: Event) {
+    override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
         if (event.target instanceof HTMLSelectElement) {
             await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
             this.render();
