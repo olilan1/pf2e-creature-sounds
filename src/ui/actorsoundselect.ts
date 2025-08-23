@@ -2,7 +2,7 @@ import { findSoundSet, getDbSoundSetNames, NO_SOUND_SET, playSoundForCreature } 
 import { MODULE_ID } from "../utils.ts";
 import { getSetting, SETTINGS } from "../settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
-import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
+import { ApplicationFormConfiguration } from "foundry-pf2e/foundry/client/applications/_types.mjs";
 import { getCustomSoundSetNames } from "../customsoundsdb.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;

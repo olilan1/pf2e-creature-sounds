@@ -302,7 +302,6 @@ function playRandomSound(sounds: string[], allPlayers: boolean): void {
 export function playSound(sound: string, allPlayers: boolean): void {
     logd(`sound to play: ${sound}`);
 
-    // @ts-expect-error (foundry.audio is ok)
     foundry.audio.AudioHelper.play({
         src: sound,
         volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME) as number,
