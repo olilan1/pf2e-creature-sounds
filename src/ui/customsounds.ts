@@ -1,3 +1,4 @@
+import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client/applications/_types.mjs";
 import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
 import {
     updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet,
@@ -6,8 +7,13 @@ import {
     validateCustomSoundDatabase, updateSoundSetsWithSoundDatabase,
     deleteAllCustomSoundSets
 } from "../customsoundsdb.ts";
-import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client-esm/applications/_types.js";
-import { isSoundDatabase, logd, MODULE_ID } from "../utils.ts";
+
+import { isSoundDatabase } from "../utils.ts";
+
+const FilePickerClass = foundry.utils.isNewerVersion("13", game.version)
+  ? foundry.applications.apps.FilePicker
+  // @ts-expect-error - v12 global FilePicker
+  : FilePicker;
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 interface SoundSetEntry {
@@ -16,7 +22,6 @@ interface SoundSetEntry {
     selected: boolean
 }
 
-// @ts-expect-error - form.scrollable should not be booleans
 export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     selectedSoundSetId: string | null = null;
@@ -74,17 +79,15 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
 
         const nothingSelected = (!this.selectedSoundSetId);
-        const canEdit = true;
 
         return {
             customSoundSetNames,
             selectedSoundSet,
-            nothingSelected,
-            canEdit
+            nothingSelected
         }
     }
 
-    override _onRender(_context: ApplicationRenderContext, _options: ApplicationRenderOptions) {
+    override async _onRender(_context: ApplicationRenderContext, _options: ApplicationRenderOptions) {
         if (this.shouldScroll) {
             const selectedSoundSetDiv = this.element.querySelector(".sound-set-entry-selected");
             if (selectedSoundSetDiv) {
@@ -95,26 +98,14 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        const target = event.target;
-
-        if (target instanceof HTMLSelectElement) {
-            await (this as any).actor.setFlag(MODULE_ID, "soundset", target.value);
-            this.render();
-        }
-
-        if (target instanceof HTMLInputElement && target.type === "radio" && target.name === "pitch") {
-            await (this as any).actor.setFlag(MODULE_ID, "pitch", target.value);
-            this.render();
-        }
-
-        if (target instanceof HTMLInputElement && target.dataset.id) { 
-            const newDisplayName = target.value;
+        if (event.target instanceof HTMLInputElement) { 
+            const newDisplayName = event.target.value;
             if (!newDisplayName) {
                 this.render();
                 return;
             }
 
-            await updateCustomSoundSetDisplayName(target.dataset.id!, newDisplayName);
+            await updateCustomSoundSetDisplayName(event.target.dataset.id!, newDisplayName);
             this.shouldScroll = true;
             this.render();
         }
@@ -153,7 +144,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
         const soundType = target.dataset.type as SoundType;
 
-        const fp = new FilePicker({
+        const fp = new FilePickerClass({
             title: "Select a sound",
             type: "audio",
             callback: async (path: string) => {
@@ -274,13 +265,28 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     static async importSoundSetsFromFolder(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
         const confirmed = await DialogV2.confirm({
-            window: { title: "Confirm Import" },
+            yes: {
+                action: "yes",
+                label: "Select folder",
+                icon: "fa-solid fa-folder"
+                },
+            no: {
+                action: "no",
+                label: "Cancel",
+                icon: "fa-solid fa-xmark"
+            },
+            window: { title: "Add folder" },
+            position: {
+                width: 700
+            },
             content: `
+            How to bulk add custom sound sets:
             <li><strong>Create a Main Folder:</strong> You can store this anywhere that is accessible by your Foundry server. The name of this folder will not matter.</li>
             <li><strong>Sound Set Folders:</strong> Inside your Main Folder, create Sub-Folders. <strong>Each of these Sub-Folders will become a new custom sound set</strong>, and its name will be the <strong>display name</strong> of the sound set.</li>
             <li><strong>Sound Type Folders:</strong> Inside <em>each sound set folder</em>, create specific Sub-Folders named <code>attack</code>, <code>hurt</code>, and <code>death</code>.</li>
             <li><strong>Sound Files:</strong> Place your audio files (MP3, OGG, WAV) directly inside these <code>attack</code>, <code>hurt</code>, or <code>death</code> subfolders based on when you want the sounds to trigger. The names of the files will not matter.</li>
-            <p><strong>Example Structure:</strong></p>
+            <div>
+            <p/><strong>Example Structure:</strong>
             <pre><code>CustomSoundsFolder/
 ├── Ghast/
 │   ├── attack/
@@ -298,10 +304,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     └── death/
         └── vampire_death.ogg
         </code></pre>
-        <ul>
-            <li>Note: Subfolders with the same name will overwrite preexisting sound sets.</li>
-            <br>Do you want to continue?</li>
-        </ul>
+        </div>
         `,
             modal: true
         });
@@ -310,25 +313,22 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             return;
         }
 
-        const fp = new FilePicker({
+        const fp = new FilePickerClass({
             type: "folder",
             title: "Select a folder containing your organized sound set subfolders",
-            callback: async (folderPath: string, picker: FilePicker) => {
+
+            // @ts-expect-error - FilePickerOptions are ok
+            callback: async (folderPath: string, picker: FilePickerOptions) => {
                 try {
                     const source = picker.activeSource;
-
-                    let basePath = folderPath;
-                    if (basePath.startsWith("/")) {
-                        basePath = basePath.substring(1);
-                    }
-                    if (basePath.startsWith(`${source}/`)) {
-                        basePath = basePath.substring(source.length + 1);
-                    }
-                    if (basePath.endsWith("/")) {
-                        basePath = basePath.slice(0, -1);
+                    if (!source) {
+                        return;
                     }
 
-                    const folderContents = await FilePicker.browse(source, basePath);
+                    console.log(folderPath);
+                    console.log(source);
+
+                    const folderContents = await FilePickerClass.browse(source, folderPath);
                     const soundSetFolders = folderContents.dirs;
 
                     if (soundSetFolders.length === 0) {
@@ -338,14 +338,8 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
                     let importedCount = 0;
                     for (const fullSoundSetPathFromBrowse of soundSetFolders) {
-                        const soundSetName = fullSoundSetPathFromBrowse.split('/').pop();
-                        if (!soundSetName) {
-                            console.warn("Skipping invalid sound set path:", fullSoundSetPathFromBrowse);
-                            continue;
-                        }
-
-                        const soundSetBrowsePath = fullSoundSetPathFromBrowse;
-                        const soundSetId = `Folder-${soundSetName}`;
+                        const soundSetName = decodeURIComponent(fullSoundSetPathFromBrowse.split('/').pop());
+                        const soundSetId = `Folder-${fullSoundSetPathFromBrowse}`;
 
                         const newSoundSet: SoundSet = {
                             id: soundSetId,
@@ -359,24 +353,21 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                             size: -1
                         };
 
-                        const soundTypeMap: Record<string, SoundType> = {
+                        const soundTypeMap: Record<string, "attack_sounds" | "hurt_sounds" | "death_sounds"> = {
                             "attack": "attack_sounds",
                             "hurt": "hurt_sounds",
                             "death": "death_sounds"
                         };
 
-                        const soundTypeSubFolders = await FilePicker.browse(source, soundSetBrowsePath);
+                        const soundTypeSubFolders = await FilePickerClass.browse(source, fullSoundSetPathFromBrowse);
 
                         for (const fullSubDirPathFromBrowse of soundTypeSubFolders.dirs) { 
                             const subDirName = fullSubDirPathFromBrowse.split('/').pop();
-                            if (!subDirName) {
-                                continue;
-                            }
 
                             const soundType = soundTypeMap[subDirName.toLowerCase()];
                             if (soundType) {
-                                const soundFileBrowsePath = fullSubDirPathFromBrowse;
-                                const soundFiles = await FilePicker.browse(source, soundFileBrowsePath);
+                                const soundFiles =
+                                    await FilePickerClass.browse(source, fullSubDirPathFromBrowse);
 
                                 for (const filePath of soundFiles.files) {
                                     if (filePath.match(/\.(mp3|ogg|wav)$/i)) {
@@ -385,15 +376,23 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                                 }
                             }
                         }
-                        await updateCustomSoundSet(newSoundSet);
-                        importedCount++;
+                        if (newSoundSet.attack_sounds.length > 0 ||
+                            newSoundSet.hurt_sounds.length > 0 ||
+                            newSoundSet.death_sounds.length > 0) {
+                            await updateCustomSoundSet(newSoundSet);
+                            importedCount++;
+                        }
                     }
 
-                    postUINotification(`Successfully imported ${importedCount} custom sound sets.`, "info");
+                    postUINotification(
+                        `Successfully imported ${importedCount} custom sound sets.`, "info");
                     this.render(); 
-                } catch (error: any) {
+                } catch (error: unknown) {
                     console.error("Error importing sound sets from folder:", error);
-                    postUINotification(`Failed to import sound sets: ${error.message}`, "error");
+                    if (error instanceof Error) {
+                        postUINotification(
+                            `Error importing sound sets from folder: ${error.message}`, "error");
+                    }
                 }
             }
         });
