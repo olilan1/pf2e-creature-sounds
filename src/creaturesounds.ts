@@ -183,17 +183,14 @@ function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
         }
         // Trait match 
         const matchingTraits = soundSet.traits.filter((trait: string) => traits.includes(trait));
-        let mainTraitsScore = 0;
-        let genderTraitsScore = 0;
 
         for (const trait of matchingTraits) {
             if (trait === "male" || trait === "female") {
-                genderTraitsScore += GENDER_TRAIT_SCORE;
+                score += GENDER_TRAIT_SCORE;
             } else {
-                mainTraitsScore += TRAIT_SCORE;
+                score += TRAIT_SCORE;
             }
         }
-        score += mainTraitsScore + genderTraitsScore;
 
         // Size adjustment
         if (score > 0 && soundSet.size != -1 && creatureSize != -1) {
