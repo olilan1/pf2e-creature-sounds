@@ -116,6 +116,15 @@ export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
         }
     }
 
+    // If character has they/them pronouns, default to no sound.
+    if (isCharacter(actor)) {
+        const pronouns = actor.system.details.gender.value;
+        if (pronouns?.match(/\b(they|them)\b/i)) {
+            logd("Actor has 'they/them' pronouns, defaulting to no sound.");
+            return null;
+        }
+    }
+
     // Check for exact name match.
     let soundSet = findSoundSetByCreatureName(getActorName(actor));
     if (soundSet) {
