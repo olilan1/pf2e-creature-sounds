@@ -38,6 +38,7 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
+const GENDER_TRAIT_SCORE = 0.5;
 
 export const NO_SOUND_SET = "none";
 
@@ -115,6 +116,15 @@ export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
         }
     }
 
+    // If character has they/them pronouns, default to no sound.
+    if (isCharacter(actor)) {
+        const pronouns = actor.system.details.gender.value;
+        if (pronouns?.match(/\b(they|them)\b/i)) {
+            logd("Actor has 'they/them' pronouns, defaulting to no sound.");
+            return null;
+        }
+    }
+
     // Check for exact name match.
     let soundSet = findSoundSetByCreatureName(getActorName(actor));
     if (soundSet) {
@@ -172,9 +182,15 @@ function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
             }
         }
         // Trait match 
-        const matchingTraits =
-                soundSet.traits.filter((trait: string) => traits.includes(trait)).length;
-        score += matchingTraits * TRAIT_SCORE;
+        const matchingTraits = soundSet.traits.filter((trait: string) => traits.includes(trait));
+
+        for (const trait of matchingTraits) {
+            if (trait === "male" || trait === "female") {
+                score += GENDER_TRAIT_SCORE;
+            } else {
+                score += TRAIT_SCORE;
+            }
+        }
 
         // Size adjustment
         if (score > 0 && soundSet.size != -1 && creatureSize != -1) {

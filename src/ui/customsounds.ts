@@ -325,9 +325,6 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                         return;
                     }
 
-                    console.log(folderPath);
-                    console.log(source);
-
                     const folderContents = await FilePickerClass.browse(source, folderPath);
                     const soundSetFolders = folderContents.dirs;
 

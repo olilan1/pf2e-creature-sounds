@@ -95,3 +95,17 @@ export function getActorName(actor: ActorPF2e): string {
     } 
     return actor.name;
 }
+
+export function truncateStringWithEllipsis(str: string, limit: number): string {
+    if (str.length <= limit) {
+        return str;
+    }
+
+    const ellipsis = "...";
+
+    if (limit <= ellipsis.length) {
+        return str.slice(0, limit);
+    }
+
+    return str.slice(0, limit - ellipsis.length) + ellipsis;
+}
