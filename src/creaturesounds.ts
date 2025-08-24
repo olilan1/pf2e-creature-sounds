@@ -38,6 +38,7 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
 const TRAIT_SCORE = 1;
+const GENDER_TRAIT_SCORE = 0.5;
 
 export const NO_SOUND_SET = "none";
 
@@ -172,9 +173,18 @@ function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
             }
         }
         // Trait match 
-        const matchingTraits =
-                soundSet.traits.filter((trait: string) => traits.includes(trait)).length;
-        score += matchingTraits * TRAIT_SCORE;
+        const matchingTraits = soundSet.traits.filter((trait: string) => traits.includes(trait));
+        let mainTraitsScore = 0;
+        let genderTraitsScore = 0;
+
+        for (const trait of matchingTraits) {
+            if (trait === "male" || trait === "female") {
+                genderTraitsScore += GENDER_TRAIT_SCORE;
+            } else {
+                mainTraitsScore += TRAIT_SCORE;
+            }
+        }
+        score += mainTraitsScore + genderTraitsScore;
 
         // Size adjustment
         if (score > 0 && soundSet.size != -1 && creatureSize != -1) {
