@@ -3,6 +3,7 @@ import { playSoundForCreatureOnDamage, playSoundForCreatureOnAttack } from "./cr
 import { ActorSoundSelectApp } from "./ui/actorsoundselect.ts";
 import { ActorPF2e, ChatMessagePF2e, CreaturePF2e, CreatureSheetPF2e } from "foundry-pf2e";
 import { registerCustomSoundsDb } from "./customsoundsdb.ts";
+import { loadSoundboardUI } from "./ui/soundboard.ts";
 
 Hooks.on("init", () => {
     registerSettings();
@@ -43,6 +44,13 @@ Hooks.on("getCreatureSheetPF2eHeaderButtons",
             new ActorSoundSelectApp(actor).render(true);
         }
     });
+});
+
+Hooks.on("changeSidebarTab", (app) => {
+    // Check if the app that changed is the Playlists directory and that the user is a GM
+    if (app.options.id === "playlists" && game.user.isGM) {
+        loadSoundboardUI();
+    }
 });
 
 function getMessageType(message: ChatMessagePF2e) {
