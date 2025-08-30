@@ -9,6 +9,7 @@ export const SETTINGS = {
     CREATURE_ATTACK_SOUNDS: "creatureSounds_attack_enable",
     CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
     PLAYERS_CAN_EDIT: "players_can_edit",
+    SOUNDBOARD_ENABLED: "soundboard_enabled",
     DEBUG_LOGGING: "debug_logging"
 } as const;
 
@@ -78,6 +79,15 @@ export function registerSettings(): void {
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.PLAYERS_CAN_EDIT, {
         name: "Allow Players to Edit Sounds",
         hint: "Allow players to edit creature sounds for actors they own",
+        scope: "world",
+        config: true,
+        default: true,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.SOUNDBOARD_ENABLED, {
+        name: "Enable Soundboard",
+        hint: "Enables the soundboard in the Playlists sidebar tab for GMs (requires reload)",
         scope: "world",
         config: true,
         default: true,

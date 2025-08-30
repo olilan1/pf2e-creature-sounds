@@ -4,10 +4,13 @@ import { ActorSoundSelectApp } from "./ui/actorsoundselect.ts";
 import { ActorPF2e, ChatMessagePF2e, CreaturePF2e, CreatureSheetPF2e } from "foundry-pf2e";
 import { registerCustomSoundsDb } from "./customsoundsdb.ts";
 import { loadSoundboardUI } from "./ui/soundboard.ts";
+import { logd } from "./utils.ts";
+import PlaylistDirectory from "foundry-pf2e/foundry/client/applications/sidebar/tabs/playlist-directory.mjs";
 
 Hooks.on("init", () => {
     registerSettings();
     registerCustomSoundsDb();
+    logd("PF2E Creature Sounds | Initialized");
 });
 
 Hooks.on("updateActor", (actor: ActorPF2e, _changed: object, updateDetails: object) => {
@@ -46,12 +49,22 @@ Hooks.on("getCreatureSheetPF2eHeaderButtons",
     });
 });
 
-Hooks.on("changeSidebarTab", (app) => {
-    // Check if the app that changed is the Playlists directory and that the user is a GM
-    if (app.options.id === "playlists" && game.user.isGM) {
-        loadSoundboardUI();
-    }
+Hooks.on("renderPlaylistDirectory", (_app: PlaylistDirectory, htmlOrJquery: JQuery | HTMLElement, 
+        _data, _options) => {
+    const html = getHtmlElement(htmlOrJquery);
+    hook(loadSoundboardUI, html)
+                .ifEnabled(SETTINGS.CREATURE_SOUNDS, SETTINGS.SOUNDBOARD_ENABLED)
+                .ifGM()
+                .run();
 });
+
+function getHtmlElement(htmlOrJquery: JQuery | HTMLElement) {
+  if (htmlOrJquery instanceof jQuery) {
+    return (htmlOrJquery as JQuery)[0] as HTMLElement;
+  }
+  // Otherwise, it's HTML, just return it
+  return htmlOrJquery as HTMLElement;
+}
 
 function getMessageType(message: ChatMessagePF2e) {
     return message.flags?.pf2e?.context?.type ?? message.flags?.pf2e?.origin?.type;

@@ -59,19 +59,12 @@ export function getSelectedToken() {
 }
 
 export function getSelectedActor() {
-  const controlledTokens = canvas.tokens.controlled;
+    const token = getSelectedToken();
+    if (!token) {
+        return null;
+    }
 
-  if (controlledTokens.length === 0) {
-    ui.notifications.warn("No token selected.");
-    return null;
-  }
-
-  if (controlledTokens.length > 1) {
-    ui.notifications.warn("Please select only one token.");
-    return null;
-  }
-
-  return controlledTokens[0].actor as ActorPF2e;
+    return token.actor as ActorPF2e;
 }
 
 function isSoundSet(obj: unknown): obj is SoundSet {

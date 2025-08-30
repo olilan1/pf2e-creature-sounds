@@ -1,54 +1,64 @@
-import { playSoundForCreature } from "../creaturesounds.ts";
+import { playSoundForCreature, SoundType } from "../creaturesounds.ts";
 import { getSelectedActor } from "../utils.ts";
 
-function handleSoundboardButtonClick(soundType: "attack" | "hurt" | "death") {
+function handleSoundboardButtonClick(SoundType: SoundType) {
     const selectedActor = getSelectedActor();
     if (!selectedActor) {
         return;
     }
-    playSoundForCreature(selectedActor, soundType, true, true);
+    playSoundForCreature(selectedActor, SoundType, true, true);
 }
 
-export function loadSoundboardUI() {
+export function loadSoundboardUI(html: HTMLElement) {
+    // The `html` parameter from a Foundry hook is a JQuery object. We need the underlying HTMLElement.
+
     // Use a setTimeout to wait for the DOM to be fully ready
     setTimeout(() => {
-        const html = $("#sidebar").find("#playlists");
 
         // Check if the soundboard has already been added
-        if (html.find(".creature-soundboard").length > 0) {
+        if (html.querySelector(".creature-soundboard")) {
             return;
         }
 
-        // Find the header of the Playlists directory
-        const header = html.find(".directory-header");
+        // Find the directory list to insert the soundboard after
+        const directoryList = html.querySelector(".directory-list");
 
-        if (header.length > 0) {
-            // Create a wrapper div for the soundboard
-            const soundboardDiv = $(`
-                <div class="creature-soundboard" style="text-align: center; padding: 5px 0;">
-                    <h4 style="display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--color-border-light-tertiary); margin: 0 0 5px 0; padding-bottom: 2px;">
-                        PF2e Creature Sounds Soundboard
-                        <i class="fa-solid fa-circle-question" style="margin-left: 8px; cursor: help;" title="Broadcast a sound for the currently selected token to all players."></i>
-                    </h4>
-                    <div class="soundboard-buttons" style="display: flex; justify-content: center; gap: 5px;">
-                    </div>
+        if (directoryList) {
+            // Create a wrapper div for the soundboard, matching Foundry's volume control style
+            const soundboardDiv = document.createElement('div');
+            soundboardDiv.className = 'creature-soundboard global-volume global-control expanded';
+            soundboardDiv.dataset.applicationPart = 'controls';
+            
+            soundboardDiv.innerHTML = `
+            <header class="playlist-header" data-action="volumeExpand">
+                <i class="expand fa-solid fa-angle-up"></i>
+                <strong>PF2e Creature Sounds</strong>
+            </header>
+            <div class="expandable">
+                <div class="wrapper">
+                    <ul class="soundboard-controls plain">
+                        <li class="soundboard-buttons flexrow">
+                            <div class="soundboard-buttons-wrapper">
+                                <button class="play_attack_sound" data-tooltip="Broadcast to all players an attack sound for the currently selected token."><i class="fa-solid fa-burst"></i> Attack</button>
+                                <button class="play_hurt_sound" data-tooltip="Broadcast to all players a hurt sound for the currently selected token."><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
+                                <button class="play_death_sound" data-tooltip="Broadcast to all players a death sound for the currently selected token."><i class="fa-solid fa-skull"></i> Death</button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            `);
+            </div>
+            `;
 
-            const attackButton = $(`<button class="play_attack_sound"><i class="fa-solid fa-burst"></i> Attack</button>`);
-            const hurtButton = $(`<button class="play_hurt_sound"><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>`);
-            const deathButton = $(`<button class="play_death_sound"><i class="fa-solid fa-skull"></i> Death</button>`);
+            // Append the whole soundboard div after the directory list
+            directoryList.before(soundboardDiv);
 
-            // Append buttons to the container inside the new div
-            const buttonsContainer = soundboardDiv.find('.soundboard-buttons');
-            buttonsContainer.append(attackButton, hurtButton, deathButton);
+            const attackButton = soundboardDiv.querySelector<HTMLButtonElement>(".play_attack_sound");
+            const hurtButton = soundboardDiv.querySelector<HTMLButtonElement>(".play_hurt_sound");
+            const deathButton = soundboardDiv.querySelector<HTMLButtonElement>(".play_death_sound");
 
-            // Append the whole soundboard div after the directory header
-            header.after(soundboardDiv);
-
-            attackButton.on("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("attack"); });
-            hurtButton.on("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("hurt"); });
-            deathButton.on("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("death"); });
+            attackButton?.addEventListener("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("attack"); });
+            hurtButton?.addEventListener("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("hurt"); });
+            deathButton?.addEventListener("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("death"); });
         }
     }, 0);
 }
