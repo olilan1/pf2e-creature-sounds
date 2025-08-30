@@ -1,0 +1,17 @@
+/* Styles for the wrapper div*/
+.soundboard-buttons-wrapper {
+    display: flex; 
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+/* Styles for the button container */
+.soundboard-buttons {
+    padding-top: 2px;
+    padding-bottom: 8px
+}
+
+/* Styles for the individual buttons */
+.soundboard-buttons button {
+    font-size: var(--font-size-16);
+}

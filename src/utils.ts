@@ -1,4 +1,4 @@
-import { ActorPF2e, CharacterPF2e, NPCPF2e } from "foundry-pf2e";
+import { ActorPF2e, CharacterPF2e, NPCPF2e, TokenPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
 import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
 
@@ -40,6 +40,31 @@ export function isSoundDatabase(obj: unknown): obj is SoundDatabase {
         return false;
     }
     return Object.values(obj).every(isSoundSet);
+}
+
+export function getSelectedToken() {
+  const controlledTokens = canvas.tokens.controlled;
+
+  if (controlledTokens.length === 0) {
+    ui.notifications.warn("No token selected.");
+    return null;
+  }
+
+  if (controlledTokens.length > 1) {
+    ui.notifications.warn("Please select only one token.");
+    return null;
+  }
+
+  return controlledTokens[0] as TokenPF2e;
+}
+
+export function getSelectedActor() {
+    const token = getSelectedToken();
+    if (!token) {
+        return null;
+    }
+
+    return token.actor as ActorPF2e;
 }
 
 function isSoundSet(obj: unknown): obj is SoundSet {
