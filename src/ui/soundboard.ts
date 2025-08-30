@@ -10,7 +10,6 @@ function handleSoundboardButtonClick(SoundType: SoundType) {
 }
 
 export function loadSoundboardUI(html: HTMLElement) {
-    // The `html` parameter from a Foundry hook is a JQuery object. We need the underlying HTMLElement.
 
     // Use a setTimeout to wait for the DOM to be fully ready
     setTimeout(() => {
@@ -24,7 +23,7 @@ export function loadSoundboardUI(html: HTMLElement) {
         const directoryList = html.querySelector(".directory-list");
 
         if (directoryList) {
-            // Create a wrapper div for the soundboard, matching Foundry's volume control style
+            
             const soundboardDiv = document.createElement('div');
             soundboardDiv.className = 'creature-soundboard global-volume global-control expanded';
             soundboardDiv.dataset.applicationPart = 'controls';
@@ -49,13 +48,14 @@ export function loadSoundboardUI(html: HTMLElement) {
             </div>
             `;
 
-            // Append the whole soundboard div after the directory list
+            // Append the soundboard div after the directory list
             directoryList.before(soundboardDiv);
 
             const attackButton = soundboardDiv.querySelector<HTMLButtonElement>(".play_attack_sound");
             const hurtButton = soundboardDiv.querySelector<HTMLButtonElement>(".play_hurt_sound");
             const deathButton = soundboardDiv.querySelector<HTMLButtonElement>(".play_death_sound");
 
+            // Add event listeners to the buttons
             attackButton?.addEventListener("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("attack"); });
             hurtButton?.addEventListener("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("hurt"); });
             deathButton?.addEventListener("click", (event) => { event.preventDefault(); handleSoundboardButtonClick("death"); });
