@@ -1,6 +1,34 @@
 import { playSoundForCreature, SoundType } from "../creaturesounds.ts";
 import { getSelectedActor } from "../utils.ts";
 
+const SOUNDBOARD_HTML = `
+        <div class="expandable">
+        <div class="wrapper">
+            <div class="pf2ecs-soundboard-buttons">
+                <button id="play_attack_sound" data-tooltip="Broadcast to all players an attack sound for the selected token."><i class="fa-solid fa-burst"></i> Attack</button>
+                <button id="play_hurt_sound" data-tooltip="Broadcast to all players a hurt sound for the selected token."><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
+                <button id="play_death_sound" data-tooltip="Broadcast to all players a death sound for the selected token."><i class="fa-solid fa-skull"></i> Death</button>
+            </div>
+        </div>
+        </div>
+        `;
+
+const V13_HEADER = `
+        <header class="playlist-header" data-action="volumeExpand">
+            <i class="expand fa-solid fa-angle-up"></i>
+            <strong>PF2e Creature Sounds</strong>
+        </header>
+        `;
+        
+
+const V12_HEADER = `
+        <header class="playlist-header flexrow">
+            <h4>
+                PF2e Creature Sounds
+            </h4>
+        </header>
+        `;
+
 function handleSoundboardButtonClick(soundType: SoundType) {
     const selectedActor = getSelectedActor();
     if (!selectedActor) {
@@ -16,38 +44,22 @@ export function loadSoundboardUI(html: HTMLElement) {
         return;
     }
 
-    // Find the directory list to insert the soundboard after
-    const directoryList = html.querySelector(".directory-list");
+    // Find the global volume controls to insert the soundboard after
+    // It's an id in v12, but a class in v13
+    const globalVolume = html.querySelector(".global-volume, #global-volume");
 
-    if (directoryList) {
-        
+    if (globalVolume) {
         const soundboardDiv = document.createElement('div');
         soundboardDiv.id = 'creature-soundboard';
         soundboardDiv.className = 'global-volume global-control expanded';
         soundboardDiv.dataset.applicationPart = 'controls';
         
-        soundboardDiv.innerHTML = `
-        <header class="playlist-header" data-action="volumeExpand">
-            <i class="expand fa-solid fa-angle-up"></i>
-            <strong>PF2e Creature Sounds</strong>
-        </header>
-        <div class="expandable">
-            <div class="wrapper">
-                <ul class="pf2ecs-soundboard-controls plain">
-                    <li class="pf2ecs-soundboard-buttons flexrow">
-                        <div class="pf2ecs-soundboard-buttons-wrapper">
-                            <button id="play_attack_sound" data-tooltip="Broadcast to all players an attack sound for the selected token."><i class="fa-solid fa-burst"></i> Attack</button>
-                            <button id="play_hurt_sound" data-tooltip="Broadcast to all players a hurt sound for the selected token."><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
-                            <button id="play_death_sound" data-tooltip="Broadcast to all players a death sound for the selected token."><i class="fa-solid fa-skull"></i> Death</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        `;
+        soundboardDiv.innerHTML =
+            (foundry.utils.isNewerVersion(game.version, "13") ? V13_HEADER : V12_HEADER)
+            + SOUNDBOARD_HTML;
 
-        // Append the soundboard div before the directory list
-        directoryList.before(soundboardDiv);
+        // Append the soundboard div after the volume controls
+        globalVolume.after(soundboardDiv);
 
         const attackButton = soundboardDiv.querySelector<HTMLButtonElement>("#play_attack_sound");
         const hurtButton = soundboardDiv.querySelector<HTMLButtonElement>("#play_hurt_sound");
