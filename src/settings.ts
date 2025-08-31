@@ -91,6 +91,7 @@ export function registerSettings(): void {
         scope: "world",
         config: true,
         default: true,
+        requiresReload: true,
         type: Boolean
     });
 

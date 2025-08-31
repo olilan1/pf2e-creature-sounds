@@ -59,12 +59,15 @@ export function getSelectedToken() {
 }
 
 export function getSelectedActor() {
-    const token = getSelectedToken();
-    if (!token) {
-        return null;
-    }
+    return getSelectedToken()?.actor as ActorPF2e;
+}
 
-    return token.actor as ActorPF2e;
+export function getHtmlElement(htmlOrJquery: JQuery | HTMLElement) {
+  if (htmlOrJquery instanceof jQuery) {
+    return (htmlOrJquery as JQuery)[0] as HTMLElement;
+  }
+  // Otherwise, it's HTML, just return it
+  return htmlOrJquery as HTMLElement;
 }
 
 function isSoundSet(obj: unknown): obj is SoundSet {
