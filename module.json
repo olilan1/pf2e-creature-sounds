@@ -16,7 +16,8 @@
     "styles": [
       "styles/customsounds.css",
       "styles/actorsoundselect.css",
-      "styles/soundboard.css"
+      "styles/soundboard.css",
+      "styles/my-actor-list.css"
     ],
     "compatibility": {
       "minimum": "12",
