@@ -1,5 +1,5 @@
 import { CustomSoundsApp } from "./ui/customsounds.ts";
-import { ActorListApp } from "./ui/overview.ts";
+import { ActorListApp } from "./ui/actorlist.ts";
 
 export const SETTINGS_NAMESPACE = "pf2e-creature-sounds";
 
@@ -30,7 +30,7 @@ export function registerSettings(): void {
         name: "Overview of Creature Sounds",
         label: "Creature Sounds Overview",
         hint: "Get an overview of your actors and the sounds associated with them.",
-        icon: "fa-solid fa-spaghetti-monster-flying",
+        icon: "fa-solid fa-users",
         type: ActorListApp,
         restricted: true,
     });
