@@ -24,13 +24,11 @@
         ],
         "creatures": [],
         "keywords": [
-            "chernobue",
             "isgulug",
             "piscodaemon"
         ],
         "traits": [
-            "aberration",
-            "qlippoth"
+            "aberration"
         ],
         "size": 3
     },
@@ -303,7 +301,8 @@
             "necrophidius",
             "osyluth",
             "thanadaemon",
-            "vrykolakas"
+            "vrykolakas",
+            "draugr"
         ],
         "traits": [
             "skeleton",
@@ -1014,9 +1013,7 @@
         "creatures": [],
         "keywords": [
             "bog mummy",
-            "draugr",
             "mohrg",
-            "skaveling",
             "totenmaske",
             "Baykok",
             "Festrog",
@@ -1411,7 +1408,8 @@
             "kappa",
             "kasa-obake",
             "kushtaka",
-            "scalescribe"
+            "scalescribe",
+            "cythnigot"
         ],
         "traits": [
             "fiend"
@@ -1448,7 +1446,8 @@
         "keywords": [
             "nuckelavee",
             "vrock",
-            "Mobogo"
+            "Mobogo",
+            "skaveling"
         ],
         "traits": [],
         "size": -1
@@ -1531,7 +1530,6 @@
             "grimstalker",
             "intellect devourer",
             "stygira",
-            "urdefhan",
             "Caulborn",
             "Nosferatu Malefactor",
             "Nosferatu Overlord",
@@ -1541,7 +1539,6 @@
         "traits": [
             "aberration",
             "xulgath",
-            "qlippoth",
             "sea devil"
         ],
         "size": 2
@@ -2811,7 +2808,7 @@
         "size": 2
     },
     "Sami_Gnome": {
-        "display_name": "Gnome",
+        "display_name": "Gnome (Masculine)",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-1.m4a",
@@ -4116,7 +4113,6 @@
         "size": -1
     },
     "Kraughor_A": {
-        "id": "Kraughor_A",
         "display_name": "Kraughor_A",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 01_KRST_NONE.m4a",
@@ -4145,11 +4141,12 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": [
+            "qlippoth"
+        ],
+        "size": 3
     },
     "Kraughor_B": {
-        "id": "Kraughor_B",
         "display_name": "Kraughor_B",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 01_KRST_NONE.m4a",
@@ -4189,7 +4186,6 @@
         "size": -1
     },
     "Kraughor_C": {
-        "id": "Kraughor_C",
         "display_name": "Kraughor_C",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 01_KRST_NONE.m4a",
@@ -4223,7 +4219,6 @@
         "size": -1
     },
     "Skarnil_A": {
-        "id": "Skarnil_A",
         "display_name": "Skarnil_A",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 01_KRST_NONE.m4a",
@@ -4252,13 +4247,17 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 04_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 05_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "nyogoth",
+            "shoggti"
+        ],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": [
+            "qlippoth"
+        ],
+        "size": 2
     },
     "Skarnil_B": {
-        "id": "Skarnil_B",
         "display_name": "Skarnil_B",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 01_KRST_NONE.m4a",
@@ -4299,13 +4298,14 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 07_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 08_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "thulgant"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
     },
     "Skarnil_C": {
-        "id": "Skarnil_C",
         "display_name": "Skarnil_C",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 01_KRST_NONE.m4a",
@@ -4361,13 +4361,14 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 11_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 12_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "gongorinan"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
     },
     "Varnok_A": {
-        "id": "Varnok_A",
         "display_name": "Varnok_A",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 01_KRST_NONE.m4a",
@@ -4419,7 +4420,6 @@
         "size": -1
     },
     "Varnok_B": {
-        "id": "Varnok_B",
         "display_name": "Varnok_B",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 01_KRST_NONE.m4a",
@@ -4468,7 +4468,6 @@
         "size": -1
     },
     "Varnok_C": {
-        "id": "Varnok_C",
         "display_name": "Varnok_C",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 01_KRST_NONE.m4a",
@@ -4506,14 +4505,15 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 07_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 08_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "chernobue"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
     },
     "Daniel": {
-        "id": "Daniel",
-        "display_name": "Daniel",
+        "display_name": "Humanoid Masculine L",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_2.m4a",
@@ -4548,8 +4548,7 @@
         "size": -1
     },
     "Lauren": {
-        "id": "Lauren",
-        "display_name": "Lauren",
+        "display_name": "Humanoid Feminine M",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Attacking_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Attacking_4.m4a",
@@ -4580,12 +4579,17 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
         "size": -1
     },
     "Nadia": {
-        "id": "Nadia",
-        "display_name": "Nadia",
+        "display_name": "Humanoid Feminine N",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_2.m4a",
@@ -4617,12 +4621,17 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
         "size": -1
     },
     "Thomas": {
-        "id": "Thomas",
-        "display_name": "Thomas",
+        "display_name": "Humanoid Masculine M",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Effort_5.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Effort_8.m4a",
@@ -4666,8 +4675,7 @@
         "size": -1
     },
     "Adorable": {
-        "id": "Adorable",
-        "display_name": "Adorable",
+        "display_name": "Gnome (Feminine)",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt10.m4a",
@@ -4705,8 +4713,7 @@
         "size": -1
     },
     "Assassin": {
-        "id": "Assassin",
-        "display_name": "Assassin",
+        "display_name": "Humanoid Masculine M",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_10.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_2.m4a",
@@ -4735,11 +4742,14 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "male",
+            "human",
+            "halfling"
+        ],
         "size": -1
     },
     "Demonic": {
-        "id": "Demonic",
         "display_name": "Demonic",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_10.m4a",
@@ -4771,8 +4781,7 @@
         "size": -1
     },
     "Engineer": {
-        "id": "Engineer",
-        "display_name": "Engineer",
+        "display_name": "Humanoid Masculine N",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_2.m4a",
@@ -4795,13 +4804,16 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Death/Taking Damage Grunts 1_4.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "male",
+            "human",
+            "halfling"
+        ],
         "traits": [],
         "size": -1
     },
     "Gunslinger": {
-        "id": "Gunslinger",
-        "display_name": "Gunslinger",
+        "display_name": "Humanoid Masculine O",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt2.m4a",
@@ -4827,13 +4839,17 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Death/DamageGrunt3.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "male",
+            "human",
+            "halfling",
+            "dwarf"
+        ],
         "traits": [],
         "size": -1
     },
     "Wizard": {
-        "id": "Wizard",
-        "display_name": "Wizard",
+        "display_name": "Humanoid Masculine P",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Hurt/Pain Grunt_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Hurt/Pain Grunt_2.m4a",
@@ -4855,13 +4871,17 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Death/Pain Grunt_4.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "male",
+            "human",
+            "dwarf",
+            "centaur"
+        ],
         "traits": [],
         "size": -1
     },
-    "Festrog": {
-        "id": "Festrog",
-        "display_name": "Festrog",
+    "Urdefhan": {
+        "display_name": "Urdefhan",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_10.m4a",
@@ -4888,7 +4908,9 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "urdefhan"
+        ],
         "size": -1
     }
 }
