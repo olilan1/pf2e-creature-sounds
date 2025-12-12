@@ -11,9 +11,9 @@ import {
 import { isSoundDatabase } from "../utils.ts";
 
 const FilePickerClass = foundry.utils.isNewerVersion("13", game.version)
-  ? foundry.applications.apps.FilePicker
-  // @ts-expect-error - v12 global FilePicker
-  : FilePicker;
+    ? foundry.applications.apps.FilePicker
+    // @ts-expect-error - v12 global FilePicker
+    : FilePicker;
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 interface SoundSetEntry {
@@ -98,7 +98,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
-        if (event.target instanceof HTMLInputElement) { 
+        if (event.target instanceof HTMLInputElement) {
             const newDisplayName = event.target.value;
             if (!newDisplayName) {
                 this.render();
@@ -269,7 +269,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                 action: "yes",
                 label: "Select folder",
                 icon: "fa-solid fa-folder"
-                },
+            },
             no: {
                 action: "no",
                 label: "Cancel",
@@ -284,7 +284,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             <li><strong>Create a Main Folder:</strong> You can store this anywhere that is accessible by your Foundry server. The name of this folder will not matter.</li>
             <li><strong>Sound Set Folders:</strong> Inside your Main Folder, create Sub-Folders. <strong>Each of these Sub-Folders will become a new custom sound set</strong>, and its name will be the <strong>display name</strong> of the sound set.</li>
             <li><strong>Sound Type Folders:</strong> Inside <em>each sound set folder</em>, create specific Sub-Folders named <code>attack</code>, <code>hurt</code>, and <code>death</code>.</li>
-            <li><strong>Sound Files:</strong> Place your audio files (MP3, OGG, WAV) directly inside these <code>attack</code>, <code>hurt</code>, or <code>death</code> subfolders based on when you want the sounds to trigger. The names of the files will not matter.</li>
+            <li><strong>Sound Files:</strong> Place your audio files (MP3, OGG, WAV, M4A) directly inside these <code>attack</code>, <code>hurt</code>, or <code>death</code> subfolders based on when you want the sounds to trigger. The names of the files will not matter.</li>
             <div>
             <p/><strong>Example Structure:</strong>
             <pre><code>CustomSoundsFolder/
@@ -298,7 +298,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 │       └── ghast_death_01.mp3
 └── Vampire/
     ├── attack/
-    │   └── vamp_attack_01.mp3
+    │   └── vamp_attack_01.m4a
     ├── hurt/
     │   └── vamp_hurt_01.wav
     └── death/
@@ -358,7 +358,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
                         const soundTypeSubFolders = await FilePickerClass.browse(source, fullSoundSetPathFromBrowse);
 
-                        for (const fullSubDirPathFromBrowse of soundTypeSubFolders.dirs) { 
+                        for (const fullSubDirPathFromBrowse of soundTypeSubFolders.dirs) {
                             const subDirName = fullSubDirPathFromBrowse.split('/').pop();
 
                             const soundType = soundTypeMap[subDirName.toLowerCase()];
@@ -367,7 +367,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                                     await FilePickerClass.browse(source, fullSubDirPathFromBrowse);
 
                                 for (const filePath of soundFiles.files) {
-                                    if (filePath.match(/\.(mp3|ogg|wav)$/i)) {
+                                    if (filePath.match(/\.(mp3|ogg|wav|m4a)$/i)) {
                                         newSoundSet[soundType].push(filePath);
                                     }
                                 }
@@ -383,7 +383,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
                     postUINotification(
                         `Successfully imported ${importedCount} custom sound sets.`, "info");
-                    this.render(); 
+                    this.render();
                 } catch (error: unknown) {
                     console.error("Error importing sound sets from folder:", error);
                     if (error instanceof Error) {
