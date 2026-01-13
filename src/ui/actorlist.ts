@@ -58,12 +58,22 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
             selected: selectedFolderId === "THEPARTY" ? true : false
         });
 
+        // Actors in Root directory have no folder so needs to be added manually
+        actorFolders.push({
+            id: "ROOT",
+            name: "Root",
+            selected: selectedFolderId === "ROOT" ? true : false
+        });
+
         const folderIds = getChildrenFolderIds(selectedFolderId);
 
         let actorsToDisplay: ActorPF2e[] = [];
 
         if (selectedFolderId === "THEPARTY") {
             actorsToDisplay = game.actors.party?.members ?? [];
+        } else if (selectedFolderId === "ROOT") {
+            const partyMembers = (game.actors.party?.members ?? []) as ActorPF2e[];
+            actorsToDisplay = game.actors.contents.filter(actor => !actor.folder && !partyMembers.includes(actor));
         } else {
             actorsToDisplay = game.actors.contents.filter(actor =>
                 folderIds.includes(actor.folder?.id || "")
