@@ -4510,7 +4510,7 @@
         "size": -1
     },
     "Assassin": {
-        "display_name": "Humanoid Masculine M",
+        "display_name": "Humanoid Masculine Q",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_10.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_2.m4a",
