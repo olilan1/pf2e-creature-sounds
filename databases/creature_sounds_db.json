@@ -430,7 +430,7 @@
         "size": -1
     },
     "Ancient_Dragon": {
-        "display_name": "Dinosaur",
+        "display_name": "Dinosaur - Triceratops",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Ancient_Dragon/Ancient_Dragon_Monster_Pain_1_Dinosaur_Creature_Hurt_Squeal_Vocalization.m4a",
@@ -453,8 +453,7 @@
         "keywords": [
             "elasmosaurus",
             "water orm",
-            "mokele-mbembe",
-            "tyrannosaurus"
+            "mokele-mbembe"
         ],
         "traits": [
             "dinosaur"
@@ -1486,7 +1485,6 @@
             "warsworn",
             "ort",
             "omox",
-            "shoggoth",
             "blindheim",
             "giant leech",
             "mist stalker",
@@ -4113,7 +4111,7 @@
         "size": -1
     },
     "Kraughor_A": {
-        "display_name": "Kraughor_A",
+        "display_name": "Dinosaur - Allosaurus",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 01_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 02_KRST_NONE.m4a",
@@ -4139,15 +4137,15 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 07_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 08_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": ["allosaurus"],
         "keywords": [],
         "traits": [
-            "qlippoth"
+            "dinosaur"
         ],
-        "size": 3
+        "size": 4
     },
     "Kraughor_B": {
-        "display_name": "Kraughor_B",
+        "display_name": "Dinosaur - Tyrannosaurus",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 01_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 02_KRST_NONE.m4a",
@@ -4180,13 +4178,15 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 08_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 09_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "tyrannosaurus"
+        ],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": ["dinosaur"],
+        "size": 4
     },
     "Kraughor_C": {
-        "display_name": "Kraughor_C",
+        "display_name": "Dinosaur - Carnotaurus",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 01_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 02_KRST_NONE.m4a",
@@ -4213,13 +4213,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 07_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 08_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": ["carnotaurus"],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": ["dinosaur"],
+        "size": 4
     },
     "Skarnil_A": {
-        "display_name": "Skarnil_A",
+        "display_name": "Aberration - Amphibious",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 01_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 02_KRST_NONE.m4a",
@@ -4249,127 +4249,17 @@
         ],
         "creatures": [
             "nyogoth",
-            "shoggti"
+            "shoggti",
+            "shoggoth",
+            "froghemoth",
+            "chuul"
         ],
-        "keywords": [],
-        "traits": [
-            "qlippoth"
-        ],
-        "size": 2
-    },
-    "Skarnil_B": {
-        "display_name": "Skarnil_B",
-        "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Hurt/CREAMnstr_Skarnil Grunt Type B 12_KRST_NONE.m4a"
-        ],
-        "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Growl Type B 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Roar Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Roar Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Roar Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Attack/CREAMnstr_Skarnil Roar Type B 04_KRST_NONE.m4a"
-        ],
-        "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_B/Skarnil_B_Death/CREAMnstr_Skarnil Death Type B 08_KRST_NONE.m4a"
-        ],
-        "creatures": [
-            "thulgant"
-        ],
-        "keywords": [],
-        "traits": [],
-        "size": -1
-    },
-    "Skarnil_C": {
-        "display_name": "Skarnil_C",
-        "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Growl Type C 12_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 12_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 13_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 14_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 15_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 16_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Hurt/CREAMnstr_Skarnil Grunt Type C 17_KRST_NONE.m4a"
-        ],
-        "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Attack/CREAMnstr_Skarnil Roar Type C 07_KRST_NONE.m4a"
-        ],
-        "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_C/Skarnil_C_Death/CREAMnstr_Skarnil Death Type C 12_KRST_NONE.m4a"
-        ],
-        "creatures": [
-            "gongorinan"
-        ],
-        "keywords": [],
+        "keywords": ["elder thing"],
         "traits": [],
         "size": -1
     },
     "Varnok_A": {
-        "display_name": "Varnok_A",
+        "display_name": "Ankhrav",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 01_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 02_KRST_NONE.m4a",
@@ -4415,100 +4305,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 13_KRST_NONE.m4a"
         ],
         "creatures": [],
-        "keywords": [],
-        "traits": [],
-        "size": -1
-    },
-    "Varnok_B": {
-        "display_name": "Varnok_B",
-        "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Hurt/CREAMnstr_Varnok Growl Type B 12_KRST_NONE.m4a"
-        ],
-        "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Attack/CREAMnstr_Varnok Roar Type B 11_KRST_NONE.m4a"
-        ],
-        "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_B/Varnok_B_Death/CREAMnstr_Varnok Death Type B 12_KRST_NONE.m4a"
-        ],
-        "creatures": [],
-        "keywords": [],
-        "traits": [],
-        "size": -1
-    },
-    "Varnok_C": {
-        "display_name": "Varnok_C",
-        "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 09_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 10_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 11_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 12_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Hurt/CREAMnstr_Varnok Growl Type C 13_KRST_NONE.m4a"
-        ],
-        "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 08_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Attack/CREAMnstr_Varnok Roar Type C 09_KRST_NONE.m4a"
-        ],
-        "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_C/Varnok_C_Death/CREAMnstr_Varnok Death Type C 08_KRST_NONE.m4a"
-        ],
-        "creatures": [
-            "chernobue"
-        ],
-        "keywords": [],
+        "keywords": ["ankhrav"],
         "traits": [],
         "size": -1
     },
