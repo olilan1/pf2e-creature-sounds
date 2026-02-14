@@ -24,13 +24,11 @@
         ],
         "creatures": [],
         "keywords": [
-            "chernobue",
             "isgulug",
             "piscodaemon"
         ],
         "traits": [
-            "aberration",
-            "qlippoth"
+            "aberration"
         ],
         "size": 3
     },
@@ -303,7 +301,8 @@
             "necrophidius",
             "osyluth",
             "thanadaemon",
-            "vrykolakas"
+            "vrykolakas",
+            "draugr"
         ],
         "traits": [
             "skeleton",
@@ -431,7 +430,7 @@
         "size": -1
     },
     "Ancient_Dragon": {
-        "display_name": "Dinosaur",
+        "display_name": "Dinosaur - Triceratops",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Ancient_Dragon/Ancient_Dragon_Monster_Pain_1_Dinosaur_Creature_Hurt_Squeal_Vocalization.m4a",
@@ -454,8 +453,7 @@
         "keywords": [
             "elasmosaurus",
             "water orm",
-            "mokele-mbembe",
-            "tyrannosaurus"
+            "mokele-mbembe"
         ],
         "traits": [
             "dinosaur"
@@ -748,8 +746,7 @@
             "tree",
             "viper vine"
         ],
-        "traits": [
-        ],
+        "traits": [],
         "size": -1
     },
     "Gnoll": {
@@ -1015,9 +1012,7 @@
         "creatures": [],
         "keywords": [
             "bog mummy",
-            "draugr",
             "mohrg",
-            "skaveling",
             "totenmaske",
             "Baykok",
             "Festrog",
@@ -1412,7 +1407,8 @@
             "kappa",
             "kasa-obake",
             "kushtaka",
-            "scalescribe"
+            "scalescribe",
+            "cythnigot"
         ],
         "traits": [
             "fiend"
@@ -1449,7 +1445,8 @@
         "keywords": [
             "nuckelavee",
             "vrock",
-            "Mobogo"
+            "Mobogo",
+            "skaveling"
         ],
         "traits": [],
         "size": -1
@@ -1488,7 +1485,6 @@
             "warsworn",
             "ort",
             "omox",
-            "shoggoth",
             "blindheim",
             "giant leech",
             "mist stalker",
@@ -1532,7 +1528,6 @@
             "grimstalker",
             "intellect devourer",
             "stygira",
-            "urdefhan",
             "Caulborn",
             "Nosferatu Malefactor",
             "Nosferatu Overlord",
@@ -1542,7 +1537,6 @@
         "traits": [
             "aberration",
             "xulgath",
-            "qlippoth",
             "sea devil"
         ],
         "size": 2
@@ -2812,7 +2806,7 @@
         "size": 2
     },
     "Sami_Gnome": {
-        "display_name": "Gnome",
+        "display_name": "Gnome (Masculine)",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-hurt-1.m4a",
@@ -2954,7 +2948,7 @@
             "male",
             "lizardfolk",
             "nagaji",
-            "serpentfolk"            
+            "serpentfolk"
         ],
         "size": 2
     },
@@ -3710,7 +3704,7 @@
             "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Damage 3.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Attack.m4a"            
+            "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Attack.m4a"
         ],
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Death.m4a"
@@ -4113,6 +4107,606 @@
         ],
         "traits": [
             "plant"
+        ],
+        "size": -1
+    },
+    "Kraughor_A": {
+        "display_name": "Dinosaur - Allosaurus",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 06_KRST_NONE.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Attack/CREAMnstr_Kraughor Roar Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Attack/CREAMnstr_Kraughor Roar Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Attack/CREAMnstr_Kraughor Roar Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Attack/CREAMnstr_Kraughor Roar Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Attack/CREAMnstr_Kraughor Roar Type A 05_KRST_NONE.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 08_KRST_NONE.m4a"
+        ],
+        "creatures": ["allosaurus"],
+        "keywords": [],
+        "traits": [
+            "dinosaur"
+        ],
+        "size": 4
+    },
+    "Kraughor_B": {
+        "display_name": "Dinosaur - Tyrannosaurus",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 07_KRST_NONE.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 08_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 09_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Attack/CREAMnstr_Kraughor Roar Type B 10_KRST_NONE.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 08_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Death/CREAMnstr_Kraughor Death Type B 09_KRST_NONE.m4a"
+        ],
+        "creatures": [
+            "tyrannosaurus"
+        ],
+        "keywords": [],
+        "traits": ["dinosaur"],
+        "size": 4
+    },
+    "Kraughor_C": {
+        "display_name": "Dinosaur - Carnotaurus",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 07_KRST_NONE.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 05_KRST_NONE.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 08_KRST_NONE.m4a"
+        ],
+        "creatures": ["carnotaurus"],
+        "keywords": [],
+        "traits": ["dinosaur"],
+        "size": 4
+    },
+    "Skarnil_A": {
+        "display_name": "Aberration - Amphibious",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Growl Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Grunt Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Grunt Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Grunt Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Hurt/CREAMnstr_Skarnil Grunt Type A 04_KRST_NONE.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Attack/CREAMnstr_Skarnil Roar Type A 07_KRST_NONE.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skarnil_A/Skarnil_A_Death/CREAMnstr_Skarnil Death Type A 05_KRST_NONE.m4a"
+        ],
+        "creatures": [
+            "nyogoth",
+            "shoggti",
+            "shoggoth",
+            "froghemoth",
+            "chuul"
+        ],
+        "keywords": ["elder thing"],
+        "traits": [],
+        "size": -1
+    },
+    "Varnok_A": {
+        "display_name": "Ankhrav",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 08_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 09_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 10_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 11_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 12_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 13_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 14_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Hurt/CREAMnstr_Varnok Growl Type A 15_KRST_NONE.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 08_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 09_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Attack/CREAMnstr_Varnok Roar Type A 10_KRST_NONE.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 01_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 02_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 03_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 04_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 05_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 06_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 07_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 08_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 09_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 10_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 11_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 12_KRST_NONE.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 13_KRST_NONE.m4a"
+        ],
+        "creatures": [],
+        "keywords": ["ankhrav"],
+        "traits": [],
+        "size": -1
+    },
+    "Daniel": {
+        "display_name": "Humanoid Masculine L",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Hurt/Soldier_Daniel_Sharp_Pain_7.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Attack/Soldier_Daniel_Attacking_9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_6.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Lauren": {
+        "display_name": "Humanoid Feminine M",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Attacking_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Attacking_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Pain_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Pain_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Pain_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Sharp_Pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Sharp_Pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Sharp_Pain_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Sharp_Pain_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Hurt/Soldier_Lauren_Sharp_Pain_09.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Attack/Soldier_Lauren_Weapon_Swing_09.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Death/Soldier_Lauren_Death_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Death/Soldier_Lauren_Death_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Lauren/Death/Soldier_Lauren_Death_19.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Nadia": {
+        "display_name": "Humanoid Feminine N",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Hurt/Soldier_Nadia_Sharp_Pain_7.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Attacking_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Attacking_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Attacking_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Attacking_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Attack/Soldier_Nadia_Weapon_Swing_9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Death/Soldier_Nadia_Pain_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Death/Soldier_Nadia_Pain_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Nadia/Death/Soldier_Nadia_Pain_5.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "female",
+            "human",
+            "halfling",
+            "dwarf",
+            "centaur"
+        ],
+        "size": -1
+    },
+    "Thomas": {
+        "display_name": "Humanoid Masculine M",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Effort_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Effort_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Pain_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Scream_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Scream_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Sharp_Pain_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Sharp_Pain_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Sharp_Pain_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Hurt/Soldier_Thomas_Sharp_Pain_4.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Attacking_9.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Attack/Soldier_Thomas_Weapon_Swing_10.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Death/Soldier_Thomas_Death_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Death/Soldier_Thomas_Death_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Death/Soldier_Thomas_Death_7.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Adorable": {
+        "display_name": "Gnome (Feminine)",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Hurt/DamageGrunt9.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Attack/AttackGrunt9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Death/DamageGrunt5.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Assassin": {
+        "display_name": "Humanoid Masculine M",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Hurt/Taking Damage Grunt_9.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Attack/Attacking Grunt_9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Death/Taking Damage Grunt_1.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "male",
+            "human",
+            "halfling"
+        ],
+        "size": -1
+    },
+    "Demonic": {
+        "display_name": "Demonic",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_9.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Attack/Grunt 1_8.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Death/Taking Damage Grunt_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Death/Taking Damage Grunt_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Death/Taking Damage Grunt_3.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Engineer": {
+        "display_name": "Humanoid Masculine N",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Hurt/Taking Damage Grunts 1_8.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Attack/Basic Attack Grunts 1_7.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Death/Taking Damage Grunts 1_4.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "male",
+            "human",
+            "halfling"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Gunslinger": {
+        "display_name": "Humanoid Masculine O",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Hurt/DamageGrunt8.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Attack/AttackGrunt9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Death/DamageGrunt3.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "male",
+            "human",
+            "halfling",
+            "dwarf"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Wizard": {
+        "display_name": "Humanoid Masculine P",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Hurt/Pain Grunt_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Hurt/Pain Grunt_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Hurt/Pain Grunt_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Hurt/Pain Grunt_5.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Attack/Exertion_9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Death/Pain Grunt_4.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "male",
+            "human",
+            "dwarf",
+            "centaur"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Urdefhan": {
+        "display_name": "Urdefhan",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Hurt/Taking Damage - Scowls %26 Grunts_9.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Attack/Aggressive Growls_9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Death/Dying Sounds_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Death/Dying Sounds_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Death/Dying Sounds_5.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "urdefhan"
         ],
         "size": -1
     }
