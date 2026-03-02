@@ -9,9 +9,9 @@ const ImagePopout = foundry.applications.apps.ImagePopout;
 export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     // Default to the party folder
-    selectedFolderId: string = "THEPARTY";
-    scrollPosTable: number = 0;
-    scrollPosFolders: number = 0;
+    #selectedFolderId: string = "THEPARTY";
+    #scrollPosTable: number = 0;
+    #scrollPosFolders: number = 0;
     #hookId: number | null = null;
 
     static override DEFAULT_OPTIONS = {
@@ -47,7 +47,7 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
 
     override async _prepareContext() {
 
-        const selectedFolderId = this.selectedFolderId;
+        const selectedFolderId = this.#selectedFolderId;
 
         const actorFolders = getActorFolders(selectedFolderId);
 
@@ -61,7 +61,7 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
         // Actors in Root directory have no folder so needs to be added manually
         actorFolders.push({
             id: "ROOT",
-            name: "Root",
+            name: "No Folder",
             selected: selectedFolderId === "ROOT" ? true : false
         });
 
@@ -94,12 +94,14 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
                 return { label, tooltip };
             });
 
-            let soundSetName = `No Soundset Selected`;
+            let soundSetName = `No Soundset`;
+            let isNoSoundSet = true;
 
             const soundSet = await findSoundSet(actor);
 
             if (soundSet) {
                 soundSetName = soundSet.display_name;
+                isNoSoundSet = false;
             }
 
             const isOverriden = !!actor.getFlag("pf2e-creature-sounds", "soundset");
@@ -110,7 +112,8 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
                 img: actor.img,
                 traits: traitsMap,
                 soundSetName: soundSetName,
-                isOverriden: isOverriden
+                isOverriden: isOverriden,
+                isNoSoundSet: isNoSoundSet
             };
         });
 
@@ -145,11 +148,11 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const scrollContainerTable = this.element?.querySelector(".pf2ecs-actorlist-right-column");
 
         if (scrollContainerFolders) {
-            this.scrollPosFolders = scrollContainerFolders.scrollTop;
+            this.#scrollPosFolders = scrollContainerFolders.scrollTop;
         }
 
         if (scrollContainerTable && !resetTableScroll) {
-            this.scrollPosTable = scrollContainerTable.scrollTop;
+            this.#scrollPosTable = scrollContainerTable.scrollTop;
         }
 
     }
@@ -175,12 +178,12 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const scrollContainerLeft = this.element.querySelector(".pf2ecs-actorlist-folder-box");
         const scrollContainerRight = this.element.querySelector(".pf2ecs-actorlist-right-column");
 
-        if (scrollContainerLeft && this.scrollPosFolders > 0) {
-            scrollContainerLeft.scrollTop = this.scrollPosFolders;
+        if (scrollContainerLeft && this.#scrollPosFolders > 0) {
+            scrollContainerLeft.scrollTop = this.#scrollPosFolders;
         }
 
-        if (scrollContainerRight && this.scrollPosTable > 0) {
-            scrollContainerRight.scrollTop = this.scrollPosTable;
+        if (scrollContainerRight && this.#scrollPosTable > 0) {
+            scrollContainerRight.scrollTop = this.#scrollPosTable;
         }
     }
 
@@ -209,9 +212,7 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     static openActorCharacterSheet(this: ActorListApp, _event: PointerEvent, target: HTMLElement) {
-        const actorId = target.dataset.id;
-        if (!actorId) return;
-        const actor = game.actors.get(actorId);
+        const actor = game.actors.get(target.dataset.id as string);
         if (actor) {
             actor.sheet.render(true);
         } else {
@@ -220,9 +221,7 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     static openActorCharacterImage(this: ActorListApp, _event: PointerEvent, target: HTMLElement) {
-        const actorId = target.dataset.id;
-        if (!actorId) return;
-        const actor = game.actors.get(actorId);
+        const actor = game.actors.get(target.dataset.id as string);
         if (!actor) return;
         const popout = new ImagePopout({ src: actor.img, window: { title: actor.name } });
         popout.render(true);
@@ -231,11 +230,10 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
     static selectActorFolder(this: ActorListApp, _event: PointerEvent, target: HTMLElement) {
 
         // No need to re-render if we are already showing the selected folder
-        if (target.dataset.id === this.selectedFolderId) return;
+        const folderId = target.dataset.id;
+        if (!folderId || folderId === this.#selectedFolderId) return;
 
-        if (target.dataset.id) {
-            this.selectedFolderId = target.dataset.id;
-        }
+        this.#selectedFolderId = folderId;
 
         // We want to force a table scroll reset when we change folders
         this.render({ resetTableScroll: true });
@@ -244,24 +242,9 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
 }
 
 function getActorFolders(selectedFolderId: string | null): { id: string, name: string, selected: boolean }[] {
-    const allFolders = game.folders.filter(f => f.type === "Actor");
 
-    allFolders.sort((a, b) => a.name.localeCompare(b.name));
-
-    const childrenMap = new Map<string, Folder[]>();
-    const roots: Folder[] = [];
-
-    for (const folder of allFolders) {
-        const parentId = folder.folder?.id;
-        if (parentId) {
-            if (!childrenMap.has(parentId)) {
-                childrenMap.set(parentId, []);
-            }
-            childrenMap.get(parentId)!.push(folder);
-        } else {
-            roots.push(folder);
-        }
-    }
+    // Find only the root-level Actor folders
+    const roots = game.folders.filter(f => f.type === "Actor" && !f.folder);
 
     const result: { id: string, name: string, selected: boolean }[] = [];
 
@@ -281,7 +264,7 @@ function getActorFolders(selectedFolderId: string | null): { id: string, name: s
             selected: folder.id === selectedFolderId
         });
 
-        const children = childrenMap.get(folder.id) || [];
+        const children = (folder.getSubfolders() || []).filter((f: Folder) => f.type === "Actor");
 
         let childPrefix = prefix;
         if (!isRoot) {
@@ -290,11 +273,11 @@ function getActorFolders(selectedFolderId: string | null): { id: string, name: s
 
         children.forEach((child, index) => {
             const last = index === children.length - 1;
-            traverse(child, childPrefix, last, false);
+            traverse(child as Folder, childPrefix, last, false);
         });
     }
 
-    roots.forEach(root => traverse(root, "", true, true));
+    roots.forEach(root => traverse(root as Folder, "", true, true));
 
     return result;
 }
@@ -303,11 +286,7 @@ function getChildrenFolderIds(folderId: string): string[] {
     const parentFolder = game.folders.get(folderId);
     if (!parentFolder) return [];
 
-    const descendantFolders = game.folders.filter(f => {
-        if (f.type !== "Actor") return false;
-        if (f.id === folderId) return true;
-        return f.ancestors?.some(a => a.id === folderId);
-    });
+    const descendantFolders = parentFolder.getSubfolders(true);
 
-    return descendantFolders.map(f => f.id);
+    return [folderId, ...descendantFolders.map(f => f.id)];
 }

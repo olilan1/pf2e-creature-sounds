@@ -101,3 +101,11 @@
     color: #ffddbb;
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
+
+.pf2ecs-icon-only-play-buttons-container {
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
