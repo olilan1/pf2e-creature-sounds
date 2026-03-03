@@ -68,11 +68,11 @@ export class ActorListApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const folderIds = getChildrenFolderIds(selectedFolderId);
 
         let actorsToDisplay: ActorPF2e[] = [];
+        const partyMembers = (game.actors.party?.members ?? []) as ActorPF2e[];
 
         if (selectedFolderId === "THEPARTY") {
-            actorsToDisplay = game.actors.party?.members ?? [];
+            actorsToDisplay = partyMembers;
         } else if (selectedFolderId === "ROOT") {
-            const partyMembers = (game.actors.party?.members ?? []) as ActorPF2e[];
             actorsToDisplay = game.actors.contents.filter(actor => !actor.folder && !partyMembers.includes(actor));
         } else {
             actorsToDisplay = game.actors.contents.filter(actor =>
@@ -264,7 +264,7 @@ function getActorFolders(selectedFolderId: string | null): { id: string, name: s
             selected: folder.id === selectedFolderId
         });
 
-        const children = (folder.getSubfolders() || []).filter((f: Folder) => f.type === "Actor");
+        const children = folder.getSubfolders();
 
         let childPrefix = prefix;
         if (!isRoot) {
@@ -273,11 +273,11 @@ function getActorFolders(selectedFolderId: string | null): { id: string, name: s
 
         children.forEach((child, index) => {
             const last = index === children.length - 1;
-            traverse(child as Folder, childPrefix, last, false);
+            traverse(child, childPrefix, last, false);
         });
     }
 
-    roots.forEach(root => traverse(root as Folder, "", true, true));
+    roots.forEach(root => traverse(root, "", true, true));
 
     return result;
 }
