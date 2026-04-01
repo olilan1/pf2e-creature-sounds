@@ -1,0 +1,111 @@
+/* Top level container for Actor List UI */
+.pf2ecs-actor-list-content {
+    display: flex;
+    height: 100%;
+    padding: 0;
+}
+
+/* Left column for actor folders list */
+.pf2ecs-actorlist-left-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    gap: 8px;
+    padding-left: 0.5rem;
+    overflow-y: hidden;
+}
+
+/* The box to list the actor folders */
+.pf2ecs-actorlist-folder-box {
+    border-radius: 4px;
+    border: 1px solid var(--creature-sounds-border-color);
+    box-shadow: inset 0 0 4px 0 var(--creature-sounds-shadow-color);
+    overflow-y: scroll;
+    flex: 1;
+    min-height: 0;
+}
+
+/* Entry for actor folders list */
+.pf2ecs-actorlist-entry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+/* Hover effect for actor folders list entries */
+.pf2ecs-actorlist-entry:hover {
+    flex-grow: 1;
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+
+/* Styling for Selected actor folders */
+.pf2ecs-actorlist-entry-selected {
+    text-shadow: 0 0 10px var(--color-shadow-primary);
+    font-weight: bold;
+}
+
+/* Right column for the Actor List UI */
+.pf2ecs-actorlist-right-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    padding-right: 0.5rem;
+    min-width: 100px;
+    overflow-y: scroll;
+}
+
+/* The table to list the actors within the selected folder */
+.pf2ecs-actorlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+
+/* The header row of the table to list the actors within the selected folder */
+.pf2ecs-table-header {
+    background-color: #000000;
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* The thumbnail of the actor */
+.pf2ecs-actor-image {
+    width: 48px;
+    height: 48px;
+    object-fit: scale-down;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #000;
+}
+
+/* The message when no actors are found in the selected folder */
+.pf2ecs-no-actors-found {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+/* Change mouse when hovering over clickable cells */
+.pf2ecs-clickable-cell {
+    cursor: pointer;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+/* Styling for cells that are clickable when hovered */
+.pf2ecs-clickable-cell:hover {
+    color: #ffddbb;
+    text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+
+.pf2ecs-icon-only-play-buttons-container {
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
