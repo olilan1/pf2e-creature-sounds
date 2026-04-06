@@ -1,4 +1,5 @@
 import { CustomSoundsApp } from "./ui/customsounds.ts";
+import { ActorListApp } from "./ui/actorlist.ts";
 
 export const SETTINGS_NAMESPACE = "pf2e-creature-sounds";
 
@@ -9,6 +10,7 @@ export const SETTINGS = {
     CREATURE_ATTACK_SOUNDS: "creatureSounds_attack_enable",
     CREATURE_HURT_SOUNDS: "creatureSounds_hurt_enable",
     PLAYERS_CAN_EDIT: "players_can_edit",
+    SOUNDBOARD_ENABLED: "soundboard_enabled",
     DEBUG_LOGGING: "debug_logging"
 } as const;
 
@@ -20,8 +22,16 @@ export function registerSettings(): void {
         label: "Manage Custom Sound Sets",
         hint: "Create your own sound sets to apply to creatures",
         icon: "fa-solid fa-spaghetti-monster-flying",
-        // @ts-expect-error (type of ApplicationV2 is ok)
         type: CustomSoundsApp,
+        restricted: true,
+    });
+
+    game.settings.registerMenu(SETTINGS_NAMESPACE, "ActorListApp", {
+        name: "Overview of Creature Sounds",
+        label: "Creature Sounds Overview",
+        hint: "Get an overview of your actors and the sounds associated with them.",
+        icon: "fa-solid fa-users",
+        type: ActorListApp,
         restricted: true,
     });
 
@@ -82,6 +92,16 @@ export function registerSettings(): void {
         scope: "world",
         config: true,
         default: true,
+        type: Boolean
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.SOUNDBOARD_ENABLED, {
+        name: "Enable Soundboard",
+        hint: "Enables the soundboard in the Playlists sidebar tab for GMs (requires reload)",
+        scope: "world",
+        config: true,
+        default: true,
+        requiresReload: true,
         type: Boolean
     });
 

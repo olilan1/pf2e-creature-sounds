@@ -1,0 +1,82 @@
+<div class="pf2ecs-actor-list-content">
+    <div class="pf2ecs-actorlist-left-column">
+        <p><i class="fa-solid fa-folder-tree"></i>&nbsp;&nbsp;Actor Folders:</p>
+        <div class="pf2ecs-actorlist-folder-box">
+            {{#each actorFolders}}
+            <div class="pf2ecs-actorlist-entry pf2ecs-clickable-cell" data-action="select_actor_folder"
+                data-id="{{this.id}}">
+                <span class="{{#if this.selected}}pf2ecs-actorlist-entry-selected{{/if}}">
+                    {{this.name}}
+                </span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="pf2ecs-actorlist-right-column">
+        {{#if actors.length}}
+        <table class="pf2ecs-actorlist-table">
+            <thead class="pf2ecs-table-header">
+                <tr>
+                    <th></th>
+                    <th>Actor Name and Traits</th>
+                    <th>Soundset</th>
+                    <th>Play</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each actors}}
+                <tr>
+                    <td class="pf2ecs-clickable-cell" data-action="open_actor_image" data-id={{this.id}}>
+                        <img src="{{this.img}}" alt="{{this.name}}" class="pf2ecs-actor-image" />
+                    </td>
+                    <td class="pf2ecs-clickable-cell" data-action="open_character_sheet"
+                        data-id={{this.id}}>{{this.name}}
+                        <div class="tags paizo-style" data-tooltip-class="pf2e">
+                            {{#each this.traits}}
+                            <span class="tag" data-tooltip="{{this.tooltip}}">{{this.label}}</span>
+                            {{/each}}
+                        </div>
+                    </td>
+                    <td class="pf2ecs-clickable-cell" data-action="open_actor_sound_select"
+                        data-id={{this.id}}>
+                        {{#if this.isOverriden}}<i class="fa-solid fa-user-gear"
+                            data-tooltip="Manually Selected"></i>
+                        {{else}}<i class="fa-solid fa-robot"
+                            data-tooltip="Auto-Matched"></i>
+                        {{/if}}
+                        {{#if this.isNoSoundSet}}
+                            <i>&nbsp;&nbsp;&nbsp;{{this.soundSetName}}</i>
+                        {{else}}
+                            &nbsp;&nbsp;&nbsp;{{this.soundSetName}}
+                        {{/if}}
+                    </td>
+                    <td>
+                        <div class="pf2ecs-icon-only-play-buttons-container">
+                            <button data-action="play_attack_sound" data-id="{{this.id}}" 
+                                {{#unless this.isNoSoundSet}}data-tooltip="Play Attack Sound"{{/unless}} 
+                                {{#if this.isNoSoundSet}}disabled{{/if}}>
+                                <i class="fa-solid fa-burst"></i>
+                            </button>
+                            
+                            <button data-action="play_hurt_sound" data-id="{{this.id}}" 
+                                {{#unless this.isNoSoundSet}}data-tooltip="Play Hurt Sound"{{/unless}} 
+                                {{#if this.isNoSoundSet}}disabled{{/if}}>
+                                <i class="fa-solid fa-person-falling-burst"></i>
+                            </button>
+                            
+                            <button data-action="play_death_sound" data-id="{{this.id}}" 
+                                {{#unless this.isNoSoundSet}}data-tooltip="Play Death Sound"{{/unless}} 
+                                {{#if this.isNoSoundSet}}disabled{{/if}}>
+                                <i class="fa-solid fa-skull"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        {{else}}
+        <p class="pf2ecs-no-actors-found">No PF2e Creature Sounds supported actors found in this folder.</p>
+        {{/if}}
+    </div>
+</div>

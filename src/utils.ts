@@ -1,4 +1,4 @@
-import { ActorPF2e, CharacterPF2e, NPCPF2e } from "foundry-pf2e";
+import { ActorPF2e, CharacterPF2e, NPCPF2e, TokenPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
 import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
 
@@ -40,6 +40,34 @@ export function isSoundDatabase(obj: unknown): obj is SoundDatabase {
         return false;
     }
     return Object.values(obj).every(isSoundSet);
+}
+
+export function getSelectedToken() {
+  const controlledTokens = canvas.tokens.controlled;
+
+  if (controlledTokens.length === 0) {
+    ui.notifications.warn("No token selected.");
+    return null;
+  }
+
+  if (controlledTokens.length > 1) {
+    ui.notifications.warn("Please select only one token.");
+    return null;
+  }
+
+  return controlledTokens[0] as TokenPF2e;
+}
+
+export function getSelectedActor() {
+    return getSelectedToken()?.actor as ActorPF2e;
+}
+
+export function getHtmlElement(htmlOrJquery: JQuery | HTMLElement) {
+  if (htmlOrJquery instanceof jQuery) {
+    return (htmlOrJquery as JQuery)[0] as HTMLElement;
+  }
+  // Otherwise, it's HTML, just return it
+  return htmlOrJquery as HTMLElement;
 }
 
 function isSoundSet(obj: unknown): obj is SoundSet {
@@ -94,4 +122,18 @@ export function getActorName(actor: ActorPF2e): string {
         return actor.flags.babele.originalName as string;
     } 
     return actor.name;
+}
+
+export function truncateStringWithEllipsis(str: string, limit: number): string {
+    if (str.length <= limit) {
+        return str;
+    }
+
+    const ellipsis = "...";
+
+    if (limit <= ellipsis.length) {
+        return str.slice(0, limit);
+    }
+
+    return str.slice(0, limit - ellipsis.length) + ellipsis;
 }

@@ -90,8 +90,8 @@
     width: 100%;
 }
 
-/* Container for download/upload sound sets buttons. */
-.sound-set-download-upload {
+/* Container for a row of buttons. */
+.sound-set-button-row {
     align-self: center;
     display: flex;
     flex-direction: row;
@@ -189,5 +189,5 @@
 .text-and-icon-button {
     margin-left: 0px;
     margin-right: 0px;
-    flex-grow: 1;
+    width: 50%;
 }
