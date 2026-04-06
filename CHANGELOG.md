@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+- Bulk import sound sets feature
+- Don't match based only on gender traits
+- Soundboard feature
+- Add new sound sets: Dinosaur - Allosaurus, Dinosaur - Tyrannosaurus, Dinosaur - Carnotaurus,
+  Aberration - Amphibious, Ankhrav, Humanoid Masculine L-Q, Humanoid Feminine M-N, Gnome (Feminine),
+  Demonic, Urdefhan
+- Actor Overview feature
+
 ## [1.1.1] - 2025-07-20
 
 - Bug fix: Creatures not playing sounds on death
