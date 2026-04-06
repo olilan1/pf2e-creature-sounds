@@ -5,6 +5,8 @@ GameDevMarket: https://www.gamedevmarket.net/terms-conditions#pro-licence
 
 Pixabay: https://pixabay.com/service/license-summary/
 
+Ovani: https://ovanisound.com/policies/terms-of-service
+
 SamiOli Studios sounds are proprietary sounds recorded by the developers specifically for this module.
 
 ## Important
