@@ -137,3 +137,10 @@ export function truncateStringWithEllipsis(str: string, limit: number): string {
 
     return str.slice(0, limit - ellipsis.length) + ellipsis;
 }
+
+export function getFilePickerClass() {
+    return foundry.utils.isNewerVersion(game.version, "13")
+        ? foundry.applications.apps.FilePicker
+        // @ts-expect-error - v12 global FilePicker
+        : FilePicker;
+}
