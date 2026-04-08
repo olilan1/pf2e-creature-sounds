@@ -1232,7 +1232,7 @@
         "size": -1
     },
     "Female Werewolf Shifter": {
-        "display_name": "Werewolf",
+        "display_name": "Werewolf A",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 01_ESM_HC2.m4a",
@@ -4709,5 +4709,81 @@
             "urdefhan"
         ],
         "size": -1
+    },
+    "Bee Swarm": {
+        "display_name": "Swarm - Bees",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmhurt1.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmhurt2.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmhurt3.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmattack1.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmattack2.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmattack3.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmdeath1.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            ""
+        ],
+        "size": 0
+    },
+    "Fly Swarm": {
+        "display_name": "Swarm - Flies",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmhurt1.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmhurt2.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmhurt3.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmattack1.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmattack2.m4a",
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmattack3.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmdeath1.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            ""
+        ],
+        "size": 0
+    },
+    "Werewolf": {
+        "display_name": "Werewolf B",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Hurt/werewolf_voice_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Hurt/werewolf_voice_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Hurt/werewolf_voice_pain_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Hurt/werewolf_voice_pain_28.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Attack/werewolf_voice_attack_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Attack/werewolf_voice_attack_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Attack/werewolf_voice_bite_yelp_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Attack/werewolf_voice_bite_yelp_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Attack/werewolf_voice_bite_yelp_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Attack/werewolf_voice_bite_yelp_11.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Death/werewolf_voice_death_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Death/werewolf_voice_death_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Death/werewolf_voice_death_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Death/werewolf_voice_death_16.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            ""
+        ],
+        "size": 0
     }
 }
