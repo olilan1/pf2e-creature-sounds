@@ -8,12 +8,7 @@ import {
     deleteAllCustomSoundSets
 } from "../customsoundsdb.ts";
 
-import { isSoundDatabase } from "../utils.ts";
-
-const FilePickerClass = foundry.utils.isNewerVersion("13", game.version)
-    ? foundry.applications.apps.FilePicker
-    // @ts-expect-error - v12 global FilePicker
-    : FilePicker;
+import { getFilePickerClass, isSoundDatabase } from "../utils.ts";
 
 const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applications.api;
 interface SoundSetEntry {
@@ -144,7 +139,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
         const soundType = target.dataset.type as SoundType;
 
-        const fp = new FilePickerClass({
+        const fp = new (getFilePickerClass())({
             title: "Select a sound",
             type: "audio",
             callback: async (path: string) => {
@@ -313,6 +308,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
             return;
         }
 
+        const FilePickerClass = getFilePickerClass();
         const fp = new FilePickerClass({
             type: "folder",
             title: "Select a folder containing your organized sound set subfolders",
