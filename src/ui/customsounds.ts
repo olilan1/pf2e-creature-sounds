@@ -14,6 +14,7 @@ const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applicat
 interface SoundSetEntry {
     id: string;
     display_name: string;
+    category: string;
     selected: boolean
 }
 
@@ -110,6 +111,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const newSoundSet: SoundSet = {
             id: getNewSoundSetId(),
             display_name: "New Sound Set",
+            category: "Custom Sound Sets",
             hurt_sounds: [],
             attack_sounds: [],
             death_sounds: [],
@@ -337,6 +339,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                         const newSoundSet: SoundSet = {
                             id: soundSetId,
                             display_name: soundSetName,
+                            category: "Custom Sound Sets",
                             hurt_sounds: [],
                             attack_sounds: [],
                             death_sounds: [],
@@ -401,6 +404,7 @@ function createEmptySoundSet() {
     const emptySoundSet: SoundSet = {
         id: "",
         display_name: "",
+        category: "Custom Sound Sets",
         hurt_sounds: [],
         attack_sounds: [],
         death_sounds: [],

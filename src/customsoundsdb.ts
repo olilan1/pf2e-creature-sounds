@@ -31,7 +31,11 @@ export async function updateCustomSoundSet(soundSet: SoundSet) {
 
 export async function getCustomSoundSet(soundSetId: string) {
     const currentSoundDatabase = await getCustomSoundDatabase();
-    return currentSoundDatabase[soundSetId];
+    const soundSet = currentSoundDatabase[soundSetId];
+    if (soundSet && !soundSet.category) {
+        soundSet.category = "Custom Sound Sets";
+    }
+    return soundSet;
 }
 
 export async function deleteCustomSoundSet(soundSetId: string) {

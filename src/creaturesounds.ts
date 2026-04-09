@@ -1,12 +1,13 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
-import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName } from "./utils.ts";
+import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName, namesFromSoundDatabaseByCategory } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json' with { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
 
 export interface SoundSet {
     id: string;
     display_name: string;
+    category: string;
     notes?: string;
     hurt_sounds: string[];
     attack_sounds: string[];
@@ -42,8 +43,17 @@ const GENDER_TRAIT_SCORE = 0.5;
 
 export const NO_SOUND_SET = "none";
 
-export function getDbSoundSetNames(): { id: string; display_name: string; }[] {
+export function getDbSoundSetNames(): { id: string; display_name: string; category: string }[] {
     return namesFromSoundDatabase(soundDatabase);
+}
+
+export function getDbSoundSetCategories(): { category: string }[] {
+    const categories = Object.values(soundDatabase).map(soundSet => soundSet.category);
+    return [...new Set(categories)].map(category => ({ category }));
+}
+
+export function getDbSoundSetNamesByCategory(category: string): { id: string; display_name: string; }[] {
+    return namesFromSoundDatabaseByCategory(soundDatabase, category);
 }
 
 export async function playSoundForCreatureOnDamage(actor: ActorPF2e) {
