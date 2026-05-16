@@ -1,4 +1,4 @@
-import { findSoundSet, getDbSoundSetCategories, getDbSoundSetNamesByCategory, NO_SOUND_SET, playSoundForCreature } from "../creaturesounds.ts";
+import { findSoundSet, getDbSoundSetNamesByCategory, NO_SOUND_SET, playSoundForCreature, SoundCategory, DB_SOUND_CATEGORIES } from "../creaturesounds.ts";
 import { MODULE_ID, truncateStringWithEllipsis } from "../utils.ts";
 import { getSetting, SETTINGS } from "../settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
@@ -10,7 +10,7 @@ const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV2) {
     actor: ActorPF2e;
     currentSoundSet?: string;
-    currentCategory?: string;
+    currentCategory?: SoundCategory | "NO SOUND";
 
     constructor(actor: ActorPF2e) {
         super({
@@ -67,7 +67,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     override async _onChangeForm(_formConfig: ApplicationFormConfiguration, event: Event) {
         if (event.target instanceof HTMLSelectElement) {
             if (event.target.id === "categoryDropdown") {
-                this.currentCategory = event.target.value;
+                this.currentCategory = event.target.value as SoundCategory | "NO SOUND";
                 if (this.currentCategory === "NO SOUND") {
                     await this.actor.setFlag(MODULE_ID, "soundset", NO_SOUND_SET);
                 }
@@ -99,18 +99,20 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         playSoundForCreature(this.actor, "death", false, true);
     }
 
-    async buildCategoryOptions() {
-        const categories = getDbSoundSetCategories()
+    async buildCategoryOptions(): Promise<{ category: SoundCategory | "NO SOUND" }[]> {
+        const categories = [...DB_SOUND_CATEGORIES]
+            .map(category => ({ category }))
             .sort((a, b) => a.category.localeCompare(b.category));
+        const allCategories: { category: SoundCategory | "NO SOUND" }[] = categories;
         const customNames = await getCustomSoundSetNames();
         if (customNames.length > 0) {
-            categories.push({ category: "Custom Sound Sets" });
+            allCategories.push({ category: "Custom Sound Sets" });
         }
-        categories.unshift({ category: "NO SOUND" });
-        return categories;
+        allCategories.unshift({ category: "NO SOUND" });
+        return allCategories;
     }
 
-    async buildNameOptions(category: string) {
+    async buildNameOptions(category: SoundCategory | "NO SOUND") {
         if (category === "Custom Sound Sets") {
             const customNames = await getCustomSoundSetNames();
             return customNames.sort((a, b) => a.display_name.localeCompare(b.display_name));

@@ -1,12 +1,11 @@
 import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client/applications/_types.mjs";
-import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
+import { playSound, SoundSet, SoundType, SoundCategory, CUSTOM_CATEGORY } from "../creaturesounds.ts";
 import {
     updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet,
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet,
     deleteSoundFromCustomSoundSet, saveSoundSetsAsJSON,
     validateCustomSoundDatabase, updateSoundSetsWithSoundDatabase,
-    deleteAllCustomSoundSets,
-    CUSTOM_CATEGORY
+    deleteAllCustomSoundSets
 } from "../customsoundsdb.ts";
 
 import { getFilePickerClass, isSoundDatabase } from "../utils.ts";
@@ -15,7 +14,7 @@ const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applicat
 interface SoundSetEntry {
     id: string;
     display_name: string;
-    category: string;
+    category: SoundCategory;
     selected: boolean
 }
 
@@ -405,7 +404,7 @@ function createEmptySoundSet() {
     const emptySoundSet: SoundSet = {
         id: "",
         display_name: "",
-        category: "",
+        category: CUSTOM_CATEGORY,
         hurt_sounds: [],
         attack_sounds: [],
         death_sounds: [],

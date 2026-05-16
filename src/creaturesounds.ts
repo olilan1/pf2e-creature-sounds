@@ -4,10 +4,32 @@ import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabas
 import * as importedDb from '../databases/creature_sounds_db.json' with { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
 
+export const DB_SOUND_CATEGORIES = [
+    "Monstrosities & Aberrations",
+    "Dragons, Dinosaurs & Reptiles",
+    "Humanoids",
+    "Insects & Swarms",
+    "Monstrous Humanoids",
+    "Undead & Spirits",
+    "Fiends & Celestials",
+    "Amphibians & Aquatics",
+    "Animals & Beasts",
+    "Avian",
+    "Fey & Plants",
+    "Constructs & Oozes",
+    "Elementals"
+] as const;
+
+export type DbSoundCategory = typeof DB_SOUND_CATEGORIES[number];
+
+export const CUSTOM_CATEGORY = "Custom Sound Sets";
+
+export type SoundCategory = DbSoundCategory | typeof CUSTOM_CATEGORY;
+
 export interface SoundSet {
     id: string;
     display_name: string;
-    category: string;
+    category: SoundCategory;
     notes?: string;
     hurt_sounds: string[];
     attack_sounds: string[];
@@ -31,7 +53,7 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
     Object.entries(importedDb.default)
         .map(([key, value]) => [
             key,
-            { ...value, id: key },
+            { ...value, id: key } as SoundSet,
         ])
 );
 
@@ -43,16 +65,13 @@ const GENDER_TRAIT_SCORE = 0.5;
 
 export const NO_SOUND_SET = "none";
 
-export function getDbSoundSetNames(): { id: string; display_name: string; category: string }[] {
+export function getDbSoundSetNames(): { id: string; display_name: string; category: SoundCategory }[] {
     return namesFromSoundDatabase(soundDatabase);
 }
 
-export function getDbSoundSetCategories(): { category: string }[] {
-    const categories = Object.values(soundDatabase).map(soundSet => soundSet.category);
-    return [...new Set(categories)].map(category => ({ category }));
-}
 
-export function getDbSoundSetNamesByCategory(category: string): { id: string; display_name: string; }[] {
+
+export function getDbSoundSetNamesByCategory(category: SoundCategory): { id: string; display_name: string; }[] {
     return namesFromSoundDatabaseByCategory(soundDatabase, category);
 }
 

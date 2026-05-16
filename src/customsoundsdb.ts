@@ -1,11 +1,11 @@
-import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
+import { SoundDatabase, SoundSet, SoundType, CUSTOM_CATEGORY } from "./creaturesounds.ts";
 import { SETTINGS_NAMESPACE } from "./settings.ts";
 import { namesFromSoundDatabase, soundTypeToField } from "./utils.ts";
 import { saveAs } from 'file-saver';
 
 const CUSTOM_SOUND_SETS = "custom_sound_sets";
 
-export const CUSTOM_CATEGORY = "Custom Sound Sets";
+
 
 export function registerCustomSoundsDb(): void {
     game.settings.register(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, {
@@ -35,7 +35,7 @@ export async function getCustomSoundSet(soundSetId: string) {
     const currentSoundDatabase = await getCustomSoundDatabase();
     const soundSet = currentSoundDatabase[soundSetId];
     if (soundSet && !soundSet.category) {
-        soundSet.category = "Custom Sound Sets";
+        soundSet.category = CUSTOM_CATEGORY;
     }
     return soundSet;
 }
