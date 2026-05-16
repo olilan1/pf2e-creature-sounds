@@ -5,7 +5,8 @@ import {
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet,
     deleteSoundFromCustomSoundSet, saveSoundSetsAsJSON,
     validateCustomSoundDatabase, updateSoundSetsWithSoundDatabase,
-    deleteAllCustomSoundSets
+    deleteAllCustomSoundSets,
+    CUSTOM_CATEGORY
 } from "../customsoundsdb.ts";
 
 import { getFilePickerClass, isSoundDatabase } from "../utils.ts";
@@ -111,7 +112,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const newSoundSet: SoundSet = {
             id: getNewSoundSetId(),
             display_name: "New Sound Set",
-            category: "Custom Sound Sets",
+            category: CUSTOM_CATEGORY,
             hurt_sounds: [],
             attack_sounds: [],
             death_sounds: [],
@@ -339,7 +340,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                         const newSoundSet: SoundSet = {
                             id: soundSetId,
                             display_name: soundSetName,
-                            category: "Custom Sound Sets",
+                            category: CUSTOM_CATEGORY,
                             hurt_sounds: [],
                             attack_sounds: [],
                             death_sounds: [],
@@ -404,7 +405,7 @@ function createEmptySoundSet() {
     const emptySoundSet: SoundSet = {
         id: "",
         display_name: "",
-        category: "Custom Sound Sets",
+        category: "",
         hurt_sounds: [],
         attack_sounds: [],
         death_sounds: [],

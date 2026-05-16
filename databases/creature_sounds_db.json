@@ -115,7 +115,7 @@
     },
     "Goblin": {
         "display_name": "Goblin A",
-        "category": "Monstrous Humanoids",
+        "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_01.m4a",
@@ -872,11 +872,10 @@
         "size": -1
     },
     "Kelpie": {
-        "display_name": "Kelpie",
-        "category": "Amphibians & Aquatics",
+        "display_name": "Nightmare",
+        "category": "Animals & Beasts",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Pain_1_Water_Spirit_Horse_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Pain_2_Water_Spirit_Horse_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Pain_3_Water_Spirit_Horse_Creature.m4a"
         ],
@@ -1268,8 +1267,8 @@
         "size": -1
     },
     "Female Werewolf Shifter": {
-        "display_name": "Werewolf A",
-        "category": "Monstrous Humanoids",
+        "display_name": "Warg",
+        "category": "Animals & Beasts",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 01_ESM_HC2.m4a",
@@ -1494,7 +1493,7 @@
         "size": -1
     },
     "Sludgeman": {
-        "display_name": "Sludgeman",
+        "display_name": "Living Tar",
         "category": "Constructs & Oozes",
         "notes": "",
         "hurt_sounds": [
@@ -2710,7 +2709,7 @@
     },
     "Ben_Goblin": {
         "display_name": "Goblin B",
-        "category": "Monstrous Humanoids",
+        "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-hurt-1.m4a",
@@ -2799,7 +2798,7 @@
     },
     "Ben_Kobold": {
         "display_name": "Kobold",
-        "category": "Monstrous Humanoids",
+        "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-hurt-1.m4a",
@@ -3816,7 +3815,7 @@
         "size": -1
     },
     "Ooze": {
-        "display_name": "Ooze",
+        "display_name": "Gunpowder Ooze",
         "category": "Constructs & Oozes",
         "notes": "",
         "hurt_sounds": [
@@ -4079,7 +4078,7 @@
         "size": -1
     },
     "Insect_Swarm": {
-        "display_name": "Insect Swarm",
+        "display_name": "Swarm - Mosquito",
         "category": "Insects & Swarms",
         "notes": "",
         "hurt_sounds": [
@@ -4677,8 +4676,8 @@
         "size": -1
     },
     "Demonic": {
-        "display_name": "Demonic",
-        "category": "Fiends & Celestials",
+        "display_name": "Hobgoblin",
+        "category": "Humanoids",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_10.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Hurt/Taking Damage Grunt_4.m4a",

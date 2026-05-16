@@ -82,9 +82,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
 
     static async setToDefault(this: ActorSoundSelectApp) {
         await this.actor.unsetFlag(MODULE_ID, "soundset");
-        const soundSet = await findSoundSet(this.actor);
-        this.currentSoundSet = soundSet?.id ?? NO_SOUND_SET;
-        this.currentCategory = soundSet?.category ?? "NO SOUND";
+        this.currentSoundSet = undefined;
+        this.currentCategory = undefined;
         this.render();
     }
 
