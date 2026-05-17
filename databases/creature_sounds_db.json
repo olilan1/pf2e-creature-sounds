@@ -1293,9 +1293,7 @@
             "badger",
             "meladaemon"
         ],
-        "traits": [
-            "werecreature"
-        ],
+        "traits": [],
         "size": -1
     },
     "Female Wisp Spirit": {
@@ -4909,7 +4907,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Death/werewolf_voice_death_16.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "werewolf"
+        ],
         "traits": [],
         "size": 0
     },
@@ -5071,8 +5071,12 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Death/elec_lightning_magic_spell_08.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Death/elec_lightning_magic_spell_10.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "spark moth"
+        ],
+        "keywords": [
+            "galvo"
+        ],
         "traits": [],
         "size": -1
     },
@@ -5557,7 +5561,9 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Death/Moving Bubbles L.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "squid"
+        ],
         "traits": [],
         "size": -1
     },
@@ -5720,7 +5726,9 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Death/Swirls Low Rhythmic B.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "shark"
+        ],
         "traits": [],
         "size": -1
     },
@@ -5751,7 +5759,9 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 005.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "arkhana"
+        ],
         "traits": [],
         "size": -1
     }
