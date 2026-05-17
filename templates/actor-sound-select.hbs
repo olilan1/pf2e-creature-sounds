@@ -26,8 +26,8 @@
         </div>
     </div>
     <div class="play-buttons-container">
-        <button class="play-button" data-action="play_attack_sound"><i class="fa-solid fa-burst"></i> Attack</button>
-        <button class="play-button" data-action="play_hurt_sound"><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
-        <button class="play-button" data-action="play_death_sound"><i class="fa-solid fa-skull"></i> Death</button>
+        <button class="play-button" data-action="play_attack_sound" {{#unless hasSoundSet}} disabled {{/unless}}><i class="fa-solid fa-burst"></i> Attack</button>
+        <button class="play-button" data-action="play_hurt_sound" {{#unless hasSoundSet}} disabled {{/unless}}><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
+        <button class="play-button" data-action="play_death_sound" {{#unless hasSoundSet}} disabled {{/unless}}><i class="fa-solid fa-skull"></i> Death</button>
     </div>
 </div>

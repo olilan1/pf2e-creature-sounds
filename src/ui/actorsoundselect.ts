@@ -54,13 +54,17 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         const isNoSoundCategory = currentCategory === "NO SOUND";
         const canEdit = this.actor.sheet.isEditable
                 && (game.user.isGM || getSetting(SETTINGS.PLAYERS_CAN_EDIT));
+        const hasSoundSet = currentSoundSet !== NO_SOUND_SET
+            && currentSoundSet !== undefined
+            && currentSoundSet !== "";
         return {
             currentSoundSet,
             currentCategory,
             dropDownCategories,
             dropDownSoundSetNames,
             isNoSoundCategory,
-            canEdit
+            canEdit,
+            hasSoundSet
         };
     }
 
@@ -68,9 +72,8 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
         if (event.target instanceof HTMLSelectElement) {
             if (event.target.id === "categoryDropdown") {
                 this.currentCategory = event.target.value as SoundCategory | "NO SOUND";
-                if (this.currentCategory === "NO SOUND") {
-                    await this.actor.setFlag(MODULE_ID, "soundset", NO_SOUND_SET);
-                }
+                await this.actor.setFlag(MODULE_ID, "soundset", NO_SOUND_SET);
+                this.currentSoundSet = NO_SOUND_SET;
                 this.render();
             } else if (event.target.id === "soundSetDropdown") {
                 await this.actor.setFlag(MODULE_ID, "soundset", event.target?.value);
