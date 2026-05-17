@@ -11,12 +11,12 @@ export const DB_SOUND_CATEGORIES = [
     "Insects & Swarms",
     "Monstrous Humanoids",
     "Undead & Spirits",
-    "Fiends & Celestials",
-    "Amphibians & Aquatics",
-    "Animals & Beasts",
-    "Avian",
-    "Fey & Plants",
-    "Constructs & Oozes",
+    "Fiends & Outsiders",
+    "Amphibians, Aquatics & Avians",
+    "Animals",
+    "Beasts & Large Animals",
+    "Fey & Aliens",
+    "Constructs, Oozes & Plants",
     "Elementals"
 ] as const;
 

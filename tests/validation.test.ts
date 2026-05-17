@@ -29,7 +29,7 @@ const mockDb: SoundDatabase = {
         ...validSoundSet,
         id: "Custom-B",
         display_name: "Set B",
-        category: "Animals & Beasts",
+        category: "Animals",
     },
     "Custom-C": {
         ...validSoundSet,
@@ -48,7 +48,7 @@ describe("Category Query Logic (namesFromSoundDatabaseByCategory)", () => {
     });
 
     it("should return the correct shape without extra fields", () => {
-        const results = namesFromSoundDatabaseByCategory(mockDb, "Animals & Beasts");
+        const results = namesFromSoundDatabaseByCategory(mockDb, "Animals");
         expect(results).toEqual([{ id: "Custom-B", display_name: "Set B" }]);
     });
 
@@ -72,7 +72,7 @@ describe("Database Name Mapping (namesFromSoundDatabase)", () => {
     it("should map category values correctly", () => {
         const results = namesFromSoundDatabase(mockDb);
         const setB = results.find(r => r.id === "Custom-B");
-        expect(setB?.category).toBe("Animals & Beasts");
+        expect(setB?.category).toBe("Animals");
     });
 });
 
