@@ -1,16 +1,33 @@
 <div>
-    <div class="selected-sound-set-label">Sound Set</div>
-    <div class="sound-set-selector-container">
-        <select id="myDropdown" {{#unless canEdit}} disabled {{/unless}}>
-            {{selectOptions dropDownNames selected=currentSoundSet valueAttr="id" labelAttr="display_name"}}
-        </select>
-        <button class="revert-button" data-action="default_sound" data-tooltip="Revert to default" {{#unless canEdit}} disabled {{/unless}}>
-            <i class="fa-solid fa-arrow-rotate-left icon-only"></i>
-        </button>
+    <div class="soundset-selection-row-container">
+        <div class="soundset-selection-column">
+            <div class="dropdown-label">Category</div>
+            <select id="categoryDropdown" {{#unless canEdit}} disabled {{/unless}}>
+                {{selectOptions dropDownCategories selected=currentCategory valueAttr="category" labelAttr="category"}}
+            </select>
+        </div>
+        <div class="soundset-selection-column">
+            <div class="dropdown-label">Sound Set</div>
+            {{#if isNoSoundCategory}}
+                <select id="soundSetDropdown" disabled>
+                    <option value="" disabled selected>No sound set selected</option>
+                </select>
+            {{else}}
+                <select id="soundSetDropdown" {{#unless canEdit}} disabled {{/unless}}>
+                    <option value="" disabled selected hidden>Select a sound set</option>
+                    {{selectOptions dropDownSoundSetNames selected=currentSoundSet valueAttr="id" labelAttr="display_name"}}
+                </select>
+            {{/if}}
+        </div>
+        <div class="revert-button-column">
+            <button class="revert-button" data-action="default_sound" data-tooltip="Revert to default" {{#unless canEdit}} disabled {{/unless}}>
+                <i class="fa-solid fa-arrow-rotate-left icon-only"></i>
+            </button>
+        </div>
     </div>
     <div class="play-buttons-container">
-        <button class="play-button" data-action="play_attack_sound"><i class="fa-solid fa-burst"></i> Attack</button>
-        <button class="play-button" data-action="play_hurt_sound"><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
-        <button class="play-button" data-action="play_death_sound"><i class="fa-solid fa-skull"></i> Death</button>
+        <button class="play-button" data-action="play_attack_sound" {{#unless hasSoundSet}} disabled {{/unless}}><i class="fa-solid fa-burst"></i> Attack</button>
+        <button class="play-button" data-action="play_hurt_sound" {{#unless hasSoundSet}} disabled {{/unless}}><i class="fa-solid fa-person-falling-burst"></i> Hurt</button>
+        <button class="play-button" data-action="play_death_sound" {{#unless hasSoundSet}} disabled {{/unless}}><i class="fa-solid fa-skull"></i> Death</button>
     </div>
 </div>

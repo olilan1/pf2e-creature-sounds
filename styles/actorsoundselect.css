@@ -1,5 +1,26 @@
-/* The "Sound Set" label. */
-.selected-sound-set-label {
+/* Container for the two labels. */
+.dropdown-label-row-container {
+    display: flex;
+    gap: 8px;
+}
+
+/* Row container for labels and dropdowns. */
+.soundset-selection-row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+/* Column for label and dropdown. */
+.soundset-selection-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+/* The Dropdown labels. */
+.dropdown-label {
     font-weight: bold;
     margin-bottom: 2px;
 }
@@ -8,7 +29,14 @@
 .sound-set-selector-container {
     display: flex;
     gap: 8px;
-    width: 20rem;
+}
+
+/* Column for the revert button. */
+.revert-button-column {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /* The button to revert to default sound set. */

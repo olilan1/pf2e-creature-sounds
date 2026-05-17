@@ -1,5 +1,5 @@
 import { ApplicationFormConfiguration, ApplicationRenderContext, ApplicationRenderOptions } from "foundry-pf2e/foundry/client/applications/_types.mjs";
-import { playSound, SoundSet, SoundType } from "../creaturesounds.ts";
+import { playSound, SoundSet, SoundType, SoundCategory, CUSTOM_CATEGORY } from "../creaturesounds.ts";
 import {
     updateCustomSoundSet, getCustomSoundSetNames, deleteCustomSoundSet,
     getCustomSoundSet, updateCustomSoundSetDisplayName, addSoundToCustomSoundSet,
@@ -14,6 +14,7 @@ const { ApplicationV2, HandlebarsApplicationMixin, DialogV2 } = foundry.applicat
 interface SoundSetEntry {
     id: string;
     display_name: string;
+    category: SoundCategory;
     selected: boolean
 }
 
@@ -110,6 +111,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         const newSoundSet: SoundSet = {
             id: getNewSoundSetId(),
             display_name: "New Sound Set",
+            category: CUSTOM_CATEGORY,
             hurt_sounds: [],
             attack_sounds: [],
             death_sounds: [],
@@ -337,6 +339,7 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
                         const newSoundSet: SoundSet = {
                             id: soundSetId,
                             display_name: soundSetName,
+                            category: CUSTOM_CATEGORY,
                             hurt_sounds: [],
                             attack_sounds: [],
                             death_sounds: [],
@@ -401,6 +404,7 @@ function createEmptySoundSet() {
     const emptySoundSet: SoundSet = {
         id: "",
         display_name: "",
+        category: CUSTOM_CATEGORY,
         hurt_sounds: [],
         attack_sounds: [],
         death_sounds: [],

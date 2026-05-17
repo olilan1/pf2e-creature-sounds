@@ -1,9 +1,44 @@
-import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
+import { SoundDatabase, SoundSet, SoundType, CUSTOM_CATEGORY } from "./creaturesounds.ts";
 import { SETTINGS_NAMESPACE } from "./settings.ts";
-import { namesFromSoundDatabase, soundTypeToField } from "./utils.ts";
+import { namesFromSoundDatabase, soundTypeToField, logd } from "./utils.ts";
 import { saveAs } from 'file-saver';
 
 const CUSTOM_SOUND_SETS = "custom_sound_sets";
+const CUSTOM_SOUND_SETS_VERSION = "custom_sound_sets_version";
+
+/**
+ * Current schema version for the custom sound database.
+ *
+ * When changing the database schema:
+ * 1. Increment this value.
+ * 2. Add a new entry to the `migrations` Map below, keyed by the new version number.
+ *    The migration function receives the database at version (key - 1) and must return
+ *    it transformed to version (key).
+ * 3. The migration will run automatically on module startup for any world whose
+ *    stored version is behind CURRENT_DB_VERSION.
+ */
+export const CURRENT_DB_VERSION = 1;
+
+type Migration = (db: SoundDatabase) => SoundDatabase;
+
+/**
+ * Registry of migration functions, keyed by the TARGET version they produce.
+ *
+ * Each function receives the database at the previous version and returns
+ * the database transformed to the keyed version. Migrations are run in
+ * ascending key order.
+ */
+export const migrations = new Map<number, Migration>([
+    [1, (db) => {
+        // v0 → v1: Add missing category field to custom sound sets
+        for (const soundSet of Object.values(db)) {
+            if (!soundSet.category) {
+                soundSet.category = CUSTOM_CATEGORY;
+            }
+        }
+        return db;
+    }],
+]);
 
 export function registerCustomSoundsDb(): void {
     game.settings.register(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS, {
@@ -12,6 +47,14 @@ export function registerCustomSoundsDb(): void {
         default: {},
         config: false,
         type: Object
+    });
+
+    game.settings.register(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS_VERSION, {
+        name: "Custom Sound Sets Schema Version",
+        scope: "world",
+        default: 0,
+        config: false,
+        type: Number
     });
 }
 
@@ -31,7 +74,35 @@ export async function updateCustomSoundSet(soundSet: SoundSet) {
 
 export async function getCustomSoundSet(soundSetId: string) {
     const currentSoundDatabase = await getCustomSoundDatabase();
-    return currentSoundDatabase[soundSetId];
+    const soundSet = currentSoundDatabase[soundSetId];
+    return soundSet;
+}
+
+/**
+ * Runs any pending migrations on the custom sound database.
+ * Should be called once during the `ready` hook, after settings are fully loaded.
+ */
+export async function migrateCustomSoundDatabase() {
+    const storedVersion = game.settings.get(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS_VERSION) as number;
+
+    if (storedVersion >= CURRENT_DB_VERSION) {
+        return;
+    }
+
+    logd(`Custom sound database is at version ${storedVersion}, migrating to version ${CURRENT_DB_VERSION}`);
+    let db = await getCustomSoundDatabase();
+
+    for (let version = storedVersion + 1; version <= CURRENT_DB_VERSION; version++) {
+        const migration = migrations.get(version);
+        if (migration) {
+            logd(`Running migration to version ${version}`);
+            db = migration(db);
+        }
+    }
+
+    await setCustomSoundDatabase(db);
+    await game.settings.set(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS_VERSION, CURRENT_DB_VERSION);
+    logd(`Custom sound database migrated to version ${CURRENT_DB_VERSION}`);
 }
 
 export async function deleteCustomSoundSet(soundSetId: string) {

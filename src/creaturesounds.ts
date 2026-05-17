@@ -1,12 +1,37 @@
 import { ActorPF2e, CharacterPF2e, ChatMessagePF2e, NPCPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts"
-import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName } from "./utils.ts";
+import { getHashCode, logd, isNPC, isCharacter, MODULE_ID, namesFromSoundDatabase, getActorName, namesFromSoundDatabaseByCategory } from "./utils.ts";
 import * as importedDb from '../databases/creature_sounds_db.json' with { type: "json" };
 import { getCustomSoundSet } from "./customsoundsdb.ts";
+
+export const DB_SOUND_CATEGORIES = [
+    "Monstrosities & Aberrations",
+    "Dragons, Dinosaurs & Reptiles",
+    "Humanoids",
+    "Insects & Swarms",
+    "Monstrous Humanoids",
+    "Undead & Spirits",
+    "Fiends & Celestials",
+    "Amphibians & Aquatics",
+    "Animals & Beasts",
+    "Avian",
+    "Fey & Plants",
+    "Constructs & Oozes",
+    "Elementals"
+] as const;
+
+export type DbSoundCategory = typeof DB_SOUND_CATEGORIES[number];
+
+export const CUSTOM_CATEGORY = "Custom Sound Sets";
+
+export const ALL_CATEGORIES = [...DB_SOUND_CATEGORIES, CUSTOM_CATEGORY] as const;
+
+export type SoundCategory = DbSoundCategory | typeof CUSTOM_CATEGORY;
 
 export interface SoundSet {
     id: string;
     display_name: string;
+    category: SoundCategory;
     notes?: string;
     hurt_sounds: string[];
     attack_sounds: string[];
@@ -30,7 +55,7 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
     Object.entries(importedDb.default)
         .map(([key, value]) => [
             key,
-            { ...value, id: key },
+            { ...value, id: key } as SoundSet,
         ])
 );
 
@@ -42,8 +67,14 @@ const GENDER_TRAIT_SCORE = 0.5;
 
 export const NO_SOUND_SET = "none";
 
-export function getDbSoundSetNames(): { id: string; display_name: string; }[] {
+export function getDbSoundSetNames(): { id: string; display_name: string; category: SoundCategory }[] {
     return namesFromSoundDatabase(soundDatabase);
+}
+
+
+
+export function getDbSoundSetNamesByCategory(category: SoundCategory): { id: string; display_name: string; }[] {
+    return namesFromSoundDatabaseByCategory(soundDatabase, category);
 }
 
 export async function playSoundForCreatureOnDamage(actor: ActorPF2e) {

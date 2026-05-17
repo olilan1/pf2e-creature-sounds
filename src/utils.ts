@@ -1,6 +1,6 @@
 import { ActorPF2e, CharacterPF2e, NPCPF2e, TokenPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
-import { SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
+import { ALL_CATEGORIES, SoundCategory, SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
 
 export const MODULE_ID = "pf2e-creature-sounds";
 
@@ -77,6 +77,7 @@ function isSoundSet(obj: unknown): obj is SoundSet {
     return (
         'id' in obj &&
         'display_name' in obj &&
+        'category' in obj &&
         'hurt_sounds' in obj &&
         'attack_sounds' in obj &&
         'death_sounds' in obj &&
@@ -86,6 +87,7 @@ function isSoundSet(obj: unknown): obj is SoundSet {
         'size' in obj &&
         typeof obj.id === 'string' &&
         typeof obj.display_name === 'string' &&
+        (ALL_CATEGORIES as readonly string[]).includes(obj.category as string) &&
         isStringArray(obj.hurt_sounds) &&
         isStringArray(obj.attack_sounds) &&
         isStringArray(obj.death_sounds) &&
@@ -113,6 +115,13 @@ export function soundTypeToField(soundType: SoundType) {
 
 export function namesFromSoundDatabase(soundDb: SoundDatabase) {
     const result = Object.entries(soundDb)
+        .map(([key, value]) => ({ id: key, display_name: value.display_name, category: value.category }))
+    return result;
+}
+
+export function namesFromSoundDatabaseByCategory(soundDb: SoundDatabase, category: SoundCategory) {
+    const result = Object.entries(soundDb)
+        .filter(([_key, value]) => value.category === category)
         .map(([key, value]) => ({ id: key, display_name: value.display_name }))
     return result;
 }
