@@ -3902,7 +3902,7 @@
         "size": -1
     },
     "Elemental Ice": {
-        "display_name": "Elemental - Ice",
+        "display_name": "Ice Elemental",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -3939,7 +3939,7 @@
         "size": -1
     },
     "Elemental Fire": {
-        "display_name": "Elemental - Fire (Large)",
+        "display_name": "Fire Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -3970,7 +3970,7 @@
         "size": -1
     },
     "Elemental Water": {
-        "display_name": "Elemental - Water (Large)",
+        "display_name": "Water Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -4001,7 +4001,7 @@
         "size": -1
     },
     "Elemental Air": {
-        "display_name": "Elemental - Air (Large)",
+        "display_name": "Air Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -4034,7 +4034,7 @@
         "size": -1
     },
     "Elemental Earth": {
-        "display_name": "Elemental - Earth (Large)",
+        "display_name": "Earth Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -5049,7 +5049,7 @@
         "size": -1
     },
     "Electrical": {
-        "display_name": "Elemental - Electric",
+        "display_name": "Electric",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -5081,7 +5081,7 @@
         "size": -1
     },
     "Elemental - Fire Medium": {
-        "display_name": "Elemental - Fire (Medium)",
+        "display_name": "Fire Elemental (Medium)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -5506,7 +5506,7 @@
         "size": -1
     },
     "Aquatic": {
-        "display_name": "Elemental - Water (Medium)",
+        "display_name": "Water Elemental (Medium)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -5674,7 +5674,7 @@
         "size": -1
     },
     "Elemental - Earth Medium": {
-        "display_name": "Elemental - Earth (Medium)",
+        "display_name": "Earth Elemental (Medium)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
