@@ -2,7 +2,7 @@ import { registerSettings, getSetting, SETTINGS, SettingsKey } from "./settings.
 import { playSoundForCreatureOnDamage, playSoundForCreatureOnAttack } from "./creaturesounds.ts"
 import { ActorSoundSelectApp } from "./ui/actorsoundselect.ts";
 import { ActorPF2e, ChatMessagePF2e, CreaturePF2e, CreatureSheetPF2e } from "foundry-pf2e";
-import { registerCustomSoundsDb } from "./customsoundsdb.ts";
+import { registerCustomSoundsDb, migrateCustomSoundDatabase } from "./customsoundsdb.ts";
 import { loadSoundboardUI } from "./ui/soundboard.ts";
 import { getHtmlElement, logd } from "./utils.ts";
 import PlaylistDirectory from "foundry-pf2e/foundry/client/applications/sidebar/tabs/playlist-directory.mjs";
@@ -11,6 +11,10 @@ Hooks.on("init", () => {
     registerSettings();
     registerCustomSoundsDb();
     logd("PF2E Creature Sounds | Initialized");
+});
+
+Hooks.on("ready", async () => {
+    await migrateCustomSoundDatabase();
 });
 
 Hooks.on("updateActor", (actor: ActorPF2e, _changed: object, updateDetails: object) => {

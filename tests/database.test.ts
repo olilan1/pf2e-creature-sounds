@@ -12,11 +12,11 @@ import * as importedDb from "../databases/creature_sounds_db.json" with { type: 
 describe("Creature Sounds Database", () => {
     it("should have valid categories for all sound sets", () => {
         const soundDatabase = importedDb.default;
-        const validCategories = [...DB_SOUND_CATEGORIES];
+        const validCategories: string[] = [...DB_SOUND_CATEGORIES];
 
         for (const [key, soundSet] of Object.entries(soundDatabase)) {
             expect(
-                validCategories.includes(soundSet.category as any),
+                validCategories.includes(soundSet.category as string),
                 `SoundSet '${key}' has an invalid category '${soundSet.category}'. Expected one of: ${validCategories.join(", ")}`
             ).toBe(true);
         }
