@@ -7,13 +7,7 @@
 - Soundboard feature
 - Actor Overview feature
 - Organise sound sets into categories
-- Add new sound sets: Dinosaur - Allosaurus, Dinosaur - Tyrannosaurus, Dinosaur - Carnotaurus,
-  Aberration - Amphibious, Ankhrav, Humanoid Masculine L-Q, Humanoid Feminine M-N, Gnome (Feminine),
-  Demonic, Urdefhan, Werewolf, Bee Swarm, Fly Swarm, Alien Beast, Alien Humanoid, Beast B, Bugbear,
-  Electrical, Elemental - Fire Medium, Evil Outsider, Giant B, Glass, Humanoid Masuline Old,
-  Kobold B, Lizard, Mechanical, Ogre B, Redcap, Squelchy Flesh Pile, Velstrac, Wisp B, Aquatic,
-  Aquatic - Bubbles, Celestial, Construct - Metal, Construct - Wood, Elemental - Earth Medium,
-  Elemental - Water Medium, Mystical
+- Added many new sound sets
 - Renamed some sound sets
 
 ## [1.1.1] - 2025-07-20
