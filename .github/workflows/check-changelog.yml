@@ -1,0 +1,47 @@
+name: "Changelog Update Check"
+
+on:
+  pull_request:
+    # Trigger on PR updates and when labels are toggled
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+
+# Cancel in-progress runs if the PR is updated again before the check finishes
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-changelog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    env:
+      SKIP_CHANGELOG: ${{ contains(github.event.pull_request.labels.*.name, 'skip-changelog') }}
+    steps:
+      - name: Check bypass label
+        if: env.SKIP_CHANGELOG == 'true'
+        run: echo "ℹ️ 'skip-changelog' label detected. Bypassing check."
+
+      - name: Checkout Code
+        if: env.SKIP_CHANGELOG != 'true'
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history so git diff can compare branches
+          fetch-depth: 0
+
+      - name: Verify Changelog
+        if: env.SKIP_CHANGELOG != 'true'
+        run: |
+          # This compares the 'base' (e.g. main) with the 'head' (the PR branch)
+          if git diff --name-only origin/${{ github.base_ref }}...HEAD \
+             | grep -E -q "^CHANGELOG\.md$"; then
+            echo "✅ CHANGELOG.md has been updated."
+            exit 0
+          else
+            MSG="No changes detected in CHANGELOG.md. "
+            MSG+="Please update the changelog or add the "
+            MSG+="'skip-changelog' label to bypass this requirement."
+            echo "::error title=Missing Changelog::$MSG"
+            exit 1
+          fi
