@@ -24,6 +24,8 @@ export type DbSoundCategory = typeof DB_SOUND_CATEGORIES[number];
 
 export const CUSTOM_CATEGORY = "Custom Sound Sets";
 
+export const ALL_CATEGORIES = [...DB_SOUND_CATEGORIES, CUSTOM_CATEGORY] as const;
+
 export type SoundCategory = DbSoundCategory | typeof CUSTOM_CATEGORY;
 
 export interface SoundSet {

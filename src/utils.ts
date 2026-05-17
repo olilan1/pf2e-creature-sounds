@@ -1,6 +1,6 @@
 import { ActorPF2e, CharacterPF2e, NPCPF2e, TokenPF2e } from "foundry-pf2e";
 import { getSetting, SETTINGS } from "./settings.ts";
-import { DB_SOUND_CATEGORIES, SoundCategory, SoundDatabase, SoundSet, SoundType, CUSTOM_CATEGORY } from "./creaturesounds.ts";
+import { ALL_CATEGORIES, SoundCategory, SoundDatabase, SoundSet, SoundType } from "./creaturesounds.ts";
 
 export const MODULE_ID = "pf2e-creature-sounds";
 
@@ -87,7 +87,7 @@ function isSoundSet(obj: unknown): obj is SoundSet {
         'size' in obj &&
         typeof obj.id === 'string' &&
         typeof obj.display_name === 'string' &&
-        ([...DB_SOUND_CATEGORIES, CUSTOM_CATEGORY] as string[]).includes(obj.category as string) &&
+        (ALL_CATEGORIES as readonly string[]).includes(obj.category as string) &&
         isStringArray(obj.hurt_sounds) &&
         isStringArray(obj.attack_sounds) &&
         isStringArray(obj.death_sounds) &&

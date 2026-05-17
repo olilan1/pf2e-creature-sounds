@@ -1,4 +1,4 @@
-import { findSoundSet, getDbSoundSetNamesByCategory, NO_SOUND_SET, playSoundForCreature, SoundCategory, DB_SOUND_CATEGORIES } from "../creaturesounds.ts";
+import { findSoundSet, getDbSoundSetNamesByCategory, NO_SOUND_SET, playSoundForCreature, SoundCategory, DB_SOUND_CATEGORIES, CUSTOM_CATEGORY } from "../creaturesounds.ts";
 import { MODULE_ID, truncateStringWithEllipsis } from "../utils.ts";
 import { getSetting, SETTINGS } from "../settings.ts";
 import { ActorPF2e } from "foundry-pf2e";
@@ -100,20 +100,21 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
     }
 
     async buildCategoryOptions(): Promise<{ category: SoundCategory | "NO SOUND" }[]> {
-        const categories = [...DB_SOUND_CATEGORIES]
-            .map(category => ({ category }))
-            .sort((a, b) => a.category.localeCompare(b.category));
-        const allCategories: { category: SoundCategory | "NO SOUND" }[] = categories;
+        const sortedDbCategories = [...DB_SOUND_CATEGORIES].sort((a, b) => a.localeCompare(b));
+        const allCategories: { category: SoundCategory | "NO SOUND" }[] = [
+            { category: "NO SOUND" },
+            ...sortedDbCategories.map(c => ({ category: c }))
+        ];
+
         const customNames = await getCustomSoundSetNames();
         if (customNames.length > 0) {
-            allCategories.push({ category: "Custom Sound Sets" });
+            allCategories.push({ category: CUSTOM_CATEGORY });
         }
-        allCategories.unshift({ category: "NO SOUND" });
         return allCategories;
     }
 
     async buildNameOptions(category: SoundCategory | "NO SOUND") {
-        if (category === "Custom Sound Sets") {
+        if (category === CUSTOM_CATEGORY) {
             const customNames = await getCustomSoundSetNames();
             return customNames.sort((a, b) => a.display_name.localeCompare(b.display_name));
         } else if (category === "NO SOUND") {
