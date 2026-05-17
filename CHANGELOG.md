@@ -9,6 +9,7 @@
   Aberration - Amphibious, Ankhrav, Humanoid Masculine L-Q, Humanoid Feminine M-N, Gnome (Feminine),
   Demonic, Urdefhan
 - Actor Overview feature
+- Organise sound sets into categories
 
 ## [1.1.1] - 2025-07-20
 
