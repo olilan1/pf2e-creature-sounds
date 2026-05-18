@@ -15,8 +15,6 @@
 .soundset-selection-column {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    min-width: 0;
 }
 
 /* The Dropdown labels. */
@@ -65,4 +63,9 @@
     flex: 1;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+/* Keep the sound set dropdown size stable so the dialog doesn't shift when changing categories */
+#soundSetDropdown {
+    width: 200px;
 }

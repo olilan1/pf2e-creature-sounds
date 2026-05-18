@@ -266,9 +266,7 @@
         "traits": [
             "orc",
             "dromaar",
-            "half-orc",
-            "hobgoblin",
-            "bugbear"
+            "half-orc"
         ],
         "size": -1
     },
@@ -407,8 +405,8 @@
         "size": 0
     },
     "Troll": {
-        "display_name": "Troll",
-        "category": "Monstrous Humanoids",
+        "display_name": "Gug",
+        "category": "Monstrosities & Aberrations",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Troll/Troll_Hurt/CREAMnstr_Troll_Hurt_01.m4a",
@@ -474,7 +472,7 @@
     },
     "Barbazu": {
         "display_name": "Barbazu",
-        "category": "Fiends & Celestials",
+        "category": "Fiends & Outsiders",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Balor/Balor_Monster_Pain_1_Supernatural_Creature_Groan_Hurt_Death_Hit_Vocalization.m4a",
@@ -533,7 +531,7 @@
         "size": -1
     },
     "Frost_Giant": {
-        "display_name": "Ogre",
+        "display_name": "Troll",
         "category": "Monstrous Humanoids",
         "notes": "",
         "hurt_sounds": [
@@ -553,7 +551,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "ogre",
             "hamatula"
         ],
         "traits": [],
@@ -561,7 +558,7 @@
     },
     "Kraken": {
         "display_name": "Kraken",
-        "category": "Amphibians & Aquatics",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Kraken/Kraken_Monster_Pain_1_Hurt_Death_Howl_Moan.m4a",
@@ -590,7 +587,7 @@
     },
     "Mammoth": {
         "display_name": "Mammoth",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Mammoth/Mammoth_Monster_Pain_1_Elephant_Vocalization_Grunt_Breath.m4a",
@@ -618,7 +615,7 @@
     },
     "Roc": {
         "display_name": "Roc",
-        "category": "Avian",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Roc/Roc_Monster_Pain_1_Dinosaur_Bird_Squeal_Die_Death_Hit.m4a",
@@ -664,8 +661,8 @@
         "size": -1
     },
     "Sphinx": {
-        "display_name": "Sphinx",
-        "category": "Animals & Beasts",
+        "display_name": "Tiger",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Sphinx/Sphinx_Monster_Pain_1_Saber_Tooth_Lion_Tiger_Growl_Grunt_Death.m4a",
@@ -686,7 +683,6 @@
         "creatures": [],
         "keywords": [
             "sphinx",
-            "smilodon",
             "rakshasa",
             "imentesh",
             "Hieracosphinx"
@@ -739,7 +735,7 @@
     },
     "Treant": {
         "display_name": "Arboreal",
-        "category": "Fey & Plants",
+        "category": "Constructs, Oozes & Plants",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Treant/Treant_Monster_Pain_1_Tree_Creature_Croak_Groan_Moan_Squeal.m4a",
@@ -809,7 +805,7 @@
     },
     "Harpy": {
         "display_name": "Harpy",
-        "category": "Avian",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Harpy/Harpy_Monster_Pain_1_Bird_Dinosaur_Witch_Creature.m4a",
@@ -836,8 +832,8 @@
         "size": -1
     },
     "Hellhound": {
-        "display_name": "Hellhound",
-        "category": "Animals & Beasts",
+        "display_name": "Hound",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Hell_Hound/Hellhound_Monster_Pain_1_Dog_Wolf_Creature.m4a",
@@ -873,7 +869,7 @@
     },
     "Kelpie": {
         "display_name": "Nightmare",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Pain_2_Water_Spirit_Horse_Creature.m4a",
@@ -905,7 +901,7 @@
     },
     "Mimic": {
         "display_name": "Mimic",
-        "category": "Constructs & Oozes",
+        "category": "Constructs, Oozes & Plants",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Mimic/Mimic_Monster_Pain_1_Robotic_Humanoid_Creature_Mechanical.m4a",
@@ -960,7 +956,7 @@
     },
     "Owlbear": {
         "display_name": "Owlbear",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Owlbear/Owlbear_Monster_Pain_1_Bird_Mammal_Creature.m4a",
@@ -988,7 +984,7 @@
     },
     "Rock_Golem": {
         "display_name": "Rock Golem",
-        "category": "Constructs & Oozes",
+        "category": "Constructs, Oozes & Plants",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Rock_Golem/Rock_Golem_Monster_Pain_1_Supernatural_Mythical_Creature.m4a",
@@ -1162,7 +1158,7 @@
     },
     "Female Sprite Gnome": {
         "display_name": "Gremlin",
-        "category": "Fey & Plants",
+        "category": "Fey & Aliens",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Sprite_Gnome/CREAHmn_Female Sprite Gnome Pain Injured Hit Shout Cry 01_ESM_HC2.m4a",
@@ -1198,7 +1194,7 @@
     },
     "Female Succubus Demon": {
         "display_name": "Succubus",
-        "category": "Fiends & Celestials",
+        "category": "Fiends & Outsiders",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Succubus_Demon/CREAHmn_Female Succubus Demon Pain Groan Hit Grunt Cry 01_ESM_HC2.m4a",
@@ -1268,7 +1264,7 @@
     },
     "Female Werewolf Shifter": {
         "display_name": "Warg",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 01_ESM_HC2.m4a",
@@ -1297,14 +1293,12 @@
             "badger",
             "meladaemon"
         ],
-        "traits": [
-            "werecreature"
-        ],
+        "traits": [],
         "size": -1
     },
     "Female Wisp Spirit": {
-        "display_name": "Wisp",
-        "category": "Undead & Spirits",
+        "display_name": "Air Wisp",
+        "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Wisp_Spirit/CREAHmn_Female Wisp Spirit Pain Yelp Cry Hit Short Ethereal Ghost 01_ESM_HC2.m4a",
@@ -1327,9 +1321,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Wisp_Spirit/CREAHmn_Female Wisp Spirit Death Defeated Pitch Drop Ethereal Ghost Cry 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Wisp_Spirit/CREAHmn_Female Wisp Spirit Death Defeated Pitch Drop Ethereal Ghost Cry 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "air wisp"
+        ],
         "keywords": [
-            "wisp",
             "phantasmal minion"
         ],
         "traits": [],
@@ -1413,7 +1408,7 @@
     },
     "Hellspawn": {
         "display_name": "Imp",
-        "category": "Fiends & Celestials",
+        "category": "Fiends & Outsiders",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Hellspawn/CREAHmn_Hellspawn Pain Painful Hissing Grunt Falling Off 01_ESM_HC2.m4a",
@@ -1457,7 +1452,7 @@
     },
     "Mutant": {
         "display_name": "Vrock",
-        "category": "Avian",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Mutant/CREAHmn_Mutant Pain Damaged Screech Defiant Fearful Throaty 01_ESM_HC2.m4a",
@@ -1494,7 +1489,7 @@
     },
     "Sludgeman": {
         "display_name": "Living Tar",
-        "category": "Constructs & Oozes",
+        "category": "Constructs, Oozes & Plants",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Sludgeman/CREAHmn_Sludgeman Pain Deep Gutteral Disgusting Throaty Wet 01_ESM_HC2.m4a",
@@ -1586,7 +1581,7 @@
     },
     "Voidling": {
         "display_name": "Venedaemon",
-        "category": "Fiends & Celestials",
+        "category": "Fiends & Outsiders",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Pain Harsh Breathy Light Ghost Like 01_ESM_HC2.m4a",
@@ -1610,9 +1605,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Death Long Drawn Out Haunting Weird 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Death Short Quick Creepy Weird Ethereal 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Will-o’-Wisp"
+        ],
         "keywords": [
-            "wisp",
             "shining child",
             "venedaemon",
             "quelaunt",
@@ -2455,7 +2451,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "witchwyrd",
             "Tattoo Guardian",
             "Vanara Disciple"
         ],
@@ -3075,7 +3070,7 @@
     },
     "Cat": {
         "display_name": "Cat",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cat/Hurt/Cat Scream 01.m4a",
@@ -3111,7 +3106,7 @@
     },
     "Chicken": {
         "display_name": "Chicken",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Chicken/Hurt/Chicken 04.m4a",
@@ -3137,7 +3132,7 @@
     },
     "Cow": {
         "display_name": "Cow",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Cow/Hurt/Cow 02.m4a",
@@ -3169,7 +3164,7 @@
     },
     "Dog": {
         "display_name": "Dog",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Hurt/Dog Bark 08.m4a",
@@ -3203,7 +3198,7 @@
     },
     "Donkey": {
         "display_name": "Donkey",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Donkey/Hurt/Donkey 02.m4a",
@@ -3234,7 +3229,7 @@
     },
     "Duck": {
         "display_name": "Duck",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Duck/Hurt/Duck 02.m4a",
@@ -3266,7 +3261,7 @@
     },
     "Horse": {
         "display_name": "Horse",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Horse/Hurt/Horse Neigh 03.m4a",
@@ -3307,7 +3302,7 @@
     },
     "Pig": {
         "display_name": "Pig",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Pig/Hurt/Pig Squeel 01.m4a",
@@ -3344,7 +3339,7 @@
     },
     "Sheep": {
         "display_name": "Sheep",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Sheep/Hurt/Sheep 07.m4a",
@@ -3373,7 +3368,7 @@
     },
     "Snake": {
         "display_name": "Snake",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.m4a",
@@ -3401,7 +3396,7 @@
     },
     "Bear": {
         "display_name": "Bear",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Bear/Hurt/Bear_Damage_Take-001.m4a",
@@ -3428,8 +3423,8 @@
         "size": -1
     },
     "Beast": {
-        "display_name": "Beast",
-        "category": "Animals & Beasts",
+        "display_name": "Hippopotamus",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-001.m4a",
@@ -3452,14 +3447,15 @@
         "creatures": [],
         "keywords": [
             "catoblepas",
-            "giant pangolin"
+            "giant pangolin",
+            "hippopotamus"
         ],
         "traits": [],
         "size": -1
     },
     "Boar": {
         "display_name": "Boar",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Boar/Hurt/Boar_Roar_Scream-001.m4a",
@@ -3487,7 +3483,7 @@
     },
     "Camel": {
         "display_name": "Camel",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Camel/Hurt/Camel_Damage_Take-001.m4a",
@@ -3524,7 +3520,7 @@
     },
     "Crab": {
         "display_name": "Crab",
-        "category": "Amphibians & Aquatics",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crab/Hurt/Crab_Damage_Take-001.m4a",
@@ -3549,7 +3545,7 @@
     },
     "Crocodile": {
         "display_name": "Crocodile",
-        "category": "Amphibians & Aquatics",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Hurt/Crocodile_Damage_Take-001.m4a",
@@ -3622,7 +3618,7 @@
     },
     "Demon": {
         "display_name": "Demon",
-        "category": "Fiends & Celestials",
+        "category": "Fiends & Outsiders",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Demon/Hurt/Zombie_Damage_Take-001.m4a",
@@ -3655,7 +3651,7 @@
     },
     "Dryad": {
         "display_name": "Dryad",
-        "category": "Fey & Plants",
+        "category": "Fey & Aliens",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Hurt/Dryad_Damage_Take_Wound-001.m4a",
@@ -3692,7 +3688,7 @@
     },
     "Elephant": {
         "display_name": "Elephant",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Elephant/Hurt/Elephant_Damage_Take-001.m4a",
@@ -3791,7 +3787,7 @@
     },
     "Lion": {
         "display_name": "Lion",
-        "category": "Animals & Beasts",
+        "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/Pixabay/Lion/Lion Damage 1.m4a",
@@ -3816,7 +3812,7 @@
     },
     "Ooze": {
         "display_name": "Gunpowder Ooze",
-        "category": "Constructs & Oozes",
+        "category": "Constructs, Oozes & Plants",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Hurt/Ooze_Slime_Damage_Take-001.m4a",
@@ -3878,7 +3874,7 @@
     },
     "Sea Lion": {
         "display_name": "Sea Lion",
-        "category": "Animals & Beasts",
+        "category": "Animals",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Hurt/Sea_Lion_Damage_Take-001.m4a",
@@ -3900,14 +3896,13 @@
         "creatures": [],
         "keywords": [
             "snapping turtle",
-            "hippopotamus",
             "sea lion"
         ],
         "traits": [],
         "size": -1
     },
     "Elemental Ice": {
-        "display_name": "Elemental - Ice",
+        "display_name": "Ice Elemental",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -3932,7 +3927,6 @@
         "creatures": [],
         "keywords": [
             "blizzardborn",
-            "glass golem",
             "ice golem",
             "icicle snake",
             "sceaduinar",
@@ -3945,7 +3939,7 @@
         "size": -1
     },
     "Elemental Fire": {
-        "display_name": "Elemental - Fire",
+        "display_name": "Fire Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -3976,7 +3970,7 @@
         "size": -1
     },
     "Elemental Water": {
-        "display_name": "Elemental - Water",
+        "display_name": "Water Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -4007,7 +4001,7 @@
         "size": -1
     },
     "Elemental Air": {
-        "display_name": "Elemental - Air",
+        "display_name": "Air Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -4040,7 +4034,7 @@
         "size": -1
     },
     "Elemental Earth": {
-        "display_name": "Elemental - Earth",
+        "display_name": "Earth Elemental (Large)",
         "category": "Elementals",
         "notes": "",
         "hurt_sounds": [
@@ -4078,7 +4072,7 @@
         "size": -1
     },
     "Insect_Swarm": {
-        "display_name": "Swarm - Mosquito",
+        "display_name": "Swarm - Mosquitoes",
         "category": "Insects & Swarms",
         "notes": "",
         "hurt_sounds": [
@@ -4103,7 +4097,7 @@
     },
     "goblin_fairy": {
         "display_name": "Sprite",
-        "category": "Fey & Plants",
+        "category": "Fey & Aliens",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Voice/Goblin Fairy/goblin_fairy_hurt_pain_01.m4a",
@@ -4188,7 +4182,7 @@
     },
     "small_plant": {
         "display_name": "Plant",
-        "category": "Fey & Plants",
+        "category": "Constructs, Oozes & Plants",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_bush_tree_whip_01.m4a",
@@ -4863,9 +4857,7 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [
-            ""
-        ],
+        "traits": [],
         "size": 0
     },
     "Fly Swarm": {
@@ -4887,13 +4879,11 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [
-            ""
-        ],
+        "traits": [],
         "size": 0
     },
     "Werewolf": {
-        "display_name": "Werewolf B",
+        "display_name": "Werewolf",
         "category": "Monstrous Humanoids",
         "notes": "",
         "hurt_sounds": [
@@ -4917,10 +4907,862 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/WerewolfVocalizations/Death/werewolf_voice_death_16.m4a"
         ],
         "creatures": [],
+        "keywords": [
+            "werewolf"
+        ],
+        "traits": [],
+        "size": 0
+    },
+    "Shriezyx": {
+        "display_name": "Shriezyx",
+        "category": "Monstrosities & Aberrations",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Hurt/alien_v2_voice_pain_07.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Attack/alien_v2_voice_attack_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Attack/alien_v2_voice_attack_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Attack/alien_v2_voice_attack_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Attack/alien_v2_voice_attack_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Attack/alien_v2_voice_attack_05.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_18.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_19.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "shriezyx"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Witchwyrd": {
+        "display_name": "Witchwyrd",
+        "category": "Fey & Aliens",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Hurt/Strong Hi-Tech Alien Angry Voice 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Hurt/Strong Hi-Tech Alien Pain 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Hurt/Strong Hi-Tech Alien Pain 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Hurt/Strong Hi-Tech Alien Pain 3.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Attack/Strong Hi-Tech Alien Voice 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Attack/Strong Hi-Tech Alien Voice 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Attack/Strong Hi-Tech Alien Voice 3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Attack/Strong Hi-Tech Alien Voice 4.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Death/Wise Alien Voice 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Death/Wise Alien Voice 5.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "witchwyrd"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Smilodon": {
+        "display_name": "Smilodon",
+        "category": "Beasts & Large Animals",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_16.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Hurt/beast_voice_pain_18.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_18.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_21.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Attack/beast_voice_attack_22.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_21.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_22.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "smilodon"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Bugbear": {
+        "display_name": "Bugbear",
+        "category": "Monstrous Humanoids",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Hurt/goblin_voice_pain_16.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Attack/goblin_voice_attacking_16.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Death/goblin_voice_death_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Death/goblin_voice_death_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Death/goblin_voice_death_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Death/goblin_voice_death_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Death/goblin_voice_death_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Bugbear/Death/goblin_voice_death_15.m4a"
+        ],
+        "creatures": [],
         "keywords": [],
         "traits": [
-            ""
+            "bugbear"
         ],
-        "size": 0
+        "size": -1
+    },
+    "Electrical": {
+        "display_name": "Electric",
+        "category": "Elementals",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Hurt/electric_lightning_blast_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Hurt/electric_lightning_blast_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Hurt/electric_lightning_blast_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Hurt/electric_lightning_blast_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Hurt/electric_lightning_blast_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Hurt/electric_lightning_blast_06.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Attack/electric_surge_blast_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Attack/electric_surge_blast_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Attack/electric_surge_blast_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Attack/electric_surge_blast_04.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Death/elec_lightning_magic_spell_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Death/elec_lightning_magic_spell_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Death/elec_lightning_magic_spell_10.m4a"
+        ],
+        "creatures": [
+            "spark moth"
+        ],
+        "keywords": [
+            "galvo"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Elemental - Fire Medium": {
+        "display_name": "Fire Elemental (Medium)",
+        "category": "Elementals",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Hurt/fireball_impact_burn_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Hurt/fireball_impact_burn_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Hurt/fireball_impact_burn_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Hurt/fireball_impact_burn_04.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Attack/Spell - Fireball 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Attack/Spell - Fireball 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Attack/Spell - Fireball 3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Attack/Spell - Fireball 4.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Death/fireball_impact_magic_smoke_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Death/fireball_impact_magic_smoke_02.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Deimavigga": {
+        "display_name": "Deimavigga",
+        "category": "Fiends & Outsiders",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Hurt/dark_knight_voice_pain_18.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_17.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Attack/dark_knight_voice_attack_20.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_12.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "deimavigga"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Cyclops": {
+        "display_name": "Cyclops",
+        "category": "Monstrous Humanoids",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Hurt/cyclops_voice_pain_16.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Attack/cyclops_voice_attacking_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Attack/cyclops_voice_attacking_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Attack/cyclops_voice_attacking_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Attack/cyclops_voice_battle_shout_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Attack/cyclops_voice_battle_shout_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Attack/cyclops_voice_victory_shout_01.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_long_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_short_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_short_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_short_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_short_08.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "cyclops"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Glass Golem": {
+        "display_name": "Glass Golem",
+        "category": "Constructs, Oozes & Plants",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Hurt/Glass Crash 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Hurt/Glass Crash 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Hurt/Glass Crash 3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Hurt/Glass Crash 4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Hurt/Glass Crash 5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Hurt/Heavy Glass Shatter 3.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Attack/Quick_Swish_Swoosh_Whoosh_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Attack/Quick_Swish_Swoosh_Whoosh_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Attack/Sliced_Whirl_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Attack/Sliced_Whirl_2.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Death/Heavy Glass Shatter 7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Death/Heavy Glass Shatter 8.m4a"
+        ],
+        "creatures": [
+            "Glass Golem"
+        ],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Humanoid Masculine Old": {
+        "display_name": "Humanoid Masculine Old",
+        "category": "Humanoids",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_001.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_002.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_003.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_009.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_010.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_011.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Hurt/SFX_Zombie_Male_Cartoon_Dumb_Pain_Short_012.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_001.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_002.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_003.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_004.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_005.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_007.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Attack/SFX_Zombie_Male_Cartoon_Dumb_Attack_Faster_008.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_002.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_003.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_007.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_011.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_012.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Kobold B": {
+        "display_name": "Kobold B",
+        "category": "Humanoids",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 27.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 30.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 42.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 43.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 57.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 66.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 32.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 34.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 46.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 56.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Attack/Small Monster Voice Effect 6.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 31.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 36.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 37.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 45.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Lizard": {
+        "display_name": "Lizard",
+        "category": "Dragons, Dinosaurs & Reptiles",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Hurt/Small Monster Hiss 1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Hurt/Small Monster Hiss 10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Hurt/Small Monster Hiss 3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Hurt/Small Monster Hiss 6.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Attack/Small Monster Hiss 2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Attack/Small Monster Hiss 4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Attack/Small Monster Hiss 7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Attack/Small Monster Hiss 8.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Attack/Small Monster Hiss 9.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Death/Small Monster Hiss 12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Death/Small Monster Hiss 5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Lizard/Death/Small Monster Voice Effect 4.m4a"
+        ],
+        "creatures": [
+            "Giant Frilled Lizard",
+            "Caustic Monitor"
+        ],
+        "keywords": [
+            "chameleon",
+            "gecko",
+            "monitor lizard"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Clockwork Soldier": {
+        "display_name": "Clockwork Soldier",
+        "category": "Constructs, Oozes & Plants",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Hurt/Toaster Boom B.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Hurt/Toaster Boom D.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Hurt/Toaster Boom E.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Attack/Toaster Boom A.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Attack/Toaster Boom G.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Attack/Toaster Boom H.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Attack/Toaster Boom I.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Attack/Toaster Boom J.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Death/Sci-Fi Dieselpunk Small Machinery Engine 1 Powering Down.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [
+            "clockwork"
+        ],
+        "size": -1
+    },
+    "Ogre B": {
+        "display_name": "Ogre",
+        "category": "Monstrous Humanoids",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Hurt/ogre_voice_pain_19.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_16.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Attack/ogre_voice_attacking_20.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Death/ogre_voice_death_long_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Death/ogre_voice_death_short_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Death/ogre_voice_death_short_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Death/ogre_voice_death_short_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Ogre B/Death/ogre_voice_death_short_11.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "ogre"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Redcap": {
+        "display_name": "Redcap",
+        "category": "Fey & Aliens",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Hurt/parasite_voice_pain_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Hurt/parasite_voice_pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Hurt/parasite_voice_pain_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Hurt/parasite_voice_pain_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Hurt/parasite_voice_pain_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Hurt/parasite_voice_pain_16.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Attack/parasite_voice_attack_15.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Death/parasite_voice_death_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Death/parasite_voice_death_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Death/parasite_voice_death_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Death/parasite_voice_death_05.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "redcap"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Shanrigol": {
+        "display_name": "Shanrigol",
+        "category": "Monstrosities & Aberrations",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Hurt/SFX_GORE_BigBodyPartsFallingOnTheGroundBloodSplatter_Disgusting_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Hurt/SFX_GORE_GutsAndInternalOrgansFallingOnTheGroundBloodSplatter_Disgusting_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Hurt/SFX_GORE_Pull_C03_Tear_and_Rip_off.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Hurt/SFX_GORE_Pull_C04_Tear_and_Rip_off.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Hurt/SFX_GORE_Pull_C05_Tear_and_Rip_off.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Attack/SFX_GORE_EyeSquishOrGaugeOut_Fast_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Attack/SFX_GORE_EyeSquishOrGaugeOut_Fast_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Attack/SFX_GORE_EyeSquishOrGaugeOut_Fast_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Attack/SFX_GORE_EyeSquishOrGaugeOut_Fast_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Attack/SFX_GORE_EyeSquishOrGaugeOut_Fast_5.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Death/SFX_GORE_BodyExplosionWithBloodAndOrgansSpatter_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Death/SFX_GORE_BodyExplosionWithBloodAndOrgansSpatter_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Death/SFX_GORE_BodyExplosionWithBloodAndOrgansSpatter_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shanrigol/Death/SFX_GORE_BodyExplosionWithBloodAndOrgansSpatter_4.m4a"
+        ],
+        "creatures": [
+            "Gibbering Mouther",
+            "Sewer Ooze"
+        ],
+        "keywords": [
+            "shanrigol"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Velstrac": {
+        "display_name": "Velstrac",
+        "category": "Fiends & Outsiders",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_20.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Hurt/infernal_voice_pain_23.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_16.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_17.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_19.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Attack/infernal_voice_attack_21.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_11.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_14.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_15.m4a"
+        ],
+        "creatures": [
+            "Augur"
+        ],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Wisp B": {
+        "display_name": "Wisp",
+        "category": "Elementals",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Hurt/Bright_Swoosh_Whoosh_10.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Hurt/Bright_Swoosh_Whoosh_12.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Hurt/Bright_Swoosh_Whoosh_13.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Hurt/Bright_Swoosh_Whoosh_14.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Attack/Bright_Swoosh_Whoosh_15.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Attack/Bright_Swoosh_Whoosh_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Attack/Bright_Swoosh_Whoosh_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Attack/Bright_Swoosh_Whoosh_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Attack/Bright_Swoosh_Whoosh_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Attack/Bright_Swoosh_Whoosh_6.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Death/Bright-Flare_Beam_Swish_Whirl_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Death/Bright-Flare_Beam_Swish_Whirl_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Death/Bright-Flare_Beam_Swish_Whirl_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Death/Bright-Flare_Beam_Swish_Whirl_7.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "wisp"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Aquatic": {
+        "display_name": "Water Elemental (Medium)",
+        "category": "Elementals",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Hurt/Water Magic Wavecrash Echo 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Hurt/Water Magic Wavecrash Echo 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Hurt/Water Magic Wavecrash Echo 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Hurt/Water Magic Wavecrash Echo 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Hurt/Water Magic Wavecrash Echo 005.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Attack/Water Magic Tidal Rush 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Attack/Water Magic Tidal Rush 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Attack/Water Magic Tidal Rush 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Attack/Water Magic Tidal Rush 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Attack/Water Magic Tidal Rush 005.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Attack/Water Magic Tidal Rush 006.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Death/Water Magic Maelstrom Roar 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Death/Water Magic Maelstrom Roar 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Death/Water Magic Maelstrom Roar 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Death/Water Magic Maelstrom Roar 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Death/Water Magic Maelstrom Roar 005.m4a"
+        ],
+        "creatures": [
+            "Dewdrop Jelly"
+        ],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Aquatic - Bubbles": {
+        "display_name": "Squid",
+        "category": "Amphibians, Aquatics & Avians",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Hurt/Moving Bubbles F.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Hurt/Moving Bubbles J.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Hurt/Moving Bubbles K.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Hurt/Swirls Low F.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Hurt/Swirls Low H.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Attack/Helmet Submerge A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Attack/Helmet Submerge B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Attack/Helmet Submerge C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Attack/Helmet Submerge E.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Death/Low Swoosh D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Death/Low Swoosh G.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic - Bubbles/Death/Moving Bubbles L.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "squid"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Celestial": {
+        "display_name": "Lantern Archon",
+        "category": "Fiends & Outsiders",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Hurt/Holy Tail Gong A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Hurt/Holy Tail Gong B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Hurt/Holy Tail Gong C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Hurt/Holy Tail Gong D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Hurt/Holy Tail Long A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Hurt/Holy Tail Long B.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Attack/Divine Magic Celestial Choir 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Attack/Divine Magic Celestial Choir 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Attack/Divine Magic Celestial Choir 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Attack/Divine Magic Celestial Choir 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Attack/Divine Magic Celestial Choir 005.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Attack/Divine Magic Celestial Choir 006.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 004.m4a"
+        ],
+        "creatures": [
+            "Lantern Archon"
+        ],
+        "keywords": [
+            "Zoaem"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Construct - Metal": {
+        "display_name": "Brass Bastion",
+        "category": "Constructs, Oozes & Plants",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Hurt/Units Armored Move A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Hurt/Units Armored Move B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Hurt/Units Armored Move C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Hurt/Units Armored Move D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Hurt/Units Armored Move E.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Attack/Units Armored Attack A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Attack/Units Armored Attack B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Attack/Units Armored Attack C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Attack/Units Armored Attack D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Attack/Units Armored Attack E.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Death/Transform Heavy A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Death/Transform Heavy B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Death/Transform Heavy C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Death/Transform Heavy D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Metal/Death/Transform Heavy E.m4a"
+        ],
+        "creatures": [
+            "Brass Bastion",
+            "Iron Golem",
+            "Iron Warden",
+            "Adamantine Golem",
+            "Adamant Sentinel",
+            "Mithral Golem"
+        ],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Construct - Wood": {
+        "display_name": "Wood Golem",
+        "category": "Constructs, Oozes & Plants",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 005.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 006.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Hurt/Debris Destructed Barn 007.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 005.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 006.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Attack/Debris Heavy Landing 007.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Death/Debris Shockwave 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Death/Debris Shockwave 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Death/Debris Shockwave 004.m4a"
+        ],
+        "creatures": [
+            "Wood Golem"
+        ],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Elemental - Earth Medium": {
+        "display_name": "Earth Elemental (Medium)",
+        "category": "Elementals",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Hurt/Earth Tail B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Hurt/Earth Tail G.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Hurt/Earth Tail Long B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Hurt/Earth Tail Long D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Hurt/Earth Tail Long F.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Hurt/Earth Tail Long G.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact E.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact F.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Attack/Earth Impact G.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Death/Debris Destroyed Landing 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Death/Debris Destroyed Landing 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Death/Debris Destroyed Landing 008.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Shark": {
+        "display_name": "Shark",
+        "category": "Amphibians, Aquatics & Avians",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Hurt/Low Swoosh B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Hurt/Low Swoosh C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Hurt/Low Swoosh E.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Hurt/Low Swoosh F.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Attack/Swooshes A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Attack/Swooshes B.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Attack/Swooshes C.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Attack/Swooshes D.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Attack/Swooshes E.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Death/Swirls Low Rhythmic A.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Death/Swirls Low Rhythmic B.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "shark"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Mystical": {
+        "display_name": "Arkhana",
+        "category": "Fiends & Outsiders",
+        "notes": "",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Hurt/Arcane Spells Mystic Vortex 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Hurt/Arcane Spells Mystic Vortex 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Hurt/Arcane Spells Mystic Vortex 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Hurt/Arcane Spells Mystic Vortex 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Hurt/Arcane Spells Mystic Vortex 005.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Attack/Arcane Spells Mana Surge 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Attack/Arcane Spells Mana Surge 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Attack/Arcane Spells Mana Surge 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Attack/Arcane Spells Mana Surge 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Attack/Arcane Spells Mana Surge 005.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Attack/Arcane Spells Mana Surge 006.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 001.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 002.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 003.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 004.m4a",
+            "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 005.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "arkhana"
+        ],
+        "traits": [],
+        "size": -1
     }
 }

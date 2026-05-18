@@ -35,7 +35,7 @@ export class ActorSoundSelectApp extends HandlebarsApplicationMixin(ApplicationV
             icon: "fas fa-volume-up",
         },
         position: {
-            width: 500
+            width: "auto"
         },
         actions: {
             play_attack_sound: ActorSoundSelectApp.playAttackSound,

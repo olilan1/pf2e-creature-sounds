@@ -7,9 +7,7 @@
 - Soundboard feature
 - Actor Overview feature
 - Organise sound sets into categories
-- Add new sound sets: Dinosaur - Allosaurus, Dinosaur - Tyrannosaurus, Dinosaur - Carnotaurus,
-  Aberration - Amphibious, Ankhrav, Humanoid Masculine L-Q, Humanoid Feminine M-N, Gnome (Feminine),
-  Demonic, Urdefhan, Werewolf, Bee Swarm, Fly Swarm
+- Added many new sound sets
 - Renamed some sound sets
 
 ## [1.1.1] - 2025-07-20
