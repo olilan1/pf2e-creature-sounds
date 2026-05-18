@@ -41,7 +41,7 @@ export interface SoundSet {
     traits: string[];
     size: number;
 }
-  
+
 export interface SoundDatabase {
     [id: string]: SoundSet;
 }
@@ -103,15 +103,15 @@ export async function playSoundForCreatureOnAttack(message: ChatMessagePF2e) {
 }
 
 export async function playSoundForCreature(
-        actor: ActorPF2e, soundType: SoundType, allPlayers = true, forceSound = false) {
+    actor: ActorPF2e, soundType: SoundType, allPlayers = true, forceSound = false) {
 
     switch (soundType) {
         case "attack":
         case "hurt":
             // @ts-expect-error (actor.system.attributes.emitsSound is valid)
-            if (!actor.system.attributes.emitsSound && !forceSound) {       
+            if (!actor.system.attributes.emitsSound && !forceSound) {
                 return;
-            } 
+            }
             break;
         case "death":
             if (hasSilenceEffect(actor) && !forceSound) {
@@ -131,17 +131,21 @@ export async function playSoundForCreature(
     playRandomSound(returnedSounds, allPlayers);
 }
 
-export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
+export async function findSoundSet(
+    actor: ActorPF2e,
+    db: SoundDatabase = soundDatabase,
+    fetchCustomSoundSet: (id: string) => Promise<SoundSet | undefined> = getCustomSoundSet
+): Promise<SoundSet | null> {
     // Check if flag has been set for Actor.
     const chosenSoundSet = actor.flags?.[MODULE_ID]?.soundset as string;
     if (chosenSoundSet) {
         if (chosenSoundSet === NO_SOUND_SET) {
             return null;
         }
-        if (chosenSoundSet in soundDatabase) {
-            return soundDatabase[chosenSoundSet];
+        if (chosenSoundSet in db) {
+            return db[chosenSoundSet];
         }
-        const customSoundSet = await getCustomSoundSet(chosenSoundSet);
+        const customSoundSet = await fetchCustomSoundSet(chosenSoundSet);
         if (customSoundSet) {
             return customSoundSet;
         }
@@ -157,12 +161,12 @@ export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
     }
 
     // Check for exact name match.
-    let soundSet = findSoundSetByCreatureName(getActorName(actor));
+    let soundSet = findSoundSetByCreatureName(getActorName(actor), db);
     if (soundSet) {
         return soundSet;
     }
     // If no exact match, score keywords and traits.
-    soundSet = findSoundSetByScoring(actor);
+    soundSet = findSoundSetByScoring(actor, db);
     if (soundSet) {
         return soundSet;
     }
@@ -171,8 +175,8 @@ export async function findSoundSet(actor: ActorPF2e): Promise<SoundSet | null> {
     return null;
 }
 
-function findSoundSetByScoring(actor: ActorPF2e): SoundSet | null {
-    const scoredSoundSets = scoreSoundSets(actor);
+export function findSoundSetByScoring(actor: ActorPF2e, db: SoundDatabase = soundDatabase): SoundSet | null {
+    const scoredSoundSets = scoreSoundSets(actor, db);
 
     let highestScore = 1;
     let soundsWithHighestValue: SoundSet[] = [];
@@ -194,12 +198,12 @@ function findSoundSetByScoring(actor: ActorPF2e): SoundSet | null {
     return soundsWithHighestValue[hash % soundsWithHighestValue.length];
 }
 
-function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
+export function scoreSoundSets(actor: ActorPF2e, db: SoundDatabase = soundDatabase): Map<SoundSet, number> {
     const soundSetScores = new Map<SoundSet, number>();
     const traits = extractTraits(actor);
     const creatureSize = extractSize(actor);
 
-    for (const [, soundSet] of Object.entries(soundDatabase)) {
+    for (const [, soundSet] of Object.entries(db)) {
         let score = 0;
         // Keyword match
         const blurb = isNPC(actor) ? actor?.system?.details?.blurb : null;
@@ -235,8 +239,8 @@ function scoreSoundSets(actor: ActorPF2e): Map<SoundSet, number> {
     return soundSetScores;
 }
 
-function findSoundSetByCreatureName(creatureName: string): SoundSet | null {
-    for (const [, soundSet] of Object.entries(soundDatabase)) {
+export function findSoundSetByCreatureName(creatureName: string, db: SoundDatabase = soundDatabase): SoundSet | null {
+    for (const [, soundSet] of Object.entries(db)) {
         if (soundSet.creatures?.includes(creatureName)) {
             logd("Exact Match found for " + creatureName);
             return soundSet;
@@ -245,7 +249,7 @@ function findSoundSetByCreatureName(creatureName: string): SoundSet | null {
     return null;
 }
 
-function getSoundsOfType(soundSet: SoundSet, soundType: SoundType): string[] {
+export function getSoundsOfType(soundSet: SoundSet, soundType: SoundType): string[] {
     switch (soundType) {
         case "hurt":
             return soundSet.hurt_sounds;
@@ -263,7 +267,7 @@ function getSoundsOfType(soundSet: SoundSet, soundType: SoundType): string[] {
     }
 }
 
-function extractTraits(actor: ActorPF2e): string[] {
+export function extractTraits(actor: ActorPF2e): string[] {
     const rollOptions = actor.flags.pf2e.rollOptions.all;
     const traits = [];
     for (const key in rollOptions) {
@@ -325,7 +329,7 @@ function getGenderFromBlurb(actor: NPCPF2e): "female" | "male" | null {
     return null;
 }
 
-function extractSize(actor: ActorPF2e): number {
+export function extractSize(actor: ActorPF2e): number {
     const rollOptions = actor.flags.pf2e.rollOptions.all;
     const regex = /^(self|origin):size:(\d+)$/;
     for (const key in rollOptions) {
