@@ -3935,7 +3935,7 @@
             "consonite choir",
             "ledalusca"
         ],
-        "traits": [],
+        "traits": [["elemental", "cold"], ["elemental", "cold", "water"]],
         "size": -1
     },
     "Elemental Fire": {
@@ -3966,8 +3966,8 @@
             "lava worm",
             "xiuh couatl"
         ],
-        "traits": [],
-        "size": -1
+        "traits": [["elemental", "fire"]],
+        "size": 3
     },
     "Elemental Water": {
         "display_name": "Water Elemental (Large)",
@@ -3997,8 +3997,8 @@
             "tidal master",
             "living waterfall"
         ],
-        "traits": [],
-        "size": -1
+        "traits": [["elemental", "water"]],
+        "size": 3
     },
     "Elemental Air": {
         "display_name": "Air Elemental (Large)",
@@ -4030,8 +4030,8 @@
             "bythos",
             "living thunderclap"
         ],
-        "traits": [],
-        "size": -1
+        "traits": [["elemental", "air"]],
+        "size": 3
     },
     "Elemental Earth": {
         "display_name": "Earth Elemental (Large)",
@@ -4068,8 +4068,8 @@
             "living boulder",
             "mudwretch"
         ],
-        "traits": [],
-        "size": -1
+        "traits": [["elemental", "earth"]],
+        "size": 3
     },
     "Insect_Swarm": {
         "display_name": "Swarm - Mosquitoes",
@@ -5102,8 +5102,8 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": [["elemental", "fire"]],
+        "size": 2
     },
     "Deimavigga": {
         "display_name": "Deimavigga",
@@ -5701,8 +5701,8 @@
         ],
         "creatures": [],
         "keywords": [],
-        "traits": [],
-        "size": -1
+        "traits": [["elemental", "earth"]],
+        "size": 2
     },
     "Shark": {
         "display_name": "Shark",

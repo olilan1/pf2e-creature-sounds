@@ -100,6 +100,26 @@ describe("Schema Validation (isSoundDatabase)", () => {
         };
         expect(isSoundDatabase(invalidDb)).toBe(false);
     });
+
+    it("should accept entries with nested string arrays in traits", () => {
+        const nestedDb = {
+            "Custom-X": {
+                ...validSoundSet, id: "Custom-X", traits: ["humanoid", ["elemental", "fire"]],
+            },
+        };
+        expect(isSoundDatabase(nestedDb)).toBe(true);
+    });
+
+    it("should reject entries with invalid nesting or non-string elements in traits", () => {
+        const invalidDb1 = {
+            "Custom-X": { ...validSoundSet, id: "Custom-X", traits: ["humanoid", [["elemental"]]] },
+        };
+        const invalidDb2 = {
+            "Custom-X": { ...validSoundSet, id: "Custom-X", traits: ["humanoid", [123]] },
+        };
+        expect(isSoundDatabase(invalidDb1)).toBe(false);
+        expect(isSoundDatabase(invalidDb2)).toBe(false);
+    });
 });
 
 describe("Custom Database Validation (validateCustomSoundDatabase)", () => {
