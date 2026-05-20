@@ -9,6 +9,7 @@
 - Organise sound sets into categories
 - Added many new sound sets
 - Renamed some sound sets
+- Add multi-trait matching (e.g. for elemental+fire)
 
 ## [1.1.1] - 2025-07-20
 
