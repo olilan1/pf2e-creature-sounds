@@ -38,7 +38,7 @@ export interface SoundSet {
     death_sounds: string[];
     creatures: string[];
     keywords: string[];
-    traits: string[];
+    traits: (string | string[])[];
     size: number;
 }
 
@@ -62,8 +62,14 @@ const soundDatabase: SoundDatabase = Object.fromEntries(
 // Score values
 const KEYWORD_NAME_SCORE = 5;
 const KEYWORD_BLURB_SCORE = 4;
-const TRAIT_SCORE = 1;
-const GENDER_TRAIT_SCORE = 0.5;
+
+// Trait Scoring
+const TRAIT_WEIGHT = 1.0;
+const GENDER_TRAIT_WEIGHT = 0.5;
+const TRAIT_SET_BASE_SCORE = 0.9;
+const TRAIT_SET_PER_TRAIT_SCORE = 0.1;
+const TRAIT_SET_MAX_SCORE = 1.9;
+const TRAIT_SET_SIZE_BONUS = 0.1;
 
 export const NO_SOUND_SET = "none";
 
@@ -216,15 +222,35 @@ export function scoreSoundSets(actor: ActorPF2e, db: SoundDatabase = soundDataba
                 score += KEYWORD_BLURB_SCORE;
             }
         }
-        // Trait match 
-        const matchingTraits = soundSet.traits.filter((trait: string) => traits.includes(trait));
-
-        for (const trait of matchingTraits) {
-            if (trait === "male" || trait === "female") {
-                score += GENDER_TRAIT_SCORE;
+        // Trait match
+        let totalTraitWeight = 0;
+        for (const traitEntry of soundSet.traits) {
+            if (Array.isArray(traitEntry)) {
+                // Multi-trait set: all traits in the set must match.
+                // Weight scales with set size: 1 + (n-1) * TRAIT_SET_SIZE_BONUS
+                const allMatched = traitEntry.every(t => traits.includes(t));
+                if (allMatched) {
+                    totalTraitWeight +=
+                        TRAIT_WEIGHT + (traitEntry.length - 1) * TRAIT_SET_SIZE_BONUS;
+                }
             } else {
-                score += TRAIT_SCORE;
+                // Single trait
+                if (traits.includes(traitEntry)) {
+                    if (traitEntry === "male" || traitEntry === "female") {
+                        totalTraitWeight += GENDER_TRAIT_WEIGHT;
+                    } else {
+                        totalTraitWeight += TRAIT_WEIGHT;
+                    }
+                }
             }
+        }
+
+        if (totalTraitWeight > 0) {
+            // Formula: 0.9 + 0.1 * totalTraitWeight (with a max of 1.9)
+            score += Math.min(
+                TRAIT_SET_MAX_SCORE,
+                TRAIT_SET_BASE_SCORE + TRAIT_SET_PER_TRAIT_SCORE * totalTraitWeight
+            );
         }
 
         // Size adjustment

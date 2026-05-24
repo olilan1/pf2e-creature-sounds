@@ -93,8 +93,15 @@ function isSoundSet(obj: unknown): obj is SoundSet {
         isStringArray(obj.death_sounds) &&
         isStringArray(obj.creatures) &&
         isStringArray(obj.keywords) &&
-        isStringArray(obj.traits) &&
+        isTraitsArray(obj.traits) &&
         typeof obj.size === 'number'
+    );
+}
+
+function isTraitsArray(value: unknown): value is (string | string[])[] {
+    return Array.isArray(value) && value.every(item =>
+        typeof item === 'string' ||
+        (Array.isArray(item) && item.every(subItem => typeof subItem === 'string'))
     );
 }
 

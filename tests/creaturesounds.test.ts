@@ -289,13 +289,15 @@ describe("Scoring Logic", () => {
         } as unknown as ActorPF2e;
 
         const scores = scoreSoundSets(femaleElf, mockDb);
-        // "set-female-elf": traits are humanoid (1), elf (1), female (0.5) => total 2.5
-        // Keyword in name "Elf" matches "elf" (+5) => total 7.5
-        expect(scores.get(mockDb["set-female-elf"])).toBe(7.5);
+        // "set-female-elf": traits are humanoid (1.0), elf (1.0), female (0.5) => total W = 2.5
+        // Trait score = Math.min(1.9, 0.9 + 0.1 * 2.5) = 1.15
+        // Keyword in name "Elf" matches "elf" (+5) => total 6.15
+        expect(scores.get(mockDb["set-female-elf"])).toBeCloseTo(6.15);
 
-        // "set-male-elf": traits are humanoid (1), elf (1), male (0) (since actor is female) => total 2
-        // Keyword in name "Elf" matches "elf" (+5) => total 7
-        expect(scores.get(mockDb["set-male-elf"])).toBe(7);
+        // "set-male-elf": traits are humanoid (1.0), elf (1.0), male (0) => total W = 2.0
+        // Trait score = Math.min(1.9, 0.9 + 0.1 * 2.0) = 1.1
+        // Keyword in name "Elf" matches "elf" (+5) => total 6.1
+        expect(scores.get(mockDb["set-male-elf"])).toBeCloseTo(6.1);
     });
 
     it("should apply size adjustment for non-zero scores", () => {
@@ -496,5 +498,99 @@ describe("Sound Type Selection (getSoundsOfType)", () => {
     it("should fall back to hurt sounds when death_sounds is empty", () => {
         const result = getSoundsOfType(mockDb["set-dragon-large"], "death");
         expect(result).toEqual(["dragon_hurt.wav"]);
+    });
+});
+
+describe("Multi-Trait Set Scoring Logic", () => {
+    const dbWithSets: SoundDatabase = {
+        "set-fire-elemental": {
+            id: "set-fire-elemental",
+            display_name: "Fire Elemental Sound Set",
+            category: "Elementals",
+            hurt_sounds: [], attack_sounds: [], death_sounds: [], creatures: [], keywords: [],
+            traits: [["elemental", "fire"]],
+            size: -1,
+        },
+        "set-mixed": {
+            id: "set-mixed",
+            display_name: "Mixed Sound Set",
+            category: "Humanoids",
+            hurt_sounds: [], attack_sounds: [], death_sounds: [], creatures: [], keywords: [],
+            traits: ["humanoid", ["elemental", "fire"]],
+            size: -1,
+        },
+    };
+
+    it("should score 0 if none of the traits in a multi-trait set match", () => {
+        const actor = {
+            type: "npc",
+            flags: { pf2e: { rollOptions: { all: { "self:trait:cold": true } } } },
+            system: { details: { blurb: "" } }
+        } as unknown as ActorPF2e;
+        const scores = scoreSoundSets(actor, dbWithSets);
+        expect(scores.get(dbWithSets["set-fire-elemental"])).toBe(0);
+    });
+
+    it("should score 0 if only some of the traits in a multi-trait set match", () => {
+        const actor = {
+            type: "npc",
+            flags: { pf2e: { rollOptions: { all: { "self:trait:elemental": true } } } },
+            system: { details: { blurb: "" } }
+        } as unknown as ActorPF2e;
+        const scores = scoreSoundSets(actor, dbWithSets);
+        expect(scores.get(dbWithSets["set-fire-elemental"])).toBe(0);
+    });
+
+    it("should weight a larger multi-trait set match higher than a smaller one", () => {
+        const actor = {
+            type: "npc",
+            flags: {
+                pf2e: {
+                    rollOptions: {
+                        all: {
+                            "self:trait:elemental": true,
+                            "self:trait:fire": true,
+                        }
+                    }
+                }
+            },
+            system: { details: { blurb: "" } }
+        } as unknown as ActorPF2e;
+        const scores = scoreSoundSets(actor, dbWithSets);
+        // 2-trait set: weight = 1 + (2-1)*0.1 = 1.1, score = min(1.9, 0.9 + 0.11) = 1.01
+        expect(scores.get(dbWithSets["set-fire-elemental"])).toBeCloseTo(1.01);
+    });
+
+    it("should score standard traits and multi-trait sets correctly when mixed", () => {
+        const actorHumanoidOnly = {
+            type: "npc",
+            flags: { pf2e: { rollOptions: { all: { "self:trait:humanoid": true } } } },
+            system: { details: { blurb: "" } }
+        } as unknown as ActorPF2e;
+
+        const actorAll = {
+            type: "npc",
+            flags: {
+                pf2e: {
+                    rollOptions: {
+                        all: {
+                            "self:trait:humanoid": true,
+                            "self:trait:elemental": true,
+                            "self:trait:fire": true,
+                        }
+                    }
+                }
+            },
+            system: { details: { blurb: "" } }
+        } as unknown as ActorPF2e;
+
+        // 1. Only "humanoid" matches (W = 1.0) => score is 1.0
+        const scores1 = scoreSoundSets(actorHumanoidOnly, dbWithSets);
+        expect(scores1.get(dbWithSets["set-mixed"])).toBe(1.0);
+
+        // 2. Both "humanoid" (W=1.0) and ["elemental","fire"] (W=1.1) match
+        //    => total W=2.1, score = min(1.9, 0.9 + 0.21) = 1.11
+        const scores2 = scoreSoundSets(actorAll, dbWithSets);
+        expect(scores2.get(dbWithSets["set-mixed"])).toBeCloseTo(1.11);
     });
 });
