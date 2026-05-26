@@ -82,17 +82,23 @@ export async function getCustomSoundSet(soundSetId: string) {
  * Runs any pending migrations on the custom sound database.
  * Should be called once during the `ready` hook, after settings are fully loaded.
  */
-export async function migrateCustomSoundDatabase() {
-    const storedVersion = game.settings.get(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS_VERSION) as number;
+export async function migrateCustomSoundDatabase(targetVersion = CURRENT_DB_VERSION) {
+    const storedVersion = game.settings.get(
+        SETTINGS_NAMESPACE,
+        CUSTOM_SOUND_SETS_VERSION
+    ) as number;
 
-    if (storedVersion >= CURRENT_DB_VERSION) {
+    if (storedVersion >= targetVersion) {
         return;
     }
 
-    logd(`Custom sound database is at version ${storedVersion}, migrating to version ${CURRENT_DB_VERSION}`);
+    logd(
+        `Custom sound database is at version ${storedVersion}, ` +
+        `migrating to version ${targetVersion}`
+    );
     let db = await getCustomSoundDatabase();
 
-    for (let version = storedVersion + 1; version <= CURRENT_DB_VERSION; version++) {
+    for (let version = storedVersion + 1; version <= targetVersion; version++) {
         const migration = migrations.get(version);
         if (migration) {
             logd(`Running migration to version ${version}`);
@@ -101,8 +107,12 @@ export async function migrateCustomSoundDatabase() {
     }
 
     await setCustomSoundDatabase(db);
-    await game.settings.set(SETTINGS_NAMESPACE, CUSTOM_SOUND_SETS_VERSION, CURRENT_DB_VERSION);
-    logd(`Custom sound database migrated to version ${CURRENT_DB_VERSION}`);
+    await game.settings.set(
+        SETTINGS_NAMESPACE,
+        CUSTOM_SOUND_SETS_VERSION,
+        targetVersion
+    );
+    logd(`Custom sound database migrated to version ${targetVersion}`);
 }
 
 export async function deleteCustomSoundSet(soundSetId: string) {

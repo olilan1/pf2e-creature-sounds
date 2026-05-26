@@ -129,4 +129,18 @@ describe("Custom Database Validation (validateCustomSoundDatabase)", () => {
         };
         expect(validateCustomSoundDatabase(invalidDb)).toBe("invalid_id_format");
     });
+
+    it("should return name_id_mismatch if object key and set ID do not match", () => {
+        const mismatchDb: SoundDatabase = {
+            "Custom-A": { ...validSoundSet, id: "Custom-B" },
+        };
+        expect(validateCustomSoundDatabase(mismatchDb)).toBe("name_id_mismatch");
+    });
+
+    it("should return OK for a valid custom sound database", () => {
+        const correctDb: SoundDatabase = {
+            "Custom-A": { ...validSoundSet, id: "Custom-A" },
+        };
+        expect(validateCustomSoundDatabase(correctDb)).toBe("OK");
+    });
 });
