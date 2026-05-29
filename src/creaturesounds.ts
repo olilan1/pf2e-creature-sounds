@@ -265,9 +265,13 @@ export function scoreSoundSets(actor: ActorPF2e, db: SoundDatabase = soundDataba
     return soundSetScores;
 }
 
-export function findSoundSetByCreatureName(creatureName: string, db: SoundDatabase = soundDatabase): SoundSet | null {
+export function findSoundSetByCreatureName(
+    creatureName: string,
+    db: SoundDatabase = soundDatabase
+): SoundSet | null {
+    const lowerName = creatureName.toLowerCase();
     for (const [, soundSet] of Object.entries(db)) {
-        if (soundSet.creatures?.includes(creatureName)) {
+        if (soundSet.creatures?.some(c => c.toLowerCase() === lowerName)) {
             logd("Exact Match found for " + creatureName);
             return soundSet;
         }

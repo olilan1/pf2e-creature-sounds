@@ -211,6 +211,13 @@ describe("Exact Name Matching", () => {
         expect(result?.id).toBe("set-orc");
     });
 
+    it("should return correct sound set when name case differs", () => {
+        const resultLower = findSoundSetByCreatureName("orc warrior", mockDb);
+        const resultUpper = findSoundSetByCreatureName("ORC WARRIOR", mockDb);
+        expect(resultLower?.id).toBe("set-orc");
+        expect(resultUpper?.id).toBe("set-orc");
+    });
+
     it("should return null when there is no exact name match", () => {
         const result = findSoundSetByCreatureName("Orc Chieftain", mockDb);
         expect(result).toBeNull();
