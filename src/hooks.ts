@@ -70,7 +70,7 @@ function hook<T extends unknown[]>(func: (...args: T) => void, ...args: T): Hook
     return new HookRunner<T>(func, ...args);
 }
 
-class HookRunner<T extends unknown[]> {
+export class HookRunner<T extends unknown[]> {
     func: (...args: T) => void;
     args: T;
     shouldRun: boolean;
