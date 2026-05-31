@@ -46,6 +46,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Consolidate beta releases
+      if: ${{ !startsWith(github.event.inputs.release-type, 'pre') }}
+      run: node scripts/run-consolidation.js
+
     - name: Update changelog
       id: update-changelog
       uses: release-flow/keep-a-changelog-action@v3
