@@ -4069,7 +4069,17 @@
             "consonite choir",
             "ledalusca"
         ],
-        "traits": [["elemental", "cold"], ["elemental", "cold", "water"]],
+        "traits": [
+            [
+                "elemental",
+                "cold"
+            ],
+            [
+                "elemental",
+                "cold",
+                "water"
+            ]
+        ],
         "size": -1
     },
     "Elemental Fire": {
@@ -4100,7 +4110,12 @@
             "lava worm",
             "xiuh couatl"
         ],
-        "traits": [["elemental", "fire"]],
+        "traits": [
+            [
+                "elemental",
+                "fire"
+            ]
+        ],
         "size": 3
     },
     "Elemental Water": {
@@ -4131,7 +4146,12 @@
             "tidal master",
             "living waterfall"
         ],
-        "traits": [["elemental", "water"]],
+        "traits": [
+            [
+                "elemental",
+                "water"
+            ]
+        ],
         "size": 3
     },
     "Elemental Air": {
@@ -4164,7 +4184,12 @@
             "bythos",
             "living thunderclap"
         ],
-        "traits": [["elemental", "air"]],
+        "traits": [
+            [
+                "elemental",
+                "air"
+            ]
+        ],
         "size": 3
     },
     "Elemental Earth": {
@@ -4202,7 +4227,12 @@
             "living boulder",
             "mudwretch"
         ],
-        "traits": [["elemental", "earth"]],
+        "traits": [
+            [
+                "elemental",
+                "earth"
+            ]
+        ],
         "size": 3
     },
     "Insect_Swarm": {
@@ -5271,7 +5301,12 @@
             "Exscinder"
         ],
         "keywords": [],
-        "traits": [["elemental", "fire"]],
+        "traits": [
+            [
+                "elemental",
+                "fire"
+            ]
+        ],
         "size": 2
     },
     "Deimavigga": {
@@ -5968,7 +6003,12 @@
             "Jabali"
         ],
         "keywords": [],
-        "traits": [["elemental", "earth"]],
+        "traits": [
+            [
+                "elemental",
+                "earth"
+            ]
+        ],
         "size": 2
     },
     "Shark": {
@@ -6039,6 +6079,197 @@
             "akhana",
             "pleroma"
         ],
+        "traits": [],
+        "size": -1
+    },
+    "Badger": {
+        "display_name": "Badger",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Hurt/Badger_Growl.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Attack/Badger_Growl%20(1).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Death/Badger_Growl%20(3).mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Bat": {
+        "display_name": "Bat",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Hurt/Bat_Screech%20(3).mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Attack/Bat_Screech%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Attack/Bat_Screech.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Death/Bat_Screech%20(2).mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Elk": {
+        "display_name": "Elk",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Hurt/Elk_Bugle%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Hurt/Elk_Bugle.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Attack/Elk_Grunt%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Attack/Elk_Grunt%20(3).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Death/Elk_Bugle%20(1).mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Fox": {
+        "display_name": "Fox",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Hurt/Fox_Bark%20(3).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Hurt/Fox_Scream.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Scream%20(3).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Yelp.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Goat": {
+        "display_name": "Goat",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Hurt/Goat_Bleat%20(1).mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Attack/Goat_maa.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Death/Goat_Bleat%20(3).mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Gorilla": {
+        "display_name": "Gorilla",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(2).mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(3).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt%20(3).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Hyena": {
+        "display_name": "Hyena",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(3).mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(3).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Death/Hyena_howl.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Lemur": {
+        "display_name": "Lemur",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Hurt/Lemur_Howl_Chatter%20(3).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Hurt/Lemur_Howl_Chatter.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Attack/Lemur_Howl_Chatter%20(6).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Attack/Lemur_Howl_Chatter%20(7).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Death/Lemur_Howl_Chatter%20(5).mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Monkey": {
+        "display_name": "Monkey",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Hurt/Monkey_Screech%20(2).mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Attack/Monkey_Screech%20(1).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Death/Monkey_Howl%20(3).mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Whale": {
+        "display_name": "Whale",
+        "category": "Amphibians, Aquatics & Avians",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(3).mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(1).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(2).mp3",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(3).mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Death/Whale_Moan.mp3"
+        ],
+        "creatures": [],
+        "keywords": [],
         "traits": [],
         "size": -1
     }
