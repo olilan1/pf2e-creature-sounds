@@ -3473,7 +3473,7 @@
     },
     "Snake": {
         "display_name": "Snake",
-        "category": "Animals",
+        "category": "Dragons, Dinosaurs & Reptiles",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.m4a",
