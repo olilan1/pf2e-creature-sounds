@@ -3061,7 +3061,7 @@
         "size": 2
     },
     "Sami_Lizard": {
-        "display_name": "Reptilian",
+        "display_name": "Lizardfolk",
         "category": "Dragons, Dinosaurs & Reptiles",
         "notes": "",
         "hurt_sounds": [
@@ -3113,7 +3113,6 @@
         "traits": [
             "male",
             "lizardfolk",
-            "nagaji",
             "serpentfolk"
         ],
         "size": 2
@@ -3474,7 +3473,7 @@
     },
     "Snake": {
         "display_name": "Snake",
-        "category": "Animals",
+        "category": "Dragons, Dinosaurs & Reptiles",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Snake/Hurt/Snake 1.m4a",
@@ -5388,7 +5387,7 @@
         "size": -1
     },
     "Humanoid Masculine Old": {
-        "display_name": "Humanoid Masculine Old",
+        "display_name": "Old Man",
         "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
@@ -5430,8 +5429,8 @@
         "size": -1
     },
     "Kobold B": {
-        "display_name": "Kobold B",
-        "category": "Humanoids",
+        "display_name": "Nagaji",
+        "category": "Dragons, Dinosaurs & Reptiles",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Hurt/Small Monster Voice Effect 27.m4a",
@@ -5460,7 +5459,9 @@
             "Ratfolk Grenadier"
         ],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            "nagaji"
+        ],
         "size": -1
     },
     "Lizard": {
