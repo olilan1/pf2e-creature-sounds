@@ -27,7 +27,8 @@
         "keywords": [
             "destrachan",
             "isgulug",
-            "piscodaemon"
+            "piscodaemon",
+            "shemhazian"
         ],
         "traits": [
             "aberration"
@@ -58,7 +59,11 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_03.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Behemoth/Behemoth_Death/CREAMnstr_Behemoth_Death_04.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Warsworn",
+            "Treerazer",
+            "Urveth"
+        ],
         "keywords": [
             "bandersnatch",
             "chimera",
@@ -68,7 +73,10 @@
             "hezrou",
             "leydroth",
             "kimenhul",
-            "tzitzimitl"
+            "tzitzimitl",
+            "augnagar",
+            "cave worm",
+            "magma worm"
         ],
         "traits": [],
         "size": -1
@@ -111,7 +119,7 @@
         "traits": [
             "dragon"
         ],
-        "size": -1
+        "size": 4
     },
     "Goblin": {
         "display_name": "Goblin A",
@@ -151,7 +159,8 @@
         "creatures": [],
         "keywords": [
             "skulk",
-            "grioth"
+            "grioth",
+            "gimmerling"
         ],
         "traits": [
             "goblin"
@@ -184,9 +193,11 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Insect/Insect_Death/CREAInsc_Insect_Death_04.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Insect/Insect_Death/CREAInsc_Insect_Death_05.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Larval Ofalth",
+            "Atrixyl"
+        ],
         "keywords": [
-            "ankhrav",
             "ant",
             "beetle",
             "centipede",
@@ -203,7 +214,6 @@
             "mukradi",
             "vescavor",
             "gelugon",
-            "hive mother",
             "rust monster",
             "bog strider",
             "giant maggot",
@@ -211,7 +221,8 @@
             "empress ice worm",
             "empress mage-eater worm",
             "empress necril worm",
-            "eurypterid"
+            "eurypterid",
+            "thulgant"
         ],
         "traits": [],
         "size": 3
@@ -302,13 +313,17 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_06.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_07.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Flaming Skull"
+        ],
         "keywords": [
             "necrophidius",
             "osyluth",
             "thanadaemon",
             "vrykolakas",
-            "draugr"
+            "draugr",
+            "skeleton",
+            "graveknight"
         ],
         "traits": [
             "skeleton",
@@ -384,7 +399,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "ankhrav",
             "ant",
             "beetle",
             "centipede",
@@ -525,7 +539,8 @@
             "cave worm",
             "krooth",
             "bulette",
-            "naunet"
+            "naunet",
+            "smaranava"
         ],
         "traits": [],
         "size": -1
@@ -549,9 +564,12 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Frost_Giant/Frost_Giant_Monster_Death_2_Human_Creature_Growl_Pain_Groan_Moan_Hurt.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Frost_Giant/Frost_Giant_Monster_Death_3_Human_Creature_Growl_Pain_Groan_Moan_Hurt.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Sordesdaemon"
+        ],
         "keywords": [
-            "hamatula"
+            "hamatula",
+            "troll"
         ],
         "traits": [],
         "size": -1
@@ -605,7 +623,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Mammoth/Mammoth_Monster_Death_2_Elephant_Vocalization_Roar_Moan_Groan_Pain.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Mammoth/Mammoth_Monster_Death_3_Elephant_Vocalization_Roar_Moan_Groan_Pain.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Aolaz"
+        ],
         "keywords": [
             "mammoth",
             "gorgon"
@@ -633,7 +653,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Roc/Roc_Monster_Death_2_Dinosaur_Bird_Squeal_Chirp_Moan_Groan.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Roc/Roc_Monster_Death_3_Dinosaur_Bird_Squeal_Chirp_Moan_Groan.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Tengu Sneak"
+        ],
         "keywords": [
             "roc",
             "phoenix",
@@ -647,7 +669,6 @@
             "raven",
             "vulture",
             "cauthooj",
-            "cockatrice",
             "coatl",
             "pteranodon",
             "quetzalcoatlus",
@@ -655,7 +676,9 @@
             "Garuda",
             "Harmona",
             "Terror Shrike",
-            "Tidehawk"
+            "Tidehawk",
+            "Alce",
+            "Nosoi"
         ],
         "traits": [],
         "size": -1
@@ -680,12 +703,15 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Sphinx/Sphinx_Monster_Death_2_Saber_Tooth_Lion_Tiger_Groan_Pain_Moan_Hurt.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Sphinx/Sphinx_Monster_Death_3_Saber_Tooth_Lion_Tiger_Groan_Pain_Moan_Hurt.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Raja-Krodha"
+        ],
         "keywords": [
             "sphinx",
             "rakshasa",
             "imentesh",
-            "Hieracosphinx"
+            "hieracosphinx",
+            "leopard"
         ],
         "traits": [],
         "size": -1
@@ -711,10 +737,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Spider_Queen/Spider_Queen_Monster_Death_3_Insect_Bug_Screech_Squeal_Pain_Hurt_Moan_Groan.m4a"
         ],
         "creatures": [
-            "giant dragonfly nymph"
+            "giant dragonfly nymph",
+            "Vloriak"
         ],
         "keywords": [
-            "ankhrav",
             "ant",
             "beetle",
             "centipede",
@@ -754,7 +780,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Treant/Treant_Monster_Death_2_Tree_Creature_Groan_Pain_Hurt_Moan_Die.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Treant/Treant_Monster_Death_3_Tree_Creature_Groan_Pain_Hurt_Moan_Die.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Doldrums Heap"
+        ],
         "keywords": [
             "arboreal",
             "wemmuth",
@@ -854,12 +882,8 @@
         "creatures": [],
         "keywords": [
             "hound",
-            "dog",
-            "wolf",
             "warhound",
             "barghest",
-            "warg",
-            "witchwarg",
             "peryton",
             "trollhound",
             "esipil"
@@ -886,10 +910,12 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Death_2_Water_Spirit_Horse_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Kelpie/Kelpie_Monster_Death_3_Water_Spirit_Horse_Creature.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Nightmare",
+            "Skeletal Horse"
+        ],
         "keywords": [
             "kelpie",
-            "nightmare",
             "hippocampus",
             "alicorn",
             "karkadann",
@@ -974,7 +1000,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Owlbear/Owlbear_Monster_Death_2_Bird_Mammal_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Owlbear/Owlbear_Monster_Death_3_Bird_Mammal_Creature.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Woolly Rhinoceros",
+            "Gargoyle"
+        ],
         "keywords": [
             "owlbear",
             "carrion golem"
@@ -1001,7 +1030,14 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Rock_Golem/Rock_Golem_Monster_Death_2_Supernatural_Mythical_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Rock_Golem/Rock_Golem_Monster_Death_3_Supernatural_Mythical_Creature.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Animated Colossus",
+            "Animated Furnace",
+            "Giant Animated Statue",
+            "Golem",
+            "Guthallath",
+            "Paleohemoth"
+        ],
         "keywords": [
             "kapoacinth",
             "granite glyptodont",
@@ -1009,9 +1045,7 @@
             "bastion archon",
             "sturzstromer"
         ],
-        "traits": [
-            "construct"
-        ],
+        "traits": [],
         "size": 5
     },
     "Wight": {
@@ -1034,15 +1068,20 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wight/Wight_Monster_Death_2_Spirit_Fairy_Ghost_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wight/Wight_Monster_Death_3_Spirit_Fairy_Ghost_Creature.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Bog Mummy",
+            "Mummy Guardian",
+            "Mummy Pharaoh"
+        ],
         "keywords": [
-            "bog mummy",
             "mohrg",
             "totenmaske",
             "Baykok",
             "Festrog",
             "Kurobozu",
-            "Trailgaunt"
+            "Trailgaunt",
+            "Graveknight",
+            "Skulltaker"
         ],
         "traits": [
             "wight"
@@ -1069,7 +1108,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wraith/Wraith_Monster_Death_2_Spirit_Fairy_Ghost_Creature.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Wraith/Wraith_Monster_Death_3_Spirit_Fairy_Ghost_Creature.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Dullahan",
+            "Grim Reaper"
+        ],
         "keywords": [
             "Betobeto-San"
         ],
@@ -1141,7 +1183,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Naga_Gorgon/CREAHmn_Female Naga Gorgon Death Killed Hiss Growl Groan Snake 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Naga_Gorgon/CREAHmn_Female Naga Gorgon Death Killed Hiss Growl Groan Snake 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Garadasura"
+        ],
         "keywords": [
             "medusa",
             "lamia",
@@ -1181,7 +1225,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Sprite_Gnome/CREAHmn_Female Sprite Gnome Death Fallen Defeated Cry Wail 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Sprite_Gnome/CREAHmn_Female Sprite Gnome Death Fallen Defeated Cry Wail 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Poppet Attendant",
+            "Poppet Mage"
+        ],
         "keywords": [
             "pukwudgie",
             "skull peeler",
@@ -1220,7 +1267,9 @@
         "creatures": [],
         "keywords": [
             "succubus",
-            "norn"
+            "norn",
+            "morrigna",
+            "phistophilus"
         ],
         "traits": [
             "nymph"
@@ -1252,7 +1301,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Undead/CREAHmn_Female Infected Undead Death Zombie Spawn Groan Grunt Scream Cry 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Undead/CREAHmn_Female Infected Undead Death Zombie Spawn Groan Grunt Scream Cry 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Manticore (Scorpion Tail)",
+            "Kithangian"
+        ],
         "keywords": [
             "revenant",
             "seraptis",
@@ -1286,12 +1338,16 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 01_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 02_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Dire Wolf"
+        ],
         "keywords": [
             "simurgh",
             "ahuizotl",
-            "badger",
-            "meladaemon"
+            "meladaemon",
+            "warg",
+            "witchwarg",
+            "wolf"
         ],
         "traits": [],
         "size": -1
@@ -1443,7 +1499,8 @@
             "kasa-obake",
             "kushtaka",
             "scalescribe",
-            "cythnigot"
+            "cythnigot",
+            "homunculus"
         ],
         "traits": [
             "fiend"
@@ -1482,7 +1539,8 @@
             "nuckelavee",
             "vrock",
             "Mobogo",
-            "skaveling"
+            "skaveling",
+            "cockatrice"
         ],
         "traits": [],
         "size": -1
@@ -1514,19 +1572,23 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Sludgeman/CREAHmn_Sludgeman Death Snoring Snarling Wet Throaty Short 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Sludgeman/CREAHmn_Sludgeman Death Throaty Stuttering Long Trailing Off 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Giant Frog",
+            "Slurk"
+        ],
         "keywords": [
             "charnel creation",
             "quai dau to",
             "terotricus",
-            "warsworn",
             "ort",
             "omox",
             "blindheim",
             "giant leech",
             "mist stalker",
             "Skinstitch",
-            "Squirming Swill"
+            "Squirming Swill",
+            "deep one",
+            "tripkee"
         ],
         "traits": [
             "ooze"
@@ -1559,7 +1621,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Strigoi/CREAHmn_Strigoi Death Long Drawn Out Throaty Hissing 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Strigoi/CREAHmn_Strigoi Death Multiple Gargling Hissing Pitiful Dying 05_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Deep One Hybrid"
+        ],
         "keywords": [
             "doppelganger",
             "skum",
@@ -1567,8 +1631,6 @@
             "intellect devourer",
             "stygira",
             "Caulborn",
-            "Nosferatu Malefactor",
-            "Nosferatu Overlord",
             "Popobawa",
             "Soul Skelm"
         ],
@@ -1625,9 +1687,15 @@
             "Owb",
             "Owb Prophet",
             "Shae",
-            "Tolokand"
+            "Tolokand",
+            "Eseneth",
+            "Lacridaemon",
+            "Nightgaunt",
+            "Vanyver"
         ],
-        "traits": [],
+        "traits": [
+            "shade"
+        ],
         "size": -1
     },
     "Zombie": {
@@ -1667,7 +1735,8 @@
             "flesh golem",
             "Buso",
             "Incutilis",
-            "Severed Head"
+            "Severed Head",
+            "herexen"
         ],
         "traits": [
             "zombie"
@@ -1768,7 +1837,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_11.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_13.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Aeolaeka",
+            "Yamah"
+        ],
         "keywords": [],
         "traits": [
             "female",
@@ -1822,7 +1894,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_04.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_05.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Azarketi Crab Catcher",
+            "Dromaar Mountaineer",
+            "Munsahir",
+            "Oread Guard",
+            "Balisse"
+        ],
         "keywords": [
             "centaur",
             "munavri spellblade"
@@ -1885,8 +1963,7 @@
             "human",
             "halfling",
             "elf",
-            "gnome",
-            "leshy"
+            "gnome"
         ],
         "size": 2
     },
@@ -2159,7 +2236,11 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_5.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Grace/Death/Soldier_Grace_Death_6.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Changeling Exile",
+            "Lyrakien",
+            "Tabellia"
+        ],
         "keywords": [
             "huldra"
         ],
@@ -2210,7 +2291,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_4.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Kate/Death/Soldier_Kate_Death_5.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Kanya",
+            "Veranallia"
+        ],
         "keywords": [
             "catrina",
             "suli dune dancer"
@@ -2245,7 +2329,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_3.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Axiomite",
+            "Tennin"
+        ],
         "keywords": [
             "triton",
             "android infiltrator"
@@ -2449,7 +2536,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Arthur/Death/Hero_Arthur_Death_09.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Arthur/Death/Hero_Arthur_Death_10.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Caligni Hunter"
+        ],
         "keywords": [
             "Tattoo Guardian",
             "Vanara Disciple"
@@ -2460,7 +2549,6 @@
             "halfling",
             "elf",
             "gnome",
-            "leshy",
             "dwarf"
         ],
         "size": 2
@@ -2515,7 +2603,6 @@
             "halfling",
             "elf",
             "gnome",
-            "leshy",
             "dwarf"
         ],
         "size": 2
@@ -2567,7 +2654,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Hunter/Death/Soldier_Hunter_Death_6.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Hunter/Death/Soldier_Hunter_Scream_6.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Lawbringer Warpriest",
+            "Raelis"
+        ],
         "keywords": [],
         "traits": [
             "male",
@@ -2575,7 +2665,6 @@
             "halfling",
             "elf",
             "gnome",
-            "leshy",
             "dwarf"
         ],
         "size": 2
@@ -2628,7 +2717,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male C/voice_male_c_death_16.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male C/voice_male_c_death_17.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Coarti"
+        ],
         "keywords": [
             "caligni slayer",
             "undine hydromancer",
@@ -2736,7 +2827,9 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-5.m4a",
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/bengoblin/bengoblin-death-6.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Dero Stalker"
+        ],
         "keywords": [
             "quickling",
             "spriggan",
@@ -2908,7 +3001,10 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-4.m4a",
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/samignome/samignome-death-5.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Leaf Leshy",
+            "Tanuki Village Hero"
+        ],
         "keywords": [
             "blodeuwedd",
             "korred",
@@ -3008,7 +3104,11 @@
         "keywords": [
             "salamander",
             "Mix Couatl",
-            "Vishkanya Infiltrator"
+            "Vishkanya Infiltrator",
+            "Dragonblood Occultist",
+            "Goblin Snake",
+            "Gobmob Snake",
+            "draconal"
         ],
         "traits": [
             "male",
@@ -3099,7 +3199,9 @@
             "cat",
             "squirrel",
             "silvanshee",
-            "lion cub"
+            "lion cub",
+            "elananx",
+            "poracha"
         ],
         "traits": [],
         "size": -1
@@ -3189,9 +3291,12 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 02.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 04.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Pipefox"
+        ],
         "keywords": [
-            "dog"
+            "dog",
+            "fox"
         ],
         "traits": [],
         "size": -1
@@ -3295,7 +3400,8 @@
             "horse",
             "unicorn",
             "pegasus",
-            "yzobu"
+            "yzobu",
+            "pony"
         ],
         "traits": [],
         "size": -1
@@ -3389,7 +3495,12 @@
             "amphisbaena",
             "ouroboros",
             "viper",
-            "stheno"
+            "stheno",
+            "python",
+            "coatl",
+            "raktavarna",
+            "vicharamuni",
+            "anaconda"
         ],
         "traits": [],
         "size": -1
@@ -3415,7 +3526,6 @@
         "keywords": [
             "bear",
             "wolverine",
-            "opossum",
             "kokogiak",
             "megalictis"
         ],
@@ -3444,11 +3554,14 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Death/Beast_Dead-002.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Death/Beast_Dead-003.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Benthic Worm"
+        ],
         "keywords": [
             "catoblepas",
             "giant pangolin",
-            "hippopotamus"
+            "hippopotamus",
+            "rhinoceros"
         ],
         "traits": [],
         "size": -1
@@ -3476,7 +3589,8 @@
         "keywords": [
             "boar",
             "wereboar",
-            "nucol"
+            "nucol",
+            "daeodon"
         ],
         "traits": [],
         "size": -1
@@ -3513,7 +3627,11 @@
             "moose",
             "ram",
             "sloth",
-            "wolliped"
+            "wolliped",
+            "shuln",
+            "ahuizotl",
+            "badger",
+            "opossum"
         ],
         "traits": [],
         "size": -1
@@ -3538,7 +3656,8 @@
         "keywords": [
             "cave fisher",
             "crab",
-            "irlgaunt"
+            "irlgaunt",
+            "gongorinan"
         ],
         "traits": [],
         "size": -1
@@ -3562,7 +3681,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Death/Crocodile_Dead-001.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Crocodile/Death/Crocodile_Dead-002.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Desert Drake",
+            "Phasmadaemon"
+        ],
         "keywords": [
             "crocodile",
             "alligator",
@@ -3573,7 +3695,8 @@
             "tylosaurus",
             "werecrocodile",
             "ximtal",
-            "zetogeki"
+            "zetogeki",
+            "deinosuchus"
         ],
         "traits": [],
         "size": -1
@@ -3644,7 +3767,12 @@
         "keywords": [
             "wendigo",
             "derghodaemon",
-            "eremite"
+            "eremite",
+            "leukodaemon",
+            "katpaskir",
+            "levaloch",
+            "obcisidaemon",
+            "ozthoom"
         ],
         "traits": [],
         "size": -1
@@ -3679,9 +3807,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Death/Dryad_Dead-001.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Dryad/Death/Dryad_Dead-002.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Azarketi Tide Tamer",
+            "Sakugami"
+        ],
         "keywords": [
-            "nixie"
+            "nixie",
+            "dryad"
         ],
         "traits": [],
         "size": -1
@@ -3804,7 +3936,6 @@
         "keywords": [
             "tiger",
             "lion",
-            "leopard",
             "Nikaramsa"
         ],
         "traits": [],
@@ -3859,6 +3990,7 @@
         ],
         "creatures": [],
         "keywords": [
+            "brimorak",
             "doprillu",
             "yellow musk brute",
             "adhukait",
@@ -3924,7 +4056,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_04.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/ice_spell_freeze_frost_05.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Iceberg Clam"
+        ],
         "keywords": [
             "blizzardborn",
             "ice golem",
@@ -4173,7 +4307,8 @@
             "lurker in light",
             "Gathlain Wanderer",
             "Kodama",
-            "Shikigami"
+            "Shikigami",
+            "soulbound doll"
         ],
         "traits": [
             "sprite"
@@ -4200,10 +4335,14 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_blast_impact2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster Audio - Pro Sound Collection/Magic_Spells/nature_spell_vines_blast_impact3.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Viper Vine"
+        ],
         "keywords": [
             "Green Man",
-            "Toshigami"
+            "Toshigami",
+            "Terotricus",
+            "topiary"
         ],
         "traits": [
             "plant"
@@ -4239,7 +4378,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Death/CREAMnstr_Kraughor Death Type A 08_KRST_NONE.m4a"
         ],
         "creatures": [
-            "allosaurus"
+            "allosaurus",
+            "carnotaurus",
+            "hadrosaurid"
         ],
         "keywords": [],
         "traits": [
@@ -4291,44 +4432,6 @@
         ],
         "size": 4
     },
-    "Kraughor_C": {
-        "display_name": "Dinosaur - Carnotaurus",
-        "category": "Dragons, Dinosaurs & Reptiles",
-        "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Hurt/CREAMnstr_Kraughor Growl Type C 07_KRST_NONE.m4a"
-        ],
-        "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Attack/CREAMnstr_Kraughor Roar Type A 05_KRST_NONE.m4a"
-        ],
-        "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 01_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 02_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 03_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 04_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 05_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 06_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 07_KRST_NONE.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_C/Kraughor_C_Death/CREAMnstr_Kraughor Death Type C 08_KRST_NONE.m4a"
-        ],
-        "creatures": [
-            "carnotaurus"
-        ],
-        "keywords": [],
-        "traits": [
-            "dinosaur"
-        ],
-        "size": 4
-    },
     "Skarnil_A": {
         "display_name": "Chuul",
         "category": "Monstrosities & Aberrations",
@@ -4364,10 +4467,13 @@
             "shoggti",
             "shoggoth",
             "froghemoth",
-            "chuul"
+            "chuul",
+            "Volnagur"
         ],
         "keywords": [
-            "elder thing"
+            "elder thing",
+            "gogiteth",
+            "jah-tohl"
         ],
         "traits": [],
         "size": -1
@@ -4419,9 +4525,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 12_KRST_NONE.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Varnok_A/Varnok_A_Death/CREAMnstr_Varnok Death Type A 13_KRST_NONE.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Giant Leech"
+        ],
         "keywords": [
-            "ankhrav"
+            "ankhrav",
+            "hive mother",
+            "zecui"
         ],
         "traits": [],
         "size": -1
@@ -4587,7 +4697,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Death/Soldier_Thomas_Death_6.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Thomas/Death/Soldier_Thomas_Death_7.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Gancanagh"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
@@ -4626,7 +4738,9 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Adorable/Death/DamageGrunt5.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Dero Strangler"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
@@ -4660,7 +4774,11 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Assassin/Death/Taking Damage Grunt_1.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Caligni Skulker",
+            "Satyr",
+            "Vampire Mastermind"
+        ],
         "keywords": [],
         "traits": [
             "male",
@@ -4697,7 +4815,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Demonic/Death/Taking Damage Grunt_3.m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "hobgoblin"
+        ],
         "traits": [],
         "size": -1
     },
@@ -4725,13 +4845,16 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Engineer/Death/Taking Damage Grunts 1_4.m4a"
         ],
-        "creatures": [],
-        "keywords": [
+        "creatures": [
+            "Larabay",
+            "Leprechaun"
+        ],
+        "keywords": [],
+        "traits": [
             "male",
             "human",
             "halfling"
         ],
-        "traits": [],
         "size": -1
     },
     "Gunslinger": {
@@ -4761,14 +4884,16 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Gunslinger/Death/DamageGrunt3.m4a"
         ],
-        "creatures": [],
-        "keywords": [
+        "creatures": [
+            "Einherji"
+        ],
+        "keywords": [],
+        "traits": [
             "male",
             "human",
             "halfling",
             "dwarf"
         ],
-        "traits": [],
         "size": -1
     },
     "Wizard": {
@@ -4794,14 +4919,20 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Wizard/Death/Pain Grunt_4.m4a"
         ],
-        "creatures": [],
-        "keywords": [
+        "creatures": [
+            "Caligni Dancer",
+            "Dhampir Wizard",
+            "Vampire Count",
+            "Aphorite Sharpshooter",
+            "Zhuraita"
+        ],
+        "keywords": [],
+        "traits": [
             "male",
             "human",
             "dwarf",
             "centaur"
         ],
-        "traits": [],
         "size": -1
     },
     "Urdefhan": {
@@ -4831,8 +4962,16 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Death/Dying Sounds_4.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/PhatPhrogStudios/Zombie/Death/Dying Sounds_5.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Vampire Servitor",
+            "Narrik",
+            "Penanggalan"
+        ],
+        "keywords": [
+            "gosreg",
+            "grindylow",
+            "nosferatu"
+        ],
         "traits": [
             "urdefhan"
         ],
@@ -4855,7 +4994,10 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/PixaBay/Bee Swarm/beeswarmdeath1.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Wasp Swarm",
+            "Cockroach Swarm"
+        ],
         "keywords": [],
         "traits": [],
         "size": 0
@@ -4877,7 +5019,9 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/PixaBay/Fly Swarm/flyswarmdeath1.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Skittering Slayer"
+        ],
         "keywords": [],
         "traits": [],
         "size": 0
@@ -4908,7 +5052,10 @@
         ],
         "creatures": [],
         "keywords": [
-            "werewolf"
+            "werewolf",
+            "werebear",
+            "weretiger",
+            "wererat"
         ],
         "traits": [],
         "size": 0
@@ -4940,7 +5087,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_18.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Shriezyx/Death/alien_v2_voice_death_19.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Sarglagon",
+            "Winged Chupacabra",
+            "Blood Painter",
+            "Hārakasura",
+            "Sorvuth-Ka"
+        ],
         "keywords": [
             "shriezyx"
         ],
@@ -4967,9 +5120,19 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Death/Wise Alien Voice 2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Witchwyrd/Death/Wise Alien Voice 5.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Athamaru Hunter",
+            "Charnel Creation"
+        ],
         "keywords": [
-            "witchwyrd"
+            "witchwyrd",
+            "sedacthy",
+            "vanth",
+            "Aghash",
+            "Hadrinnex",
+            "Hyakume",
+            "Theletos",
+            "Aigamuxa"
         ],
         "traits": [],
         "size": -1
@@ -5004,7 +5167,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_21.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Smilodon/Death/beast_voice_death_22.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Chimera",
+            "Grisantian Lion"
+        ],
         "keywords": [
             "smilodon"
         ],
@@ -5072,7 +5238,8 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Electrical/Death/elec_lightning_magic_spell_10.m4a"
         ],
         "creatures": [
-            "spark moth"
+            "Spark Moth",
+            "Electric Eel"
         ],
         "keywords": [
             "galvo"
@@ -5100,7 +5267,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Death/fireball_impact_magic_smoke_01.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Death/fireball_impact_magic_smoke_02.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Exscinder"
+        ],
         "keywords": [],
         "traits": [["elemental", "fire"]],
         "size": 2
@@ -5134,9 +5303,17 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_07.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Deimavigga/Death/dark_knight_voice_death_12.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Lesser Death",
+            "Ayngavhaul",
+            "Denizen of Leng",
+            "Tomb Giant"
+        ],
         "keywords": [
-            "deimavigga"
+            "deimavigga",
+            "astradaemon",
+            "gylou",
+            "lich"
         ],
         "traits": [],
         "size": -1
@@ -5169,9 +5346,14 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_short_07.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Cyclops/Death/cyclops_voice_death_short_08.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Marsh Giant",
+            "Zombie Hulk",
+            "Berberoka"
+        ],
         "keywords": [
-            "cyclops"
+            "cyclops",
+            "titan"
         ],
         "traits": [],
         "size": -1
@@ -5234,7 +5416,15 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_011.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid Masculine Old/Death/SFX_Zombie_Male_Cartoon_Dumb_Die_012.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Dero Magister",
+            "Jann",
+            "Bodach",
+            "Girtablilu Seer",
+            "Okenevem",
+            "Shoki",
+            "Sramana"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
@@ -5266,7 +5456,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 37.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 45.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Ratfolk Grenadier"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
@@ -5295,12 +5487,22 @@
         ],
         "creatures": [
             "Giant Frilled Lizard",
-            "Caustic Monitor"
+            "Caustic Monitor",
+            "Fey Dragonet",
+            "Azuretzi",
+            "Keketar",
+            "Velociraptor",
+            "River Drake",
+            "Carbuncle",
+            "House Drake",
+            "Izfiitar",
+            "Xiuh Coatl"
         ],
         "keywords": [
             "chameleon",
             "gecko",
-            "monitor lizard"
+            "monitor lizard",
+            "compsognathus"
         ],
         "traits": [],
         "size": -1
@@ -5324,8 +5526,15 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Clockwork Soldier/Death/Sci-Fi Dieselpunk Small Machinery Engine 1 Powering Down.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Soulbound Doll (Brave)",
+            "Dig-Widget",
+            "Radiant Warden",
+            "Venator"
+        ],
+        "keywords": [
+            "clockwork"
+        ],
         "traits": [
             "clockwork"
         ],
@@ -5363,7 +5572,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "ogre"
+            "ogre",
+            "calikang"
         ],
         "traits": [],
         "size": -1
@@ -5395,7 +5605,12 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Death/parasite_voice_death_03.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Redcap/Death/parasite_voice_death_05.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Scarecrow",
+            "Fungus Leshy",
+            "Attic Whisperer",
+            "Shokasura"
+        ],
         "keywords": [
             "redcap"
         ],
@@ -5428,7 +5643,14 @@
         ],
         "creatures": [
             "Gibbering Mouther",
-            "Sewer Ooze"
+            "Sewer Ooze",
+            "Xoarian",
+            "Amoeba Swarm",
+            "Brood Leech Swarm",
+            "Slime Mold",
+            "Slithering Pit",
+            "Unrisen",
+            "Vermlek"
         ],
         "keywords": [
             "shanrigol"
@@ -5468,9 +5690,18 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Velstrac/Death/infernal_voice_death_15.m4a"
         ],
         "creatures": [
-            "Augur"
+            "Augur",
+            "Arbiter",
+            "Vilderavn",
+            "Voidworm",
+            "Vigilia"
         ],
-        "keywords": [],
+        "keywords": [
+            "Doru",
+            "Eremite",
+            "Imentesh",
+            "Sykever"
+        ],
         "traits": [],
         "size": -1
     },
@@ -5498,9 +5729,16 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Death/Bright-Flare_Beam_Swish_Whirl_6.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Wisp/Death/Bright-Flare_Beam_Swish_Whirl_7.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Animated Broom",
+            "Jaathoom",
+            "Rhu-Chalik",
+            "Betobeto-San",
+            "Animated Silverware Swarm"
+        ],
         "keywords": [
-            "wisp"
+            "wisp",
+            "soulrider"
         ],
         "traits": [],
         "size": -1
@@ -5562,9 +5800,13 @@
         ],
         "creatures": [],
         "keywords": [
-            "squid"
+            "squid",
+            "dolphin",
+            "orca"
         ],
-        "traits": [],
+        "traits": [
+            "aquatic"
+        ],
         "size": -1
     },
     "Celestial": {
@@ -5594,10 +5836,22 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 004.m4a"
         ],
         "creatures": [
-            "Lantern Archon"
+            "Lantern Archon",
+            "Choral"
         ],
         "keywords": [
-            "Zoaem"
+            "Zoaem",
+            "Aesra",
+            "Cassisian",
+            "Giylea",
+            "Qarna",
+            "Rekhep",
+            "Zoaem",
+            "Bikkhasura",
+            "Gnokesh",
+            "Kadamel",
+            "Kuribu",
+            "Ninkonda"
         ],
         "traits": [],
         "size": -1
@@ -5633,7 +5887,15 @@
             "Iron Warden",
             "Adamantine Golem",
             "Adamant Sentinel",
-            "Mithral Golem"
+            "Mithral Golem",
+            "Animated Armor",
+            "Noxious Needler",
+            "Champion Automaton",
+            "Divine Warden of Pharasma",
+            "Spiral Centurion",
+            "Stalker Automaton",
+            "Swordkeeper",
+            "Assault Alloy"
         ],
         "keywords": [],
         "traits": [],
@@ -5667,7 +5929,9 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Construct - Wood/Death/Debris Shockwave 004.m4a"
         ],
         "creatures": [
-            "Wood Golem"
+            "Wood Golem",
+            "Animated Trebuchet",
+            "Wyrwood Sneak"
         ],
         "keywords": [],
         "traits": [],
@@ -5699,7 +5963,10 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Death/Debris Destroyed Landing 003.m4a",
             "modules/pf2e-creature-sounds/sounds/Ovani/Elemental - Earth Medium/Death/Debris Destroyed Landing 008.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Animated Statue",
+            "Jabali"
+        ],
         "keywords": [],
         "traits": [["elemental", "earth"]],
         "size": 2
@@ -5725,15 +5992,22 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Death/Swirls Low Rhythmic A.m4a",
             "modules/pf2e-creature-sounds/sounds/Ovani/Shark/Death/Swirls Low Rhythmic B.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Baomal",
+            "Dibrasgorth",
+            "Grodair",
+            "Nasurgeth",
+            "Nymolus"
+        ],
         "keywords": [
-            "shark"
+            "shark",
+            "megalodon"
         ],
         "traits": [],
         "size": -1
     },
     "Mystical": {
-        "display_name": "Arkhana",
+        "display_name": "Akhana",
         "category": "Fiends & Outsiders",
         "notes": "",
         "hurt_sounds": [
@@ -5758,9 +6032,12 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 004.m4a",
             "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 005.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Melody on the Wind"
+        ],
         "keywords": [
-            "arkhana"
+            "akhana",
+            "pleroma"
         ],
         "traits": [],
         "size": -1
