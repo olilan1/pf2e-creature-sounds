@@ -453,7 +453,7 @@
         "size": -1
     },
     "Ancient_Dragon": {
-        "display_name": "Dinosaur - Triceratops",
+        "display_name": "Triceratops",
         "category": "Dragons, Dinosaurs & Reptiles",
         "notes": "",
         "hurt_sounds": [
@@ -477,7 +477,8 @@
         "keywords": [
             "elasmosaurus",
             "water orm",
-            "mokele-mbembe"
+            "mokele-mbembe",
+            "iguanadon"
         ],
         "traits": [
             "dinosaur"
@@ -816,10 +817,7 @@
         ],
         "creatures": [],
         "keywords": [
-            "hyena",
-            "hyaenodon",
             "aurumvorax",
-            "leucrotta",
             "Eunemvro",
             "Kirin",
             "Kishi",
@@ -1036,14 +1034,16 @@
             "Giant Animated Statue",
             "Golem",
             "Guthallath",
-            "Paleohemoth"
+            "Paleohemoth",
+            "Gargoyle"
         ],
         "keywords": [
             "kapoacinth",
             "granite glyptodont",
             "shaitan",
             "bastion archon",
-            "sturzstromer"
+            "sturzstromer",
+            "gargoyle"
         ],
         "traits": [],
         "size": 5
@@ -1338,16 +1338,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 01_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 02_ESM_HC2.m4a"
         ],
-        "creatures": [
-            "Dire Wolf"
-        ],
+        "creatures": [],
         "keywords": [
             "simurgh",
-            "ahuizotl",
-            "meladaemon",
-            "warg",
-            "witchwarg",
-            "wolf"
+            "meladaemon"
         ],
         "traits": [],
         "size": -1
@@ -1415,7 +1409,8 @@
         "keywords": [
             "minotaur",
             "yeti",
-            "onidoshi"
+            "onidoshi",
+            "mulventok"
         ],
         "traits": [
             "minotaur"
@@ -1632,7 +1627,8 @@
             "stygira",
             "Caulborn",
             "Popobawa",
-            "Soul Skelm"
+            "Soul Skelm",
+            "Sea Devil"
         ],
         "traits": [
             "aberration",
@@ -3108,7 +3104,9 @@
             "Dragonblood Occultist",
             "Goblin Snake",
             "Gobmob Snake",
-            "draconal"
+            "draconal",
+            "Biloko",
+            "Eloko"
         ],
         "traits": [
             "male",
@@ -3197,7 +3195,6 @@
             "dweomercat",
             "hellcat",
             "cat",
-            "squirrel",
             "silvanshee",
             "lion cub",
             "elananx",
@@ -3291,12 +3288,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 02.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animals/Dog/Death/Dog Whine 04.m4a"
         ],
-        "creatures": [
-            "Pipefox"
-        ],
+        "creatures": [],
         "keywords": [
-            "dog",
-            "fox"
+            "dog"
         ],
         "traits": [],
         "size": -1
@@ -3533,11 +3527,10 @@
         "size": -1
     },
     "Beast": {
-        "display_name": "Hippopotamus",
+        "display_name": "Catoblepas",
         "category": "Beasts & Large Animals",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-001.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-002.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-003.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Beast/Hurt/Beast_Damage_Take-004.m4a"
@@ -3560,8 +3553,8 @@
         "keywords": [
             "catoblepas",
             "giant pangolin",
-            "hippopotamus",
-            "rhinoceros"
+            "rhinoceros",
+            "hodag"
         ],
         "traits": [],
         "size": -1
@@ -3616,22 +3609,13 @@
         "creatures": [],
         "keywords": [
             "camel",
-            "hodag",
             "bauble beast",
-            "bison",
-            "giant porcupine",
-            "giant skunk",
             "kangaroo",
-            "khravgodon",
             "megatherium",
-            "moose",
             "ram",
             "sloth",
             "wolliped",
-            "shuln",
-            "ahuizotl",
-            "badger",
-            "opossum"
+            "shuln"
         ],
         "traits": [],
         "size": -1
@@ -3957,9 +3941,22 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Death/Ooze_Slime_Dead-001.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Death/Ooze_Slime_Dead-002.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
-        "traits": [],
+        "creatures": [
+            "Gelatinous Cube",
+            "Ochre Jelly",
+            "Sewer Ooze",
+            "Gunpowder Ooze",
+            "Slime Mold"
+        ],
+        "keywords": [
+            "ooze",
+            "slime",
+            "jelly",
+            "pudding"
+        ],
+        "traits": [
+            "ooze"
+        ],
         "size": -1
     },
     "Beastkin": {
@@ -4380,7 +4377,7 @@
         "size": -1
     },
     "Kraughor_A": {
-        "display_name": "Dinosaur - Allosaurus",
+        "display_name": "Allosaurus",
         "category": "Dragons, Dinosaurs & Reptiles",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_A/Kraughor_A_Hurt/CREAMnstr_Kraughor Growl Type A 01_KRST_NONE.m4a",
@@ -4419,7 +4416,7 @@
         "size": 4
     },
     "Kraughor_B": {
-        "display_name": "Dinosaur - Tyrannosaurus",
+        "display_name": "Tyrannosaurus",
         "category": "Dragons, Dinosaurs & Reptiles",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Kraughor_B/Kraughor_B_Hurt/CREAMnstr_Kraughor Growl Type B 01_KRST_NONE.m4a",
@@ -4598,8 +4595,19 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_6.m4a"
         ],
         "creatures": [],
-        "keywords": [],
-        "traits": [],
+        "keywords": [
+            "soldier",
+            "bandit",
+            "thug",
+            "squire",
+            "gladiator",
+            "mercenary"
+        ],
+        "traits": [
+            "male",
+            "human",
+            "halfling"
+        ],
         "size": -1
     },
     "Lauren": {
@@ -5491,11 +5499,13 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 37.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 45.m4a"
         ],
-        "creatures": [
-            "Ratfolk Grenadier"
+        "creatures": [],
+        "keywords": [
+            "kobold"
         ],
-        "keywords": [],
-        "traits": [],
+        "traits": [
+            "kobold"
+        ],
         "size": -1
     },
     "Lizard": {
@@ -5678,11 +5688,9 @@
         ],
         "creatures": [
             "Gibbering Mouther",
-            "Sewer Ooze",
             "Xoarian",
             "Amoeba Swarm",
             "Brood Leech Swarm",
-            "Slime Mold",
             "Slithering Pit",
             "Unrisen",
             "Vermlek"
@@ -5836,8 +5844,7 @@
         "creatures": [],
         "keywords": [
             "squid",
-            "dolphin",
-            "orca"
+            "dolphin"
         ],
         "traits": [
             "aquatic"
@@ -6094,8 +6101,20 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Death/Badger_Growl%20(3).m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Badger",
+            "Giant Badger",
+            "Giant Opossum",
+            "Khravgodon",
+            "Ahuizotl"
+        ],
+        "keywords": [
+            "badger",
+            "opossum",
+            "khravgodon",
+            "giant porcupine",
+            "giant skunk"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6112,8 +6131,12 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Death/Bat_Screech%20(2).m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Bat"
+        ],
+        "keywords": [
+            "bat"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6131,8 +6154,18 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Death/Elk_Bugle%20(1).m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Elk",
+            "Giant Elk",
+            "Megaloceros",
+            "Caribou",
+            "Horned Archon"
+        ],
+        "keywords": [
+            "elk",
+            "megaloceros",
+            "caribou"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6152,8 +6185,15 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Scream%20(3).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Yelp.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Fox",
+            "Pipefox",
+            "Red Fox"
+        ],
+        "keywords": [
+            "fox",
+            "pipefox"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6169,8 +6209,12 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Death/Goat_Bleat%20(3).m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Goat"
+        ],
+        "keywords": [
+            "goat"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6190,8 +6234,18 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt%20(3).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Gorilla",
+            "Ape",
+            "Ghost Ape",
+            "Angazhani",
+            "Megaprimatus",
+            "Gigantopithecus"
+        ],
+        "keywords": [
+            "gorilla",
+            "ape"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6211,8 +6265,16 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Death/Hyena_howl.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Hyena",
+            "Afziaka Stalker",
+            "Hyaenodon",
+            "Leucrotta"
+        ],
+        "keywords": [
+            "hyena",
+            "hyaenodon"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6231,7 +6293,10 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Death/Lemur_Howl_Chatter%20(5).m4a"
         ],
         "creatures": [],
-        "keywords": [],
+        "keywords": [
+            "charau-ka",
+            "vanara"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6247,7 +6312,10 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Death/Monkey_Howl%20(3).m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Monkey",
+            "Green Monkey"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
@@ -6267,8 +6335,13 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Death/Squirrel_Squeak%20(1).m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Squirrel",
+            "Flying Squirrel"
+        ],
+        "keywords": [
+            "squirrel"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6288,7 +6361,11 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Death/Whale_Moan.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Whale",
+            "Orca",
+            "Balaena"
+        ],
         "keywords": [],
         "traits": [],
         "size": -1
@@ -6309,8 +6386,17 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Death/Wolf_Whine.m4a"
         ],
-        "creatures": [],
-        "keywords": [],
+        "creatures": [
+            "Wolf",
+            "Dire Wolf",
+            "Winter Wolf"
+        ],
+        "keywords": [
+            "wolf",
+            "warg",
+            "witchwarg",
+            "winter wolf"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6346,8 +6432,55 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__98_.m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__99_.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Rat"
+        ],
         "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Hippopotamus": {
+        "display_name": "Hippopotamus",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Hurt/Hippopotamus_Grunt%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Hurt/Hippopotamus_Grunt%20(3).m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Attack/Hippopotamus_Roar%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Attack/Hippopotamus_Roar.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Death/Hippopotamus_Roar%20(3).m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "hippopotamus"
+        ],
+        "traits": [],
+        "size": -1
+    },
+    "Moose": {
+        "display_name": "Moose",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Hurt/Moose_Bellow%20(3).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Hurt/Moose_Grunt.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Attack/Moose_Bellow%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Attack/Moose_Grunt%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Attack/Moose_Grunt%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Attack/Moose_Grunt%20(3).m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Moose/Death/Moose_Bellow.m4a"
+        ],
+        "creatures": [],
+        "keywords": [
+            "moose",
+            "bison"
+        ],
         "traits": [],
         "size": -1
     }
