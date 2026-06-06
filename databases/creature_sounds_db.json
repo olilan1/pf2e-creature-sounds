@@ -478,7 +478,7 @@
             "elasmosaurus",
             "water orm",
             "mokele-mbembe",
-            "iguanadon"
+            "iguanodon"
         ],
         "traits": [
             "dinosaur"
@@ -534,7 +534,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Basilisk/Basilisk_Monster_Death_2_Lizard_Reptile_Creature_Hiss_Groan_Moan_Screech_Squeal.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures/Basilisk/Basilisk_Monster_Death_3_Lizard_Reptile_Creature_Hiss_Groan_Moan_Screech_Squeal.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Giant Chameleon"
+        ],
         "keywords": [
             "basilisk",
             "cave worm",
@@ -999,8 +1001,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Evolved_Game_Creatures_2/Owlbear/Owlbear_Monster_Death_3_Bird_Mammal_Creature.m4a"
         ],
         "creatures": [
-            "Woolly Rhinoceros",
-            "Gargoyle"
+            "Woolly Rhinoceros"
         ],
         "keywords": [
             "owlbear",
@@ -1335,7 +1336,9 @@
         "keywords": [
             "shoony",
             "pugwampi",
-            "simurgh"
+            "simurgh",
+            "vulpinal",
+            "kitsune"
         ],
         "traits": [],
         "size": -1
@@ -1442,7 +1445,8 @@
         "creatures": [],
         "keywords": [
             "boggard",
-            "myceloid"
+            "myceloid",
+            "tupilaq"
         ],
         "traits": [
             "ghoul",
@@ -1718,15 +1722,14 @@
         ],
         "creatures": [],
         "keywords": [
-            "chupacabra",
-            "bodak",
             "void zombie",
             "yellow musk thrall",
             "flesh golem",
             "Buso",
             "Incutilis",
             "Severed Head",
-            "herexen"
+            "herexen",
+            "bodak"
         ],
         "traits": [
             "zombie"
@@ -2468,7 +2471,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "Nosferatu Thrall"
         ],
         "traits": [
             "male",
@@ -2864,7 +2866,8 @@
         ],
         "creatures": [],
         "keywords": [
-            "Caligni Caller"
+            "Caligni Caller",
+            "Procyal"
         ],
         "traits": [
             "male",
@@ -2875,7 +2878,7 @@
         "size": 2
     },
     "Ben_Kobold": {
-        "display_name": "Kobold",
+        "display_name": "Kobold A",
         "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
@@ -3548,7 +3551,8 @@
             "catoblepas",
             "giant pangolin",
             "rhinoceros",
-            "hodag"
+            "hodag",
+            "chupacabra"
         ],
         "traits": [],
         "size": -1
@@ -3706,7 +3710,6 @@
             "grodair",
             "bebilith",
             "solifugid",
-            "Girtablilu Seer",
             "Girtablilu Sentry",
             "Jorogumo",
             "Levaloch",
@@ -5461,7 +5464,8 @@
             "Girtablilu Seer",
             "Okenevem",
             "Shoki",
-            "Sramana"
+            "Sramana",
+            "Nosferatu Thrall"
         ],
         "keywords": [],
         "traits": [],
@@ -5570,7 +5574,8 @@
             "Soulbound Doll (Brave)",
             "Dig-Widget",
             "Radiant Warden",
-            "Venator"
+            "Venator",
+            "Alchemical Golem"
         ],
         "keywords": [
             "clockwork"
@@ -5740,7 +5745,9 @@
             "Imentesh",
             "Sykever"
         ],
-        "traits": [],
+        "traits": [
+            "velstrac"
+        ],
         "size": -1
     },
     "Wisp B": {
