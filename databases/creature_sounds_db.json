@@ -2888,7 +2888,7 @@
         "size": 2
     },
     "Ben_Kobold": {
-        "display_name": "Kobold A",
+        "display_name": "Kobold",
         "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
@@ -2922,7 +2922,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "morlock"
         ],
         "traits": [
             "kobold"
@@ -5514,12 +5513,6 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Kobold B/Death/Small Monster Voice Effect 45.m4a"
         ],
         "creatures": [],
-        "keywords": [
-            "kobold"
-        ],
-        "traits": [
-            "kobold"
-        ],
         "keywords": [],
         "traits": [
             "nagaji"
