@@ -314,7 +314,8 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Skeleton/Skeletons_Death/CREAHmn_Skeleton_Death_07.m4a"
         ],
         "creatures": [
-            "Flaming Skull"
+            "Flaming Skull",
+            "Shade (Boneyard)"
         ],
         "keywords": [
             "necrophidius",
@@ -741,7 +742,8 @@
         ],
         "creatures": [
             "giant dragonfly nymph",
-            "Vloriak"
+            "Vloriak",
+            "Shade (Dead Vault)"
         ],
         "keywords": [
             "ant",
@@ -1111,7 +1113,8 @@
         ],
         "creatures": [
             "Dullahan",
-            "Grim Reaper"
+            "Grim Reaper",
+            "Shade (Astral Plane)"
         ],
         "keywords": [
             "Betobeto-San"
@@ -1482,7 +1485,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Hellspawn/CREAHmn_Hellspawn Death Squealing Hissing Crackly Harsh Bright 05_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Hellspawn/CREAHmn_Hellspawn Death Throaty High Pitched Screaming Falling 06_ESM_HC2.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Shade (Hell)"
+        ],
         "keywords": [
             "mephit",
             "scamp",
@@ -1567,7 +1572,8 @@
         ],
         "creatures": [
             "Giant Frog",
-            "Slurk"
+            "Slurk",
+            "Shade (Outer Rifts)"
         ],
         "keywords": [
             "charnel creation",
@@ -1949,7 +1955,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female C/voice_female_c_death_09.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female C/voice_female_c_death_10.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Shade (Universe)"
+        ],
         "keywords": [],
         "traits": [
             "female",
@@ -2426,7 +2434,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male A/voice_male_grunt_pain_death_09.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male A/voice_male_grunt_pain_death_10.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Shade (Axis)"
+        ],
         "keywords": [
             "culdewen"
         ],
@@ -3790,7 +3800,9 @@
         ],
         "creatures": [
             "Azarketi Tide Tamer",
-            "Sakugami"
+            "Sakugami",
+            "Shade (Dreamlands)",
+            "Shade (Elysium)"
         ],
         "keywords": [
             "nixie",
@@ -4882,7 +4894,8 @@
         ],
         "creatures": [
             "Larabay",
-            "Leprechaun"
+            "Leprechaun",
+            "Shade (Abaddon)"
         ],
         "keywords": [],
         "traits": [
@@ -5000,7 +5013,8 @@
         "creatures": [
             "Vampire Servitor",
             "Narrik",
-            "Penanggalan"
+            "Penanggalan",
+            "Shade (Netherworld)"
         ],
         "keywords": [
             "gosreg",
@@ -5304,7 +5318,8 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Elemental - Fire Medium/Death/fireball_impact_magic_smoke_02.m4a"
         ],
         "creatures": [
-            "Exscinder"
+            "Exscinder",
+            "Shade (Plane of Fire)"
         ],
         "keywords": [],
         "traits": [
@@ -5465,7 +5480,8 @@
             "Okenevem",
             "Shoki",
             "Sramana",
-            "Nosferatu Thrall"
+            "Nosferatu Thrall",
+            "Shade (Ethereal Plane)"
         ],
         "keywords": [],
         "traits": [],
@@ -5779,7 +5795,8 @@
             "Jaathoom",
             "Rhu-Chalik",
             "Betobeto-San",
-            "Animated Silverware Swarm"
+            "Animated Silverware Swarm",
+            "Shade (Plane of Air)"
         ],
         "keywords": [
             "wisp",
@@ -5815,7 +5832,8 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Aquatic/Death/Water Magic Maelstrom Roar 005.m4a"
         ],
         "creatures": [
-            "Dewdrop Jelly"
+            "Dewdrop Jelly",
+            "Shade (Plane of Water)"
         ],
         "keywords": [],
         "traits": [],
@@ -5881,7 +5899,8 @@
         ],
         "creatures": [
             "Lantern Archon",
-            "Choral"
+            "Choral",
+            "Shade (Heaven)"
         ],
         "keywords": [
             "Zoaem",
@@ -5975,7 +5994,8 @@
         "creatures": [
             "Wood Golem",
             "Animated Trebuchet",
-            "Wyrwood Sneak"
+            "Wyrwood Sneak",
+            "Shade (Plane of Wood)"
         ],
         "keywords": [],
         "traits": [],
@@ -6009,7 +6029,8 @@
         ],
         "creatures": [
             "Animated Statue",
-            "Jabali"
+            "Jabali",
+            "Shade (Plane of Earth)"
         ],
         "keywords": [],
         "traits": [
@@ -6082,7 +6103,8 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Mystical/Death/Arcane Spells Arcane Ripple 005.m4a"
         ],
         "creatures": [
-            "Melody on the Wind"
+            "Melody on the Wind",
+            "Shade (Creation's Forge)"
         ],
         "keywords": [
             "akhana",
@@ -6108,7 +6130,8 @@
             "Giant Badger",
             "Giant Opossum",
             "Khravgodon",
-            "Ahuizotl"
+            "Ahuizotl",
+            "Shade (Nirvana)"
         ],
         "keywords": [
             "badger",
