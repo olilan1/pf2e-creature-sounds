@@ -122,8 +122,8 @@
         "size": 4
     },
     "Goblin": {
-        "display_name": "Goblin A",
-        "category": "Humanoids",
+        "display_name": "Morlock",
+        "category": "Monstrous Humanoids",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Khron_Monster_Library/Goblin/Goblin_Hurt/CREAHmn_Goblin_Hurt_01.m4a",
@@ -160,7 +160,8 @@
         "keywords": [
             "skulk",
             "grioth",
-            "gimmerling"
+            "gimmerling",
+            "morlock"
         ],
         "traits": [
             "goblin"
@@ -1453,7 +1454,6 @@
         ],
         "traits": [
             "ghoul",
-            "morlock",
             "grippli"
         ],
         "size": -1
@@ -2796,7 +2796,7 @@
         "size": 2
     },
     "Ben_Goblin": {
-        "display_name": "Goblin B",
+        "display_name": "Goblin",
         "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
