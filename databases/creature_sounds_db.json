@@ -6086,13 +6086,13 @@
         "display_name": "Badger",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Hurt/Badger_Growl.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Hurt/Badger_Growl.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Attack/Badger_Growl%20(1).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Attack/Badger_Growl%20(1).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Death/Badger_Growl%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Death/Badger_Growl%20(3).m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6103,14 +6103,14 @@
         "display_name": "Bat",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Hurt/Bat_Screech%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Hurt/Bat_Screech%20(3).m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Attack/Bat_Screech%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Attack/Bat_Screech.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Attack/Bat_Screech%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Attack/Bat_Screech.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Death/Bat_Screech%20(2).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Bat/Death/Bat_Screech%20(2).m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6121,15 +6121,15 @@
         "display_name": "Elk",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Hurt/Elk_Bugle%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Hurt/Elk_Bugle.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Hurt/Elk_Bugle%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Hurt/Elk_Bugle.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Attack/Elk_Grunt%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Attack/Elk_Grunt%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Attack/Elk_Grunt%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Attack/Elk_Grunt%20(3).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Death/Elk_Bugle%20(1).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Death/Elk_Bugle%20(1).m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6140,17 +6140,17 @@
         "display_name": "Fox",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Hurt/Fox_Bark%20(3).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Hurt/Fox_Scream.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Hurt/Fox_Bark%20(3).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Hurt/Fox_Scream.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Attack/Fox_Bark.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Scream%20(3).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Yelp.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Scream%20(3).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Yelp.m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6161,13 +6161,13 @@
         "display_name": "Goat",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Hurt/Goat_Bleat%20(1).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Hurt/Goat_Bleat%20(1).m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Attack/Goat_maa.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Attack/Goat_maa.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Death/Goat_Bleat%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Death/Goat_Bleat%20(3).m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6178,17 +6178,17 @@
         "display_name": "Gorilla",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(2).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(2).m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Attack/Gorilla_Roar%20(3).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt%20(3).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt%20(3).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt.m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6199,17 +6199,17 @@
         "display_name": "Hyena",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Hurt/Hyena_howl%20(3).m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Attack/Hyena_Laugh%20(3).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Death/Hyena_howl.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Death/Hyena_howl.m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6220,15 +6220,15 @@
         "display_name": "Lemur",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Hurt/Lemur_Howl_Chatter%20(3).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Hurt/Lemur_Howl_Chatter.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Hurt/Lemur_Howl_Chatter%20(3).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Hurt/Lemur_Howl_Chatter.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Attack/Lemur_Howl_Chatter%20(6).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Attack/Lemur_Howl_Chatter%20(7).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Attack/Lemur_Howl_Chatter%20(6).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Attack/Lemur_Howl_Chatter%20(7).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Death/Lemur_Howl_Chatter%20(5).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Lemur/Death/Lemur_Howl_Chatter%20(5).m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6239,13 +6239,33 @@
         "display_name": "Monkey",
         "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Hurt/Monkey_Screech%20(2).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Hurt/Monkey_Screech%20(2).m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Attack/Monkey_Screech%20(1).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Attack/Monkey_Screech%20(1).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Death/Monkey_Howl%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Death/Monkey_Howl%20(3).m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Squirrel": {
+        "display_name": "Squirrel",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Hurt/Squirrel_Squeak_Quick_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Hurt/Squirrel_Squeak_Quick_2.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Attack/Squirrel_Chatter%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Attack/Squirrel_Chatter%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Attack/Squirrel_Chatter%20(3).m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Death/Squirrel_Squeak%20(1).m4a"
         ],
         "creatures": [],
         "keywords": [],
@@ -6254,19 +6274,77 @@
     },
     "Whale": {
         "display_name": "Whale",
-        "category": "Amphibians, Aquatics & Avians",
+        "category": "Animals",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(3).m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(1).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(2).mp3",
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(3).mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Attack/Whale_Sing%20(3).m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Death/Whale_Moan.mp3"
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Death/Whale_Moan.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Wolf": {
+        "display_name": "Wolf",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Hurt/Wolf_Whine%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Hurt/Wolf_Whine%20(2).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Hurt/Wolf_Whine%20(3).m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Attack/Dog_growl.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Attack/Wolverine_Growl%20(1).m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Attack/Wolverine_Growl.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Death/Wolf_Whine.m4a"
+        ],
+        "creatures": [],
+        "keywords": [],
+        "traits": [],
+        "size": -1
+    },
+    "Rat": {
+        "display_name": "Rat",
+        "category": "Animals",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Hurt/WAV_Rat__13_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Hurt/WAV_Rat__15_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Hurt/WAV_Rat__18_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Hurt/WAV_Rat__21_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Hurt/WAV_Rat__22_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Hurt/WAV_Rat__27_.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__10_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__11_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__1_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__21_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__22_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__23_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__2_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__3_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__4_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__89_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__90_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Attack/WAV_Rat__91_.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__100_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__84_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__85_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__98_.m4a",
+            "modules/pf2e-creature-sounds/sounds/EpicStore/Rat_SFX_Pack/Rat/Death/WAV_Rat__99_.m4a"
         ],
         "creatures": [],
         "keywords": [],
