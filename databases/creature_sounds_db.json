@@ -3760,8 +3760,8 @@
             "leukodaemon",
             "katpaskir",
             "levaloch",
-            "obcisidaemon",
-            "ozthoom"
+            "ozthoom",
+            "narrik"
         ],
         "traits": [],
         "size": -1
@@ -5217,7 +5217,8 @@
         ],
         "creatures": [
             "Chimera",
-            "Grisantian Lion"
+            "Grisantian Lion",
+            "Obcisidaemon"
         ],
         "keywords": [
             "smilodon"
