@@ -11,6 +11,7 @@
 - Renamed some sound sets
 - Add multi-trait matching (e.g. for elemental+fire)
 - Reviewed and updated matching for (almost all) MC and MC2 creatures
+- Verified v14 compatible
 
 ## [1.1.1] - 2025-07-20
 
