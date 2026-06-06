@@ -1315,33 +1315,27 @@
         "size": -1
     },
     "Female Werewolf Shifter": {
-        "display_name": "Warg",
-        "category": "Beasts & Large Animals",
+        "display_name": "Shoony",
+        "category": "Humanoids",
         "notes": "",
         "hurt_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 01_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 02_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 03_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 04_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Pain Hit Injured Scream Yelp Whimper 05_ESM_HC2.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Hurt/CREAHmn_Female%20Werewolf%20Shifter%20Death%20Defeated%20Dying%20Whimper%20Growl%2001_ESM_HC2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Hurt/CREAHmn_Female%20Werewolf%20Shifter%20Pain%20Hit%20Injured%20Scream%20Yelp%20Whimper%2001_ESM_HC2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Hurt/CREAHmn_Female%20Werewolf%20Shifter%20Pain%20Hit%20Injured%20Scream%20Yelp%20Whimper%2003_ESM_HC2.m4a"
         ],
         "attack_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Attack Glottal Throaty Scream Growl Bark 01_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Attack Glottal Throaty Scream Growl Bark 02_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Attack Glottal Throaty Scream Growl Bark 03_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Attack Glottal Throaty Scream Growl Bark 04_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Attack Glottal Throaty Scream Growl Bark 05_ESM_HC2.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Attack/CREAHmn_Female%20Werewolf%20Shifter%20Startle%20Aggro%20Alerted%20Growl%20Bark%20Breath%2001_ESM_HC2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Attack/CREAHmn_Female%20Werewolf%20Shifter%20Startle%20Aggro%20Alerted%20Growl%20Bark%20Breath%2004_ESM_HC2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Attack/CREAHmn_Female%20Werewolf%20Shifter%20Startle%20Aggro%20Alerted%20Growl%20Bark%20Breath%2005_ESM_HC2.m4a"
         ],
         "death_sounds": [
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Grunt Growl 01_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Grunt Growl 02_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 01_ESM_HC2.m4a",
-            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/CREAHmn_Female Werewolf Shifter Death Defeated Dying Whimper Growl 02_ESM_HC2.m4a"
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Female_Werewolf_Shifter/Death/CREAHmn_Female%20Werewolf%20Shifter%20Pain%20Hit%20Injured%20Scream%20Yelp%20Whimper%2002_ESM_HC2.m4a"
         ],
         "creatures": [],
         "keywords": [
-            "simurgh",
-            "meladaemon"
+            "shoony",
+            "pugwampi",
+            "simurgh"
         ],
         "traits": [],
         "size": -1
@@ -5093,7 +5087,8 @@
             "werewolf",
             "werebear",
             "weretiger",
-            "wererat"
+            "wererat",
+            "meladaemon"
         ],
         "traits": [],
         "size": 0
