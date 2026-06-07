@@ -1535,7 +1535,6 @@
         ],
         "creatures": [],
         "keywords": [
-            "nuckelavee",
             "vrock",
             "Mobogo",
             "skaveling",
@@ -6111,8 +6110,6 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Death/Badger_Growl%20(3).m4a"
         ],
         "creatures": [
-            "Giant Opossum",
-            "Khravgodon",
             "Ahuizotl",
             "Shade (Nirvana)",
             "Giant Rat"
@@ -6164,10 +6161,6 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Elk/Death/Elk_Bugle%20(1).m4a"
         ],
         "creatures": [
-            "Elk",
-            "Giant Elk",
-            "Megaloceros",
-            "Caribou",
             "Horned Archon"
         ],
         "keywords": [
@@ -6194,14 +6187,9 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Scream%20(3).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Fox/Death/Fox_Yelp.m4a"
         ],
-        "creatures": [
-            "Fox",
-            "Pipefox",
-            "Red Fox"
-        ],
+        "creatures": [],
         "keywords": [
-            "fox",
-            "pipefox"
+            "fox"
         ],
         "traits": [],
         "size": -1
@@ -6218,9 +6206,7 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Goat/Death/Goat_Bleat%20(3).m4a"
         ],
-        "creatures": [
-            "Goat"
-        ],
+        "creatures": [],
         "keywords": [
             "goat"
         ],
@@ -6244,9 +6230,6 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Death/Gorilla_Grunt.m4a"
         ],
         "creatures": [
-            "Gorilla",
-            "Ape",
-            "Ghost Ape",
             "Angazhani",
             "Megaprimatus",
             "Gigantopithecus"
@@ -6275,9 +6258,7 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hyena/Death/Hyena_howl.m4a"
         ],
         "creatures": [
-            "Hyena",
             "Afziaka Stalker",
-            "Hyaenodon",
             "Leucrotta"
         ],
         "keywords": [
@@ -6321,11 +6302,10 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Monkey/Death/Monkey_Howl%20(3).m4a"
         ],
-        "creatures": [
-            "Monkey",
-            "Green Monkey"
+        "creatures": [],
+        "keywords": [
+            "monkey"
         ],
-        "keywords": [],
         "traits": [],
         "size": -1
     },
@@ -6344,10 +6324,7 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Squirrel/Death/Squirrel_Squeak%20(1).m4a"
         ],
-        "creatures": [
-            "Squirrel",
-            "Flying Squirrel"
-        ],
+        "creatures": [],
         "keywords": [
             "squirrel"
         ],
@@ -6371,11 +6348,12 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Death/Whale_Moan.m4a"
         ],
         "creatures": [
-            "Whale",
             "Orca",
             "Balaena"
         ],
-        "keywords": [],
+        "keywords": [
+            "whale"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6395,16 +6373,11 @@
         "death_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Death/Wolf_Whine.m4a"
         ],
-        "creatures": [
-            "Wolf",
-            "Dire Wolf",
-            "Winter Wolf"
-        ],
+        "creatures": [],
         "keywords": [
             "wolf",
             "warg",
-            "witchwarg",
-            "winter wolf"
+            "witchwarg"
         ],
         "traits": [],
         "size": -1
