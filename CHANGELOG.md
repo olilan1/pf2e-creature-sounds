@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.2.0-beta.0] - 2026-06-07
+
 - New Mammal sound effects added
 - Bulk import sound sets feature
 - Don't match based only on gender traits
@@ -42,7 +44,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.0...HEAD
+
+[1.2.0-beta.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...v1.2.0-beta.0
 
 [1.1.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.0...v1.1.1
 
