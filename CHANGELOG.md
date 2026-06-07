@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- New Mammal sound effects added
 - Bulk import sound sets feature
 - Don't match based only on gender traits
 - Soundboard feature
