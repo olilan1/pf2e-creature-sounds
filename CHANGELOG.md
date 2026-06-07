@@ -2,15 +2,15 @@
 
 ## [Unreleased]
 
-- New Mammal sound effects added
+## [1.2.0-beta.0] - 2026-06-07
+
 - Bulk import sound sets feature
-- Don't match based only on gender traits
 - Soundboard feature
 - Actor Overview feature
-- Organise sound sets into categories
+- Organised sound sets into categories
 - Added many new sound sets
 - Renamed some sound sets
-- Add multi-trait matching (e.g. for elemental+fire)
+- Updated sound matching, including multi-trait matching (e.g. for elemental+fire)
 - Reviewed and updated matching for (almost all) MC and MC2 creatures
 - Verified v14 compatible
 
@@ -42,7 +42,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.0...HEAD
+
+[1.2.0-beta.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...v1.2.0-beta.0
 
 [1.1.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.0...v1.1.1
 
