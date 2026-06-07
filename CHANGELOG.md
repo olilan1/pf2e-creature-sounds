@@ -4,15 +4,13 @@
 
 ## [1.2.0-beta.0] - 2026-06-07
 
-- New Mammal sound effects added
 - Bulk import sound sets feature
-- Don't match based only on gender traits
 - Soundboard feature
 - Actor Overview feature
-- Organise sound sets into categories
+- Organised sound sets into categories
 - Added many new sound sets
 - Renamed some sound sets
-- Add multi-trait matching (e.g. for elemental+fire)
+- Updated sound matching, including multi-trait matching (e.g. for elemental+fire)
 - Reviewed and updated matching for (almost all) MC and MC2 creatures
 - Verified v14 compatible
 
