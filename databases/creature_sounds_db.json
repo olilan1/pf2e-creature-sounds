@@ -923,7 +923,8 @@
             "alicorn",
             "karkadann",
             "sandpoint devil",
-            "shantak"
+            "shantak",
+            "nuckelavee"
         ],
         "traits": [],
         "size": -1
@@ -1956,7 +1957,8 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female C/voice_female_c_death_10.m4a"
         ],
         "creatures": [
-            "Shade (Universe)"
+            "Shade (Universe)",
+            "Merfolk Wavecaller"
         ],
         "keywords": [],
         "traits": [
@@ -1964,7 +1966,8 @@
             "human",
             "halfling",
             "elf",
-            "gnome"
+            "gnome",
+            "merfolk"
         ],
         "size": 2
     },
@@ -2596,7 +2599,8 @@
         "creatures": [],
         "keywords": [
             "Cecaelia Trapper",
-            "Kovintus Geomancer"
+            "Kovintus Geomancer",
+            "Merfolk Warrior"
         ],
         "traits": [
             "male",
@@ -2604,7 +2608,8 @@
             "halfling",
             "elf",
             "gnome",
-            "dwarf"
+            "dwarf",
+            "merfolk"
         ],
         "size": 2
     },
@@ -2732,7 +2737,8 @@
             "human",
             "halfling",
             "dwarf",
-            "centaur"
+            "centaur",
+            "merfolk"
         ],
         "size": 2
     },
