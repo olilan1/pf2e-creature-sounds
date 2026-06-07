@@ -1038,8 +1038,7 @@
             "Giant Animated Statue",
             "Golem",
             "Guthallath",
-            "Paleohemoth",
-            "Gargoyle"
+            "Paleohemoth"
         ],
         "keywords": [
             "kapoacinth",
@@ -2480,8 +2479,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Male B/voice_male_b_death_low_10.m4a"
         ],
         "creatures": [],
-        "keywords": [
-        ],
+        "keywords": [],
         "traits": [
             "male",
             "human",
@@ -2921,8 +2919,7 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli Studios/benkobold/benkobold-death-6.m4a"
         ],
         "creatures": [],
-        "keywords": [
-        ],
+        "keywords": [],
         "traits": [
             "kobold"
         ],
@@ -3949,21 +3946,10 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Ooze/Death/Ooze_Slime_Dead-002.m4a"
         ],
         "creatures": [
-            "Gelatinous Cube",
-            "Ochre Jelly",
-            "Sewer Ooze",
-            "Gunpowder Ooze",
-            "Slime Mold"
+            "Gunpowder Ooze"
         ],
-        "keywords": [
-            "ooze",
-            "slime",
-            "jelly",
-            "pudding"
-        ],
-        "traits": [
-            "ooze"
-        ],
+        "keywords": [],
+        "traits": [],
         "size": -1
     },
     "Beastkin": {
@@ -4010,7 +3996,7 @@
     },
     "Sea Lion": {
         "display_name": "Sea Lion",
-        "category": "Animals",
+        "category": "Amphibians, Aquatics & Avians",
         "notes": "",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Animal_Monster/Sea Lion/Hurt/Sea_Lion_Damage_Take-001.m4a",
@@ -4602,14 +4588,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Military Soldiers Bundle/Daniel/Death/Soldier_Daniel_Death_6.m4a"
         ],
         "creatures": [],
-        "keywords": [
-            "soldier",
-            "bandit",
-            "thug",
-            "squire",
-            "gladiator",
-            "mercenary"
-        ],
+        "keywords": [],
         "traits": [
             "male",
             "human",
@@ -5587,8 +5566,7 @@
             "Soulbound Doll (Brave)",
             "Dig-Widget",
             "Radiant Warden",
-            "Venator",
-            "Alchemical Golem"
+            "Venator"
         ],
         "keywords": [
             "clockwork"
@@ -5701,9 +5679,11 @@
         ],
         "creatures": [
             "Gibbering Mouther",
+            "Sewer Ooze",
             "Xoarian",
             "Amoeba Swarm",
             "Brood Leech Swarm",
+            "Slime Mold",
             "Slithering Pit",
             "Unrisen",
             "Vermlek"
@@ -5955,7 +5935,8 @@
             "Spiral Centurion",
             "Stalker Automaton",
             "Swordkeeper",
-            "Assault Alloy"
+            "Assault Alloy",
+            "Alchemical Golem"
         ],
         "keywords": [],
         "traits": [],
@@ -6123,19 +6104,18 @@
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Badger/Death/Badger_Growl%20(3).m4a"
         ],
         "creatures": [
-            "Badger",
-            "Giant Badger",
             "Giant Opossum",
             "Khravgodon",
             "Ahuizotl",
-            "Shade (Nirvana)"
+            "Shade (Nirvana)",
+            "Giant Rat"
         ],
         "keywords": [
             "badger",
             "opossum",
             "khravgodon",
-            "giant porcupine",
-            "giant skunk"
+            "porcupine",
+            "skunk"
         ],
         "traits": [],
         "size": -1
@@ -6242,7 +6222,7 @@
     },
     "Gorilla": {
         "display_name": "Gorilla",
-        "category": "Animals",
+        "category": "Beasts & Large Animals",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(1).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Gorilla/Hurt/Gorilla_Grunt%20(2).m4a"
@@ -6369,7 +6349,7 @@
     },
     "Whale": {
         "display_name": "Whale",
-        "category": "Animals",
+        "category": "Amphibians, Aquatics & Avians",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(1).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Whale/Hurt/Whale_Moan%20(2).m4a",
@@ -6394,7 +6374,7 @@
     },
     "Wolf": {
         "display_name": "Wolf",
-        "category": "Animals",
+        "category": "Beasts & Large Animals",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Hurt/Wolf_Whine%20(1).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Wolf/Hurt/Wolf_Whine%20(2).m4a",
@@ -6463,7 +6443,7 @@
     },
     "Hippopotamus": {
         "display_name": "Hippopotamus",
-        "category": "Animals",
+        "category": "Beasts & Large Animals",
         "hurt_sounds": [
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Hurt/Hippopotamus_Grunt%20(1).m4a",
             "modules/pf2e-creature-sounds/sounds/EpicStore/UltimateMammalSoundPack379/Hippopotamus/Hurt/Hippopotamus_Grunt%20(3).m4a"
