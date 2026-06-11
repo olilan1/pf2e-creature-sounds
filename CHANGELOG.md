@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- Improve matching for golems / renamed golems
+- Remove duplicates from database
+
 ## [1.2.0-beta.0] - 2026-06-07
 
 - Bulk import sound sets feature
