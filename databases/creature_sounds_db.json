@@ -1821,10 +1821,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_11.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_13.m4a"
         ],
-        "creatures": [
-            "Aeolaeka",
-            "Yamah"
-        ],
+        "creatures": [],
         "keywords": [],
         "traits": [
             "female",
@@ -1882,8 +1879,7 @@
             "Azarketi Crab Catcher",
             "Dromaar Mountaineer",
             "Munsahir",
-            "Oread Guard",
-            "Balisse"
+            "Oread Guard"
         ],
         "keywords": [
             "centaur",
@@ -2226,8 +2222,7 @@
         ],
         "creatures": [
             "Changeling Exile",
-            "Lyrakien",
-            "Tabellia"
+            "Lyrakien"
         ],
         "keywords": [
             "huldra"
@@ -2318,8 +2313,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_3.m4a"
         ],
         "creatures": [
-            "Axiomite",
-            "Tennin"
+            "Axiomite"
         ],
         "keywords": [
             "triton",
@@ -2645,8 +2639,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Hunter/Death/Soldier_Hunter_Scream_6.m4a"
         ],
         "creatures": [
-            "Lawbringer Warpriest",
-            "Raelis"
+            "Lawbringer Warpriest"
         ],
         "keywords": [],
         "traits": [
@@ -4788,7 +4781,8 @@
         "creatures": [
             "Caligni Skulker",
             "Satyr",
-            "Vampire Mastermind"
+            "Vampire Mastermind",
+            "Ghaele"
         ],
         "keywords": [],
         "traits": [
@@ -5862,9 +5856,7 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 004.m4a"
         ],
         "creatures": [
-            "Lantern Archon",
-            "Choral",
-            "Shade (Heaven)"
+            "Lantern Archon"
         ],
         "keywords": [
             "Zoaem",
@@ -5879,7 +5871,9 @@
             "Kuribu",
             "Ninkonda"
         ],
-        "traits": [],
+        "traits": [
+            "archon"
+        ],
         "size": -1
     },
     "Construct - Metal": {
@@ -6444,6 +6438,111 @@
             "bison"
         ],
         "traits": [],
+        "size": -1
+    },
+    "Samiangel": {
+        "display_name": "Angel (Masculine)",
+        "category": "Fiends & Outsiders",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Hurt/samiangel-hurt-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Hurt/samiangel-hurt-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Hurt/samiangel-hurt-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Hurt/samiangel-hurt-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Hurt/samiangel-hurt-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Hurt/samiangel-hurt-6.mp3"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-4.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-5.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-6.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Attack/samiangel-attack-7.mp3"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-1.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-11.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-2.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-3.mp3",
+            "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-8.mp3"
+        ],
+        "creatures": [
+            "Shade (Heaven)",
+            "Movanic Deva",
+            "Choral",
+            "Peri",
+            "Planetar",
+            "Solar",
+            "Raelis",
+            "Lantern Archon (Gestalt)",
+            "Legion Archon"
+        ],
+        "keywords": [],
+        "traits": [
+            "angel",
+            "male"
+        ],
+        "size": -1
+    },
+    "GraceAngel": {
+        "display_name": "Angel (Feminine)",
+        "category": "Fiends & Outsiders",
+        "hurt_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Pain_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Pain_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Pain_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Pain_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Pain_7.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Hurt/Angel_Grace_Sharp_Pain_09.m4a"
+        ],
+        "attack_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Attacking_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Attacking_2.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Attacking_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Attacking_4.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Attacking_5.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Attacking_6.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Effort_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Effort_3.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_01.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_02.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_03.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_04.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_05.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_06.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_07.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_08.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_09.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Attack/Angel_Grace_Weapon_Swing_10.m4a"
+        ],
+        "death_sounds": [
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Death/Angel_Grace_Death_1.m4a",
+            "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Death/Angel_Grace_Death_4.m4a"
+        ],
+        "creatures": [
+            "Aasimar Redeemer",
+            "Monadic Deva",
+            "Tabellia",
+            "Balisse",
+            "Tennin",
+            "Trumpet Archon",
+            "Aeolaeka",
+            "Yamah",
+            "Star Archon"
+        ],
+        "keywords": [],
+        "traits": [
+            "angel",
+            "female"
+        ],
         "size": -1
     }
 }
