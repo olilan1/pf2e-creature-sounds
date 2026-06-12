@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Angelic like humanoid sound sets added
 - Improve matching for golems / renamed golems
 - Remove duplicates from database
 
