@@ -66,7 +66,6 @@
         ],
         "keywords": [
             "bandersnatch",
-            "chimera",
             "balor",
             "behemoth hippopotamus",
             "frost worm",
@@ -324,8 +323,7 @@
             "thanadaemon",
             "vrykolakas",
             "draugr",
-            "skeleton",
-            "graveknight"
+            "skeleton"
         ],
         "traits": [
             "skeleton",
@@ -446,8 +444,7 @@
         ],
         "creatures": [],
         "keywords": [
-            "grendel",
-            "angazhani"
+            "grendel"
         ],
         "traits": [
             "troll"
@@ -541,7 +538,6 @@
         ],
         "keywords": [
             "basilisk",
-            "cave worm",
             "krooth",
             "bulette",
             "naunet",
@@ -674,7 +670,6 @@
             "raven",
             "vulture",
             "cauthooj",
-            "coatl",
             "pteranodon",
             "quetzalcoatlus",
             "jyoti",
@@ -714,7 +709,6 @@
         "keywords": [
             "sphinx",
             "rakshasa",
-            "imentesh",
             "hieracosphinx",
             "leopard"
         ],
@@ -794,8 +788,7 @@
             "wemmuth",
             "mandragora",
             "sard",
-            "tree",
-            "viper vine"
+            "tree"
         ],
         "traits": [],
         "size": -1
@@ -1037,10 +1030,10 @@
             "Animated Colossus",
             "Animated Furnace",
             "Giant Animated Statue",
-            "Golem",
             "Guthallath",
             "Paleohemoth",
-            "Clay Effigy"
+            "Clay Effigy",
+            "Stone Bulwark"
         ],
         "keywords": [
             "kapoacinth",
@@ -1048,7 +1041,8 @@
             "shaitan",
             "bastion archon",
             "sturzstromer",
-            "gargoyle"
+            "gargoyle",
+            "golem"
         ],
         "traits": [],
         "size": 5
@@ -1118,9 +1112,7 @@
             "Grim Reaper",
             "Shade (Astral Plane)"
         ],
-        "keywords": [
-            "Betobeto-San"
-        ],
+        "keywords": [],
         "traits": [
             "incorporeal",
             "wraith",
@@ -1155,9 +1147,7 @@
         ],
         "creatures": [],
         "keywords": [
-            "hag",
-            "aghash",
-            "hyakume"
+            "hag"
         ],
         "traits": [
             "hag"
@@ -1576,13 +1566,11 @@
             "Shade (Outer Rifts)"
         ],
         "keywords": [
-            "charnel creation",
+            "flesh golem",
             "quai dau to",
-            "terotricus",
             "ort",
             "omox",
             "blindheim",
-            "giant leech",
             "mist stalker",
             "Skinstitch",
             "Squirming Swill",
@@ -1675,14 +1663,12 @@
             "venedaemon",
             "quelaunt",
             "ankou",
-            "denizen of leng",
             "devourer",
             "soul eater",
             "demilich",
             "Brainchild",
             "Divine Warden Of Nethys",
             "Dramofir",
-            "Hadrinnex",
             "Hatred Siktempora",
             "Owb",
             "Owb Prophet",
@@ -1730,7 +1716,6 @@
         "keywords": [
             "void zombie",
             "yellow musk thrall",
-            "flesh golem",
             "Buso",
             "Incutilis",
             "Severed Head",
@@ -3718,12 +3703,10 @@
         ],
         "creatures": [],
         "keywords": [
-            "grodair",
             "bebilith",
             "solifugid",
             "Girtablilu Sentry",
             "Jorogumo",
-            "Levaloch",
             "Mi-Go",
             "Misery Siktempora",
             "Quintessivore"
@@ -4059,10 +4042,8 @@
             "blizzardborn",
             "ice golem",
             "icicle snake",
-            "sceaduinar",
             "umonlee",
             "adachros",
-            "consonite choir",
             "ledalusca"
         ],
         "traits": [
@@ -4995,7 +4976,6 @@
         ],
         "creatures": [
             "Vampire Servitor",
-            "Narrik",
             "Penanggalan",
             "Shade (Netherworld)"
         ],
@@ -5421,7 +5401,9 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Glass Golem/Death/Heavy Glass Shatter 8.m4a"
         ],
         "creatures": [
-            "Glass Golem"
+            "Glass Golem",
+            "Crystal Sentinel",
+            "Sceaduinar"
         ],
         "keywords": [],
         "traits": [],
@@ -5740,7 +5722,6 @@
         ],
         "keywords": [
             "Doru",
-            "Eremite",
             "Imentesh",
             "Sykever"
         ],
@@ -5892,7 +5873,6 @@
             "Giylea",
             "Qarna",
             "Rekhep",
-            "Zoaem",
             "Bikkhasura",
             "Gnokesh",
             "Kadamel",
@@ -6088,7 +6068,8 @@
         ],
         "creatures": [
             "Melody on the Wind",
-            "Shade (Creation's Forge)"
+            "Shade (Creation's Forge)",
+            "Consonite Choir"
         ],
         "keywords": [
             "akhana",
@@ -6140,9 +6121,7 @@
         "creatures": [
             "Bat"
         ],
-        "keywords": [
-            "bat"
-        ],
+        "keywords": [],
         "traits": [],
         "size": -1
     },
