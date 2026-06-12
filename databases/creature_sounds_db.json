@@ -5872,11 +5872,7 @@
             "Ninkonda"
         ],
         "traits": [
-            [
-                "archon",
-                "celestial",
-                "holy"
-            ]
+            "archon"
         ],
         "size": -1
     },
@@ -6484,11 +6480,8 @@
         ],
         "keywords": [],
         "traits": [
-            [
-                "angel",
-                "celestial",
-                "holy"
-            ]
+            "angel",
+            "male"
         ],
         "size": -1
     },
@@ -6542,15 +6535,13 @@
             "Tennin",
             "Trumpet Archon",
             "Aeolaeka",
-            "Yamah"
+            "Yamah",
+            "Star Archon"
         ],
         "keywords": [],
         "traits": [
-            [
-                "angel",
-                "celestial",
-                "holy"
-            ]
+            "angel",
+            "female"
         ],
         "size": -1
     }
