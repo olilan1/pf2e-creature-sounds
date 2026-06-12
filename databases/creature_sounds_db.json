@@ -1821,10 +1821,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_11.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Gamemaster_Audio_Human_Vocalizations/Human Female B/voice_female_b_death_13.m4a"
         ],
-        "creatures": [
-            "Aeolaeka",
-            "Yamah"
-        ],
+        "creatures": [],
         "keywords": [],
         "traits": [
             "female",
@@ -1882,8 +1879,7 @@
             "Azarketi Crab Catcher",
             "Dromaar Mountaineer",
             "Munsahir",
-            "Oread Guard",
-            "Balisse"
+            "Oread Guard"
         ],
         "keywords": [
             "centaur",
@@ -2226,8 +2222,7 @@
         ],
         "creatures": [
             "Changeling Exile",
-            "Lyrakien",
-            "Tabellia"
+            "Lyrakien"
         ],
         "keywords": [
             "huldra"
@@ -2318,8 +2313,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Robin/Death/Robin_Archer_Death_By_Explosion_3.m4a"
         ],
         "creatures": [
-            "Axiomite",
-            "Tennin"
+            "Axiomite"
         ],
         "keywords": [
             "triton",
@@ -2645,8 +2639,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human Vocals Vol2/Hunter/Death/Soldier_Hunter_Scream_6.m4a"
         ],
         "creatures": [
-            "Lawbringer Warpriest",
-            "Raelis"
+            "Lawbringer Warpriest"
         ],
         "keywords": [],
         "traits": [
@@ -4788,7 +4781,8 @@
         "creatures": [
             "Caligni Skulker",
             "Satyr",
-            "Vampire Mastermind"
+            "Vampire Mastermind",
+            "Ghaele"
         ],
         "keywords": [],
         "traits": [
@@ -5862,9 +5856,7 @@
             "modules/pf2e-creature-sounds/sounds/Ovani/Celestial/Death/Divine Magic Grace Whisper 004.m4a"
         ],
         "creatures": [
-            "Lantern Archon",
-            "Choral",
-            "Shade (Heaven)"
+            "Lantern Archon"
         ],
         "keywords": [
             "Zoaem",
@@ -5879,7 +5871,13 @@
             "Kuribu",
             "Ninkonda"
         ],
-        "traits": [],
+        "traits": [
+            [
+                "archon",
+                "celestial",
+                "holy"
+            ]
+        ],
         "size": -1
     },
     "Construct - Metal": {
@@ -6473,9 +6471,25 @@
             "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-3.mp3",
             "modules/pf2e-creature-sounds/sounds/SamiOli%20Studios/samiangel/Death/samiangel-death-8.mp3"
         ],
-        "creatures": [],
+        "creatures": [
+            "Shade (Heaven)",
+            "Movanic Deva",
+            "Choral",
+            "Peri",
+            "Planetar",
+            "Solar",
+            "Raelis",
+            "Lantern Archon (Gestalt)",
+            "Legion Archon"
+        ],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            [
+                "angel",
+                "celestial",
+                "holy"
+            ]
+        ],
         "size": -1
     },
     "GraceAngel": {
@@ -6520,9 +6534,24 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Death/Angel_Grace_Death_1.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Human%20Vocals%20Vol2/GraceAngel/Death/Angel_Grace_Death_4.m4a"
         ],
-        "creatures": [],
+        "creatures": [
+            "Aasimar Redeemer",
+            "Monadic Deva",
+            "Tabellia",
+            "Balisse",
+            "Tennin",
+            "Trumpet Archon",
+            "Aeolaeka",
+            "Yamah"
+        ],
         "keywords": [],
-        "traits": [],
+        "traits": [
+            [
+                "angel",
+                "celestial",
+                "holy"
+            ]
+        ],
         "size": -1
     }
 }
