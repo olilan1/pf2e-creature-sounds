@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.2.0-beta.1] - 2026-06-13
+
 - Angelic like humanoid sound sets added
 - Improve matching for golems / renamed golems
 - Remove duplicates from database
@@ -46,7 +48,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.0...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.1...HEAD
+
+[1.2.0-beta.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.0...v1.2.0-beta.1
 
 [1.2.0-beta.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...v1.2.0-beta.0
 
