@@ -6115,7 +6115,10 @@
         "creatures": [
             "Bat"
         ],
-        "keywords": [],
+        "keywords": [
+            "bat swarm",
+            "giant bat"
+        ],
         "traits": [],
         "size": -1
     },
@@ -6391,7 +6394,9 @@
         "creatures": [
             "Rat"
         ],
-        "keywords": [],
+        "keywords": [
+            "rat swarm"
+        ],
         "traits": [],
         "size": -1
     },
