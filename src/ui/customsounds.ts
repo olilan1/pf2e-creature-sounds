@@ -260,31 +260,31 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
         }
     }
 
-    static async importSoundSetsFromFolder(this: CustomSoundsApp, _event: PointerEvent, _target: HTMLElement) {
-        const confirmed = await DialogV2.confirm({
-            yes: {
-                action: "yes",
-                label: "Select folder",
-                icon: "fa-solid fa-folder"
-            },
-            no: {
-                action: "no",
-                label: "Cancel",
-                icon: "fa-solid fa-xmark"
-            },
-            window: { title: "Add folder" },
-            position: {
-                width: 700
-            },
-            content: `
-            How to bulk add custom sound sets:
-            <li><strong>Create a Main Folder:</strong> You can store this anywhere that is accessible by your Foundry server. The name of this folder will not matter.</li>
-            <li><strong>Sound Set Folders:</strong> Inside your Main Folder, create Sub-Folders. <strong>Each of these Sub-Folders will become a new custom sound set</strong>, and its name will be the <strong>display name</strong> of the sound set.</li>
-            <li><strong>Sound Type Folders:</strong> Inside <em>each sound set folder</em>, create specific Sub-Folders named <code>attack</code>, <code>hurt</code>, and <code>death</code>.</li>
-            <li><strong>Sound Files:</strong> Place your audio files (MP3, OGG, WAV, M4A) directly inside these <code>attack</code>, <code>hurt</code>, or <code>death</code> subfolders based on when you want the sounds to trigger. The names of the files will not matter.</li>
+    static async importSoundSetsFromFolder(
+        this: CustomSoundsApp,
+        _event: PointerEvent,
+        _target: HTMLElement
+    ) {
+        const content = document.createElement("div");
+        content.innerHTML = `
+            <p style="margin-bottom: 0.25rem;">How to bulk add custom sound sets:</p>
+            <ul style="margin: 0 0 0.5rem 1.25rem; padding: 0;">
+                <li><strong>Create a Main Folder:</strong> You can store this anywhere that is
+                    accessible by your Foundry server. The name of this folder will not matter.</li>
+                <li><strong>Sound Set Folders:</strong> Inside your Main Folder, create Sub-Folders.
+                    <strong>Each of these Sub-Folders will become a new custom sound set</strong>,
+                    and its name will be the <strong>display name</strong> of the sound set.</li>
+                <li><strong>Sound Type Folders:</strong> Inside <em>each sound set folder</em>,
+                    create specific Sub-Folders named <code>attack</code>, <code>hurt</code>,
+                    and <code>death</code>.</li>
+                <li><strong>Sound Files:</strong> Place your audio files (MP3, OGG, WAV, M4A)
+                    directly inside these <code>attack</code>, <code>hurt</code>, or
+                    <code>death</code> subfolders based on when you want the sounds to trigger.
+                    The names of the files will not matter.</li>
+            </ul>
             <div>
-            <p/><strong>Example Structure:</strong>
-            <pre><code>CustomSoundsFolder/
+                <p style="margin: 0.5rem 0 0.25rem 0;"><strong>Example Structure:</strong></p>
+                <pre><code style="white-space: pre; font-family: monospace;">CustomSoundsFolder/
 ├── Ghast/
 │   ├── attack/
 │   │   ├── ghast_attack_01.mp3
@@ -299,10 +299,29 @@ export class CustomSoundsApp extends HandlebarsApplicationMixin(ApplicationV2) {
     ├── hurt/
     │   └── vamp_hurt_01.wav
     └── death/
-        └── vampire_death.ogg
-        </code></pre>
-        </div>
-        `,
+        └── vampire_death.ogg</code></pre>
+            </div>
+        `;
+
+        const confirmed = await DialogV2.confirm({
+            yes: {
+                action: "yes",
+                label: "Select folder",
+                icon: "fa-solid fa-folder"
+            },
+            no: {
+                action: "no",
+                label: "Cancel",
+                icon: "fa-solid fa-xmark"
+            },
+            window: {
+                title: "Add folder",
+                positioned: true
+            },
+            position: {
+                width: 700
+            },
+            content: content as unknown as string,
             modal: true
         });
 

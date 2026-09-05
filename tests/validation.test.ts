@@ -123,7 +123,7 @@ describe("Schema Validation (isSoundDatabase)", () => {
 });
 
 describe("Custom Database Validation (validateCustomSoundDatabase)", () => {
-    it("should reject databases where IDs don't start with Custom-", () => {
+    it("should reject databases where IDs don't start with Custom- or Folder-", () => {
         const invalidDb: SoundDatabase = {
             "Wrong-123": { ...validSoundSet, id: "Wrong-123" },
         };
@@ -140,6 +140,7 @@ describe("Custom Database Validation (validateCustomSoundDatabase)", () => {
     it("should return OK for a valid custom sound database", () => {
         const correctDb: SoundDatabase = {
             "Custom-A": { ...validSoundSet, id: "Custom-A" },
+            "Folder-A": { ...validSoundSet, id: "Folder-A" },
         };
         expect(validateCustomSoundDatabase(correctDb)).toBe("OK");
     });

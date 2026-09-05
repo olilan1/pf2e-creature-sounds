@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Corrected some sounds
+- UI Display of Folder Structure Fix for V14
+- Import functionality fix to work with bulk update 
+
 ## [1.2.0-beta.1] - 2026-06-13
 
 - Angelic like humanoid sound sets added
