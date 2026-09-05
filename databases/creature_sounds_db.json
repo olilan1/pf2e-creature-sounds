@@ -163,7 +163,7 @@
             "morlock"
         ],
         "traits": [
-            "goblin"
+            "morlock"
         ],
         "size": -1
     },
@@ -217,6 +217,7 @@
             "rust monster",
             "bog strider",
             "giant maggot",
+            "mudlicker maggot",
             "empress bore worm",
             "empress ice worm",
             "empress mage-eater worm",
@@ -1655,9 +1656,7 @@
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Death Long Drawn Out Haunting Weird 04_ESM_HC2.m4a",
             "modules/pf2e-creature-sounds/sounds/GameDevMarket/Humanoid_Creatures_2/Male_Voidling/CREAHmn_Voidling Death Short Quick Creepy Weird Ethereal 05_ESM_HC2.m4a"
         ],
-        "creatures": [
-            "Will-o’-Wisp"
-        ],
+        "creatures": [],
         "keywords": [
             "shining child",
             "venedaemon",
@@ -5758,7 +5757,8 @@
         ],
         "keywords": [
             "wisp",
-            "soulrider"
+            "soulrider",
+            "corpselight"
         ],
         "traits": [],
         "size": -1
