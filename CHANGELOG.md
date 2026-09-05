@@ -4,21 +4,12 @@
 
 ## [2.0.0] - 2026-09-05
 
-- Corrected some sounds
-- UI Display of Folder Structure Fix for V14
-- Import functionality fix to work with bulk update
-- Updated Documentation
-- Angelic like humanoid sound sets added
-- Improve matching for golems / renamed golems
-- Remove duplicates from database
+- Added many new sound sets
+- Organised sound sets into categories
+- Reviewed and updated matching for (almost all) MC and MC2 creatures
+- Actor Overview feature
 - Bulk import sound sets feature
 - Soundboard feature
-- Actor Overview feature
-- Organised sound sets into categories
-- Added many new sound sets
-- Renamed some sound sets
-- Updated sound matching, including multi-trait matching (e.g. for elemental+fire)
-- Reviewed and updated matching for (almost all) MC and MC2 creatures
 - Verified v14 compatible
 
 ## [1.1.1] - 2025-07-20
