@@ -5,6 +5,7 @@
 - Corrected some sounds
 - UI Display of Folder Structure Fix for V14
 - Import functionality fix to work with bulk update 
+- Updated Documentation
 
 ## [1.2.0-beta.1] - 2026-06-13
 

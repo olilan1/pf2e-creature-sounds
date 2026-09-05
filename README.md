@@ -57,3 +57,38 @@ the sound select dialog.
 You can also Export all your custom sound sets so that you can Import them into another world, or
 just as a backup, but please note that this does not back up your actual sound files, just the sound
 set definition.
+
+In addition, there is also a bulk-import feature where you can create an entire collection at once. To use bulk import, organize your files as below and click the **Add folder** button to let the system create the sound sets for you.
+
+```text
+CustomSoundsFolder/
+├── Ghast/
+│   ├── attack/ (audio files)
+│   ├── hurt/   (audio files)
+│   └── death/  (audio files)
+└── Vampire/
+    ├── attack/
+    ├── hurt/
+    └── death/
+```
+
+## Creature Sounds Overview
+
+Are you preparing for your next session? Then this feature is for you. Go to Module Settings to access the overview. 
+
+<img src="documentation/overview-settings.png" width="400">
+
+This lets you view, configure and preview sounds for all actors from a single window. You can easily see which creatures have the automated sound matching, and which are manually selected.
+
+<img src="documentation/overview-screen.png" width="400">
+
+## GM Soundboard
+
+For quick manual audio during encounters or roleplay, a soundboard is integrated directly into
+the Playlists sidebar tab for GMs.
+
+Selecting any token on the active scene enables the **Attack**, **Hurt**, and **Death** buttons
+on the soundboard. Clicking a button immediately broadcasts that creature's sound to all players.
+This feature can be toggled on or off in the module settings.
+
+<img src="documentation/soundboard.png" width="400">
