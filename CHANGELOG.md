@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- bat and rat swarm matching added
+
 ## [2.0.0] - 2026-09-05
 
 - Added many new sound sets
