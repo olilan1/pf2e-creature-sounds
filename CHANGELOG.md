@@ -2,19 +2,15 @@
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-09-05
+
 - Corrected some sounds
 - UI Display of Folder Structure Fix for V14
-- Import functionality fix to work with bulk update 
+- Import functionality fix to work with bulk update
 - Updated Documentation
-
-## [1.2.0-beta.1] - 2026-06-13
-
 - Angelic like humanoid sound sets added
 - Improve matching for golems / renamed golems
 - Remove duplicates from database
-
-## [1.2.0-beta.0] - 2026-06-07
-
 - Bulk import sound sets feature
 - Soundboard feature
 - Actor Overview feature
@@ -53,11 +49,9 @@
 - Converted sounds to AAC and normalised volume
 - Added plant sound set
 
-[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.1...HEAD
+[Unreleased]: https://github.com/olilan1/pf2e-creature-sounds/compare/v2.0.0...HEAD
 
-[1.2.0-beta.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.2.0-beta.0...v1.2.0-beta.1
-
-[1.2.0-beta.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...v1.2.0-beta.0
+[2.0.0]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.1...v2.0.0
 
 [1.1.1]: https://github.com/olilan1/pf2e-creature-sounds/compare/v1.1.0...v1.1.1
 
