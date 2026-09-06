@@ -3,6 +3,8 @@
 ## [Unreleased]
 
 - bat and rat swarm matching added
+- Play creature sounds on the Environment channel
+- Change creature sound volume setting to world scope
 
 ## [2.0.0] - 2026-09-05
 

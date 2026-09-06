@@ -115,7 +115,11 @@ describe("Sound Playback Triggers", () => {
         await playSoundForCreatureOnDamage(actor);
 
         expect(foundry.audio.AudioHelper.play).toHaveBeenCalledWith(
-            expect.objectContaining({ src: "orc_death.wav", volume: 0.5 }),
+            expect.objectContaining({
+                src: "orc_death.wav",
+                channel: "environment",
+                volume: 0.5,
+            }),
             true
         );
     });
@@ -141,7 +145,11 @@ describe("Sound Playback Triggers", () => {
         await playSoundForCreatureOnDamage(actor);
 
         expect(foundry.audio.AudioHelper.play).toHaveBeenCalledWith(
-            expect.objectContaining({ src: "orc_hurt.wav", volume: 0.5 }),
+            expect.objectContaining({
+                src: "orc_hurt.wav",
+                channel: "environment",
+                volume: 0.5,
+            }),
             true
         );
     });

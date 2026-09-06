@@ -385,6 +385,7 @@ export function playSound(sound: string, allPlayers: boolean): void {
 
     foundry.audio.AudioHelper.play({
         src: sound,
+        channel: "environment",
         volume: getSetting(SETTINGS.CREATURE_SOUNDS_VOLUME) as number,
         autoplay: true,
         loop: false
