@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+- Added new sounds from OvaniSound (@ChasarooniZ)
 
 - bat and rat swarm matching added
 
