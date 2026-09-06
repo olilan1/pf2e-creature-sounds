@@ -44,6 +44,23 @@ export function registerSettings(): void {
         type: Boolean
     });
 
+    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_VOLUME, {
+        name: "Creature sound volume",
+        hint: "Base volume for creature sounds for all users. Played on the "
+            + "Environment channel, so each user's Environment volume slider is "
+            + "also taken into account.",
+        scope: "world",
+        config: true,
+        default: 0.5,
+        // @ts-expect-error (range is ok)
+        range: {
+            min: 0,
+            max: 1,
+            step: 0.1
+        },
+        type: Number
+    });
+
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_CHARACTER, {
         name: "Character sounds",
         hint: "Enable creature sounds functionality for player characters",
@@ -69,21 +86,6 @@ export function registerSettings(): void {
         config: true,
         default: true,
         type: Boolean
-    });
-
-    game.settings.register(SETTINGS_NAMESPACE, SETTINGS.CREATURE_SOUNDS_VOLUME, {
-        name: "Creature sound volume",
-        hint: "Volume for those creature sounds",
-        scope: "client",
-        config: true,
-        default: 0.5,
-        // @ts-expect-error (range is ok)
-        range: {
-            min: 0,
-            max: 1,
-            step: 0.1
-        },
-        type: Number
     });
 
     game.settings.register(SETTINGS_NAMESPACE, SETTINGS.PLAYERS_CAN_EDIT, {
